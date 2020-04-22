@@ -12,6 +12,7 @@ if (place_meeting(x, y + 1, oCollision) || oneway)
 {
 	//Change colllision sprite
 	sprite_index = sPlayerCollision;
+	spriteRot = 0;
 	
 	//Squash
 	scrLandSquash();

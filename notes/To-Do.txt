@@ -1,28 +1,19 @@
 Features:
 - Controller input
 - IDEA: reset ppFrames if hitting a projectile while pushing or pulling, a la bash
-- IDEA: Save hsp and vsp when dashing and add it to the ppSpeed for some conservation of momentum
-- mull over moving platforms
+ - Need projectiles first
+- Mull over moving platforms
  - They are a bit boring. A better alternative would be to just have moving PP objects instead
-- Make dash conserve momentum a bit more for wavedash-like experience
 
 Game Feel & Oil
-- Edge allowance for one-way platforms
-- Possible buffer & coyote time for walljump
+
 
 Graphics
-- Particles
-  - Secondary pp particles
-  
 - Sprites with the AI frame interpolation
 - (Polish shader with clamped values instead of if-statements)
-- Make pp indicator lights draw on light surface
 
 Sound
 - Default BGM
 - Final Scene BGM
-- PP object ambient
-- PP object activation
-- PP object indicator direction change
 - Research audio emitters for environment sounds
  - Probably not needed for such a simple game, if onscreen, make sound, if not, don't

@@ -1,8 +1,8 @@
-if (place_meeting(x + wallJumpDistance, y - sprite_height / 2, oCollision) && jump)
+if (place_meeting(x + wallJumpDistance, y - sprite_height / 2, oCollision) && wantsToJump && !isPull && !isPush && !wasGrounded)
 {
 	wallJumpDir = "left";
 	var walljump = true;
-} else if (place_meeting(x - wallJumpDistance, y - sprite_height / 2, oCollision) && jump)
+} else if (place_meeting(x - wallJumpDistance, y - sprite_height / 2, oCollision) && wantsToJump && !isPull && !isPush && !wasGrounded)
 {
 	wallJumpDir = "right";
 	var walljump = true;
@@ -11,13 +11,16 @@ if (place_meeting(x + wallJumpDistance, y - sprite_height / 2, oCollision) && ju
 	var walljump = false;
 }
 
-if (place_meeting(x + 1, y - sprite_height / 2, oCollision) || place_meeting(x - 1, y - sprite_height / 2, oCollision))
+var hugLeft = place_meeting(x - 1, y - sprite_height / 2, oCollision);
+var hugRight = place_meeting(x + 1, y - sprite_height / 2, oCollision);
+if ((hugRight && right) || (hugLeft && left))
 {
 	curFallSpeed = fallSpeedWall;
 }
 
 
-if (walljump && wallJumpTimer == wallJumpTimerMax)
+//Commit walljump
+if (walljump)
 {
 	
 	wallJumping = true;

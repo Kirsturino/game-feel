@@ -69,6 +69,14 @@ if (distance_to_object(interact) < interactDistanceMax)
 		hsp = 0;
 		move = 0;
 		
+		if (isPull)
+		{
+		spriteRot = ppDir - 90;
+		} else if (isPush)
+		{
+			spriteRot = ppDir + 90;
+		}
+		
 		//SFX
 		var pitch = random_range(0.8, 1.2);
 		audio_sound_pitch(sndPP, pitch);
@@ -80,11 +88,6 @@ if (distance_to_object(interact) < interactDistanceMax)
 {
 	with (interact)
 	{
-		if (drawTri)
-		{
-			audio_sound_pitch(sndPPActive, 1.5);
-			audio_play_sound(sndPPActive, 40, false);
-		}
 		drawTri = false;
 	}
 }
@@ -143,4 +146,8 @@ if (isPull || isPush)
 	vspMax = scrApproach(vspMax, vspMaxNormal, spChangeSpeed);
 	airAxl = scrApproach(airAxl, airAxlMax, airAxlChangeSpeed);
 	airDrag = scrApproach(airDrag, airdragMax, airDragChangeSpeed);
+	
+	//Animate spinny boi
+	var dd = angle_difference(spriteRot, 0);
+	spriteRot -= min(abs(dd), 4) * sign(dd);
 }

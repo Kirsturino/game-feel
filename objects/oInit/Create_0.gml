@@ -5,9 +5,6 @@
 //Meta stuff
 global.debugging = false;
 
-//Input device
-global.inputDevice = "keyboard";
-
 //Initialize particles
 scrParticleInit();
 

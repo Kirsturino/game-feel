@@ -20,7 +20,7 @@ if (restore != noone && restore.active && ppFrames != ppFramesMax)
 		scrSetShake(15, 30);
 		scrFreeze(120);
 		audio_play_sound(sndRefreshMega, 50, false);
-		ppFrames = ppFramesMax * 3;
+		ppFrames = floor(ppFramesMax * 3.5);
 	}
 	
 	//SFX after screen freeze
