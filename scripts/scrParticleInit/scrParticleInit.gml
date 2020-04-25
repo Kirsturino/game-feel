@@ -80,10 +80,10 @@ part_type_size(global.ppPart4,0.1,0.2,0,0);
 part_type_scale(global.ppPart4,1,1);
 part_type_color1(global.ppPart4,16777215);
 part_type_alpha2(global.ppPart4,1,0);
-part_type_speed(global.ppPart4,2,2,-0.002,0);
+part_type_speed(global.ppPart4,1,3,-0.002,0);
 part_type_direction(global.ppPart4,45,135,0,0);
 part_type_gravity(global.ppPart4,0.001,270);
-part_type_orientation(global.ppPart4,0,0,0,0,1);
+part_type_orientation(global.ppPart4,0,0,0,10,1);
 part_type_blend(global.ppPart4,1);
 part_type_life(global.ppPart4,30,40);
 
@@ -113,3 +113,16 @@ part_type_gravity(global.restorePart,0.001,270);
 part_type_orientation(global.restorePart,0,359,5,0,0);
 part_type_blend(global.restorePart,1);
 part_type_life(global.restorePart,30,50);
+
+//Secret particles
+global.secretPart = part_type_create();
+part_type_shape(global.secretPart,pt_shape_star);
+part_type_size(global.secretPart,0.05,0.15,0,0);
+part_type_scale(global.secretPart,0.5,0.5);
+//Color stated in secret object
+part_type_alpha3(global.secretPart,0,0.5,0);
+part_type_speed(global.secretPart,0.1,0.2,0,0);
+part_type_direction(global.secretPart,0,359,0,0);
+part_type_orientation(global.secretPart,0,0,0,0,1);
+part_type_blend(global.secretPart,1);
+part_type_life(global.secretPart,120,160);

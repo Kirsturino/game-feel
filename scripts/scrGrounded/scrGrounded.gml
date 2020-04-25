@@ -7,9 +7,6 @@ scrCollisionMovement();
 scrPushPull();
 scrResetPP();
 
-//Room transition
-scrTransition();
-
 //Squash and stretch
 scrSquashGrounded();
 scrSquash();

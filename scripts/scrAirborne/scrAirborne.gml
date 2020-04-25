@@ -20,8 +20,5 @@ scrRestore();
 scrSquashAirborne();
 scrSquash();
 
-//Room transition
-scrTransition();
-
 //State switches
 scrToGround();

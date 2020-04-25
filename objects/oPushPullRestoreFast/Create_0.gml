@@ -13,7 +13,7 @@ color = c_white;
 rotSpeed = 2;
 
 active = true;
-activeTimer = 180;
+activeTimer = 30;
 
 inactiveColor = c_dkgray;
 colorTo = c_white;

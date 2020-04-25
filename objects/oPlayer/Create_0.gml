@@ -41,7 +41,6 @@ hspMaxPP = 5;
 vspMaxPP = 5;
 interact = noone;
 lastInteract = noone;
-interactDistanceMax = 70;
 
 //Walljump variables
 wallJumpDistance = 4;
@@ -99,3 +98,18 @@ ledgeGrabLength = 16;
 
 //SFX variables
 refreshPitch = 1;
+
+//Spawn player in wanted position, if not possible, spawn in default room position
+if (global.spawnX != 9999 && global.spawnY != 9999 && !place_meeting(global.spawnX, global.spawnY, oCollision))
+{
+	x = global.spawnX;
+	y = global.spawnY;
+}
+
+hsp = global.spawnhsp;
+vsp = global.spawnvsp;
+
+//Keep player moving after screen transitions
+scrInput();
+if (right) newestDir = "right";
+if (left) newestDir = "left";

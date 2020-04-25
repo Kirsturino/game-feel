@@ -32,5 +32,6 @@ if (global.debugging)
 		draw_text(10, 100, "ledge timer: " + string(ledgeTimer));
 		draw_text(10, 110, "walljump timer: " + string(wallJumpTimer));
 		draw_text(10, 120, "fall speed: " + string(curFallSpeed));
+		draw_text(10, 130, "ppDir: " + string(ppDir));
 	}
 }

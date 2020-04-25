@@ -10,7 +10,7 @@ with (oPlayer)
 
 with (oPushPull)
 {
-	scrPPLight(oLighting.lightSurf, x, y, interactRange, 8, offset, circleAlpha, color);
+	scrPPLight(oLighting.lightSurf, x, y, visualInteractRange, 8, offset, circleAlpha, color);
 }
 
 with (oLight)

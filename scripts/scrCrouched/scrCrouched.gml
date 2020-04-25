@@ -2,7 +2,8 @@
 scrInput();
 
 //Movement
-scrJump();
+scrFallThrough();
+
 //scrCrouchJump();
 scrCollisionMovement();
 scrPushPull();
@@ -11,9 +12,5 @@ scrPushPull();
 scrSquashCrouched();
 scrSquash();
 
-//Room transition
-scrTransition();
-
 //State switches
-scrToAir();
 scrCrouchToGrounded();

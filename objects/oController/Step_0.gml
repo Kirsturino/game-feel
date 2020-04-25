@@ -15,14 +15,14 @@ if (keyboard_check_pressed(ord("T")))
 
 if (keyboard_check_pressed(ord("M")))
 {
-	if (musicTarget == 0)
+	if (global.musicTarget == 0)
 	{
-		musicTarget = musicVolume;
+		global.musicTarget = musicVolume;
 	} else 
 	{
-		musicTarget = 0;
+		global.musicTarget = 0;
 	}
-	audio_group_set_gain(agMusic, musicTarget, 1000);
+	audio_group_set_gain(agMusic, global.musicTarget, 1000);
 }
 
 if (keyboard_check_pressed(ord("F")))
@@ -39,3 +39,6 @@ if (keyboard_check_pressed(ord("F")))
 
 //Ambient particles
 part_emitter_stream(global.partSystem, global.ambientEmitter, global.ambientPart, -5);
+
+var gp_num = gamepad_get_device_count();
+show_debug_message("CONTROLLERS" + string(gp_num));

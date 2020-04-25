@@ -3,92 +3,122 @@ interact = instance_nearest(x, y - sprite_height / 2, oPushPull);
 if (interact != noone)
 {
 	var interactDir = point_direction(x, y - sprite_height / 2, interact.x, interact.y);
-} else
-{
-	var interactDir = 0;
-}
+	interact.triDirTo = other.ppDir;
 
-//Round interactDir to 8 cardinal directions
-if (!isPull && !isPush)
-{
-	if (interactDir <= 22.5 || interactDir > 337.5)
-	{
-		ppDir = 0;
-	} else if (interactDir <= 67.5)
-	{
-		ppDir = 45;
-	} else if (interactDir <= 112.5)
-	{
-		ppDir = 90;
-	} else if (interactDir <= 157.5)
-	{
-		ppDir = 135;
-	} else if (interactDir <= 202.5)
-	{
-		ppDir = 180;
-	} else if (interactDir <= 247.5)
-	{
-		ppDir = 225;
-	} else if (interactDir <= 292.5)
-	{
-		ppDir = 270;
-	}else if (interactDir <= 337.5)
-	{
-		ppDir = 315;
-	}
-}
 
-//Highlight interactable object, get initial keypress for pushing or pulling
-if (distance_to_object(interact) < interactDistanceMax)
-{
-	with (interact)
+	#region ppDir
+	//Round interactDir to 8 cardinal directions
+	if (!isPull && !isPush)
 	{
-		
-		if (!drawTri)
+		if (interactDir <= 22.5 || interactDir > 337.5)
 		{
-			audio_sound_pitch(sndPPActive, 2);
-			audio_play_sound(sndPPActive, 40, false);
+			ppDir = 0;
+		} else if (interactDir <= 67.5)
+		{
+			ppDir = 45;
+		} else if (interactDir <= 112.5)
+		{
+			ppDir = 90;
+		} else if (interactDir <= 157.5)
+		{
+			ppDir = 135;
+		} else if (interactDir <= 202.5)
+		{
+			ppDir = 180;
+		} else if (interactDir <= 247.5)
+		{
+			ppDir = 225;
+		} else if (interactDir <= 292.5)
+		{
+			ppDir = 270;
+		}else if (interactDir <= 337.5)
+		{
+			ppDir = 315;
 		}
-		drawTri = true;
-		triDirTo = other.ppDir;
 	}
+	#endregion
+
+	//Highlight interactable object, get initial keypress for pushing or pulling
+	if (distance_to_object(interact) < interact.interactRange)
+	{
+		with (interact)
+		{
+		
+			if (!drawTri)
+			{
+				audio_sound_pitch(sndPPActive, 2);
+				audio_play_sound(sndPPActive, 40, false);
+			}
+			drawTri = true;
+		}
 	
-	lastInteract = interact;
+		lastInteract = interact;
 
-	//Stop natural momentum before applying force, get direction for force
-	if ((pushPress || pullPress) && ppFrames == ppFramesMax && interact != noone)
-	{
-		if (pushPress)
+		//Stop natural momentum before applying force, get direction for force
+		if ((pushPress || pullPress) && ppFrames == ppFramesMax && interact != noone)
 		{
-			isPush = true;
-		} else if (pullPress)
-		{
-			isPull = true;
-		}
-		vsp = 0;
-		hsp = 0;
-		move = 0;
+			if (pushPress)
+			{
+				isPush = true;
+			} else if (pullPress)
+			{
+				isPull = true;
+			}
+			vsp = 0;
+			hsp = 0;
+			move = 0;
 		
-		if (isPull)
-		{
-		spriteRot = ppDir - 90;
-		} else if (isPush)
-		{
-			spriteRot = ppDir + 90;
-		}
+			//Animate character to turn towards or away from pp objects
+			#region sprite rotation shenanigans
 		
-		//SFX
-		var pitch = random_range(0.8, 1.2);
-		audio_sound_pitch(sndPP, pitch);
-		audio_play_sound(sndPP, 50, false);
-		scrSetShake(15, 15);
-		scrFreeze(80);
-	}
-} else
-{
-	with (interact)
+			var rotDir = ppDir;
+		
+			if (rotDir > 180)
+			{
+				rotDir = rotDir - 360;
+			}
+			
+			//Up and down pushing rotations will remain at 0
+			if (isPull)
+			{
+				if (ppDir == 225)
+				{
+					spriteRot = -45;
+				} else if (ppDir == 315)
+				{
+					spriteRot = 45;
+				} else if (rotDir != -90)
+				{
+					spriteRot = rotDir - 90;
+				}
+			} else if (isPush)
+			{
+				if (ppDir == 45)
+				{
+					spriteRot = -45;
+				} else if (ppDir == 135)
+				{
+					spriteRot = 45;
+				} else if (rotDir != 90)
+				{
+					spriteRot = rotDir + 90;
+				}
+			}
+			#endregion
+		
+			//SFX
+			var pitch = random_range(0.8, 1.2);
+			audio_sound_pitch(sndPP, pitch);
+			audio_play_sound(sndPP, 50, false);
+			scrSetShake(15, 10);
+			scrFreeze(80);
+		}
+	} else
 	{
-		drawTri = false;
+		with (interact)
+		{
+			drawTri = false;
+		}
 	}
 }
 
@@ -133,6 +163,7 @@ if (isPull || isPush)
 	hspMax = hspMaxPP;
 	vspMax = vspMaxPP;
 	airAxl = 0;
+	curFallSpeed = fastFallSpeed;
 } else
 {
 	if (state == scrGrounded)
@@ -148,6 +179,5 @@ if (isPull || isPush)
 	airDrag = scrApproach(airDrag, airdragMax, airDragChangeSpeed);
 	
 	//Animate spinny boi
-	var dd = angle_difference(spriteRot, 0);
-	spriteRot -= min(abs(dd), 4) * sign(dd);
+	spriteRot = lerp(spriteRot, 0, 0.1);
 }
