@@ -5,6 +5,7 @@ Features:
 - IDEA: Objects that prolong your dash in the same direction as your last dash when hit
 - Mull over moving platforms
  - They are a bit boring. A better alternative would be to just have moving PP objects instead
+- Some kind of indicator whether you have a dash charge
 
 Game Feel & Oil
 
@@ -14,6 +15,8 @@ Graphics
 - (Polish shader with clamped values instead of if-statements)
 - Room transition animation
 - Revamp colors
+- Parallax objects
+
 Sound
 - Default BGM
 - Final Scene BGM

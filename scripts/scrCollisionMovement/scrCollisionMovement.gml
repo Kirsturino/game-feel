@@ -1,25 +1,11 @@
 //Get movement direction
 
-//Apply null movement
-if (leftPress or rightRelease)
+if (global.inputDevice == "kb")
 {
-	newestDir = "left";
-}
-
-if (rightPress or leftRelease)
+	scrNullMovement();
+} else if (global.inputDevice == "controller")
 {
-	newestDir = "right";
-}
-
-if (right && newestDir = "right")
-{
-	move = 1;
-} else if (left && newestDir = "left")
-{
-	move = -1;
-} else 
-{
-	move = 0;
+	scrMovement();
 }
 
 //Calculate movement speed

@@ -495,6 +495,14 @@
             }
         },
         {
+            "Key": "5c60950e-d280-4a0b-8349-8cb8fa3eaa72",
+            "Value": {
+                "id": "98d5f50b-ae61-4347-b6dd-d3f58dc7598e",
+                "resourcePath": "sprites\\sTiles\\sTiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5cc457a6-8848-43a5-82d6-b972849446c8",
             "Value": {
                 "id": "08ad845a-a46c-41be-a465-6ff98e7a3e84",
@@ -623,6 +631,14 @@
             }
         },
         {
+            "Key": "710282f7-8934-4e83-8496-7e3d49438e47",
+            "Value": {
+                "id": "92528baf-e062-4c51-bdb5-90a74a269d4a",
+                "resourcePath": "scripts\\scrNullMovement\\scrNullMovement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7185fc49-089f-4a09-8f15-3c1257331365",
             "Value": {
                 "id": "e679863c-a235-469d-a2c0-5863870c6323",
@@ -719,11 +735,27 @@
             }
         },
         {
+            "Key": "894c2a62-be2b-48f8-b1c8-36e1e75d456f",
+            "Value": {
+                "id": "32e601d6-86c7-4e4b-b682-4821d34233d1",
+                "resourcePath": "sprites\\sGroundTiles\\sGroundTiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8cb32950-58d7-4303-b84b-0c60489b3518",
             "Value": {
                 "id": "e8dface9-194f-45a8-90c5-d20579593763",
                 "resourcePath": "views\\8cb32950-58d7-4303-b84b-0c60489b3518.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "91279afb-77b1-4ca4-a95f-906dfd6db289",
+            "Value": {
+                "id": "c67c7513-bec9-4c04-aee9-fdddf7b8305e",
+                "resourcePath": "tilesets\\tsGround\\tsGround.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -1007,6 +1039,14 @@
             }
         },
         {
+            "Key": "e0683045-0e33-4f66-aa95-d521500c4e6e",
+            "Value": {
+                "id": "f7833668-7118-4f7a-b01f-315ba020a39e",
+                "resourcePath": "scripts\\scrMovement\\scrMovement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e21890da-c9a8-4047-873d-a8ba064c37e9",
             "Value": {
                 "id": "0cfd96c2-cce6-4818-9a55-69a6eccbfe30",
@@ -1203,7 +1243,9 @@
         "83a136fa-d4df-4eeb-9d00-85e90bb46aa5",
         "fffd6bb6-8e14-4032-9776-79e0cfd8c2a7",
         "ed129c93-31eb-44ce-9e7d-8f4c40d472c0",
-        "239af11a-a97e-48f3-9784-3fbbf974edb6"
+        "239af11a-a97e-48f3-9784-3fbbf974edb6",
+        "710282f7-8934-4e83-8496-7e3d49438e47",
+        "e0683045-0e33-4f66-aa95-d521500c4e6e"
     ],
     "tutorial": ""
 }

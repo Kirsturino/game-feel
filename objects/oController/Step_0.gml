@@ -37,8 +37,16 @@ if (keyboard_check_pressed(ord("F")))
 	}
 }
 
+if (keyboard_check_pressed(ord("G")))
+{
+	if (global.inputDevice == "kb")
+	{
+		global.inputDevice = "controller";
+	} else
+	{
+		global.inputDevice = "kb";
+	}
+}
+
 //Ambient particles
 part_emitter_stream(global.partSystem, global.ambientEmitter, global.ambientPart, -5);
-
-var gp_num = gamepad_get_device_count();
-show_debug_message("CONTROLLERS" + string(gp_num));
