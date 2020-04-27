@@ -1,8 +1,11 @@
-if (place_meeting(x + wallJumpDistance, y - sprite_height / 2, oCollision) && wantsToJump && !isPull && !isPush && !wasGrounded)
+var rCollision = collision_point(bbox_right + wallJumpDistance, y - sprite_height / 2, oCollision, false, false);
+var lCollision = collision_point(bbox_left - wallJumpDistance, y - sprite_height / 2, oCollision, false, false);
+
+if (rCollision != noone && wantsToJump && !isPull && !isPush && !wasGrounded)
 {
 	wallJumpDir = "left";
 	var walljump = true;
-} else if (place_meeting(x - wallJumpDistance, y - sprite_height / 2, oCollision) && wantsToJump && !isPull && !isPush && !wasGrounded)
+} else if (lCollision != noone && wantsToJump && !isPull && !isPush && !wasGrounded)
 {
 	wallJumpDir = "right";
 	var walljump = true;
@@ -11,9 +14,9 @@ if (place_meeting(x + wallJumpDistance, y - sprite_height / 2, oCollision) && wa
 	var walljump = false;
 }
 
-var hugLeft = place_meeting(x - 1, y - sprite_height / 2, oCollision);
-var hugRight = place_meeting(x + 1, y - sprite_height / 2, oCollision);
-if ((hugRight && right) || (hugLeft && left))
+var hugRight = collision_point(bbox_right + 1, y - sprite_height / 2, oCollision, false, false);
+var hugLeft = collision_point(bbox_left - 1, y - sprite_height / 2, oCollision, false, false);
+if ((hugRight != noone && right) || (hugLeft != noone && left))
 {
 	curFallSpeed = fallSpeedWall;
 }

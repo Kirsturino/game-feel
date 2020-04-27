@@ -1,12 +1,5 @@
 //Get movement direction
-
-if (global.inputDevice == "kb")
-{
-	scrNullMovement();
-} else if (global.inputDevice == "controller")
-{
-	scrMovement();
-}
+scrNullMovement();
 
 //Calculate movement speed
 if (state == scrGrounded)
@@ -36,51 +29,7 @@ hsp += hspFraction;
 hspFraction = hsp - (floor(abs(hsp)) * sign(hsp));
 hsp -= hspFraction;
 
-//Horizontal collision
-if (place_meeting(x + hsp, y, oCollision))
-{
-	xCollision = true;
-	
-	while (!place_meeting(x + sign(hsp), y, oCollision))
-	{
-		x += sign(hsp);
-	}
-	
-	//Edge allowance, meaning that player will slide on top of ledge instead of colliding with it
-	
-	//Track if assistance was used
-	var slidHorizontal = false;
-	
-	//Get difference between player and the ledge the player is colliding with
-	if (place_meeting(x + sign(hsp), y, oCollision))
-	{
-		var colliderHorizontal = instance_place(x + sign(hsp), y, oCollision);
-		var yDifference = y - colliderHorizontal.y;
-		var forgivenessLimitHorizontal = minLedgeDifferenceY + (colliderHorizontal.image_yscale - 1) * blockSize / 2;
-		
-		if (abs(yDifference) > forgivenessLimitHorizontal && yDifference < 0)
-		{
-			//slide player until no longer colliding
-			while (place_meeting(x + sign(hsp), y, oCollision))
-			{
-				y += sign(yDifference);
-			}
-			
-			slidHorizontal = true;
-		} else
-		{
-			hsp = 0;
-		}
-	}
-	
-	if (!slidHorizontal)
-	{
-		hsp = 0;
-	}
-} else
-{
-	xCollision = false;
-}
+scrHorCollision();
 
 //Aid player in reaching ledges
 if (state != scrCrouched && ledgeTimer == 0)
@@ -94,16 +43,7 @@ ledgeTimer = scrApproach(ledgeTimer, 0, 1);
 x += hsp;
 
 //Apply friction
-if (state == scrGrounded)
-{
-	hsp = scrApproach(hsp, 0, drag);
-} else if (state == scrAirborne)
-{
-	hsp = scrApproach(hsp, 0, airDrag);
-} else if (state == scrCrouched)
-{
-	hsp = scrApproach(hsp, 0, crouchDrag);
-}
+scrFriction();
 
 //Increase player control by allowing control of fall speed
 scrSlowfall();
@@ -112,50 +52,7 @@ scrSlowfall();
 vsp = clamp(vsp, -vspMax, curFallSpeed);
 
 //Vertical collision
-if (place_meeting(x, y + vsp, oCollision))
-{
-	yCollision = true;
-	
-	while (!place_meeting(x, y + sign(vsp), oCollision))
-	{
-		y += sign(vsp);
-	}
-	
-	//Edge allowance, meaning that player will slide out instead of colliding if only hitting roof with a couple pixels
-	
-	//Track if assistance was used
-	var slid = false;
-	
-	//Get difference between player and the roof the player is colliding with
-	if (place_meeting(x, y - 1, oCollision))
-	{
-		var collider = instance_place(x, y - 1, oCollision);
-		var xDifference = x - collider.x;
-		var forgivenessLimit = minLedgeDifferenceX + (collider.image_xscale - 1) * blockSize / 2;
-	
-		if (abs(xDifference) > forgivenessLimit)
-		{
-			//Slide player until no longer colliding
-			while (place_meeting(x, y - 1, oCollision))
-			{
-				x += sign(xDifference);
-			}
-			
-			slid = true;
-		} else
-		{
-			vsp = 0;
-		}
-	}
-	
-	if (!slid)
-	{
-		vsp = 0;
-	}
-} else
-{
-	yCollision = false;
-}
+scrVerCollision();
 
 //Collision with oneways
 scrOnewayCollision();

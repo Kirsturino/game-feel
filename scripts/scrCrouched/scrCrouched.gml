@@ -13,4 +13,5 @@ scrSquashCrouched();
 scrSquash();
 
 //State switches
+scrToAir();
 scrCrouchToGrounded();

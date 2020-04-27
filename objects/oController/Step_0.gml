@@ -17,7 +17,7 @@ if (keyboard_check_pressed(ord("M")))
 {
 	if (global.musicTarget == 0)
 	{
-		global.musicTarget = musicVolume;
+		global.musicTarget = global.musicVolume;
 	} else 
 	{
 		global.musicTarget = 0;
@@ -34,17 +34,6 @@ if (keyboard_check_pressed(ord("F")))
 	    default:
 	        room_goto(rmTest);
 	        break;
-	}
-}
-
-if (keyboard_check_pressed(ord("G")))
-{
-	if (global.inputDevice == "kb")
-	{
-		global.inputDevice = "controller";
-	} else
-	{
-		global.inputDevice = "kb";
 	}
 }
 

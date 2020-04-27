@@ -8,3 +8,7 @@ if (global.debugging)
 		}
 	}
 }
+
+//Transition animations
+scrTransitionAnimation();
+scrRoomStartAnimation();

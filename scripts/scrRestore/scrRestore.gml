@@ -14,6 +14,7 @@ if (restore != noone && restore.active && ppFrames != ppFramesMax)
 	{
 		scrSetShake(10, 10);
 		scrFreeze(80);
+		audio_play_sound(sndPPMax, 100, false);
 		ppFrames = ppFramesMax;
 	} else
 	{

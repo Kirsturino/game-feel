@@ -4,4 +4,6 @@ script_execute(state);
 
 //Room transition
 scrTransition();
+
+//Touch and reveal secrets
 scrSecrets();

@@ -1,8 +1,8 @@
 {
-    "id": "e0683045-0e33-4f66-aa95-d521500c4e6e",
+    "id": "8e7a1a61-3f2a-4b19-bc5f-fe730763758c",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scrMovement",
+    "name": "scrHorCollision",
     "IsCompatibility": false,
     "IsDnD": false
 }

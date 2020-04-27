@@ -1,6 +1,6 @@
 //Get area size for grass
 width = sprite_width;
-height = sprite_height;
+height = sprite_height + 1;
 
 //Determine grass type
 bladeSize = 1;

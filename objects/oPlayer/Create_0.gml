@@ -1,5 +1,5 @@
 //Initialize default state
-state = scrGrounded;
+state = scrAirborne;
 
 //Initialize movement variables
 hsp = 0;
@@ -29,8 +29,8 @@ ledgeTimerMax = 15;
 ppSpeed = 0;
 ppSpeedMax = 5;
 ppAxl = 1;
-ppFrames = 0;
 ppFramesMax = 5;
+ppFrames = ppFramesMax;
 airAxlChangeSpeed = 0.015;
 airDragChangeSpeed = 0.1;
 spChangeSpeed = 0.075;
@@ -81,6 +81,10 @@ spriteAlpha = 1;
 lightRadius = 64;
 lightRadiusMax = 72;
 lightRadiusMin = 48;
+color = c_white;
+colorTo = c_white;
+canDashColor = c_white;
+cantDashColor = c_dkgray;
 
 //Track stats
 lastVsp = 0;
@@ -100,10 +104,23 @@ ledgeGrabLength = 16;
 refreshPitch = 1;
 
 //Spawn player in wanted position, if not possible, spawn in default room position
-if (global.spawnX != 9999 && global.spawnY != 9999 && !place_meeting(global.spawnX, global.spawnY, oCollision))
+if (global.spawnX != -1 && global.spawnY != -1 && !place_meeting(global.spawnX, global.spawnY, oCollision))
 {
-	x = global.spawnX;
-	y = global.spawnY;
+	if (global.spawnX > room_width)
+	{
+		x = room_width;
+	} else
+	{
+		x = global.spawnX;
+	}
+	
+	if (global.spawnY > room_height)
+	{
+		y = room_height;
+	} else
+	{
+		y = global.spawnY;
+	}
 }
 
 hsp = global.spawnhsp;
@@ -113,3 +130,6 @@ vsp = global.spawnvsp;
 scrInput();
 if (right) newestDir = "right";
 if (left) newestDir = "left";
+
+//Controller & Input stuff
+gamepad_set_axis_deadzone(global.controller, 0.1);

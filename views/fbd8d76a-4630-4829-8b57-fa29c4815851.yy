@@ -16,7 +16,9 @@
         "4e3ecfa8-3b25-4858-aa40-282fdd1f3445",
         "ac8a37a0-c59d-4d45-a5f9-5b84d7dddf09",
         "0a274e32-df95-45e5-87b9-ad3e01f982df",
-        "fe425c4b-7eae-404c-8d75-87e241257991"
+        "fe425c4b-7eae-404c-8d75-87e241257991",
+        "f8244b68-8354-46a8-bf29-3930a1792934",
+        "710282f7-8934-4e83-8496-7e3d49438e47"
     ],
     "filterType": "GMScript",
     "folderName": "Movement",

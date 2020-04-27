@@ -18,6 +18,7 @@ part_particles_create(global.partSystem, x, y, global.ppPart4, 1);
 if (ppFrames == ppFramesMax - 1)
 {
 	part_type_orientation(global.ppPart3,ppDir,ppDir,0,0,0);
+	part_type_scale(global.ppPart3,1.5,0.5);
 	part_particles_create(global.partSystem, x, y, global.ppPart3, 1);
 	part_particles_create(global.partSystem, x, y, global.ppPart, 10);
 }

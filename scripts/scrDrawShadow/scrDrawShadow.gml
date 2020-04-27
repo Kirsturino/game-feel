@@ -4,4 +4,4 @@
 ///@param xscale
 ///@param yscale
 ///@param rotation
-draw_sprite_ext(argument0, 0, argument1 + 4, argument2 + 3, argument3, argument4, argument5, c_black, 0.1);
+draw_sprite_ext(argument0, 0, argument1 + 4, argument2 + 3, argument3, argument4, argument5, c_black, 0.2);

@@ -1,5 +1,5 @@
 //Check if ground below player
-if (!place_meeting(x, y + 1, oCollision) && !place_meeting(x, y + 1, oOneway))
+if (!place_meeting(x, y + 1, oCollision) && (!place_meeting(x, y + 1, oOneway) || vsp > 1))
 {
 	//Coyote time
 	wasGrounded = true;

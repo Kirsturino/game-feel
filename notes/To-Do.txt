@@ -1,21 +1,21 @@
 Features:
-- Controller input
 - IDEA: reset ppFrames if hitting a projectile while pushing or pulling, a la bash
  - Need projectiles first
 - IDEA: Objects that prolong your dash in the same direction as your last dash when hit
 - Mull over moving platforms
  - They are a bit boring. A better alternative would be to just have moving PP objects instead
-- Some kind of indicator whether you have a dash charge
+- Moving ppObjects
+ - Paths? Just back and forth? Both? Need research
 
 Game Feel & Oil
 
 
 Graphics
-- Sprites with the AI frame interpolation
+- Player sprites with the AI frame interpolation
 - (Polish shader with clamped values instead of if-statements)
-- Room transition animation
 - Revamp colors
-- Parallax objects
+- Parallax background
+- PP reset effect (like downwell?)
 
 Sound
 - Default BGM
