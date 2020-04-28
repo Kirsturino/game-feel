@@ -14,8 +14,7 @@ Graphics
 - Player sprites with the AI frame interpolation
 - (Polish shader with clamped values instead of if-statements)
 - Revamp colors
-- Parallax background
-- PP reset effect (like downwell?)
+- Parallax backgrounds, how do you parallax lul
 
 Sound
 - Default BGM

@@ -14,7 +14,7 @@
             
         ]
     },
-    "out_columns": 15,
+    "out_columns": 16,
     "out_tilehborder": 2,
     "out_tilevborder": 2,
     "spriteId": "2207a2e7-1dd0-4f38-92c0-ee4c21a58bbe",
@@ -247,7 +247,38 @@
             221,
             222,
             223,
-            224
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255
         ],
         "SerialiseFrameCount": 1
     },
@@ -255,11 +286,11 @@
         
     ],
     "tile_animation_speed": 15,
-    "tile_count": 225,
+    "tile_count": 256,
     "tileheight": 16,
     "tilehsep": 0,
     "tilevsep": 0,
     "tilewidth": 16,
-    "tilexoff": 8,
-    "tileyoff": 8
+    "tilexoff": 0,
+    "tileyoff": 0
 }

@@ -23,6 +23,16 @@
             "enumb": 0,
             "eventtype": 8,
             "m_owner": "428a3cdf-4e63-4568-b938-723f09004ca9"
+        },
+        {
+            "id": "65fb9714-334c-4145-a083-0821236e2fed",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "428a3cdf-4e63-4568-b938-723f09004ca9"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -52,22 +62,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "$FF304204",
+            "value": "$FF5C7F07",
             "varName": "grassColor",
-            "varType": 7
-        },
-        {
-            "id": "3a1bffd6-cec8-471c-9fca-2bc569c65835",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "$FFFFFFFF",
-            "varName": "grassColorAlt",
             "varType": 7
         }
     ],

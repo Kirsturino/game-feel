@@ -126,3 +126,17 @@ part_type_direction(global.secretPart,0,359,0,0);
 part_type_orientation(global.secretPart,0,0,0,0,1);
 part_type_blend(global.secretPart,1);
 part_type_life(global.secretPart,120,160);
+
+//Rain particles
+global.rainPart = part_type_create();
+part_type_shape(global.rainPart,pt_shape_line);
+part_type_size(global.rainPart,0.1,0.2,0,0);
+part_type_scale(global.rainPart,1,1);
+part_type_color1(global.rainPart,c_white);
+part_type_alpha1(global.rainPart,0.2);
+part_type_speed(global.rainPart,5,7,0,0);
+part_type_direction(global.rainPart,280,280,0,0);
+part_type_gravity(global.rainPart,0.001,270);
+part_type_orientation(global.rainPart,0,0,0,0,1);
+part_type_blend(global.rainPart,1);
+part_type_life(global.rainPart,180,180);

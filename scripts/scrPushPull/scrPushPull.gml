@@ -99,11 +99,19 @@ if (interact != noone)
 				} else if (ppDir == 135)
 				{
 					spriteRot = 45;
+				} else if (ppDir == 180)
+				{
+					spriteRot = -90;
 				} else if (rotDir != 90)
 				{
 					spriteRot = rotDir + 90;
 				}
 			}
+			
+			//Stretch that boi cuz he be goin' fast!
+			yDrawScale = 3;
+			xDrawScale = 0.25;
+			
 			#endregion
 		
 			//SFX

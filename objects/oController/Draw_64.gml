@@ -33,6 +33,6 @@ if (global.debugging)
 		draw_text(10, 110, "walljump timer: " + string(wallJumpTimer));
 		draw_text(10, 120, "fall speed: " + string(curFallSpeed));
 		draw_text(10, 130, "ppDir: " + string(ppDir));
-		draw_text(10, 140, "input device: " + global.inputDevice);
+		draw_text(10, 140, "fps: " + string(fps) + "/" + string(fps_real));
 	}
 }

@@ -2,7 +2,7 @@
     "id": "b4ab2ed5-4550-4228-a541-82a9dac60806",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oParallax",
+    "name": "oEnvironmentGenerator",
     "eventList": [
         {
             "id": "085457aa-16c6-4cfd-9411-58f936ad951b",
@@ -52,8 +52,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "$FF331717",
-            "varName": "color",
+            "value": "$FF662E2E",
+            "varName": "mountainColor",
             "varType": 7
         },
         {
@@ -66,8 +66,36 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "$FF662D2D",
-            "varName": "color2",
+            "value": "$FF994343",
+            "varName": "mountainColor2",
+            "varType": 7
+        },
+        {
+            "id": "99a9f789-b638-43f1-81f8-35debc768f72",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "$FFFFB2E5",
+            "varName": "cloudColor",
+            "varType": 7
+        },
+        {
+            "id": "af4160f1-2155-45b2-ab3c-12db58790dbe",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "$FFFFE5E9",
+            "varName": "starColor",
             "varType": 7
         }
     ],

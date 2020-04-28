@@ -36,6 +36,3 @@ if (keyboard_check_pressed(ord("F")))
 	        break;
 	}
 }
-
-//Ambient particles
-part_emitter_stream(global.partSystem, global.ambientEmitter, global.ambientPart, -5);
