@@ -45,10 +45,10 @@ lastInteract = noone;
 //Walljump variables
 wallJumpDistance = 5;
 wallJumpDir = "";
-hspMaxWallJump = 3;
+hspMaxWallJump = hspMaxNormal;
 wallJumpHSpeed = hspMaxWallJump;
-wallJumpVMultiplier = 0.7;
-wallJumpTimerMax = 10;
+wallJumpVMultiplier = 0.9;
+wallJumpTimerMax = 12;
 wallJumpTimer = wallJumpTimerMax;
 wallJumping = false;
 fallSpeedWall = 1;

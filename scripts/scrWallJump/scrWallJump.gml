@@ -84,8 +84,8 @@ if (wallJumping)
 		wallJumpTimer--;
 	} else 
 	{
-		airAxl = airAxlMax;
-		airDrag = airdragMax;
+		airAxl = airAxlMax / 2;
+		airDrag = airdragMax / 2;
 		wallJumpTimer = wallJumpTimerMax;
 		wallJumping = false;
 	}

@@ -12,7 +12,6 @@ Game Feel & Oil
 
 
 Graphics
-- Complete tileset
 - Player sprites with the AI frame interpolation
 - (Polish shader with clamped values instead of if-statements)
 - Revamp colors
