@@ -84,10 +84,10 @@ spriteAlpha = 1;
 lightRadius = 64;
 lightRadiusMax = 72;
 lightRadiusMin = 48;
-color = c_white;
-colorTo = c_white;
-canDashColor = c_white;
-cantDashColor = c_dkgray;
+color = global.cWhite;
+colorTo = global.cWhite;
+canDashColor = global.cWhite;
+cantDashColor = global.cGray;
 
 //Track stats
 lastVsp = 0;

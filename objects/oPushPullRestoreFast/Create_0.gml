@@ -9,13 +9,13 @@ drawXTo = x;
 drawYTo = y;
 
 rot = 0;
-color = c_white;
+color = global.cOrangeDark;
 rotSpeed = 2;
 
 active = true;
 activeTimer = 30;
 
-inactiveColor = c_dkgray;
-colorTo = c_white;
+inactiveColor = global.cGray;
+colorTo = global.cOrangeDark;
 
 offset = random(2);

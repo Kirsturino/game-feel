@@ -1,9 +1,3 @@
-if (state == scrDead)
-{
-	state = scrGrounded;
-	colorTo = c_white;
-}
-
 with (oCamera)
 {
 	camera_set_view_pos(view, other.x - viewWidth, other.y - viewHeight);

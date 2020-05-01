@@ -1,8 +1,6 @@
-image_blend = color;
+image_blend = global.cOrange;
 
 drawX = x;
 drawY = y;
 
 rotSpeed = 2;
-
-part_type_color1(global.secretPart,color);

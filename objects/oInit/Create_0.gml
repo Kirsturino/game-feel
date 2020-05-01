@@ -21,6 +21,9 @@ global.uAlpha = 1;
 #macro viewWidth 320
 #macro viewHeight 180
 
+//Make a global palette
+scrInitPalette();
+
 //Initialize particles
 scrParticleInit();
 

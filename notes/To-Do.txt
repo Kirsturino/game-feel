@@ -14,8 +14,9 @@ Game Feel & Oil
 Graphics
 - Player sprites with the AI frame interpolation
 - (Polish shader with clamped values instead of if-statements)
-- Revamp colors
+- Polish ground & decoration tileset
 - Come up with better way to convey available dash charges
+- Outline shader
 
 Sound
 - Default BGM

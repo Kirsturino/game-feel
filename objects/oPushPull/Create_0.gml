@@ -7,9 +7,9 @@ yScale = 1;
 drawX = x;
 drawY = y;
 
-color = c_white;
-inactiveColor = c_white;
-colorTo = c_white;
+color = global.cYellow;
+inactiveColor = global.cWhite;
+colorTo = global.cYellow;
 
 circleAlpha = 0.1;
 

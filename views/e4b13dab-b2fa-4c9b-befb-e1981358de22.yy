@@ -11,7 +11,8 @@
         "4c303504-a500-47c7-9ffd-f264b0faa991",
         "1286a025-b910-42f2-a09e-3806ccad9856",
         "68767140-80c7-4a46-93f8-cb8945b2ca7c",
-        "b517b931-afdb-4e82-9cb1-63876929d203"
+        "b517b931-afdb-4e82-9cb1-63876929d203",
+        "a82897e1-3538-44a0-99fc-bb2ace2e9bd1"
     ],
     "filterType": "GMScript",
     "folderName": "Squash",

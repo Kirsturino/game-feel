@@ -1,4 +1,4 @@
-var rndHeight = irandom_range(-8, 8);
+var rndHeight = irandom_range(-6, 6);
 
 with (instance_create_layer(bbox_left + 2, bbox_top - blockSize / 2 - rndHeight, "ForegroundEnvironment", oGrass))
 {

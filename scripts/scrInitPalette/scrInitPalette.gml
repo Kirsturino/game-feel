@@ -1,0 +1,15 @@
+global.cBlack = Black;
+global.cWhite = White;
+global.cGray = Gray;
+global.cBrown = Brown;
+global.cBrownLight = BrownLight;
+global.cBrownDark = BrownDark;
+global.cGreen = Green;
+global.cGreenDark = GreenDark;
+global.cGreenLight = GreenLight;
+global.cBlue = Blue;
+global.cBlueDark = BlueDark;
+global.cBlueLight = BlueLight;
+global.cOrange = Orange;
+global.cOrangeDark = OrangeDark;
+global.cYellow = Yellow;

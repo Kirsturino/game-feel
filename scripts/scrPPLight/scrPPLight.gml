@@ -43,7 +43,7 @@ if (surface_exists(argument0))
 		var y1 = argument2 + lengthdir_y(dist, dir * i + argument5);
 		var x2 = argument1 + lengthdir_x(dist, dir * (i + 1) + argument5);
 		var y2 = argument2 + lengthdir_y(dist, dir * (i + 1) + argument5);
-	    draw_triangle_color(argument1, argument2, x1, y1, x2, y2, c_yellow, c_yellow, c_yellow, false);
+	    draw_triangle_color(argument1, argument2, x1, y1, x2, y2, global.cYellow, global.cYellow, global.cYellow, false);
 	}
 	
 	gpu_set_blendmode(bm_normal);

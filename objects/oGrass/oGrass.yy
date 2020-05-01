@@ -52,20 +52,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "5e9ac205-0fd9-464d-b0c5-b1c6a8b5faba",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "$FF5C7F07",
-            "varName": "grassColor",
-            "varType": 7
-        }
+        
     ],
     "solid": false,
     "spriteId": "44a73663-722f-44b2-abca-96921583f646",
