@@ -12,6 +12,15 @@ scrPushPull();
 scrSquashCrouched();
 scrSquash();
 
+//Room transition
+scrTransition();
+
+//Touch and reveal secrets
+scrSecrets();
+
+//Die
+scrDanger();
+
 //State switches
 scrToAir();
 scrCrouchToGrounded();

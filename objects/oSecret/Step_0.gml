@@ -7,11 +7,3 @@ y = wiggle;
 image_angle += rotSpeed;
 
 part_particles_create(global.partSystem, x, y, global.secretPart, 1);
-
-if (despawn)
-{
-	part_particles_create(global.partSystem, x, y, global.secretPart, 100);
-	scrSetShake(10, 10);
-	scrFreeze(60);
-	instance_destroy();
-}

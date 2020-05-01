@@ -1,2 +1,7 @@
 /// @description Room transition
-room_goto(global.destination);
+if (oPlayer.state != scrDead)
+{
+	room_goto(global.destination);
+}
+
+scrStartRoomStartAnimation();

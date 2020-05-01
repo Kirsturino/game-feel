@@ -20,4 +20,4 @@ audio_group_set_gain(agMusic, global.musicTarget, 0);
 //Init screen change variables
 animationLength = 20;
 animationScale = 15;
-alarm[2] = animationLength;
+scrStartRoomStartAnimation();

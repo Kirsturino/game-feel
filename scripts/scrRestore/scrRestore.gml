@@ -9,6 +9,7 @@ if (restore != noone && restore.active && ppFrames != ppFramesMax)
 	}
 	
 	//Juice & SFX
+	colorTo = canDashColor;
 	audio_play_sound(sndRefreshBuildup2, 40, false);
 	if (ppFrames == 0)
 	{

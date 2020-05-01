@@ -140,3 +140,17 @@ part_type_gravity(global.rainPart,0.001,270);
 part_type_orientation(global.rainPart,0,0,0,0,1);
 part_type_blend(global.rainPart,1);
 part_type_life(global.rainPart,180,180);
+
+//Death particles
+global.deathPart = part_type_create();
+part_type_shape(global.deathPart,pt_shape_line);
+part_type_size(global.deathPart,0.2,0.4,0,0);
+part_type_scale(global.deathPart,1,1);
+part_type_color1(global.deathPart,c_maroon);
+part_type_alpha2(global.deathPart,1, 0);
+part_type_speed(global.deathPart,3,6,-0.04,0);
+part_type_direction(global.deathPart,0,359,0,0);
+part_type_gravity(global.deathPart,0.001,270);
+part_type_orientation(global.deathPart,0,0,0,0,1);
+part_type_blend(global.deathPart,1);
+part_type_life(global.deathPart,20,40);

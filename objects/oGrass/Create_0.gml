@@ -1,6 +1,6 @@
 //Determine grass type
 bladeSize = 1;
-bladeSeparation = 2;
+bladeSeparation = 3;
 
 alarm[0] = 1;
 

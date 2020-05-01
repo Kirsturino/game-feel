@@ -1,6 +1,7 @@
 if(!isPull && !isPush && ppFrames != ppFramesMax)
 {
-	alarm[2] = 5;
+	alarm[2] = 8;
+	colorTo = canDashColor;
 	audio_play_sound(sndPPMax, 100, false);
 		
 	var dirModifier = hsp * 10;

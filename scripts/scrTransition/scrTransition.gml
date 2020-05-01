@@ -31,8 +31,6 @@ if (transitionTrigger != noone)
 	global.spawnvsp = min(-jumpSpeed, vsp);
 	
 	global.destination = transitionTrigger.destination;
-	if (oController.alarm[1] == -1 && oController.alarm[2] == -1)
-	{
-		oController.alarm[1] = oController.animationLength;
-	}
+	
+	scrStartTransitionAnimation();
 }

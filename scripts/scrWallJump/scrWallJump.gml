@@ -1,11 +1,21 @@
 var rCollision = collision_point(bbox_right + wallJumpDistance, y - sprite_height / 2, oCollision, false, false);
 var lCollision = collision_point(bbox_left - wallJumpDistance, y - sprite_height / 2, oCollision, false, false);
 
-if (rCollision != noone && wantsToJump && !isPull && !isPush && !wasGrounded)
+if (rCollision || lCollision)
+{
+	huggedWall = true;
+	canWallJump = true;
+} else if(huggedWall)
+{
+	alarm[4] = wallJumpCoyoteBufferLength;
+	huggedWall = false;
+}
+
+if (rCollision != noone && wantsToJump && !isPull && !isPush && !wasGrounded && canWallJump)
 {
 	wallJumpDir = "left";
 	var walljump = true;
-} else if (lCollision != noone && wantsToJump && !isPull && !isPush && !wasGrounded)
+} else if (lCollision != noone && wantsToJump && !isPull && !isPush && !wasGrounded && canWallJump)
 {
 	wallJumpDir = "right";
 	var walljump = true;

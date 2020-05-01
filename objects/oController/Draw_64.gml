@@ -34,5 +34,6 @@ if (global.debugging)
 		draw_text(10, 120, "fall speed: " + string(curFallSpeed));
 		draw_text(10, 130, "ppDir: " + string(ppDir));
 		draw_text(10, 140, "fps: " + string(fps) + "/" + string(fps_real));
+		draw_text(10, 150, "wantsToJump: " + string(wantsToJump));
 	}
 }

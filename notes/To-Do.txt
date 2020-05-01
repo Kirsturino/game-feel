@@ -1,7 +1,8 @@
 Features:
 - IDEA: reset ppFrames if hitting a projectile while pushing or pulling, a la bash
- - Need projectiles first
 - IDEA: Objects that prolong your dash in the same direction as your last dash when hit
+- IDEA: Projectiles that have a PP area that when dashed on will go the opposite direction, like bash
+
 - Mull over moving platforms
  - They are a bit boring. A better alternative would be to just have moving PP objects instead
 - Moving ppObjects
@@ -11,10 +12,11 @@ Game Feel & Oil
 
 
 Graphics
+- Complete tileset
 - Player sprites with the AI frame interpolation
 - (Polish shader with clamped values instead of if-statements)
 - Revamp colors
-- Parallax backgrounds, how do you parallax lul
+- Come up with better way to convey available dash charges
 
 Sound
 - Default BGM

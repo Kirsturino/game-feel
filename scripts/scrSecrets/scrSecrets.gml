@@ -4,10 +4,10 @@ if (secret != noone)
 {
 	if (place_meeting(x, y, oFakeCollision))
 	{
-		secret.image_alpha = scrApproach(secret.image_alpha, 0, 0.05);
+		global.fakeLayerAlpha = scrApproach(global.fakeLayerAlpha, 0.5, 0.02);
 	} else
 	{
-		secret.image_alpha = scrApproach(secret.image_alpha, 1, 0.05);
+		global.fakeLayerAlpha = scrApproach(global.fakeLayerAlpha, 1, 0.02);
 	}
 }
 
@@ -15,5 +15,11 @@ var collectible = instance_place(x, y, oSecret);
 
 if (collectible != noone)
 {
-	collectible.despawn = true;
+	with (collectible)
+	{
+		part_particles_create(global.partSystem, x, y, global.secretPart, 100);
+		scrSetShake(10, 10);
+		scrFreeze(60);
+		instance_destroy();
+	}
 }

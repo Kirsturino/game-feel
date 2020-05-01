@@ -111,6 +111,7 @@ if (interact != noone)
 			//Stretch that boi cuz he be goin' fast!
 			yDrawScale = 3;
 			xDrawScale = 0.25;
+			colorTo = cantDashColor;
 			
 			#endregion
 		

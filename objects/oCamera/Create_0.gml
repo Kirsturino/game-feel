@@ -1,7 +1,13 @@
 //Setup camera variables
-viewWidth = 1920 / 6;
-viewHeight = 1080 / 6;
 windowScale = 4;
+
+curX = camera_get_view_x(view);
+curY = camera_get_view_y(view);
+xTo = 0;
+yTo = 0;
+xx = clamp(oPlayer.x - viewWidth / 2, 0, room_width - viewWidth);
+yy = clamp(oPlayer.y - viewHeight / 2, 0, room_height - viewHeight);
+camera_set_view_pos(view, xx, yy);
 
 window_set_size(viewWidth * windowScale, viewHeight * windowScale);
 alarm[0] = 1;
@@ -12,9 +18,6 @@ camera_set_view_size(view, viewWidth, viewHeight);
 surface_resize(application_surface, viewWidth , viewHeight);
 
 
-var xx = clamp(oPlayer.x - viewWidth / 2, 0, room_width - viewWidth);
-var yy = clamp(oPlayer.y - viewHeight / 2, 0, room_height - viewHeight);
-camera_set_view_pos(view, xx, yy);
 
 //Camera shake variables
 shakeDuration = 0;

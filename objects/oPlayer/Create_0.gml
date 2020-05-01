@@ -43,15 +43,18 @@ interact = noone;
 lastInteract = noone;
 
 //Walljump variables
-wallJumpDistance = 4;
+wallJumpDistance = 5;
 wallJumpDir = "";
-hspMaxWallJump = 2.5;
+hspMaxWallJump = 3;
 wallJumpHSpeed = hspMaxWallJump;
-wallJumpVMultiplier = 0.8;
-wallJumpTimerMax = 12;
+wallJumpVMultiplier = 0.7;
+wallJumpTimerMax = 10;
 wallJumpTimer = wallJumpTimerMax;
 wallJumping = false;
 fallSpeedWall = 1;
+#macro wallJumpCoyoteBufferLength 5
+huggedWall = false;
+canWallJump = false;
 
 //Jump controls
 grvModifier = 0.7;
@@ -103,28 +106,9 @@ ledgeGrabLength = 16;
 //SFX variables
 refreshPitch = 1;
 
-//Spawn player in wanted position, if not possible, spawn in default room position
-if (global.spawnX != -1 && global.spawnY != -1 && !place_meeting(global.spawnX, global.spawnY, oCollision))
-{
-	if (global.spawnX > room_width)
-	{
-		x = room_width;
-	} else
-	{
-		x = global.spawnX;
-	}
-	
-	if (global.spawnY > room_height)
-	{
-		y = room_height;
-	} else
-	{
-		y = global.spawnY;
-	}
-}
-
-hsp = global.spawnhsp;
-vsp = global.spawnvsp;
+defaultX = x;
+defaultY = y;
+scrSpawn();
 
 //Keep player moving after screen transitions
 scrInput();

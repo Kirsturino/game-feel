@@ -13,6 +13,14 @@ global.debugging = false;
 global.musicTarget = 0;
 global.destination = noone;
 
+//Secret layer
+global.fakeLayerAlpha = 1;
+global.uAlpha = 1;
+
+//Camera dimensions
+#macro viewWidth 320
+#macro viewHeight 180
+
 //Initialize particles
 scrParticleInit();
 
