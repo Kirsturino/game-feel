@@ -2,6 +2,9 @@ var transitionTrigger = instance_place(x, y, oRoomTransition);
 
 if (transitionTrigger != noone)
 {
+	global.spawnhsp = hsp;
+	global.spawnvsp = vsp;
+	
 	if (transitionTrigger.type == "horizontal")
 	{
 		if (transitionTrigger.x > room_width)
@@ -20,6 +23,7 @@ if (transitionTrigger != noone)
 		} else
 		{
 			global.spawnY = 888888;
+			global.spawnvsp = min(-jumpSpeed, vsp);
 		}
 		global.spawnX = x;
 	} else if (transitionTrigger.type == "custom")
@@ -27,8 +31,6 @@ if (transitionTrigger != noone)
 		global.spawnX = transitionTrigger.spawnX;
 		global.spawnY = transitionTrigger.spawnY;
 	}
-	global.spawnhsp = hsp;
-	global.spawnvsp = min(-jumpSpeed, vsp);
 	
 	global.destination = transitionTrigger.destination;
 	

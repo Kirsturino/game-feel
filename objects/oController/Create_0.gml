@@ -1,6 +1,6 @@
 draw_set_font(fDefault);
 
-//Init system
+//Init ambient part system
 if (!part_system_exists(global.partSystem))
 {
 	global.partSystem = part_system_create_layer("Particles", true);
@@ -16,6 +16,8 @@ part_emitter_region(global.partSystem, global.ambientEmitter, 0, room_width, 0, 
 
 alarm[0] = 1;
 audio_group_set_gain(agMusic, global.musicTarget, 0);
+
+scrHideEditorLayers();
 
 //Init screen change variables
 animationLength = 20;

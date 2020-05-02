@@ -132,7 +132,7 @@ global.rainPart = part_type_create();
 part_type_shape(global.rainPart,pt_shape_line);
 part_type_size(global.rainPart,0.1,0.2,0,0);
 part_type_scale(global.rainPart,1,1);
-part_type_color1(global.rainPart,global.cWhite);
+part_type_color1(global.rainPart,global.cBlueLight);
 part_type_alpha1(global.rainPart,0.2);
 part_type_speed(global.rainPart,5,7,0,0);
 part_type_direction(global.rainPart,280,280,0,0);

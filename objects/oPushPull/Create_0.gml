@@ -7,7 +7,8 @@ yScale = 1;
 drawX = x;
 drawY = y;
 
-color = global.cYellow;
+color = global.cWhite;
+activeColor = global.cYellow;
 inactiveColor = global.cWhite;
 colorTo = global.cYellow;
 

@@ -24,6 +24,8 @@ if (place_meeting(x + 1, y, oCollision))
 	if (rightLedge != noone && rightLedgeVacant && move == 1 && vsp >= 0)
 	{
 		vsp = -ledgeGrabSpeed;
+		audio_play_sound(sndJump, 50, false);
+		scrJumpParticles();
 	}
 }
 
@@ -43,5 +45,7 @@ if (place_meeting(x - 1, y, oCollision))
 	if (leftLedge != noone && leftLedgeVacant && move == -1 && vsp >= 0)
 	{
 		vsp = -ledgeGrabSpeed;
+		audio_play_sound(sndJump, 50, false);
+		scrJumpParticles();
 	}
 }

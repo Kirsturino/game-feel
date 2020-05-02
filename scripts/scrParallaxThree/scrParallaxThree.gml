@@ -21,7 +21,7 @@ for (var i = 0; i < room_width;  i += triangleFrequency + irandom_range(-blockSi
 	var triangleWidth = blockSize * 8 + irandom_range(-blockSize * 2, blockSize * 2);
 	var triangleHeight = blockSize * 16 + irandom_range(-blockSize * 2, blockSize * 2);
 
-    draw_triangle_color(i - triangleWidth, room_height, i + triangleWidth, room_height, i, room_height - triangleHeight, global.cBlueDark, global.cBlueDark, global.cBlueDark, false);
+    draw_triangle_color(i - triangleWidth, room_height, i + triangleWidth, room_height, i, room_height - triangleHeight, global.cBrownLight, global.cBrownLight, global.cBrownLight, false);
 }
 
 surface_reset_target();

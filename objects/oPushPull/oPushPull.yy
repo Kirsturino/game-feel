@@ -53,20 +53,6 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "001c7716-bf94-4812-b698-f33f8da214be",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "$FF4CFFFF",
-            "varName": "activeColor",
-            "varType": 7
-        },
-        {
             "id": "4c3ec0f4-1e15-41fc-81ca-a0244d28d8b7",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",

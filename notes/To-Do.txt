@@ -7,6 +7,8 @@ Features:
  - They are a bit boring. A better alternative would be to just have moving PP objects instead
 - Moving ppObjects
  - Paths? Just back and forth? Both? Need research
+ 
+- Main menu, pause menu
 
 Game Feel & Oil
 
@@ -14,9 +16,10 @@ Game Feel & Oil
 Graphics
 - Player sprites with the AI frame interpolation
 - (Polish shader with clamped values instead of if-statements)
-- Polish ground & decoration tileset
+- Polish ground tileset
 - Come up with better way to convey available dash charges
 - Outline shader
+- Make emitter for rain particles that follows player
 
 Sound
 - Default BGM

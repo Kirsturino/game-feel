@@ -37,5 +37,8 @@ global.musicVolume = audio_sound_get_gain(sndBGM);
 global.gp_num = gamepad_get_device_count();
 global.controller = noone;
 
+//Default to fullscreen
+window_set_fullscreen(true);
+
 //Move to actual room after initializing everything
 room_goto_next();

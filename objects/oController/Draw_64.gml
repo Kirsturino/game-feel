@@ -17,6 +17,10 @@ if (global.debugging)
 			case scrCrouched:
 			draw_text(10, 10, "State: Crouched");
 			break;
+			
+			case scrDead:
+			draw_text(10, 10, "State: Dead");
+			break;
 		}
 	
 		draw_text(10, 20, "hsp: " + string(hsp));

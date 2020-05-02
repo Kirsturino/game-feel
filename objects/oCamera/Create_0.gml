@@ -1,5 +1,5 @@
 //Setup camera variables
-windowScale = 4;
+windowScale = 6;
 
 curX = camera_get_view_x(view);
 curY = camera_get_view_y(view);

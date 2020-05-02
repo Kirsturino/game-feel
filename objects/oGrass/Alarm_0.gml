@@ -10,7 +10,7 @@ vertex_begin(vbuff, format);
 
 for (var i = 0; i < width; i += bladeSeparation)
 {
-	if (collision_point(x + i, y, oCollision, false, true) == noone && collision_point(x + i, y, oFakeCollision, false, true) == noone && collision_point(x + i, y, oDanger, false, true) == noone && y > 0)
+	if (collision_point(x + i, y, oCollision, false, true) == noone && collision_point(x + i, y, oFakeCollision, false, true) == noone && collision_point(x + i, y + sprite_height + 2, oDanger, false, true) == noone && y > 0)
 	{
 		var rnd = irandom_range(-5, 5);
 		var bladernd = irandom(5);

@@ -5,4 +5,7 @@
 scrPPLightIndicator(drawX, drawY, visualInteractRange, triDir, offset, 8, triAlpha, color);
 
 //Draw representative sprite
-//draw_sprite_ext(sprite_index, 0, drawX, drawY, xScale, yScale, rot, color, 1);
+if (!spawnRestore)
+{
+	draw_sprite_ext(sprite_index, 0, drawX, drawY, xScale, yScale, rot, color, 1);
+}

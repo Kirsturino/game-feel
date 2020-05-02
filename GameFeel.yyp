@@ -1087,6 +1087,14 @@
             }
         },
         {
+            "Key": "addc0eb3-527b-4f77-9203-8e69446ffc0d",
+            "Value": {
+                "id": "ef3b261d-8f6b-4499-ba4c-278cbd11241a",
+                "resourcePath": "scripts\\scrHideEditorLayers\\scrHideEditorLayers.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "aefd10aa-c181-4208-b0ee-7b5dc97589c1",
             "Value": {
                 "id": "518061e1-9a8b-4a3a-acdb-b2af9adf423b",
@@ -1252,6 +1260,14 @@
                 "id": "d08e490b-3350-41da-a7c3-abea4ff3fb2c",
                 "resourcePath": "objects\\oPushPullRestore\\oPushPullRestore.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d156ff82-b789-482b-b6b7-847a25bbe1a3",
+            "Value": {
+                "id": "6b81c24b-c602-4096-b171-c96a273c240e",
+                "resourcePath": "sprites\\sFakeCollision\\sFakeCollision.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1570,7 +1586,8 @@
         "79bef6f8-7ade-4b9b-becc-18b0b736d43d",
         "7013c4d9-635d-4b32-8b09-e6fb04a9e8e7",
         "7ad3c13d-3494-481b-8ec9-9866d966e3df",
-        "3b70620d-7835-453b-92bf-25fad4e001b3"
+        "3b70620d-7835-453b-92bf-25fad4e001b3",
+        "addc0eb3-527b-4f77-9203-8e69446ffc0d"
     ],
     "tutorial": ""
 }

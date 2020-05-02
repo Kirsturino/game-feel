@@ -16,6 +16,7 @@ active = true;
 activeTimer = 180;
 
 inactiveColor = global.cGray;
+activeColor = global.cYellow;
 colorTo = global.cYellow;
 
 offset = random(2);
