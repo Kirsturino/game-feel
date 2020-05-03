@@ -84,6 +84,7 @@ spriteAlpha = 1;
 lightRadius = 64;
 lightRadiusMax = 72;
 lightRadiusMin = 48;
+lightAlpha = 1;
 color = global.cWhite;
 colorTo = global.cWhite;
 canDashColor = global.cWhite;

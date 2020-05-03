@@ -887,6 +887,14 @@
             }
         },
         {
+            "Key": "8773ad11-4068-4214-bf2d-1639697f361b",
+            "Value": {
+                "id": "c69ad82e-d95b-48b2-90bc-73d4e67978c2",
+                "resourcePath": "scripts\\scrLightPlayer\\scrLightPlayer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "894c2a62-be2b-48f8-b1c8-36e1e75d456f",
             "Value": {
                 "id": "32e601d6-86c7-4e4b-b682-4821d34233d1",
@@ -1533,8 +1541,8 @@
         "710282f7-8934-4e83-8496-7e3d49438e47",
         "7a2b2617-fd99-4aef-b929-1fd6b736f0b5",
         "3b3d87ee-3f66-429e-9294-cee359ae926b",
-        "e21d8c9d-0972-422a-8151-3d92ecb3795c",
         "e02a3055-dfef-40f9-b152-d9f1107555bf",
+        "e21d8c9d-0972-422a-8151-3d92ecb3795c",
         "0f3e032d-7df7-4459-b7bf-74436078289a",
         "871164ec-7cc3-4a88-8c05-fff329f82450",
         "341611ca-2c65-4898-b485-d4832ee4c1be",
@@ -1556,6 +1564,7 @@
         "b517b931-afdb-4e82-9cb1-63876929d203",
         "a82897e1-3538-44a0-99fc-bb2ace2e9bd1",
         "cceee5a7-ba6d-46f5-90cf-4727423c88b5",
+        "8773ad11-4068-4214-bf2d-1639697f361b",
         "2275fc13-4dbe-4bda-aad5-3a6783b54a66",
         "ff648c0e-a923-4db2-bb41-a84c9db93eb6",
         "49b0cb48-f75a-48d1-8387-6e488d875c9f",

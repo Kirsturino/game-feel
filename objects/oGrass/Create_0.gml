@@ -1,7 +1,7 @@
 //Determine grass type
 bladeSize = 1;
 bladeSeparation = 3;
-grassColor = global.cGreen;
+grassColor = global.cGreenLight;
 
 alarm[0] = 1;
 

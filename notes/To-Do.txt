@@ -11,6 +11,7 @@ Features:
 - Main menu, pause menu
 
 Game Feel & Oil
+- I'll figure something out
 
 
 Graphics
@@ -20,6 +21,7 @@ Graphics
 - Come up with better way to convey available dash charges
 - Outline shader
 - Make emitter for rain particles that follows player
+- Maybe trail or something with followthrough
 
 Sound
 - Default BGM

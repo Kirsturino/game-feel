@@ -5,7 +5,7 @@ with (oPlayer)
 	var flicker = random_range(-0.2, 0.2);
 	lightRadius += flicker;
 	lightRadius = clamp(lightRadius, lightRadiusMin, lightRadiusMax);
-	scrLight(oLighting.lightSurf, x, y - sprite_height / 2, lightRadius + wiggle, 8);
+	scrLightPlayer(oLighting.lightSurf, x, y - sprite_height / 2, lightRadius + wiggle, 8);
 }
 
 with (oPushPull)

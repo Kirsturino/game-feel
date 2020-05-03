@@ -22,5 +22,3 @@ gpu_set_blendmode(bm_add);
 draw_triangle_color(argument0, argument1, x1, y1, x2, y2, argument7, c_black, c_black, false);
 gpu_set_blendmode(bm_normal);
 draw_set_alpha(1);
-
-	
