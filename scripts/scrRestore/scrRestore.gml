@@ -10,13 +10,13 @@ if (restore != noone && restore.active && ppFrames != ppFramesMax)
 	
 	//Juice & SFX
 	alarm[2] = 8;
-	colorTo = canDashColor;
 	audio_play_sound(sndRefreshBuildup2, 40, false);
 	if (ppFrames == 0)
 	{
 		scrSetShake(10, 10);
 		scrFreeze(80);
 		audio_play_sound(sndPPMax, 100, false);
+		colorTo = canDashColor;
 		ppFrames = ppFramesMax;
 	} else
 	{
