@@ -1,3 +1,4 @@
+/// @description Music
 //Make audio go brr
 if (!audio_is_playing(sndAmbient))
 {

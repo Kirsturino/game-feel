@@ -38,7 +38,7 @@ global.gp_num = gamepad_get_device_count();
 global.controller = noone;
 
 //Default to fullscreen
-window_set_fullscreen(true);
+//window_set_fullscreen(true);
 
 //Move to actual room after initializing everything
 room_goto_next();

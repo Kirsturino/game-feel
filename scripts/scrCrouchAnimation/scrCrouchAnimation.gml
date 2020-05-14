@@ -1,0 +1,1 @@
+curSprite = sPlayerIdleCrouch;

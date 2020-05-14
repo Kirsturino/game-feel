@@ -7,7 +7,8 @@
         "e4b13dab-b2fa-4c9b-befb-e1981358de22",
         "b88d33dc-29ec-4f21-8a50-9ee7b28da407",
         "975ea3e6-e7b6-43da-855c-a796ec7a5194",
-        "2f205c49-26dd-43a3-b4b0-4a14788d6494"
+        "2f205c49-26dd-43a3-b4b0-4a14788d6494",
+        "9aa6b0ed-7b5c-43c9-8d17-cd7ba18412e7"
     ],
     "filterType": "GMScript",
     "folderName": "Juice",

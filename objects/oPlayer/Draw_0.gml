@@ -2,20 +2,26 @@
 scrDrawShadow(curSprite, x, y, xDrawScale, yDrawScale, spriteRot);
 	
 //Draw visible player
-draw_sprite_ext(curSprite, 0, x, y + 1, xDrawScale, yDrawScale, spriteRot, color, spriteAlpha);
+if (animationFrame < sprite_get_number(curSprite))
+{
+	animationFrameIncrement++;
+	
+	if (animationFrameIncrement >= animationSpeed)
+	{
+		animationFrame++;
+		animationFrameIncrement = 0;
+	}
+} else if (animationFrame >= sprite_get_number(curSprite))
+{
+	animationFrame = 0;
+}
+
+draw_sprite_ext(curSprite, animationFrame, x, y + 1, xDrawScale, yDrawScale, spriteRot, color, spriteAlpha);
 
 color = merge_color(color, colorTo, 0.2);
 
-//Visuals for resetting PP. This is literally just Downwell
-if (alarm[2] != -1)
-{
-	var x1 = x - blockSize / 2;
-	var x2 = x + blockSize / 2;
-	var y1 = y - blockSize + alarm[2];
-	var y2 = y1 + alarm[2] * 2;
-	
-	draw_rectangle_color(x1, y1, x2, y2, color, color, color, color, false);
-}
+//PP Reset animation
+scrPPResetAnimation();
 
 if (global.debugging)
 {

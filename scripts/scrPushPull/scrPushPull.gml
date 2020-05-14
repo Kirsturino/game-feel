@@ -108,11 +108,15 @@ if (interact != noone)
 				}
 			}
 			
-			scrPPSquash();
+			
 			colorTo = cantDashColor;
 			
 			#endregion
 		
+			//Animation
+			scrDashAnimation();
+			scrPPSquash();
+			
 			//SFX
 			var pitch = random_range(0.8, 1.2);
 			audio_sound_pitch(sndPP, pitch);

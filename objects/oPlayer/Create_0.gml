@@ -17,7 +17,7 @@ hspMaxNormal = 2;
 vspMaxNormal = 4;
 hspMax = 2;
 vspMax = 4;
-hspMaxCrouched = 1.5;
+hspMaxCrouched = 0;
 jumpSpeed = 3.75;
 crouchJumpSpeed = 5;
 newestDir = "";
@@ -55,6 +55,8 @@ fallSpeedWall = 1;
 #macro wallJumpCoyoteBufferLength 5
 huggedWall = false;
 canWallJump = false;
+hugRight = false;
+hugLeft = false;
 
 //Jump controls
 grvModifier = 0.7;
@@ -78,7 +80,7 @@ xDrawScale = 1;
 yDrawScale = 1;
 
 //Character graphics
-curSprite = sPlayer;
+curSprite = sPlayerIdleRight;
 spriteRot = 0;
 spriteAlpha = 1;
 lightRadius = 64;
@@ -88,7 +90,11 @@ lightAlpha = 1;
 color = global.cWhite;
 colorTo = global.cWhite;
 canDashColor = global.cWhite;
-cantDashColor = global.cGray;
+cantDashColor = global.cBrownLight;
+dashFXLength = ppFramesMax * 3;
+animationFrame = 0;
+animationFrameIncrement = 0;
+animationSpeed = 2;
 
 //Track stats
 lastVsp = 0;
@@ -97,8 +103,8 @@ yCollision = true;
 nearGround = 0;
 
 //Collision forgiveness
-minLedgeDifferenceX = 8;
-minLedgeDifferenceY = 8;
+minLedgeDifferenceX = 6;
+minLedgeDifferenceY = 6;
 ledgeGrabSpeed = 4;
 ledgeGrabSpeedHeld = 3;
 ledgeGrabSpeedNormal = 4.5;

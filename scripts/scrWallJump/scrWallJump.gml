@@ -24,8 +24,8 @@ if (rCollision != noone && wantsToJump && !isPull && !isPush && !wasGrounded && 
 	var walljump = false;
 }
 
-var hugRight = collision_point(bbox_right + 1, y - sprite_height / 2, oCollision, false, false);
-var hugLeft = collision_point(bbox_left - 1, y - sprite_height / 2, oCollision, false, false);
+hugRight = collision_point(bbox_right + 1, y - sprite_height / 2, oCollision, false, false);
+hugLeft = collision_point(bbox_left - 1, y - sprite_height / 2, oCollision, false, false);
 if ((hugRight != noone && right) || (hugLeft != noone && left))
 {
 	curFallSpeed = fallSpeedWall;

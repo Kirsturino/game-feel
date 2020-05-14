@@ -18,6 +18,7 @@ if (willJump)
 	
 	//Reset buffer
 	wantsToJump = false;
+	jump = false;
 	
 	//Squash and stretch
 	scrJumpSquash();

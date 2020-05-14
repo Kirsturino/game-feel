@@ -29,5 +29,8 @@ scrSecrets();
 //Die
 scrDanger();
 
+//Animations
+scrAirborneAnimation();
+
 //State switches
 scrToGround();
