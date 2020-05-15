@@ -2,6 +2,7 @@ Features:
 - IDEA: reset ppFrames if hitting a projectile while pushing or pulling, a la bash
 - IDEA: Objects that prolong your dash in the same direction as your last dash when hit
 - IDEA: Projectiles that have a PP area that when dashed on will go the opposite direction, like bash
+- IDEA: Water physics & controls. Water acts as a dash zone where you get to decide your dash direction like in Celeste
 
 - Mull over moving platforms
  - They are a bit boring. A better alternative would be to just have moving PP objects instead
