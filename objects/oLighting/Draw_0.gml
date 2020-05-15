@@ -1,4 +1,4 @@
-with (oPlayer)
+with (oFamiliar)
 {
 	//Draw light
 	var wiggle = scrWave(-2, 2, 2, 0);

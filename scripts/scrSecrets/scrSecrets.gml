@@ -11,7 +11,7 @@ if (secret != noone)
 	}
 }
 
-var collectible = instance_place(x, y, oSecret);
+var collectible = instance_place(x, y, oCollectible);
 
 if (collectible != noone)
 {

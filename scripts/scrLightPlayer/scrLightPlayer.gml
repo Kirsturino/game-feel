@@ -4,7 +4,7 @@
 ///@param radius
 ///@param corners
 
-if (ppFrames == ppFramesMax)
+if (oPlayer.ppFrames == oPlayer.ppFramesMax)
 {
 	lightAlpha = scrApproach(lightAlpha, 1, 0.1);
 } else

@@ -391,6 +391,14 @@
             }
         },
         {
+            "Key": "3839dbdf-57da-4b14-91f5-b59ee70f9bf6",
+            "Value": {
+                "id": "db323a50-278d-4bf4-9274-4d8b1503d32f",
+                "resourcePath": "shaders\\shdWave\\shdWave.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "38a81f40-3f87-47ce-8fcd-075085626f04",
             "Value": {
                 "id": "544b32f9-6907-4d44-be58-52ffba6be922",
@@ -567,6 +575,14 @@
             }
         },
         {
+            "Key": "4e30cf92-514d-4d29-bfcd-f5f425ec1b02",
+            "Value": {
+                "id": "077fb1ed-4e8d-41ea-9426-be5d58428dbe",
+                "resourcePath": "scripts\\scrChance\\scrChance.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4e3ecfa8-3b25-4858-aa40-282fdd1f3445",
             "Value": {
                 "id": "21575b16-93bd-4623-aba0-969023f2cd87",
@@ -588,6 +604,14 @@
                 "id": "96abbbee-e74b-4f3f-8ae1-56ba5db8868c",
                 "resourcePath": "rooms\\rmOne\\rmOne.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "51369988-4435-4335-8aa0-216fc0f5d8af",
+            "Value": {
+                "id": "78c60a62-4904-4931-bf24-4644418af26a",
+                "resourcePath": "sounds\\sndSecretHint\\sndSecretHint.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -636,6 +660,14 @@
                 "id": "cbbbf294-8ca5-4ed9-93b6-b60652a676e3",
                 "resourcePath": "scripts\\scrJumpParticles\\scrJumpParticles.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5d01092f-fccb-4aa3-aff1-5def5a3ebe3c",
+            "Value": {
+                "id": "ec5665ca-1f6e-4a6f-b0d6-8328c22d5e4d",
+                "resourcePath": "objects\\oSecret\\oSecret.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -860,6 +892,14 @@
                 "id": "ee3fbd27-dbc4-4ba3-b0ba-03a7bc4eff10",
                 "resourcePath": "scripts\\scrTransitionAnimation\\scrTransitionAnimation.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7ba4ea2d-703f-4c96-8007-fed4df2c3393",
+            "Value": {
+                "id": "d3d23058-138c-46be-a47d-5be81dc6652d",
+                "resourcePath": "objects\\oFamiliar\\oFamiliar.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1159,6 +1199,14 @@
             }
         },
         {
+            "Key": "ad2a8cc2-b7b2-4673-9b15-8f4d5b536948",
+            "Value": {
+                "id": "4cddb340-c5a6-44cd-a5ff-35b17deef3b5",
+                "resourcePath": "views\\ad2a8cc2-b7b2-4673-9b15-8f4d5b536948.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "ad313751-7af1-47a8-9ed0-54778d164f99",
             "Value": {
                 "id": "29b76715-2f9c-40ab-96f3-cac638f84a10",
@@ -1180,6 +1228,14 @@
                 "id": "518061e1-9a8b-4a3a-acdb-b2af9adf423b",
                 "resourcePath": "scripts\\scrPPEmitter\\scrPPEmitter.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b0b206c9-faff-4a6f-935c-4404e69553d4",
+            "Value": {
+                "id": "51795119-2ba9-4691-b6f0-dcd8b3ff8f36",
+                "resourcePath": "shaders\\shdWaveStatic\\shdWaveStatic.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -1250,7 +1306,7 @@
             "Key": "b84bc155-70a2-4dc5-8195-04708d6f9b50",
             "Value": {
                 "id": "18722236-0b85-4a1d-9e2c-3147c5b1a4a9",
-                "resourcePath": "objects\\oSecret\\oSecret.yy",
+                "resourcePath": "objects\\oCollectible\\oCollectible.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1631,6 +1687,14 @@
             }
         },
         {
+            "Key": "fdba8dfb-133c-4478-b33e-dfb30fcf6e4d",
+            "Value": {
+                "id": "8bb76167-3484-4df6-947f-028c800eb1f0",
+                "resourcePath": "shaders\\shdOutline\\shdOutline.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "fddf2a51-31f0-4bd8-9f50-d0e587485cb9",
             "Value": {
                 "id": "387699d3-50fe-465f-9067-553576f97200",
@@ -1676,6 +1740,7 @@
         "b159f163-aff7-40f8-98ad-1903c924863b",
         "00485a0a-0d09-4b5d-97ba-a52e90502be9",
         "f22072c5-4aaf-4e97-9a6e-60d561b91e64",
+        "4e30cf92-514d-4d29-bfcd-f5f425ec1b02",
         "32d7ad34-61ac-4be4-842d-a75aa507b666",
         "6e9f3a3f-efb1-45d2-85dd-a7f67bedcf07",
         "6b8feedb-c55c-479e-a7c8-759956ff0d7e",

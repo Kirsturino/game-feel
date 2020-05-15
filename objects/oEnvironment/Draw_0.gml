@@ -42,15 +42,17 @@ if (!surface_exists(parSurfTwo))
 	scrParallaxTwo();
 } else
 {
+	//shader_set(shdWaveStatic);
+	//shader_set_uniform_f(uTime,current_time/1000 * spd);
+	//shader_set_uniform_f(uFrequency, frequency);
+	//shader_set_uniform_f(uIntensity, intensity);
 	draw_surface(parSurfTwo, camX / 4, camY / 8);
+	//shader_reset();
 }
 
 //Ambient particles
 part_emitter_stream(global.partSystem, global.ambientEmitter, global.ambientPart, -5);
 
 //Rain particles
-repeat (4)
-{
-	var xx = irandom_range(-room_width * 0.75, room_width);
-	part_particles_create(global.partSystem, xx, 0, global.rainPart, 1);
-}
+part_emitter_region(global.partSystem, global.rainEmitter, oPlayer.x - viewWidth * 0.75, oPlayer.x + viewWidth * 0.75, oPlayer.y - viewHeight, oPlayer.y - viewHeight, ps_shape_rectangle, ps_distr_linear);
+part_emitter_stream(global.partSystem, global.rainEmitter, global.rainPart, 4);

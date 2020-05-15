@@ -1,31 +1,41 @@
+//Check if player is near enough to a wall
 var rCollision = collision_point(bbox_right + wallJumpDistance, y - sprite_height / 2, oCollision, false, false);
 var lCollision = collision_point(bbox_left - wallJumpDistance, y - sprite_height / 2, oCollision, false, false);
 
+//Get direction for walljump, set up coyote jump timer for walljump
 if (rCollision || lCollision)
 {
 	huggedWall = true;
 	canWallJump = true;
+	
+	if (rCollision != noone)
+	{
+		wallJumpDir = "left";
+	} else if (lCollision != noone)
+	{
+		wallJumpDir = "right";
+	}
 } else if(huggedWall)
 {
+	//Coyote timer, huggedWall is used solely for not triggering this part multiple times
 	alarm[4] = wallJumpCoyoteBufferLength;
 	huggedWall = false;
 }
 
-if (rCollision != noone && wantsToJump && !isPull && !isPush && !wasGrounded && canWallJump)
+//
+if (wantsToJump && !isPull && !isPush && !wasGrounded && canWallJump)
 {
-	wallJumpDir = "left";
-	var walljump = true;
-} else if (lCollision != noone && wantsToJump && !isPull && !isPush && !wasGrounded && canWallJump)
-{
-	wallJumpDir = "right";
 	var walljump = true;
 } else
 {
 	var walljump = false;
 }
 
+
+//Make player drag against wall and fall slowly, these variables are also used for animation purposes
 hugRight = collision_point(bbox_right + 1, y - sprite_height / 2, oCollision, false, false);
 hugLeft = collision_point(bbox_left - 1, y - sprite_height / 2, oCollision, false, false);
+
 if ((hugRight != noone && right) || (hugLeft != noone && left))
 {
 	curFallSpeed = fallSpeedWall;
@@ -35,7 +45,7 @@ if ((hugRight != noone && right) || (hugLeft != noone && left))
 //Commit walljump
 if (walljump)
 {
-	
+	//Switch player state to walljump
 	wallJumping = true;
 	
 	//Apply vertical momentum
@@ -57,7 +67,7 @@ if (walljump)
 	audio_play_sound(sndJumpRetro, 50, false);
 }
 
-//Increase max speeds, axl and drag when pushing/pulling
+//Things that happen when player is in walljumping state
 if (wallJumping)
 {
 	//Apply horizontal momentum throughout walljump based on wall collision

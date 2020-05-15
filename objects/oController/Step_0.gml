@@ -57,3 +57,8 @@ if (keyboard_check_pressed(ord("F")))
 	        break;
 	}
 }
+
+if (keyboard_check_pressed(ord("G")))
+{
+	repeat(5) show_debug_message("------------");
+}

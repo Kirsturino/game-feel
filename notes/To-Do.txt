@@ -13,21 +13,14 @@ Features:
 Game Feel & Oil
 - Rounded hitboxes for enemies/hazards
 
-
 Graphics
 - AI interpolation for player animations?
 - (Polish shader with clamped values instead of if-statements)
 - Polish ground tileset
-- Come up with better way to convey available dash charges
-- Outline shader
-- Ghost shader
-- Make emitter for rain particles that follows player
-- Maybe trail or something with followthrough
 
 Sound
 - Default BGM
 - Final Scene BGM
-- Secret BGM
+- BGM change/fade system
 - Research audio emitters for environment sounds
  - Probably not needed for such a simple game, if onscreen, make sound, if not, don't
-- Secrets/Collectibles emit faint noise so player can hear them

@@ -2,6 +2,7 @@
 global.partSystem = part_system_create_layer("Particles", true);
 
 global.ambientEmitter = part_emitter_create(global.partSystem);
+global.rainEmitter = part_emitter_create(global.partSystem);
 
 //Ambient emitter particles
 global.ambientPart = part_type_create();
@@ -154,3 +155,13 @@ part_type_gravity(global.deathPart,0.001,270);
 part_type_orientation(global.deathPart,0,0,0,0,1);
 part_type_blend(global.deathPart,1);
 part_type_life(global.deathPart,20,40);
+
+//Familiar particles
+global.trailPart = part_type_create();
+part_type_shape(global.trailPart,pt_shape_flare);
+part_type_size(global.trailPart,0.2,0.2,-0.01,0);
+part_type_scale(global.trailPart,1,1);
+part_type_color1(global.trailPart,global.cWhite);
+part_type_alpha2(global.trailPart,0.5,0);
+part_type_speed(global.trailPart,0,0,0,0);
+part_type_life(global.trailPart,60,60);

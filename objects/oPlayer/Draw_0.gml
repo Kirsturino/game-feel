@@ -1,7 +1,7 @@
 //Draw player shadow
 scrDrawShadow(curSprite, x, y, xDrawScale, yDrawScale, spriteRot);
 	
-//Draw visible player
+//Custom animation system because of the way I draw character sprites
 if (animationFrame < sprite_get_number(curSprite))
 {
 	animationFrameIncrement++;
@@ -16,6 +16,7 @@ if (animationFrame < sprite_get_number(curSprite))
 	animationFrame = 0;
 }
 
+//Draw player sprite
 draw_sprite_ext(curSprite, animationFrame, x, y + 1, xDrawScale, yDrawScale, spriteRot, color, spriteAlpha);
 
 color = merge_color(color, colorTo, 0.2);

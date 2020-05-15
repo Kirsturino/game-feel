@@ -67,6 +67,7 @@ if (interact != noone)
 			vsp = 0;
 			hsp = 0;
 			move = 0;
+			wallJumpTimer = 0;
 		
 			//Animate character to turn towards or away from pp objects
 			#region sprite rotation shenanigans

@@ -3,7 +3,7 @@
     "modelName": "GMSound",
     "mvc": "1.0",
     "name": "sndSecret",
-    "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
+    "audioGroupGuid": "e59e859f-8981-438a-8a4d-c96432790622",
     "bitDepth": 1,
     "bitRate": 128,
     "kind": 0,

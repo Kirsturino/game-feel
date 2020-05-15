@@ -17,7 +17,7 @@ hspMaxNormal = 2;
 vspMaxNormal = 4;
 hspMax = 2;
 vspMax = 4;
-hspMaxCrouched = 0;
+hspMaxCrouched = 1.5;
 jumpSpeed = 3.75;
 crouchJumpSpeed = 5;
 newestDir = "";
@@ -52,7 +52,7 @@ wallJumpTimerMax = 12;
 wallJumpTimer = wallJumpTimerMax;
 wallJumping = false;
 fallSpeedWall = 1;
-#macro wallJumpCoyoteBufferLength 5
+#macro wallJumpCoyoteBufferLength 2
 huggedWall = false;
 canWallJump = false;
 hugRight = false;
@@ -83,10 +83,6 @@ yDrawScale = 1;
 curSprite = sPlayerIdleRight;
 spriteRot = 0;
 spriteAlpha = 1;
-lightRadius = 64;
-lightRadiusMax = 72;
-lightRadiusMin = 48;
-lightAlpha = 1;
 color = global.cWhite;
 colorTo = global.cWhite;
 canDashColor = global.cWhite;
@@ -95,6 +91,12 @@ dashFXLength = ppFramesMax * 3;
 animationFrame = 0;
 animationFrameIncrement = 0;
 animationSpeed = 2;
+
+//Outline shader stuff
+upixelH = shader_get_uniform(shdOutline, "pixelH");
+upixelW = shader_get_uniform(shdOutline, "pixelW");
+texelW = texture_get_texel_width(sprite_get_texture(curSprite, 0));
+texelH = texture_get_texel_height(sprite_get_texture(curSprite, 0));
 
 //Track stats
 lastVsp = 0;
@@ -121,6 +123,9 @@ scrSpawn();
 scrInput();
 if (right) newestDir = "right";
 if (left) newestDir = "left";
+
+//Spawn familiar
+instance_create_layer(x, y, "Player", oFamiliar);
 
 //Controller & Input stuff
 gamepad_set_axis_deadzone(global.controller, 0.1);
