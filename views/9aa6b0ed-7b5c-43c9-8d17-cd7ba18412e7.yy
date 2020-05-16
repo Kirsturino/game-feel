@@ -8,7 +8,9 @@
         "fd0818ad-c1b4-4567-aee1-76381d4ff6e5",
         "d2d5cde9-5c86-45ee-a1a7-a607fb14a019",
         "4bf91aad-7d48-40c7-8131-b21d7353c2c9",
-        "67129a3c-8b8f-4b1f-a65c-61aacc486f3f"
+        "67129a3c-8b8f-4b1f-a65c-61aacc486f3f",
+        "2dcc6faa-6081-47ea-ad42-8aaab144a9e1",
+        "c9a6a400-6136-4e3b-a1f9-3b7890791d35"
     ],
     "filterType": "GMScript",
     "folderName": "Animations",

@@ -2,6 +2,12 @@
 
 if (global.debugging)
 {
+	draw_set_alpha(0.8);
+	draw_rectangle_color(0, 0, viewWidth / 3, viewHeight, global.cBlack, global.cBlack, global.cBlack, global.cBlack, false);
+	draw_set_alpha(1);
+	
+	draw_set_font(fDebug);
+	
 	with (oPlayer)
 	{
 		switch (state)
@@ -24,9 +30,9 @@ if (global.debugging)
 		}
 	
 		draw_text(10, 20, "hsp: " + string(hsp));
-		draw_text(100, 20, "vsp: " + string(vsp));
+		draw_text(60, 20, "vsp: " + string(vsp));
 		draw_text(10, 30, "x: " + string(x));
-		draw_text(100, 30, "y: " + string(y));
+		draw_text(50, 30, "y: " + string(y));
 		draw_text(10, 40, "push frames: " + string(ppFrames));
 		draw_text(10, 50, "push speed: " + string(ppSpeed));
 		draw_text(10, 60, "air axl: " + string(airAxl));
@@ -40,4 +46,6 @@ if (global.debugging)
 		draw_text(10, 140, "fps: " + string(fps) + "/" + string(fps_real));
 		draw_text(10, 150, "wantsToJump: " + string(wantsToJump));
 	}
+	
+	draw_set_font(fDefault);
 }

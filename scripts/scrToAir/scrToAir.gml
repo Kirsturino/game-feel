@@ -11,5 +11,7 @@ if (!place_meeting(x, y + 1, oCollision) && (!place_meeting(x, y + 1, oOneway) |
 	//Change colllision sprite
 	sprite_index = sPlayerCollision;
 	
+	scrResetAnimation();
+	
 	state = scrAirborne;
 }

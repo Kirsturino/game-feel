@@ -8,20 +8,23 @@ Features:
  - They are a bit boring. A better alternative would be to just have moving PP objects instead
 - Moving ppObjects
  - Paths? Just back and forth? Both? Need research
- 
+
 - Main menu, pause menu
+- Settings
+ - Resolution
+ - Fullscreen/Windowed
+ - Music/SFX/Ambient volumes
 
 Game Feel & Oil
 - Rounded hitboxes for enemies/hazards
 
 Graphics
 - AI interpolation for player animations?
-- (Polish shader with clamped values instead of if-statements)
+- Polish grass shader
 - Polish ground tileset
 
 Sound
 - Default BGM
 - Final Scene BGM
-- BGM change/fade system
 - Research audio emitters for environment sounds
  - Probably not needed for such a simple game, if onscreen, make sound, if not, don't

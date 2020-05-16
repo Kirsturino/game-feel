@@ -17,7 +17,17 @@ if (animationFrame < sprite_get_number(curSprite))
 }
 
 //Draw player sprite
-draw_sprite_ext(curSprite, animationFrame, x, y + 1, xDrawScale, yDrawScale, spriteRot, color, spriteAlpha);
+if (global.highContrast)
+{
+	shader_set(shdOutline);
+	shader_set_uniform_f(upixelW, texelW);
+	shader_set_uniform_f(upixelH, texelH);
+	draw_sprite_ext(curSprite, animationFrame, x, y + 1, xDrawScale, yDrawScale, spriteRot, color, spriteAlpha);
+	shader_reset();
+} else
+{
+	draw_sprite_ext(curSprite, animationFrame, x, y + 1, xDrawScale, yDrawScale, spriteRot, color, spriteAlpha);
+}
 
 color = merge_color(color, colorTo, 0.2);
 

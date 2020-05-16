@@ -3,7 +3,7 @@ var rCollision = collision_point(bbox_right + wallJumpDistance, y - sprite_heigh
 var lCollision = collision_point(bbox_left - wallJumpDistance, y - sprite_height / 2, oCollision, false, false);
 
 //Get direction for walljump, set up coyote jump timer for walljump
-if (rCollision || lCollision)
+if ((rCollision || lCollision) && !wallJumping)
 {
 	huggedWall = true;
 	canWallJump = true;
@@ -22,7 +22,7 @@ if (rCollision || lCollision)
 	huggedWall = false;
 }
 
-//
+//Check condition for walljumping
 if (wantsToJump && !isPull && !isPush && !wasGrounded && canWallJump)
 {
 	var walljump = true;
@@ -48,11 +48,12 @@ if (walljump)
 	//Switch player state to walljump
 	wallJumping = true;
 	
-	//Apply vertical momentum
-	vsp = -jumpSpeed * wallJumpVMultiplier;
+	//Apply vertical momentum, if player is going up, preserve some of that momentum
+	vsp = min(vsp, 0) - jumpSpeed * wallJumpVMultiplier;
 	
 	//Reset buffer
 	wantsToJump = false;
+	canWallJump = false;
 	
 	//Squash and stretch
 	scrJumpSquash();

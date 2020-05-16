@@ -24,3 +24,7 @@ shakeDuration = 0;
 shakeAmount = 0;
 shakeX = 0;
 shakeY = 0;
+
+//Camera push variables
+pushX = 0;
+pushY = 0;

@@ -60,14 +60,18 @@ if (interact != noone)
 			if (pushPress)
 			{
 				isPush = true;
+				scrSetPush(30, ppDir - 180);
 			} else if (pullPress)
 			{
 				isPull = true;
+				scrSetPush(30, ppDir);
 			}
 			vsp = 0;
 			hsp = 0;
 			move = 0;
-			wallJumpTimer = 0;
+			wallJumping = false;
+			wallJumpTimer = wallJumpTimerMax;
+			canWallJump = false;
 		
 			//Animate character to turn towards or away from pp objects
 			#region sprite rotation shenanigans
@@ -193,3 +197,6 @@ if (isPull || isPush)
 	//Animate spinny boi
 	spriteRot = lerp(spriteRot, 0, 0.1);
 }
+
+//Dash particle trail
+scrDashTrail();

@@ -1,10 +1,10 @@
 //Apply null movement
-if (leftPress or rightRelease)
+if (leftPress || rightRelease)
 {
 	newestDir = "left";
 }
 
-if (rightPress or leftRelease)
+if (rightPress || leftRelease)
 {
 	newestDir = "right";
 }

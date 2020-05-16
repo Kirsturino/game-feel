@@ -24,6 +24,8 @@ if (place_meeting(x, y + 1, oCollision) || oneway)
 	audio_play_sound(sndLand, 50, false);
 	refreshPitch = 1;
 	
+	scrResetAnimation();
+	
 	//Change state
 	state = scrGrounded;
 }

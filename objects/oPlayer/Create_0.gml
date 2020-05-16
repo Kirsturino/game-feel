@@ -43,7 +43,7 @@ interact = noone;
 lastInteract = noone;
 
 //Walljump variables
-wallJumpDistance = 5;
+wallJumpDistance = 3;
 wallJumpDir = "";
 hspMaxWallJump = hspMaxNormal;
 wallJumpHSpeed = hspMaxWallJump;
@@ -52,7 +52,7 @@ wallJumpTimerMax = 12;
 wallJumpTimer = wallJumpTimerMax;
 wallJumping = false;
 fallSpeedWall = 1;
-#macro wallJumpCoyoteBufferLength 2
+#macro wallJumpCoyoteBufferLength 3
 huggedWall = false;
 canWallJump = false;
 hugRight = false;
@@ -87,7 +87,7 @@ color = global.cWhite;
 colorTo = global.cWhite;
 canDashColor = global.cWhite;
 cantDashColor = global.cBrownLight;
-dashFXLength = ppFramesMax * 3;
+dashFXLength = ppFramesMax * 4;
 animationFrame = 0;
 animationFrameIncrement = 0;
 animationSpeed = 2;

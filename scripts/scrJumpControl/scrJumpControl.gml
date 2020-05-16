@@ -1,5 +1,5 @@
 //Variable jump height + slowfall
-if (vsp < 0 && !jumpHeld && !isPull && !isPush && state != scrGrounded)
+if (vsp < 0 && !jumpHeld && !isPull && !isPush && state != scrGrounded && alarm[5] == -1)
 {
 	vsp += grv;
 }

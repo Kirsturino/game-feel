@@ -11,7 +11,27 @@ layer_script_begin(layerID, scrSetFakeGroundAlpha);
 layer_script_end(layerID, scrResetFakeGroundAlpha);
 
 //Init ambient & rain particles
+if (!part_system_exists(global.partSystem))
+{
+	global.partSystem = part_system_create_layer("Particles", true);
+}
+
+if (!part_emitter_exists(global.partSystem, global.ambientEmitter))
+{
+	global.ambientEmitter = part_emitter_create(global.partSystem);
+}
+
+if (!part_emitter_exists(global.partSystem, global.rainEmitter))
+{
+	global.rainEmitter = part_emitter_create(global.partSystem);
+}
+
+//Ambient particles
+part_emitter_stream(global.partSystem, global.ambientEmitter, global.ambientPart, -5);
 part_emitter_region(global.partSystem, global.ambientEmitter, 0, room_width, 0, room_height, ps_shape_rectangle, ps_distr_linear);
+
+//Rain particles
+part_emitter_stream(global.partSystem, global.rainEmitter, global.rainPart, 4);
 
 ////Wave shader uniforms
 //uTime = shader_get_uniform(shdWave,"time")

@@ -1,6 +1,9 @@
 if (down)
 {
-	sprite_index = sPlayerCollisionCrouched;
 	scrCrouchSquash();
+	
+	sprite_index = sPlayerCollisionCrouched;
+	scrResetAnimation();
+	
 	state = scrCrouched;
 }
