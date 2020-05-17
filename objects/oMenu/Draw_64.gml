@@ -112,28 +112,28 @@ repeat (ds_height)
 		
 		case menu_element_type.input:
 			var current_val = ds_grid[# 3, yy];
-			var string_val;
+			var current_val;
 			
 			switch (current_val)
 			{
-				case ord("W"):
-					string_val = "UP KEY";
+				case vk_up:
+					current_val = "UP KEY";
 				break;
 				
-				case ord("A"):
-					string_val = "LEFT KEY";
+				case vk_left:
+					current_val = "LEFT KEY";
 				break;
 				
-				case ord("D"):
-					string_val = "RIGHT KEY";
+				case vk_right:
+					current_val = "RIGHT KEY";
 				break;
 				
-				case ord("S"):
-					string_val = "DOWN KEY";
+				case vk_down:
+					current_val = "DOWN KEY";
 				break;
 				
 				default:
-					string_val = chr(current_val);
+					current_val = chr(current_val);
 				break;
 			}
 			
@@ -144,7 +144,7 @@ repeat (ds_height)
 				c = global.cYellow;
 			}
 			
-			draw_text_color(rtx, rty, string_val, c, c, c, c, 1);
+			draw_text_color(rtx, rty, current_val, c, c, c, c, 1);
 		break;
 	}
 	
