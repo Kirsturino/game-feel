@@ -55,10 +55,10 @@ if (surface_exists(argument0))
 	for (var i = 0; i < argument4; ++i) 
 	{
 		//Draw each sector of the shape
-		var x1 = argument1 + lengthdir_x(dist, dir * i + argument5);
-		var y1 = argument2 + lengthdir_y(dist, dir * i + argument5);
-		var x2 = argument1 + lengthdir_x(dist, dir * (i + 1) + argument5);
-		var y2 = argument2 + lengthdir_y(dist, dir * (i + 1) + argument5);
+		var x1 = argument1 + lengthdir_x(dist, dir * i + argument5) - blockSize * 2;
+		var y1 = argument2 + lengthdir_y(dist, dir * i + argument5) - blockSize * 2;
+		var x2 = argument1 + lengthdir_x(dist, dir * (i + 1) + argument5) - blockSize * 2;
+		var y2 = argument2 + lengthdir_y(dist, dir * (i + 1) + argument5) - blockSize * 2;
 		draw_set_alpha(argument6);
 	    draw_line_width_color(x1, y1, x2, y2, 2, argument7, argument7);
 		draw_set_alpha(1);

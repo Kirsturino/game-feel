@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "19e7f2a4-1f20-44f8-a5a9-6eaefef893cf",
+            "Value": {
+                "id": "7a1f1715-9441-4691-9e8e-b6325bb0b2fc",
+                "resourcePath": "scripts\\scrCreateMenu\\scrCreateMenu.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1d61c99c-3fb1-4437-bf43-966a8212d337",
             "Value": {
                 "id": "c361f44e-f8a0-45b8-a741-0ceb401f8fcc",
@@ -463,6 +471,14 @@
             }
         },
         {
+            "Key": "3f47221c-81ab-45bb-a6c6-bab83cad7143",
+            "Value": {
+                "id": "2a6073bd-f003-499d-aa91-dfb5eae49128",
+                "resourcePath": "scripts\\scrResumeGame\\scrResumeGame.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "40b05817-cd83-47ee-b7dd-bbde2b5d01e0",
             "Value": {
                 "id": "5474c785-17ff-4ed2-a9bc-88b35796f81d",
@@ -679,6 +695,14 @@
             }
         },
         {
+            "Key": "5ac76887-77b7-4078-a1f8-f3dbc8976a60",
+            "Value": {
+                "id": "0319c0a5-9c82-4378-a763-6d7fa4069206",
+                "resourcePath": "objects\\oMenu\\oMenu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5afb9b59-8efd-474f-aecf-5cda2d24fe9c",
             "Value": {
                 "id": "9743211c-7ef5-46b4-871d-c1a1ca8cfa66",
@@ -716,6 +740,14 @@
                 "id": "ec5665ca-1f6e-4a6f-b0d6-8328c22d5e4d",
                 "resourcePath": "objects\\oSecret\\oSecret.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5e054fc7-caf1-457d-b17c-d347c6129a1c",
+            "Value": {
+                "id": "d6fe70a2-f98f-4431-84a8-53f15fc5d54c",
+                "resourcePath": "scripts\\scrChangeVolume\\scrChangeVolume.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1135,6 +1167,14 @@
             }
         },
         {
+            "Key": "95204c35-d0cb-48a1-815d-183eb477de9c",
+            "Value": {
+                "id": "153fcebd-5bc0-4bfb-ae8f-1c67fcab18b0",
+                "resourcePath": "rooms\\rmMainMenu\\rmMainMenu.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "975ea3e6-e7b6-43da-855c-a796ec7a5194",
             "Value": {
                 "id": "a49ee90c-b109-4edb-b782-8389b6578ad0",
@@ -1439,6 +1479,14 @@
             }
         },
         {
+            "Key": "c3558960-f51a-4875-9c06-de5269cb7753",
+            "Value": {
+                "id": "fdc5caa3-12c1-4a33-a948-ab792c86fc2e",
+                "resourcePath": "scripts\\scrChangeWindowMode\\scrChangeWindowMode.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c52ceea0-36c1-4fc1-9098-7876f96c8062",
             "Value": {
                 "id": "8406d0ef-51db-4c6c-beea-d256b1dc95b6",
@@ -1703,6 +1751,14 @@
             }
         },
         {
+            "Key": "f270b130-203a-47e2-8fe4-d774ada86b8f",
+            "Value": {
+                "id": "59a02dce-c3c4-4433-9f59-42a0fe502d60",
+                "resourcePath": "scripts\\scrChangeResolution\\scrChangeResolution.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f36e20f2-ff00-482b-912c-8a9a937b744d",
             "Value": {
                 "id": "68ab1719-2c75-450d-8c77-d4a7d2e5349c",
@@ -1811,6 +1867,14 @@
             "Value": {
                 "id": "dad8837f-901b-4971-9574-7d3cd305b639",
                 "resourcePath": "scripts\\scrFallThrough\\scrFallThrough.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ff63328c-8cf7-47bc-96ac-e25561d1bc63",
+            "Value": {
+                "id": "dd7cce8c-17f3-465e-b683-ba1a0a746c4c",
+                "resourcePath": "scripts\\scrExitGame\\scrExitGame.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1928,6 +1992,12 @@
         "493b3761-3f8f-4646-9cad-5885ae8538e6",
         "444f812a-4fe7-40a4-b007-2da3a33b3813",
         "79bef6f8-7ade-4b9b-becc-18b0b736d43d",
+        "19e7f2a4-1f20-44f8-a5a9-6eaefef893cf",
+        "3f47221c-81ab-45bb-a6c6-bab83cad7143",
+        "ff63328c-8cf7-47bc-96ac-e25561d1bc63",
+        "5e054fc7-caf1-457d-b17c-d347c6129a1c",
+        "f270b130-203a-47e2-8fe4-d774ada86b8f",
+        "c3558960-f51a-4875-9c06-de5269cb7753",
         "addc0eb3-527b-4f77-9203-8e69446ffc0d",
         "3b70620d-7835-453b-92bf-25fad4e001b3",
         "7013c4d9-635d-4b32-8b09-e6fb04a9e8e7",

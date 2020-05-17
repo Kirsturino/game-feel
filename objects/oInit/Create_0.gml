@@ -12,6 +12,19 @@ global.spawnvsp = 0;
 global.debugging = false;
 global.destination = noone;
 
+//Menu things
+global.pause = true;
+
+//Controls for the menu
+global.key_back = vk_escape;
+global.key_pull = ord("J");
+global.key_enter = vk_enter;
+global.key_push = ord("K");
+global.key_left = ord("A");
+global.key_right = ord("D");
+global.key_up = ord("W");
+global.key_down = ord("S");
+
 //Secret layer
 global.fakeLayerAlpha = 1;
 global.uAlpha = 1;
@@ -19,6 +32,7 @@ global.uAlpha = 1;
 //Camera dimensions
 #macro viewWidth 320
 #macro viewHeight 180
+global.windowScale = 4;
 
 //Make a global palette
 scrInitPalette();
@@ -50,7 +64,7 @@ global.controller = noone;
 //Default to fullscreen
 //window_set_fullscreen(true);
 
-//Accessibility
+//Accessibility options
 global.highContrast = false;
 
 //Move to actual room after initializing everything

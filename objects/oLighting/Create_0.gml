@@ -1,1 +1,1 @@
-lightSurf = surface_create(room_width, room_height);
+lightSurf = surface_create(room_width + blockSize * 4, room_height + blockSize * 4);
