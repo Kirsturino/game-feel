@@ -112,30 +112,8 @@ repeat (ds_height)
 		
 		case menu_element_type.input:
 			var current_val = ds_grid[# 3, yy];
-			var current_val;
 			
-			switch (current_val)
-			{
-				case vk_up:
-					current_val = "UP KEY";
-				break;
-				
-				case vk_left:
-					current_val = "LEFT KEY";
-				break;
-				
-				case vk_right:
-					current_val = "RIGHT KEY";
-				break;
-				
-				case vk_down:
-					current_val = "DOWN KEY";
-				break;
-				
-				default:
-					current_val = chr(current_val);
-				break;
-			}
+			current_val = scrGetUniqueKeys(current_val);
 			
 			c = global.cWhite;
 			
