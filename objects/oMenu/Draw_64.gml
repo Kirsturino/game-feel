@@ -58,8 +58,8 @@ repeat (ds_height)
 		case menu_element_type.shift:
 			var current_val = ds_grid[# 3, yy];
 			var current_array = ds_grid[# 4, yy];
-			var left_shift = " << ";
-			var right_shift = " >> ";
+			var left_shift = "<< ";
+			var right_shift = " >>";
 			c = global.cWhite;
 			
 			if (inputting && yy == menu_option[page])
@@ -70,7 +70,7 @@ repeat (ds_height)
 			if (current_val == 0) left_shift = "";
 			if (current_val == array_length_1d(ds_grid[# 4, yy]) - 1) right_shift = "";
 			
-			draw_text_color(rtx, rty, current_array[current_val] + right_shift, c, c, c, c, 1);
+			draw_text_color(rtx, rty, left_shift + current_array[current_val] + right_shift, c, c, c, c, 1);
 		break;
 			
 		case menu_element_type.slider:
@@ -123,6 +123,12 @@ repeat (ds_height)
 			}
 			
 			draw_text_color(rtx, rty, current_val, c, c, c, c, 1);
+			
+			//Draw confirm prompt when rebinding
+			draw_set_halign(fa_center);
+			c = global.cWhite;
+			draw_text_color(viewWidth / 2, viewHeight - 8, "PRESS ENTER TO INPUT & CONFIRM", c, c, c, c, 1);
+			draw_set_halign(fa_left);
 		break;
 	}
 	

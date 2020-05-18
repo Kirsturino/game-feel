@@ -1,1 +1,2 @@
-show_debug_message("resume game");
+global.pause = false;
+page = 0;

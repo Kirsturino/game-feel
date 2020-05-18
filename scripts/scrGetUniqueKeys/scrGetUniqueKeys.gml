@@ -6,8 +6,11 @@ Simply call this script in a draw_text function.
 argument0 should be a keyboard key such as vk_enter or ord('Z').
 //*/
  
-if( argument0 > 48 && argument0 < 91 )
-{ return chr(argument0); }
+if(argument0 > 48 && argument0 < 91)
+{ 
+	return chr(argument0); 
+}
+
 switch( argument0 )
 {
     case 8: return "Backspace"; break;
@@ -19,6 +22,7 @@ switch( argument0 )
     case 19: return "Pause/Break"; break;
     case 20: return "CAPS"; break;
     case 27: return "Esc"; break;
+	case 32: return "Spacebar"; break;
     case 33: return "Page Up"; break;
     case 34: return "Page Down"; break;
     case 35: return "End"; break;

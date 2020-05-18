@@ -13,7 +13,8 @@
         "ff63328c-8cf7-47bc-96ac-e25561d1bc63",
         "5e054fc7-caf1-457d-b17c-d347c6129a1c",
         "f270b130-203a-47e2-8fe4-d774ada86b8f",
-        "c3558960-f51a-4875-9c06-de5269cb7753"
+        "c3558960-f51a-4875-9c06-de5269cb7753",
+        "e8062921-8125-4908-bf77-a3c1e318cc60"
     ],
     "filterType": "GMScript",
     "folderName": "Menus",
