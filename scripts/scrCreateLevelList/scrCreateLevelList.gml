@@ -1,0 +1,1 @@
+global.firstWorld = [rmOne, rmTwo];

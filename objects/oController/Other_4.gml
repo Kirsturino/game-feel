@@ -1,4 +1,4 @@
-/// @description Check if music needs to be changed
+/// @description Check if music needs to be changed, also autosave
 
 if (!instance_exists(oSecret))
 {

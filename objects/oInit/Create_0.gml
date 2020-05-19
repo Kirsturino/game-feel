@@ -2,6 +2,9 @@
 #macro grv 0.25
 #macro blockSize 16
 
+//Save stuff
+scrCreateLevelList();
+
 //Persistent player properties
 global.spawnX = -1;
 global.spawnY = -1;

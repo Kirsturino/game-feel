@@ -4,16 +4,17 @@ Features:
 - IDEA: Projectiles that have a PP area that when dashed on will go the opposite direction, like bash
 - IDEA: Water physics & controls. Water acts as a dash zone where you get to decide your dash direction like in Celeste
 
+- Controller input for menus
+- Controlle rebinding
+- Level select screen
+
 - Mull over moving platforms
  - They are a bit boring. A better alternative would be to just have moving PP objects instead
 - Moving ppObjects
  - Paths? Just back and forth? Both? Need research
 
 - Main menu, pause menu
-- Settings
- - Resolution
- - Fullscreen/Windowed
- - Music/SFX/Ambient volumes
+ - Fix SFX volume slider
 
 Game Feel & Oil
 - Rounded hitboxes for enemies/hazards
@@ -26,5 +27,8 @@ Graphics
 Sound
 - Default BGM
 - Final Scene BGM
+- New rain ambient audio
+- UI Sounds
+
 - Research audio emitters for environment sounds
  - Probably not needed for such a simple game, if onscreen, make sound, if not, don't

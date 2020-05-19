@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "1212a44b-d5eb-40fe-9fe8-e10f91f25d3e",
+            "Value": {
+                "id": "5172edf9-5eb3-41d1-9d56-2369f79f8db1",
+                "resourcePath": "objects\\oSave\\oSave.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1286a025-b910-42f2-a09e-3806ccad9856",
             "Value": {
                 "id": "36308f2a-ac67-4ef7-b7aa-68ddd74b24de",
@@ -308,6 +316,14 @@
                 "id": "99fe2b3d-321d-4469-be5f-9dfe9d6d7353",
                 "resourcePath": "sounds\\sndRestoreActive\\sndRestoreActive.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "29393934-a5a9-4715-9f6e-122af374d518",
+            "Value": {
+                "id": "41302f10-d1fc-40e0-a614-4f476b0bdb44",
+                "resourcePath": "scripts\\scrCreateLevelList\\scrCreateLevelList.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1111,6 +1127,14 @@
             }
         },
         {
+            "Key": "8b20abfa-e14d-4f62-9cab-45f780a76d97",
+            "Value": {
+                "id": "25b31251-0449-4fe6-887e-b276ba9e5201",
+                "resourcePath": "scripts\\scrSaveStringToFile\\scrSaveStringToFile.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8cb32950-58d7-4303-b84b-0c60489b3518",
             "Value": {
                 "id": "e8dface9-194f-45a8-90c5-d20579593763",
@@ -1783,6 +1807,14 @@
             }
         },
         {
+            "Key": "f358d942-06e9-41f8-99ff-177247aa70da",
+            "Value": {
+                "id": "80f4d216-809c-4121-9b56-3c2fac5f3166",
+                "resourcePath": "scripts\\scrLoadJSONFromFile\\scrLoadJSONFromFile.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f36e20f2-ff00-482b-912c-8a9a937b744d",
             "Value": {
                 "id": "68ab1719-2c75-450d-8c77-d4a7d2e5349c",
@@ -2013,6 +2045,9 @@
         "5afb9b59-8efd-474f-aecf-5cda2d24fe9c",
         "dea0cd99-9e5a-4e39-97bd-cdf2c032514f",
         "a0139dbd-f6ae-4564-b8a1-915cb55aece4",
+        "29393934-a5a9-4715-9f6e-122af374d518",
+        "8b20abfa-e14d-4f62-9cab-45f780a76d97",
+        "f358d942-06e9-41f8-99ff-177247aa70da",
         "7b009ee4-3867-4f8b-8f59-418fd1eb2821",
         "493b3761-3f8f-4646-9cad-5885ae8538e6",
         "444f812a-4fe7-40a4-b007-2da3a33b3813",
