@@ -11,3 +11,10 @@ if (global.controller == noone)
 		}
 	}
 }
+
+gamepad_set_axis_deadzone(global.controller, 0.2);
+
+if (global.controller = noone)
+{
+	alarm[5] = 60;
+}

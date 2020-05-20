@@ -13,9 +13,6 @@ Features:
 - Moving ppObjects
  - Paths? Just back and forth? Both? Need research
 
-- Main menu, pause menu
- - Fix SFX volume slider
-
 Game Feel & Oil
 - Rounded hitboxes for enemies/hazards
 
@@ -26,9 +23,11 @@ Graphics
 
 Sound
 - Default BGM
+- Main menu BGM
 - Final Scene BGM
 - New rain ambient audio
-- UI Sounds
+- Walking SFX
+- MIX SFX FILES TO BE COMPATIBLE WITH AUDIO SLIDERS
 
 - Research audio emitters for environment sounds
  - Probably not needed for such a simple game, if onscreen, make sound, if not, don't

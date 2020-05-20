@@ -7,3 +7,5 @@ if (!instance_exists(oSecret))
 {
 	scrChangeMusic(sndSecret);
 }
+
+scrSaveGame();

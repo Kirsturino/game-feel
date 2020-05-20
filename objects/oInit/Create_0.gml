@@ -18,18 +18,6 @@ global.destination = noone;
 //Menu things
 global.pause = false;
 
-//Controls
-global.key_back = ord("K");
-global.key_pull = ord("J");
-global.key_enter = ord("J");
-global.key_confirm = vk_enter;
-global.key_push = ord("K");
-global.key_left = ord("A");
-global.key_right = ord("D");
-global.key_up = ord("W");
-global.key_down = ord("S");
-global.key_jump = vk_space;
-
 //Secret layer
 global.fakeLayerAlpha = 1;
 global.uAlpha = 1;
@@ -37,7 +25,6 @@ global.uAlpha = 1;
 //Camera dimensions
 #macro viewWidth 320
 #macro viewHeight 180
-global.windowScale = 4;
 
 //Make a global palette
 scrInitPalette();
@@ -45,14 +32,13 @@ scrInitPalette();
 //Initialize particles
 scrParticleInit();
 
+//Init options
+scrInitOptions();
+
 //Init audio groups
 audio_group_load(agAmbient);
 audio_group_load(agMusic);
 audio_group_load(agSFX);
-global.musicVolume = audio_sound_get_gain(sndBGM);
-global.ambientVolume = audio_sound_get_gain(sndAmbient);
-global.musicTarget = 0;
-global.ambientTarget = audio_sound_get_gain(sndAmbient);
 global.currentMusic = sndBGM;
 global.musicTo = sndBGM;
 global.currentAmbient = sndAmbient;
@@ -61,15 +47,12 @@ global.ambientTo = sndAmbient;
 audio_master_gain(0.5);
 
 //Mute music
-audio_group_set_gain(agMusic, global.musicTarget, 0);
-audio_group_set_gain(agAmbient, global.ambientTarget, 0);
+audio_group_set_gain(agMusic, global.musicVolume, 0);
+audio_group_set_gain(agAmbient, global.ambientVolume, 0);
 
 //Get controllers
 global.gp_num = gamepad_get_device_count();
 global.controller = noone;
-
-//Default to fullscreen
-//window_set_fullscreen(true);
 
 //Accessibility options
 global.highContrast = false;

@@ -2,7 +2,7 @@
     "id": "5ac76887-77b7-4078-a1f8-f3dbc8976a60",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oMenu",
+    "name": "oPauseMenu",
     "eventList": [
         {
             "id": "f2fe7fad-2a0d-4314-ae71-89db57181c74",

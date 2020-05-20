@@ -6,62 +6,13 @@ if (keyboard_check_pressed(ord("R")))
 //Saving
 if (keyboard_check_pressed(ord("Q")))
 {
-	//Create root list
-	var rootList = ds_list_create();
-		
-	with (oSave)
-	{
-		//Create map
-		var map = ds_map_create();
-		ds_list_add(rootList, map);
-		ds_list_mark_as_map(rootList, ds_list_size(rootList) - 1);
-
-		var obj = object_get_name(object_index);
-		ds_map_add(map, "obj", obj);
-		ds_map_add(map, "x", x);
-		ds_map_add(map, "y", y);
-	}
-	
-	//Wrap the root list up in a map
-	var wrapper = ds_map_create();
-	ds_map_add_list(wrapper, "ROOT", rootList);
-	
-	//Save everything to a string
-	var str = json_encode(wrapper);
-	scrSaveStringToFile("save.sav", str);
-	
-	//Delete data
-	ds_map_destroy(wrapper);
-	
-	show_debug_message("Saved!");
+	scrSaveGame();
 }
 
 //Loading
 if (keyboard_check_pressed(ord("E")))
 {
-	with (oSave) instance_destroy();
-	
-	if (file_exists("save.sav"))
-	{
-		var wrapper = scrLoadJSONFromFile("save.sav");
-		
-		var list = wrapper[? "ROOT"];
-		
-		for (var i = 0; i < ds_list_size(list); i++)
-		{
-			var map = list[| i];
-			
-			var obj = map[? "obj"];
-			with (instance_create_layer(0, 0, "Controllers", asset_get_index(obj)))
-			{
-				x = map[? "x"];
-				y = map[? "y"];
-			}
-		}
-		
-		ds_map_destroy(wrapper);
-		show_debug_message("Loaded!");
-	}
+	scrLoadGame();
 }
 
 if (keyboard_check_pressed(ord("T")))

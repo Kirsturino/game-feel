@@ -20,7 +20,7 @@ enum menu_element_type {
 	input
 }
 
-//Create menu pages
+//Create pause menu pages
 ds_menu_main = scrCreateMenu(
 	["RESUME",		menu_element_type.script_runner,	scrResumeGame],
 	["SETTINGS",	menu_element_type.page_transfer,	menu_page.settings],
@@ -35,27 +35,27 @@ ds_settings = scrCreateMenu(
 );
 
 ds_menu_audio = scrCreateMenu(
-	["MASTER",		menu_element_type.slider,			scrChangeVolume,		0.5,	[0,1]],
-	["SFX",			menu_element_type.slider,			scrChangeVolume,		1,		[0,1]],
-	["MUSIC",		menu_element_type.slider,			scrChangeVolume,		0,		[0,1]],
-	["AMBIENT",		menu_element_type.slider,			scrChangeVolume,		1,		[0,1]],
+	["MASTER",		menu_element_type.slider,			scrChangeVolume,		global.masterVolume,	[0,1]],
+	["SFX",			menu_element_type.slider,			scrChangeVolume,		global.sfxVolume,		[0,1]],
+	["MUSIC",		menu_element_type.slider,			scrChangeVolume,		global.musicVolume,		[0,1]],
+	["AMBIENT",		menu_element_type.slider,			scrChangeVolume,		global.ambientVolume,	[0,1]],
 	["BACK",		menu_element_type.page_transfer,	menu_page.settings]
 );
 
 ds_menu_graphics = scrCreateMenu(
-	["RESOLUTION",	menu_element_type.shift,			scrChangeResolution,	0,		["640 x 360", "1280 x 720", "1920 x 1080", "2560 x 1440", "4096 x 2160"]],
-	["FULLSCREEN",	menu_element_type.toggle,			scrChangeWindowMode,	1,		["FULLSCREEN", "WINDOWED"]],
+	["RESOLUTION",	menu_element_type.shift,			scrChangeResolution,		global.resolution,		["640 x 360", "1280 x 720", "1920 x 1080", "2560 x 1440", "4096 x 2160"]],
+	["FULLSCREEN",	menu_element_type.toggle,			scrChangeWindowMode,		global.fullscreen,		["FULLSCREEN", "WINDOWED"]],
 	["BACK",		menu_element_type.page_transfer,	menu_page.settings]
 );
 
 ds_menu_controls = scrCreateMenu(
-	["UP",			menu_element_type.input,			"key_up",				ord("W")],
-	["LEFT",		menu_element_type.input,			"key_left",				ord("A")],
-	["RIGHT",		menu_element_type.input,			"key_right",			ord("D")],
-	["DOWN",		menu_element_type.input,			"key_down",				ord("S")],
-	["JUMP",		menu_element_type.input,			"key_jump",				vk_space],
-	["PULL/CONFIRM",menu_element_type.input,			"key_pull",				ord("J")],
-	["PUSH/RETURN",	menu_element_type.input,			"key_push",				ord("K")],
+	["UP",			menu_element_type.input,			"key_up",				global.key_up],
+	["LEFT",		menu_element_type.input,			"key_left",				global.key_left],
+	["RIGHT",		menu_element_type.input,			"key_right",			global.key_right],
+	["DOWN",		menu_element_type.input,			"key_down",				global.key_down],
+	["JUMP",		menu_element_type.input,			"key_jump",				global.key_jump],
+	["PULL/CONFIRM",menu_element_type.input,			"key_pull",				global.key_pull],
+	["PUSH/RETURN",	menu_element_type.input,			"key_push",				global.key_push],
 	["BACK",		menu_element_type.page_transfer,	menu_page.settings]
 );
 

@@ -1,0 +1,3 @@
+/// @description Controller jank
+
+scrGetController();
