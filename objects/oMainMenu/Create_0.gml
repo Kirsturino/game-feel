@@ -1,4 +1,6 @@
 alarm[0] = 1;
+lastButton = 0;
+
 scrLoadOptions();
 display_set_gui_size(viewWidth, viewHeight);
 
@@ -8,6 +10,8 @@ enum main_menu_page {
 	audio,
 	graphics,
 	controls,
+	keyboardcontrols,
+	controllercontrols,
 	credits,
 	quit,
 	height
@@ -19,7 +23,8 @@ enum main_menu_element_type {
 	slider,
 	shift,
 	toggle,
-	input
+	input,
+	controllerinput
 }
 
 //Create pause main_menu pages
@@ -62,6 +67,12 @@ ds_menu_graphics = scrCreateMenu(
 );
 
 ds_menu_controls = scrCreateMenu(
+	["KEYBOARD",	main_menu_element_type.page_transfer,	main_menu_page.keyboardcontrols],
+	["CONTROLLER",	main_menu_element_type.page_transfer,	main_menu_page.controllercontrols],
+	["BACK",		main_menu_element_type.page_transfer,	main_menu_page.settings]
+);
+
+ds_menu_controls_keyboard = scrCreateMenu(
 	["UP",			main_menu_element_type.input,			"key_up",				global.key_up],
 	["LEFT",		main_menu_element_type.input,			"key_left",				global.key_left],
 	["RIGHT",		main_menu_element_type.input,			"key_right",			global.key_right],
@@ -69,11 +80,22 @@ ds_menu_controls = scrCreateMenu(
 	["JUMP",		main_menu_element_type.input,			"key_jump",				global.key_jump],
 	["PULL/CONFIRM",main_menu_element_type.input,			"key_pull",				global.key_pull],
 	["PUSH/RETURN",	main_menu_element_type.input,			"key_push",				global.key_push],
-	["BACK",		main_menu_element_type.page_transfer,	main_menu_page.settings]
+	["BACK",		main_menu_element_type.page_transfer,	main_menu_page.controls]
+);
+
+ds_menu_controls_controller = scrCreateMenu(
+	["UP",			main_menu_element_type.controllerinput,			"button_up",				global.button_up],
+	["LEFT",		main_menu_element_type.controllerinput,			"button_left",				global.button_left],
+	["RIGHT",		main_menu_element_type.controllerinput,			"button_right",				global.button_right],
+	["DOWN",		main_menu_element_type.controllerinput,			"button_down",				global.button_down],
+	["JUMP",main_menu_element_type.controllerinput,					"button_jump",				global.button_jump],
+	["PULL",main_menu_element_type.controllerinput,					"button_pull",				global.button_pull],
+	["PUSH",	main_menu_element_type.controllerinput,				"button_push",				global.button_push],
+	["BACK",		main_menu_element_type.page_transfer,	main_menu_page.controls]
 );
 
 page = 0;
-menu_pages = [ds_menu_main, ds_settings, ds_menu_audio, ds_menu_graphics, ds_menu_controls];
+menu_pages = [ds_menu_main, ds_settings, ds_menu_audio, ds_menu_graphics, ds_menu_controls, ds_menu_controls_keyboard, ds_menu_controls_controller];
 
 var i = 0;
 var array_length = array_length_1d(menu_pages);

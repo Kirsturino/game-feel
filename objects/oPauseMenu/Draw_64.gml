@@ -9,7 +9,7 @@ var start_y = (viewHeight / 2) - ((((ds_height-1)/2) * y_buffer)), start_x = vie
 
 //Draw pause menu "back"
 var c = global.cGray;
-draw_set_alpha(0.5);
+draw_set_alpha(0.7);
 draw_rectangle_color(0, 0, viewWidth, viewHeight, c, c, c, c, false);
 draw_set_alpha(1);
 
@@ -34,7 +34,7 @@ repeat(ds_height)
 		xo = -(x_buffer / 2);
 	}
 	
-	draw_text_color(ltx, lty, ds_grid[# 0, yy], c, c, c, c, 1);
+	draw_text_color(ltx + xo, lty, ds_grid[# 0, yy], c, c, c, c, 1);
 	
 	yy++;
 }
@@ -128,6 +128,27 @@ repeat (ds_height)
 			draw_set_halign(fa_center);
 			c = global.cWhite;
 			draw_text_color(viewWidth / 2, viewHeight - 8, "PRESS ENTER TO INPUT & CONFIRM", c, c, c, c, 1);
+			draw_set_halign(fa_left);
+		break;
+		
+		case main_menu_element_type.controllerinput:
+			var current_val = ds_grid[# 3, yy];
+			
+			current_val = scrGetUniqueKeys(current_val);
+			
+			c = global.cWhite;
+			
+			if (inputting && yy == menu_option[page])
+			{
+				c = global.cYellow;
+			}
+			
+			draw_text_color(rtx, rty, current_val, c, c, c, c, 1);
+			
+			//Draw confirm prompt when rebinding
+			draw_set_halign(fa_center);
+			c = global.cWhite;
+			draw_text_color(viewWidth / 2, viewHeight - 8, "PRESS SELECT TO INPUT & CONFIRM", c, c, c, c, 1);
 			draw_set_halign(fa_left);
 		break;
 	}

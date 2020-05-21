@@ -53,6 +53,7 @@ audio_group_set_gain(agAmbient, global.ambientVolume, 0);
 //Get controllers
 global.gp_num = gamepad_get_device_count();
 global.controller = noone;
+scrGetController();
 
 //Accessibility options
 global.highContrast = false;

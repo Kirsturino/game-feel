@@ -30,7 +30,7 @@ repeat(ds_height)
 		xo = -(x_buffer / 2);
 	}
 	
-	draw_text_color(ltx, lty, ds_grid[# 0, yy], c, c, c, c, 1);
+	draw_text_color(ltx + xo, lty, ds_grid[# 0, yy], c, c, c, c, 1);
 	
 	yy++;
 }
@@ -51,7 +51,7 @@ repeat (ds_height)
 	
 	switch (ds_grid[# 1, yy])
 	{
-		case menu_element_type.shift:
+		case main_menu_element_type.shift:
 			var current_val = ds_grid[# 3, yy];
 			var current_array = ds_grid[# 4, yy];
 			var left_shift = "<< ";
@@ -69,7 +69,7 @@ repeat (ds_height)
 			draw_text_color(rtx, rty, left_shift + current_array[current_val] + right_shift, c, c, c, c, 1);
 		break;
 			
-		case menu_element_type.slider:
+		case main_menu_element_type.slider:
 			var len = 64;
 			var current_val = ds_grid[# 3, yy];
 			var current_array = ds_grid[# 4, yy];
@@ -89,7 +89,7 @@ repeat (ds_height)
 			draw_text_color(rtx + (len * 1.2), rty, string(floor(circle_pos * 100)) + " % ", c, c, c, c, 1);
 		break;
 		
-		case menu_element_type.toggle:
+		case main_menu_element_type.toggle:
 			var current_val = ds_grid[# 3, yy];
 			var c1, c2;
 			c = global.cWhite;
@@ -106,7 +106,7 @@ repeat (ds_height)
 			draw_text_color(rtx + 32, rty, "OFF", c2, c2, c2, c2, 1);
 		break;
 		
-		case menu_element_type.input:
+		case main_menu_element_type.input:
 			var current_val = ds_grid[# 3, yy];
 			
 			current_val = scrGetUniqueKeys(current_val);
@@ -124,6 +124,27 @@ repeat (ds_height)
 			draw_set_halign(fa_center);
 			c = global.cWhite;
 			draw_text_color(viewWidth / 2, viewHeight - 8, "PRESS ENTER TO INPUT & CONFIRM", c, c, c, c, 1);
+			draw_set_halign(fa_left);
+		break;
+		
+		case main_menu_element_type.controllerinput:
+			var current_val = ds_grid[# 3, yy];
+			
+			current_val = scrGetUniqueKeys(current_val);
+			
+			c = global.cWhite;
+			
+			if (inputting && yy == menu_option[page])
+			{
+				c = global.cYellow;
+			}
+			
+			draw_text_color(rtx, rty, current_val, c, c, c, c, 1);
+			
+			//Draw confirm prompt when rebinding
+			draw_set_halign(fa_center);
+			c = global.cWhite;
+			draw_text_color(viewWidth / 2, viewHeight - 8, "PRESS SELECT TO INPUT & CONFIRM", c, c, c, c, 1);
 			draw_set_halign(fa_left);
 		break;
 	}

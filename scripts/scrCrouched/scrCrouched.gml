@@ -4,7 +4,7 @@ scrInput();
 //Movement
 scrFallThrough();
 
-//scrCrouchJump();
+scrJump();
 scrCollisionMovement();
 scrPushPull();
 

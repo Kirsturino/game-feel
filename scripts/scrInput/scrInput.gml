@@ -28,7 +28,7 @@ if (global.pause) exit;
 
 
 //Gameplay inputs
-if (gamepad_axis_value(global.controller, gp_axislh) < 0 || gamepad_button_check(global.controller, gp_padl) || keyboard_check(global.key_left))
+if (gamepad_axis_value(global.controller, gp_axislh) < 0 || gamepad_button_check(global.controller, global.button_left) || keyboard_check(global.key_left))
 {
 	left = true;
 } else
@@ -36,7 +36,7 @@ if (gamepad_axis_value(global.controller, gp_axislh) < 0 || gamepad_button_check
 	left = false;
 }
 
-if (gamepad_axis_value(global.controller, gp_axislh) > 0 || gamepad_button_check(global.controller, gp_padr) || keyboard_check(global.key_right))
+if (gamepad_axis_value(global.controller, gp_axislh) > 0 || gamepad_button_check(global.controller, global.button_right) || keyboard_check(global.key_right))
 {
 	right = true;
 } else
@@ -44,7 +44,7 @@ if (gamepad_axis_value(global.controller, gp_axislh) > 0 || gamepad_button_check
 	right = false;
 }
 	
-if (gamepad_axis_value(global.controller, gp_axislv) > 0 || gamepad_button_check(global.controller, gp_padd) || keyboard_check(global.key_down))
+if (gamepad_axis_value(global.controller, gp_axislv) > 0 || gamepad_button_check(global.controller, global.button_down) || keyboard_check(global.key_down))
 {
 	down = true;
 } else
@@ -52,7 +52,7 @@ if (gamepad_axis_value(global.controller, gp_axislv) > 0 || gamepad_button_check
 	down = false;
 }
 
-if (gamepad_axis_value(global.controller, gp_axislh) < 0 || keyboard_check_pressed(global.key_left) || gamepad_button_check_pressed(global.controller, gp_padl))
+if (gamepad_axis_value(global.controller, gp_axislh) < 0 || keyboard_check_pressed(global.key_left) || gamepad_button_check_pressed(global.controller, global.button_left))
 {
 	leftPress = true;
 } else
@@ -60,7 +60,7 @@ if (gamepad_axis_value(global.controller, gp_axislh) < 0 || keyboard_check_press
 	leftPress = false;
 }
 
-if (gamepad_axis_value(global.controller, gp_axislh) > 0 || keyboard_check_pressed(global.key_right) || gamepad_button_check_pressed(global.controller, gp_padr))
+if (gamepad_axis_value(global.controller, gp_axislh) > 0 || keyboard_check_pressed(global.key_right) || gamepad_button_check_pressed(global.controller, global.button_right))
 {
 	rightPress = true;
 } else
@@ -69,11 +69,11 @@ if (gamepad_axis_value(global.controller, gp_axislh) > 0 || keyboard_check_press
 }
 
 
-leftRelease = keyboard_check_released(global.key_left) || gamepad_button_check_released(global.controller, gp_padl);
-rightRelease = keyboard_check_released(global.key_right) || gamepad_button_check_released(global.controller, gp_padr);
+leftRelease = keyboard_check_released(global.key_left) || gamepad_button_check_released(global.controller, global.button_left);
+rightRelease = keyboard_check_released(global.key_right) || gamepad_button_check_released(global.controller, global.button_right);
 	
-jump = keyboard_check_pressed(global.key_jump) || gamepad_button_check_pressed(global.controller, gp_face1) || gamepad_button_check_pressed(global.controller, gp_face2);
-jumpHeld = keyboard_check(global.key_jump) || gamepad_button_check(global.controller, gp_face1) || gamepad_button_check(global.controller, gp_face2);
+jump = keyboard_check_pressed(global.key_jump) || gamepad_button_check_pressed(global.controller, global.button_jump);
+jumpHeld = keyboard_check(global.key_jump) || gamepad_button_check(global.controller, global.button_jump);
 
-pushPress = keyboard_check_pressed(global.key_push) || gamepad_button_check_pressed(global.controller, gp_shoulderl) || gamepad_button_check_pressed(global.controller, gp_shoulderrb) || gamepad_button_check_pressed(global.controller, gp_face4);
-pullPress = keyboard_check_pressed(global.key_pull) || gamepad_button_check_pressed(global.controller, gp_shoulderr) || gamepad_button_check_pressed(global.controller, gp_shoulderlb) || gamepad_button_check_pressed(global.controller, gp_face3);
+pushPress = keyboard_check_pressed(global.key_push) || gamepad_button_check_pressed(global.controller, global.button_push);
+pullPress = keyboard_check_pressed(global.key_pull) || gamepad_button_check_pressed(global.controller, global.button_pull);

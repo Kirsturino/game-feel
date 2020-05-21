@@ -1,4 +1,4 @@
-if (down && !left && !right)
+if (down)
 {
 	scrCrouchSquash();
 	

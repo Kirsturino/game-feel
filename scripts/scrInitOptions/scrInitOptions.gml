@@ -16,6 +16,9 @@ if (file_exists("options.sav"))
 	
 	//Controls
 	scrInitControls();
+	
+	//Make options file
+	scrSaveOptions();
 }
 
 audio_master_gain(global.masterVolume);

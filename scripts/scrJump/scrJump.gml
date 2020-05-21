@@ -1,5 +1,5 @@
 //Check if on ground, is going to hit ground or was recently on ground
-if ((jump or wantsToJump) and state == scrGrounded)
+if ((jump or wantsToJump) and state != scrAirborne)
 {
 	var willJump = true;
 } else if (jump and state == scrAirborne and wasGrounded)

@@ -34,6 +34,18 @@ if (file_exists("options.sav"))
 			global.key_up = map[? "key_up"];
 			global.key_down = map[? "key_down"];
 			global.key_jump = map[? "key_jump"];
+			
+			//Controller controls
+			global.button_back = map[? "button_back"];
+			global.button_pull = map[? "button_pull"];
+			global.button_enter = map[? "button_enter"];
+			global.button_confirm = map[? "button_confirm"];
+			global.button_push = map[? "button_push"];
+			global.button_left = map[? "button_left"];
+			global.button_right = map[? "button_right"];
+			global.button_up = map[? "button_up"];
+			global.button_down = map[? "button_down"];
+			global.button_jump = map[? "button_jump"];
 		}
 	}
 		

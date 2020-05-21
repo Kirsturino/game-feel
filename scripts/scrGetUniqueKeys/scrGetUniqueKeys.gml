@@ -74,3 +74,24 @@ switch( argument0 )
     case 221: return "]"; break;
     case 222: return "'"; break;
 }
+
+switch( argument0 )
+{
+	case gp_face1: return "A"; break;
+	case gp_face2: return "B"; break;
+	case gp_face3: return "X"; break;
+	case gp_face4: return "Y"; break;
+	
+	case gp_padl: return "DPAD LEFT"; break;
+	case gp_padr: return "DPAD RIGHT"; break;
+	case gp_padu: return "DPAD UP"; break;
+	case gp_padd: return "DPAD DOWN"; break;
+	
+	case gp_shoulderl: return "LEFT BUMPER"; break;
+	case gp_shoulderr: return "RIGHT BUMPER"; break;
+	case gp_shoulderlb: return "LEFT TRIGGER"; break;
+	case gp_shoulderrb: return "RIGHT TRIGGER"; break;
+	
+	case gp_stickl: return "LEFT STICK"; break;
+	case gp_stickr: return "RIGHT STICK"; break;
+}
