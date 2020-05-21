@@ -2,6 +2,8 @@ alarm[0] = 1;
 lastButton = 0;
 
 scrLoadOptions();
+scrLoadGame();
+
 display_set_gui_size(viewWidth, viewHeight);
 
 enum main_menu_page {
@@ -31,15 +33,15 @@ enum main_menu_element_type {
 if (!file_exists("save.sav"))
 {
 	ds_menu_main = scrCreateMenu(
-		["START",		main_menu_element_type.script_runner,	scrStartGame],
-		["SETTINGS",	main_menu_element_type.page_transfer,	main_menu_page.settings],
-		["QUIT",		main_menu_element_type.script_runner,	scrExitGame]
+	["START",		main_menu_element_type.script_runner,	scrStartNewGame],
+	["SETTINGS",	main_menu_element_type.page_transfer,	main_menu_page.settings],
+	["QUIT",		main_menu_element_type.script_runner,	scrExitGame]
 	);
 } else
 {
 	ds_menu_main = scrCreateMenu(
 	["CONTINUE",		main_menu_element_type.script_runner,	scrContinueGame],
-	["NEW GAME",		main_menu_element_type.script_runner,	scrStartGame],
+	["NEW GAME",		main_menu_element_type.script_runner,	scrStartNewGame],
 	["SETTINGS",	main_menu_element_type.page_transfer,	main_menu_page.settings],
 	["QUIT",		main_menu_element_type.script_runner,	scrExitGame]
 	);

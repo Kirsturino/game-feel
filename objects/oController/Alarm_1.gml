@@ -1,4 +1,4 @@
-/// @description Room transition
+/// @description Room transition animation
 if (oPlayer.state != scrDead)
 {
 	room_goto(global.destination);

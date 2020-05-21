@@ -15,6 +15,13 @@ var collectible = instance_place(x, y, oCollectible);
 
 if (collectible != noone)
 {
+	//Add collectible to list of collected collectibles if it hasn't been collected before. Collectible. Great word.
+	if (ds_list_find_index(global.collectibleList, collectible.name) == -1)
+	{
+		ds_list_add(global.collectibleList, collectible.name);
+	}
+	scrSaveGame();
+	
 	with (collectible)
 	{
 		part_particles_create(global.partSystem, x, y, global.secretPart, 100);

@@ -3,7 +3,7 @@
 #macro blockSize 16
 
 //Save stuff
-scrCreateLevelList();
+scrInitSaveLists();
 
 //Persistent player properties
 global.spawnX = -1;

@@ -1,23 +1,35 @@
-if (file_exists("save.sav"))
-{
-	var wrapper = scrLoadJSONFromFile("save.sav");
+if (!file_exists("save.sav")) exit;
+
+//Clear	global lists just in case so that we don't save duplicates into the lists
+scrClearSaveLists();
+	
+var wrapper = scrLoadJSONFromFile("save.sav");
 		
-	var list = wrapper[? "ROOT"];
+var list = wrapper[? "ROOT"];
 		
-	for (var i = 0; i < ds_list_size(list); i++)
-	{
-		var map = list[| i];
+var map = list[| 0];
+				
+//Load data of cleared worlds/rooms
+var rmList = ds_map_find_value(map, "roomList");
+var size = ds_list_size(rmList);
 			
-		var obj = map[? "obj"];
-		with (instance_create_layer(0, 0, layer, asset_get_index(obj)))
-		{
-			curRoom = map[? "room"];
-			room_goto(curRoom);
-		}
-	}
-		
-	ds_map_destroy(wrapper);
-	show_debug_message("Loaded!");
+for (var i = 0; i < size; ++i)
+{
+	var listValue = ds_list_find_value(rmList,i);
+	ds_list_add(global.roomList, listValue);
 }
 
-with (oSave) instance_destroy();
+//Load data of found collectibles
+var cList = ds_map_find_value(map, "collectibleList");
+size = ds_list_size(cList);
+			
+for (var i = 0; i < size; ++i)
+{
+	listValue = ds_list_find_value(cList,i);
+	ds_list_add(global.collectibleList, listValue);
+}
+			
+global.roomTo = map[? "room"];
+
+ds_map_destroy(wrapper);
+show_debug_message("Loaded!");

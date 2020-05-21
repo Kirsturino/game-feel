@@ -4,8 +4,6 @@ Features:
 - IDEA: Projectiles that have a PP area that when dashed on will go the opposite direction, like bash
 - IDEA: Water physics & controls. Water acts as a dash zone where you get to decide your dash direction like in Celeste
 
-- Controller input for menus
-- Controlle rebinding
 - Level select screen
 
 - Mull over moving platforms

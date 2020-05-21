@@ -1,2 +1,1 @@
-scrLoadGame();
-
+room_goto(global.roomTo);

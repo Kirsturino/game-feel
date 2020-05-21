@@ -1,5 +1,5 @@
 //Check if on ground, is going to hit ground or was recently on ground
-if ((jump or wantsToJump) and state == scrCrouched)
+if ((jump or wantsToJump) and state == scrCrouched && !place_meeting(x, y + 1, oOneway))
 {
 	var willJump = true;
 } else

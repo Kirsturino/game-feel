@@ -13,6 +13,7 @@ if (keyboard_check_pressed(ord("Q")))
 if (keyboard_check_pressed(ord("E")))
 {
 	scrLoadGame();
+	room_goto(global.roomTo);
 }
 
 if (keyboard_check_pressed(ord("T")))

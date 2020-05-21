@@ -29,7 +29,7 @@ enum menu_element_type {
 ds_menu_main = scrCreateMenu(
 	["RESUME",		menu_element_type.script_runner,	scrResumeGame],
 	["SETTINGS",	menu_element_type.page_transfer,	menu_page.settings],
-	["QUIT",		menu_element_type.script_runner,	scrExitGame]
+	["EXIT",		menu_element_type.script_runner,	scrToMainMenu]
 );
 
 ds_settings = scrCreateMenu(

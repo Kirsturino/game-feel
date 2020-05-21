@@ -1,8 +1,8 @@
 {
-    "id": "29393934-a5a9-4715-9f6e-122af374d518",
+    "id": "88b66d25-83a0-4b6c-85d3-ec319bdc1dd6",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scrCreateLevelList",
+    "name": "scrStartNewGame",
     "IsCompatibility": false,
     "IsDnD": false
 }

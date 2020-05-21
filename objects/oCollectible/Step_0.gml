@@ -6,4 +6,7 @@ y = wiggle;
 
 image_angle += rotSpeed;
 
-part_particles_create(global.partSystem, x, y, global.secretPart, 1);
+if (!collected)
+{
+	part_particles_create(global.partSystem, x, y, global.secretPart, 1);
+}
