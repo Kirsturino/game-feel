@@ -20,7 +20,7 @@ if (place_meeting(x + 1, y, oCollision))
 		var rightLedgeVacant = false;
 	}
 
-	//Grab. that. ledge! But only when holding the direction the ledge is in
+	//Grab. that. ledge! But only when holding the direction that the ledge is in
 	if (rightLedge != noone && rightLedgeVacant && move == 1 && vsp >= 0)
 	{
 		vsp = -ledgeGrabSpeed;

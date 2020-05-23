@@ -1,9 +1,13 @@
 oController.alarm[2] = oController.animationLength;
 
-if (oPlayer.state == scrDead)
+
+if (instance_exists(oPlayer))
 {
-	with (oPlayer)
+	if (oPlayer.state == scrDead)
 	{
-		scrSpawn();
+		with (oPlayer)
+		{
+			scrSpawn();
+		}
 	}
 }

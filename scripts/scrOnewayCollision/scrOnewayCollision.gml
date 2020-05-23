@@ -8,8 +8,8 @@ if (place_meeting(x + hsp, y, oOneway))
 		var colliderHorizontal = instance_place(x + sign(hsp), y, oOneway);
 		var yDifference = y - colliderHorizontal.y;
 
-		
-		if (abs(yDifference) > minLedgeDifferenceY / 4 && yDifference < 0 && !jumpHeld)
+		//This is kinda jank
+		if (abs(yDifference) > minLedgeDifferenceY / 6 && yDifference < 0 && !jumpHeld)
 		{
 			//slide player until no longer colliding
 			while (place_meeting(x + sign(hsp), y, oOneway))

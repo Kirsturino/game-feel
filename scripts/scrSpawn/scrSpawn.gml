@@ -8,7 +8,7 @@ if (global.spawnX != -1 && global.spawnY != -1 && !place_meeting(global.spawnX, 
 {
 	if (global.spawnX > room_width)
 	{
-		x = room_width;
+		x = room_width - 16;
 	} else
 	{
 		x = global.spawnX;
@@ -16,7 +16,7 @@ if (global.spawnX != -1 && global.spawnY != -1 && !place_meeting(global.spawnX, 
 	
 	if (global.spawnY > room_height)
 	{
-		y = room_height;
+		y = room_height - 16;
 	} else
 	{
 		y = global.spawnY;

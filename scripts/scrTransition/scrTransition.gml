@@ -9,7 +9,7 @@ if (transitionTrigger != noone)
 	{
 		if (transitionTrigger.x > room_width)
 		{
-			global.spawnX = 0;
+			global.spawnX = 16;
 		} else
 		{
 			global.spawnX = 888888;
@@ -19,7 +19,7 @@ if (transitionTrigger != noone)
 	{
 		if (transitionTrigger.y > room_height)
 		{
-			global.spawnY = 0;
+			global.spawnY = 16;
 		} else
 		{
 			global.spawnY = 888888;

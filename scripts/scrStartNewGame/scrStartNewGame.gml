@@ -5,4 +5,4 @@ if (file_exists("save.sav"))
 
 scrClearSaveLists();
 
-room_goto(rmTest);
+room_goto(rmSurfaceOne);

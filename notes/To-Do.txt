@@ -6,6 +6,8 @@ Features:
 
 - Level select screen
 
+- World 1
+
 - Mull over moving platforms
  - They are a bit boring. A better alternative would be to just have moving PP objects instead
 - Moving ppObjects
@@ -18,6 +20,7 @@ Graphics
 - AI interpolation for player animations?
 - Polish grass shader
 - Polish ground tileset
+- Separate mountain & cloud parallax layers
 
 Sound
 - Default BGM
