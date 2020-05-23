@@ -51,7 +51,7 @@ wallJumpVMultiplier = 0.9;
 wallJumpTimerMax = 12;
 wallJumpTimer = wallJumpTimerMax;
 wallJumping = false;
-fallSpeedWall = 1;
+fallSpeedWall = 0.5;
 #macro wallJumpCoyoteBufferLength 3
 huggedWall = false;
 canWallJump = false;

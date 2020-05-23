@@ -1927,6 +1927,14 @@
             }
         },
         {
+            "Key": "eb2c30bd-5bea-40f2-9e5a-91a541704e6e",
+            "Value": {
+                "id": "fe07205b-1e08-40eb-8980-418e4bdac807",
+                "resourcePath": "rooms\\rmSurfaceFour\\rmSurfaceFour.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "ece4fd22-d322-4c67-9900-1c267b66b488",
             "Value": {
                 "id": "1e62341c-c1c7-46d5-a428-7deefd96d452",
