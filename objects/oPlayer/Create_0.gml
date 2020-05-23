@@ -47,7 +47,7 @@ wallJumpDistance = 3;
 wallJumpDir = "";
 hspMaxWallJump = hspMaxNormal;
 wallJumpHSpeed = hspMaxWallJump;
-wallJumpVMultiplier = 0.9;
+wallJumpVMultiplier = 1;
 wallJumpTimerMax = 12;
 wallJumpTimer = wallJumpTimerMax;
 wallJumping = false;
@@ -60,10 +60,10 @@ hugLeft = false;
 
 //Jump controls
 grvModifier = 0.7;
-defaultFallSpeed = 4;
-fallspeedHeld = 3.5;
-fastFallSpeed = 5;
-curFallSpeed = 4;
+defaultFallSpeed = 3.3;
+fallspeedHeld = 3;
+fastFallSpeed = 4;
+curFallSpeed = defaultFallSpeed;
 fallSpeedChangeSpeed = 0.25;
 
 //Jump buffer
