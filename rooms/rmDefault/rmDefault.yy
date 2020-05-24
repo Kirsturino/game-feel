@@ -11,7 +11,8 @@
         "c7d15919-fac9-4846-bfbb-602d54100795",
         "5f77be55-fede-4bc8-8c7e-e33c82595981",
         "4e9a5780-2dcf-42a4-aea7-6be1ea981b0d",
-        "897b1a9d-005c-45be-b586-3d5f301ddd31"
+        "897b1a9d-005c-45be-b586-3d5f301ddd31",
+        "e903a042-db8a-4729-9e8d-3e39e55da1c4"
     ],
     "IsDnD": false,
     "layers": [
@@ -56,7 +57,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-
+{"name": "inst_D52FBF1","id": "e903a042-db8a-4729-9e8d-3e39e55da1c4","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_D52FBF1","objId": "d2ac9412-6593-4340-98cd-951b9458c17e","properties": null,"rotation": 0,"scaleX": 20,"scaleY": 1,"mvc": "1.1","x": 160,"y": 204}
             ],
             "layers": [
 
@@ -421,10 +422,45 @@
             "visible": true
         },
         {
+            "__type": "GMRTileLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "BackgroundWall",
+            "id": "1a6eed4c-e6f6-4062-b75b-0ad455eb2ce0",
+            "depth": 1300,
+            "grid_x": 16,
+            "grid_y": 16,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRTileLayer",
+            "prev_tileheight": 0,
+            "prev_tilewidth": 0,
+            "mvc": "1.0",
+            "tiles": {
+                "SerialiseData": null,
+                "SerialiseHeight": 0,
+                "SerialiseWidth": 0,
+                "TileSerialiseData": [
+                ]
+            },
+            "tilesetId": "00000000-0000-0000-0000-000000000000",
+            "userdefined_depth": false,
+            "visible": true,
+            "x": 0,
+            "y": 0
+        },
+        {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Parallax",
             "id": "0bbee214-7545-4e9f-a057-f32b9440aac1",
-            "depth": 1300,
+            "depth": 1400,
             "grid_x": 16,
             "grid_y": 16,
             "hierarchyFrozen": false,
@@ -453,7 +489,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4283180068 },
-            "depth": 1400,
+            "depth": 1500,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,

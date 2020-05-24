@@ -1,8 +1,11 @@
 //Init surfaces
 parSurf = surface_create(room_width, room_height);
-parSurfOne = surface_create(room_width, room_height);
-parSurfTwo = surface_create(room_width, room_height);
-parSurfThree = surface_create(room_width, room_height);
+parSurfMiddleMountain = surface_create(room_width, room_height);
+parSurfCloseMountain = surface_create(room_width, room_height);
+parSurfFarMountain = surface_create(room_width, room_height);
+parSurfMiddleCloud = surface_create(room_width, room_height);
+parSurfCloseCloud = surface_create(room_width, room_height);
+parSurfFarCloud = surface_create(room_width, room_height);
 
 //Handle tileset layer transparency
 global.uAlpha = shader_get_uniform(shdAlpha, "alpha");
@@ -49,22 +52,40 @@ if (surface_exists(parSurf))
 	scrBackground();
 }
 
-if (surface_exists(parSurfOne))
+if (surface_exists(parSurfMiddleMountain))
 {
 	//First parallax layer
-	scrParallaxOne();
+	scrParallaxMiddleMountain();
 }
 
-if (surface_exists(parSurfTwo))
+if (surface_exists(parSurfCloseMountain))
 {
 	//Second parallax layer
-	scrParallaxTwo();
+	scrParallaxCloseMountain();
 }
 
-if (surface_exists(parSurfThree))
+if (surface_exists(parSurfFarMountain))
 {
 	//Third parallax layer
-	scrParallaxThree();
+	scrParallaxFarMountain();
+}
+
+if (surface_exists(parSurfMiddleCloud))
+{
+	//First parallax layer
+	scrParallaxMiddleCloud();
+}
+
+if (surface_exists(parSurfCloseCloud))
+{
+	//Second parallax layer
+	scrParallaxCloseCloud();
+}
+
+if (surface_exists(parSurfFarCloud))
+{
+	//Third parallax layer
+	scrParallaxFarCloud();
 }
 
 //Generate grass on top of collision objects

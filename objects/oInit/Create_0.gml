@@ -35,6 +35,7 @@ scrParticleInit();
 //Init options
 scrInitOptions();
 
+
 //Init audio groups
 audio_group_load(agAmbient);
 audio_group_load(agMusic);
@@ -57,6 +58,9 @@ scrGetController();
 
 //Accessibility options
 global.highContrast = false;
+
+//Hide mouse
+window_set_cursor(cr_none);
 
 //Move to actual room after initializing everything
 room_goto_next();

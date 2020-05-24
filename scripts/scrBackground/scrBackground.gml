@@ -1,7 +1,7 @@
 surface_set_target(parSurf);
 
 //Background color
-draw_clear(global.cBlueLight);
+draw_clear(global.cBlack);
 
 //Stars, filling the entire screen, waiting to get obscured by anything else that's drawn afterwards
 var starFrequency = blockSize;

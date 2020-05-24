@@ -9,10 +9,10 @@ if (jumpHeld)
 
 //Ledge grab
 var rightLedge = instance_place(x + 1, y, oCollision);
-if (place_meeting(x + 1, y, oCollision))
+if (rightLedge != noone)
 {
 	//See if there is space above ledge
-	if (instance_place(x + blockSize, y - ledgeGrabLength, oCollision) == noone)
+	if (instance_place(x + blockSize, y - ledgeGrabLength, oCollision) == noone && instance_place(x + blockSize, rightLedge.bbox_top - 1, oDanger) == noone)
 	{
 		var rightLedgeVacant = true;
 	} else
@@ -30,10 +30,10 @@ if (place_meeting(x + 1, y, oCollision))
 }
 
 var leftLedge = instance_place(x - 1, y, oCollision);
-if (place_meeting(x - 1, y, oCollision))
+if (leftLedge != noone)
 {
 	//See if there is space above ledge
-	if (instance_place(x - blockSize, y - ledgeGrabLength, oCollision) == noone)
+	if (instance_place(x - blockSize, y - ledgeGrabLength, oCollision) == noone && instance_place(x - blockSize, leftLedge.bbox_top - 1, oDanger) == noone)
 	{
 		var leftLedgeVacant = true;
 	} else

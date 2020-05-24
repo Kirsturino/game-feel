@@ -1,8 +1,8 @@
 {
-    "id": "947299fe-7bf5-4b1e-b517-f6a12991b538",
+    "id": "4a356983-fa6f-40dd-a632-a7862136707e",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scrParallaxThree",
+    "name": "scrParallaxFarCloud",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -14,42 +14,75 @@ if (!global.debugging)
 		draw_surface(parSurf, camX, camY);
 	}
 
-	if (!surface_exists(parSurfThree))
+	if (!surface_exists(parSurfFarMountain))
 	{
-		parSurfThree = surface_create(room_width, room_height);
+		parSurfFarMountain = surface_create(room_width, room_height);
 	
 		//Third parallax layer
-		scrParallaxThree();
+		scrParallaxFarMountain();
 	} else
 	{
-		draw_surface(parSurfThree, camX / 1.5, camY / 3);
+		draw_surface(parSurfFarMountain, camX / 1.5, camY / 3);
+	}
+	
+	if (!surface_exists(parSurfFarCloud))
+	{
+		parSurfFarCloud = surface_create(room_width, room_height);
+	
+		//Third parallax layer
+		scrParallaxFarCloud();
+	} else
+	{
+		draw_surface(parSurfFarCloud, camX / 1.5, camY / 3);
 	}
 
-	if (!surface_exists(parSurfOne))
+	if (!surface_exists(parSurfMiddleMountain))
 	{
-		parSurfOne = surface_create(room_width, room_height);
+		parSurfMiddleMountain = surface_create(room_width, room_height);
 	
 		//First parallax layer
-		scrParallaxOne();
+		scrParallaxMiddleMountain();
 	} else
 	{
-		draw_surface(parSurfOne, camX / 2, camY / 4);
+		draw_surface(parSurfMiddleMountain, camX / 2, camY / 4);
+	}
+	
+	if (!surface_exists(parSurfMiddleCloud))
+	{
+		parSurfMiddleCloud = surface_create(room_width, room_height);
+	
+		//First parallax layer
+		scrParallaxMiddleCloud();
+	} else
+	{
+		draw_surface(parSurfMiddleCloud, camX / 2, camY / 4);
 	}
 
-	if (!surface_exists(parSurfTwo))
+	if (!surface_exists(parSurfCloseMountain))
 	{
-		parSurfTwo = surface_create(room_width, room_height);
+		parSurfCloseMountain = surface_create(room_width, room_height);
 	
 		//Second parallax layer
-		scrParallaxTwo();
+		scrParallaxCloseMountain();
 	} else
 	{
 		//shader_set(shdWaveStatic);
 		//shader_set_uniform_f(uTime,current_time/1000 * spd);
 		//shader_set_uniform_f(uFrequency, frequency);
 		//shader_set_uniform_f(uIntensity, intensity);
-		draw_surface(parSurfTwo, camX / 4, camY / 8);
+		draw_surface(parSurfCloseMountain, camX / 4, camY / 8);
 		//shader_reset();
+	}
+	
+	if (!surface_exists(parSurfCloseCloud))
+	{
+		parSurfCloseCloud = surface_create(room_width, room_height);
+	
+		//Second parallax layer
+		scrParallaxCloseCloud();
+	} else
+	{
+		draw_surface(parSurfCloseCloud, camX / 4, camY / 8);
 	}
 }
 

@@ -439,6 +439,14 @@
             }
         },
         {
+            "Key": "331345e2-2719-4198-97ce-4d5bff0b1d1c",
+            "Value": {
+                "id": "5ff259bb-a433-47f3-b81e-d8b99872a802",
+                "resourcePath": "scripts\\scrParallaxCloseCloud\\scrParallaxCloseCloud.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "33ab551f-5af3-4ec7-9a5e-e597f7ffb5c0",
             "Value": {
                 "id": "5c062ea4-b441-4b5c-b4df-7af21484e4e4",
@@ -663,6 +671,14 @@
             }
         },
         {
+            "Key": "4a356983-fa6f-40dd-a632-a7862136707e",
+            "Value": {
+                "id": "cb3162d3-6efb-489e-85f1-1280c1725fad",
+                "resourcePath": "scripts\\scrParallaxFarCloud\\scrParallaxFarCloud.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4a795b29-685d-44ce-84e9-40fe28ed620d",
             "Value": {
                 "id": "b11f6313-c0b5-4881-8f4d-c3135722d028",
@@ -783,6 +799,14 @@
             }
         },
         {
+            "Key": "568905ad-0f50-4fd2-8fbd-4cede8eeed06",
+            "Value": {
+                "id": "e0defc77-fdc7-46c7-94db-1e4a03c5e896",
+                "resourcePath": "scripts\\scrParallaxMiddleCloud\\scrParallaxMiddleCloud.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "57c08567-de74-4811-bcf2-d05f82c61f73",
             "Value": {
                 "id": "119cb00b-2d8b-4e6f-95c6-9958bf5cd84a",
@@ -852,6 +876,14 @@
                 "id": "d6fe70a2-f98f-4431-84a8-53f15fc5d54c",
                 "resourcePath": "scripts\\scrChangeVolume\\scrChangeVolume.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5e722741-4e1e-4f23-a4cc-f07207641e16",
+            "Value": {
+                "id": "57710659-2475-4f7b-800f-ff778c1b9876",
+                "resourcePath": "rooms\\rmSurfaceOneSecret\\rmSurfaceOneSecret.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1082,7 +1114,7 @@
             "Key": "78bccab7-a201-4463-abef-5d9dfb33a5ae",
             "Value": {
                 "id": "1f4b48b5-9859-4bb2-87f7-cab9b5b9bbc3",
-                "resourcePath": "scripts\\scrParallaxTwo\\scrParallaxTwo.yy",
+                "resourcePath": "scripts\\scrParallaxCloseMountain\\scrParallaxCloseMountain.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1298,7 +1330,7 @@
             "Key": "947299fe-7bf5-4b1e-b517-f6a12991b538",
             "Value": {
                 "id": "070d41b7-ff16-4e0a-a3a0-8cffc6220e60",
-                "resourcePath": "scripts\\scrParallaxThree\\scrParallaxThree.yy",
+                "resourcePath": "scripts\\scrParallaxFarMountain\\scrParallaxFarMountain.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1610,7 +1642,7 @@
             "Key": "b535d53a-775e-400c-a2b3-ae5ffbb291c2",
             "Value": {
                 "id": "49c4d627-3400-44ef-ba98-511a7e2bd310",
-                "resourcePath": "scripts\\scrParallaxOne\\scrParallaxOne.yy",
+                "resourcePath": "scripts\\scrParallaxMiddleMountain\\scrParallaxMiddleMountain.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2071,6 +2103,22 @@
             }
         },
         {
+            "Key": "fc54d5dd-84dd-4aa0-afe1-c1792f05c8ae",
+            "Value": {
+                "id": "ae5593c2-8bfd-473c-b323-cf3f8c3d6cb2",
+                "resourcePath": "sprites\\sCaveTiles\\sCaveTiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fc824bbc-2d53-4bcf-890a-fd49b598f7f9",
+            "Value": {
+                "id": "626dd00a-08b3-4c6f-a439-ea1eaea17d5c",
+                "resourcePath": "rooms\\rmSurfaceFive\\rmSurfaceFive.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "fd0818ad-c1b4-4567-aee1-76381d4ff6e5",
             "Value": {
                 "id": "3cc0e2c5-3906-4202-a58c-8fcf3250d249",
@@ -2217,8 +2265,11 @@
         "6e486f43-e316-41db-8c15-515338c3f24c",
         "30abffc2-d35b-4f9a-95c3-0d0fdc765971",
         "b535d53a-775e-400c-a2b3-ae5ffbb291c2",
+        "568905ad-0f50-4fd2-8fbd-4cede8eeed06",
         "78bccab7-a201-4463-abef-5d9dfb33a5ae",
+        "331345e2-2719-4198-97ce-4d5bff0b1d1c",
         "947299fe-7bf5-4b1e-b517-f6a12991b538",
+        "4a356983-fa6f-40dd-a632-a7862136707e",
         "9fe850d2-fc8c-4662-9b9f-511f7ef0dd93",
         "fd0818ad-c1b4-4567-aee1-76381d4ff6e5",
         "d2d5cde9-5c86-45ee-a1a7-a607fb14a019",

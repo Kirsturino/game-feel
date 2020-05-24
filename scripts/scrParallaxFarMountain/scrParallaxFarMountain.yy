@@ -1,8 +1,8 @@
 {
-    "id": "b535d53a-775e-400c-a2b3-ae5ffbb291c2",
+    "id": "947299fe-7bf5-4b1e-b517-f6a12991b538",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scrParallaxOne",
+    "name": "scrParallaxFarMountain",
     "IsCompatibility": false,
     "IsDnD": false
 }

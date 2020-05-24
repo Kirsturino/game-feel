@@ -1,8 +1,8 @@
 {
-    "id": "78bccab7-a201-4463-abef-5d9dfb33a5ae",
+    "id": "b535d53a-775e-400c-a2b3-ae5ffbb291c2",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scrParallaxTwo",
+    "name": "scrParallaxMiddleMountain",
     "IsCompatibility": false,
     "IsDnD": false
 }
