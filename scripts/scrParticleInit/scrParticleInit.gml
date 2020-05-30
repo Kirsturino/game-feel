@@ -1,5 +1,6 @@
 //Init system
 global.partSystem = part_system_create_layer("Particles", true);
+global.partSystemSecret = part_system_create_layer("BackgroundEnvironment", true);
 
 global.ambientEmitter = part_emitter_create(global.partSystem);
 global.rainEmitter = part_emitter_create(global.partSystem);

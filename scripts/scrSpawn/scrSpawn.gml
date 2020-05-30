@@ -4,14 +4,16 @@ with (oCamera)
 }
 
 //Spawn player in wanted position, if not possible, spawn in default room position
-if (global.spawnX != -1 && global.spawnY != -1 && !place_meeting(global.spawnX, global.spawnY, oCollision))
+if (global.spawnX != -1 && global.spawnY != -1)
 {
 	if (global.spawnX > room_width)
 	{
 		x = room_width - 16;
+		curSprite = sPlayerIdleLeft;
 	} else
 	{
 		x = global.spawnX;
+		curSprite = sPlayerIdleRight;
 	}
 	
 	if (global.spawnY > room_height)
@@ -21,7 +23,9 @@ if (global.spawnX != -1 && global.spawnY != -1 && !place_meeting(global.spawnX, 
 	{
 		y = global.spawnY;
 	}
-} else
+}
+
+if (place_meeting(x, y, oCollision))
 {
 	x = defaultX;
 	y = defaultY;

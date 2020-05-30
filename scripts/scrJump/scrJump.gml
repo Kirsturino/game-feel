@@ -2,23 +2,38 @@
 if ((jump or wantsToJump) and state != scrAirborne)
 {
 	var willJump = true;
+	var longJump = down;
 } else if (jump and state == scrAirborne and wasGrounded)
 {
 	var willJump = true;
+	var longJump = down;
+	
 } else
 {
 	var willJump = false;
+	var longJump = false;
 }
 
 
 if (willJump)
 {
-	//Apply movement
-	vsp = -jumpSpeed;
+	if (longJump)
+	{
+		//Apply movement
+		vsp = -longJumpSpeed;
 	
-	//Reset buffer
-	wantsToJump = false;
-	jump = false;
+		//Do a little forward momentum
+		hspMax = hspMaxNormal + 1.5;
+		hsp = hspMax * sign(hsp);
+	} else
+	{
+		//Apply movement
+		vsp = -jumpSpeed;
+	
+		//Reset buffer
+		wantsToJump = false;
+		jump = false;
+	}
 	
 	//Squash and stretch
 	scrJumpSquash();

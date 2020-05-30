@@ -25,17 +25,6 @@ if (!global.debugging)
 		draw_surface(parSurfFarMountain, camX / 1.5, camY / 3);
 	}
 	
-	if (!surface_exists(parSurfFarCloud))
-	{
-		parSurfFarCloud = surface_create(room_width, room_height);
-	
-		//Third parallax layer
-		scrParallaxFarCloud();
-	} else
-	{
-		draw_surface(parSurfFarCloud, camX / 1.5, camY / 3);
-	}
-
 	if (!surface_exists(parSurfMiddleMountain))
 	{
 		parSurfMiddleMountain = surface_create(room_width, room_height);
@@ -47,17 +36,6 @@ if (!global.debugging)
 		draw_surface(parSurfMiddleMountain, camX / 2, camY / 4);
 	}
 	
-	if (!surface_exists(parSurfMiddleCloud))
-	{
-		parSurfMiddleCloud = surface_create(room_width, room_height);
-	
-		//First parallax layer
-		scrParallaxMiddleCloud();
-	} else
-	{
-		draw_surface(parSurfMiddleCloud, camX / 2, camY / 4);
-	}
-
 	if (!surface_exists(parSurfCloseMountain))
 	{
 		parSurfCloseMountain = surface_create(room_width, room_height);
@@ -72,6 +50,30 @@ if (!global.debugging)
 		//shader_set_uniform_f(uIntensity, intensity);
 		draw_surface(parSurfCloseMountain, camX / 4, camY / 8);
 		//shader_reset();
+	}
+	
+	if (!surface_exists(parSurfFarCloud))
+	{
+		parSurfFarCloud = surface_create(room_width, room_height);
+	
+		//Third parallax layer
+		scrParallaxFarCloud();
+	} else
+	{
+		draw_surface(parSurfFarCloud, camX / 1.5, camY / 3);
+	}
+
+
+	
+	if (!surface_exists(parSurfMiddleCloud))
+	{
+		parSurfMiddleCloud = surface_create(room_width, room_height);
+	
+		//First parallax layer
+		scrParallaxMiddleCloud();
+	} else
+	{
+		draw_surface(parSurfMiddleCloud, camX / 2, camY / 4);
 	}
 	
 	if (!surface_exists(parSurfCloseCloud))

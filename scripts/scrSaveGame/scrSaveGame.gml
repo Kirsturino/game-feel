@@ -8,6 +8,8 @@ ds_list_mark_as_map(rootList, ds_list_size(rootList) - 1);
 
 //Save current room player was in
 ds_map_add(map, "room", room);
+ds_map_add(map, "spawnX", global.spawnX);
+ds_map_add(map, "spawnY", global.spawnY);
 	
 //Temporary lists that gets destroyed with the wrapper
 	

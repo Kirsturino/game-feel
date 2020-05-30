@@ -1,5 +1,5 @@
 //Pause game
-if ((keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(global.controller, gp_start)) && oController.alarm[1] == -1)
+if ((keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(global.controller, gp_start)) && oController.alarm[1] == -1 && oController.alarm[2] == -1)
 {
 	global.pause = !global.pause;
 	

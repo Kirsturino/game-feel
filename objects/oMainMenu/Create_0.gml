@@ -3,6 +3,7 @@ lastButton = 0;
 
 scrLoadOptions();
 scrLoadGame();
+scrGetController();
 
 display_set_gui_size(viewWidth, viewHeight);
 

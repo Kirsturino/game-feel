@@ -122,7 +122,7 @@
             "Key": "0f5ccfe4-d890-4ee6-8594-3589e96673ae",
             "Value": {
                 "id": "71ad0af5-31ed-462c-9bf2-c54a1dbb82f0",
-                "resourcePath": "scripts\\scrCrouchJump\\scrCrouchJump.yy",
+                "resourcePath": "scripts\\scrLongJump\\scrLongJump.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -380,6 +380,14 @@
                 "id": "6644f3db-6e73-463f-8e68-637221396f66",
                 "resourcePath": "sounds\\sndLand\\sndLand.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "2e50f2c9-1ef9-4d92-b4fc-17b98f1ecfee",
+            "Value": {
+                "id": "8f2bb3e2-91b4-4259-854e-2946fd5e5ad4",
+                "resourcePath": "objects\\oCheckpoint\\oCheckpoint.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -911,6 +919,14 @@
             }
         },
         {
+            "Key": "60f74afa-76f3-451c-afff-627766121c74",
+            "Value": {
+                "id": "53c7e298-2621-444a-a2c0-6ba9c22b1505",
+                "resourcePath": "scripts\\scrCheckpoint\\scrCheckpoint.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "643d2857-39a6-4030-bb5a-22729d5257c3",
             "Value": {
                 "id": "6be47b32-d667-4d95-a1ca-de1230625fac",
@@ -940,6 +956,14 @@
                 "id": "1f1f7568-5921-4919-ba7d-0eecc597adec",
                 "resourcePath": "scripts\\scrCrouchAnimation\\scrCrouchAnimation.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "67bcb893-4252-4ac4-a11b-566d23c6b331",
+            "Value": {
+                "id": "467d46f4-afe1-466b-9006-82dd121a218e",
+                "resourcePath": "rooms\\rmCaveOne\\rmCaveOne.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1124,6 +1148,14 @@
                 "id": "34ca9f70-a3d4-4ba6-adf7-97f705b69427",
                 "resourcePath": "scripts\\scrStartRoomStartAnimation\\scrStartRoomStartAnimation.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7a10596e-c5ce-4b8b-9800-eca0bdb8b5f7",
+            "Value": {
+                "id": "a2b70aff-ae74-45d7-98fa-001c7cd531cc",
+                "resourcePath": "rooms\\rmCaveThree\\rmCaveThree.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1751,6 +1783,14 @@
             }
         },
         {
+            "Key": "ce299f49-1595-40a6-b2e2-49ea2d41c19b",
+            "Value": {
+                "id": "277506cd-4de6-4808-bdf8-c950fdcd7b7c",
+                "resourcePath": "rooms\\rmCaveTwo\\rmCaveTwo.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "cf871c96-b31d-4b40-bbc0-9bae0b357318",
             "Value": {
                 "id": "5b97a356-0500-4d75-86cf-863156f6d1b5",
@@ -1892,6 +1932,14 @@
                 "id": "983c9207-baef-45a7-af4f-02495f6ddfc5",
                 "resourcePath": "views\\e0d1d8f1-59ac-4ada-900b-cd6ff720ebfa.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e1d1eeb0-2087-433e-8f46-1a604b72aca6",
+            "Value": {
+                "id": "630c3ed9-0d86-4525-b1ce-2c5a3bd50b7a",
+                "resourcePath": "sprites\\sCheckpoint\\sCheckpoint.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2234,6 +2282,7 @@
         "fffd6bb6-8e14-4032-9776-79e0cfd8c2a7",
         "ed129c93-31eb-44ce-9e7d-8f4c40d472c0",
         "239af11a-a97e-48f3-9784-3fbbf974edb6",
+        "60f74afa-76f3-451c-afff-627766121c74",
         "227a5c7f-fb28-4b3d-a913-b6bdf4d5a1ae",
         "ea418554-e0e7-46aa-b9ef-1072feeefb08",
         "4489bc6b-3e3a-4d81-95e0-0c0274bba6a6",

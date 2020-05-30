@@ -4,7 +4,7 @@ scrInput();
 //Movement
 scrFallThrough();
 
-scrCrouchJump();
+scrLongJump();
 scrCollisionMovement();
 scrPushPull();
 
@@ -12,14 +12,10 @@ scrPushPull();
 scrSquashCrouched();
 scrSquash();
 
-//Room transition
+//Touch triggers
 scrTransition();
-
-//Touch and reveal secrets
 scrSecrets();
-
-//Die
-scrDanger();
+scrCheckpoint();
 
 //Animations
 scrCrouchAnimation();
@@ -27,3 +23,6 @@ scrCrouchAnimation();
 //State switches
 scrToAir();
 scrCrouchToGrounded();
+
+//Death
+scrDanger();

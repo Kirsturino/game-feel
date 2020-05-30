@@ -30,6 +30,8 @@ for (var i = 0; i < size; ++i)
 }
 			
 global.roomTo = map[? "room"];
+global.spawnX = map[? "spawnX"];
+global.spawnY = map[? "spawnY"];
 
 ds_map_destroy(wrapper);
 show_debug_message("Loaded!");

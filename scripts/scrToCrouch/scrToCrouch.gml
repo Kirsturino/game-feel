@@ -1,4 +1,4 @@
-if (down)
+if (down && !wantsToJump)
 {
 	scrCrouchSquash();
 	

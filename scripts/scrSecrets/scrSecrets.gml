@@ -24,7 +24,7 @@ if (collectible != noone)
 	
 	with (collectible)
 	{
-		part_particles_create(global.partSystem, x, y, global.secretPart, 100);
+		part_particles_create(global.partSystemSecret, x, y, global.secretPart, 100);
 		scrSetShake(10, 10);
 		scrFreeze(60);
 		instance_destroy();

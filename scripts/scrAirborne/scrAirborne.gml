@@ -20,17 +20,16 @@ scrRestore();
 scrSquashAirborne();
 scrSquash();
 
-//Room transition
+//Touch triggers
 scrTransition();
-
-//Touch and reveal secrets
 scrSecrets();
-
-//Die
-scrDanger();
+scrCheckpoint();
 
 //Animations
 scrAirborneAnimation();
 
 //State switches
 scrToGround();
+
+//Die
+scrDanger();

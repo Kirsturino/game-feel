@@ -19,11 +19,11 @@ hspMax = 2;
 vspMax = 4;
 hspMaxCrouched = 1.5;
 jumpSpeed = 3.75;
-crouchJumpSpeed = 5;
+longJumpSpeed = jumpSpeed * 0.65;
 newestDir = "";
 move = 0;
 ledgeTimer = 0;
-ledgeTimerMax = 15;
+ledgeTimerMax = 20;
 
 //Push & Pull variables
 ppSpeed = 0;

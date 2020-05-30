@@ -42,7 +42,7 @@ void main()
 		float displace = sign(dir) * (maxPlayerDistance / 2. + sin((xx / maxPlayerDistance) * 3.14) * 4.);
 
 		wind *= .1;
-		transformPosition.x += smoothstep(0., 1., in_Weight * .5) * displace;
+		transformPosition.x += smoothstep(0., 1., in_Weight * .5) * displace + smoothstep(0., 1., in_Weight * .5) * wind * sign(player);
 	} else
 	{
 

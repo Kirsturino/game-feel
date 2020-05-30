@@ -11,14 +11,10 @@ scrResetPP();
 scrSquashGrounded();
 scrSquash();
 
-//Room transition
+//Touch triggers
 scrTransition();
-
-//Touch and reveal secrets
 scrSecrets();
-
-//Die
-scrDanger();
+scrCheckpoint();
 
 //Animations
 scrGroundedAnimation();
@@ -26,3 +22,6 @@ scrGroundedAnimation();
 //State switches
 scrToAir();
 scrToCrouch();
+
+//Death
+scrDanger();
