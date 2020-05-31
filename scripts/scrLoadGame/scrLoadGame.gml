@@ -28,10 +28,12 @@ for (var i = 0; i < size; ++i)
 	listValue = ds_list_find_value(cList,i);
 	ds_list_add(global.collectibleList, listValue);
 }
-			
+
 global.roomTo = map[? "room"];
 global.spawnX = map[? "spawnX"];
 global.spawnY = map[? "spawnY"];
+global.allowPush = map[? "allowPush"];
+global.allowPull = map[? "allowPull"];
 
 ds_map_destroy(wrapper);
 show_debug_message("Loaded!");

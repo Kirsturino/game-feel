@@ -5,7 +5,6 @@ if (interact != noone)
 	var interactDir = point_direction(x, y - sprite_height / 2, interact.x, interact.y);
 	interact.triDirTo = other.ppDir;
 
-
 	#region ppDir
 	//Round interactDir to 8 cardinal directions
 	if (!isPull && !isPush)
@@ -38,33 +37,20 @@ if (interact != noone)
 	}
 	#endregion
 
-	//Highlight interactable object, get initial keypress for pushing or pulling
+	//Get initial keypress for pushing or pulling
 	if (distance_to_object(interact) < interact.interactRange)
 	{
-		with (interact)
-		{
-		
-			if (!drawTri)
-			{
-				audio_sound_pitch(sndPPActive, 2);
-				audio_play_sound(sndPPActive, 40, false);
-			}
-			drawTri = true;
-		}
-	
-		lastInteract = interact;
-
 		//Stop natural momentum before applying force, get direction for force
-		if ((pushPress || pullPress) && ppFrames == ppFramesMax && interact != noone)
+		if (((pushPress && global.allowPush) || (pullPress && global.allowPull)) && ppFrames == ppFramesMax && interact != noone)
 		{
 			if (pushPress)
 			{
 				isPush = true;
-				scrSetPush(30, ppDir - 180);
+				scrSetPush(15, ppDir - 180);
 			} else if (pullPress)
 			{
 				isPull = true;
-				scrSetPush(30, ppDir);
+				scrSetPush(15, ppDir);
 			}
 			vsp = 0;
 			hsp = 0;
@@ -128,12 +114,6 @@ if (interact != noone)
 			audio_play_sound(sndPP, 50, false);
 			scrSetShake(15, 10);
 			scrFreeze(80);
-		}
-	} else
-	{
-		with (interact)
-		{
-			drawTri = false;
 		}
 	}
 }

@@ -1,3 +1,5 @@
+depth = 10;
+
 rot = 0;
 rotSpeed = 2;
 triRotSpeed = 20;
@@ -14,7 +16,7 @@ colorTo = global.cBlueLight;
 
 circleAlpha = 0.1;
 
-interactRange = 70;
+
 visualInteractRange = interactRange;
 
 //Variables for indicator triangle

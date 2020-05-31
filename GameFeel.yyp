@@ -1063,6 +1063,14 @@
             }
         },
         {
+            "Key": "7024b6d0-fd36-4018-aa4f-ba35929c220a",
+            "Value": {
+                "id": "ed0c57b8-3cee-4a95-937a-e0bea6512d4b",
+                "resourcePath": "rooms\\rmCaveSix\\rmCaveSix.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "7092b549-f414-4588-a644-123c5f67df70",
             "Value": {
                 "id": "8cbbc199-e5a0-4b3f-9621-a17e365ebde9",
@@ -1703,6 +1711,14 @@
             }
         },
         {
+            "Key": "baf1c79f-4fcd-45b3-a458-eb20c2730495",
+            "Value": {
+                "id": "992607bb-b1f3-46ad-843c-b845ba765d89",
+                "resourcePath": "rooms\\rmCaveFour\\rmCaveFour.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "bc9c19c9-2225-449c-8bf6-fa1e3551caf5",
             "Value": {
                 "id": "20672d10-a8af-4fac-9b92-cfcdfcc01412",
@@ -1756,6 +1772,14 @@
                 "id": "0a152208-1cab-416c-ab34-d0885f4cdce2",
                 "resourcePath": "scripts\\scrDeathAnimation\\scrDeathAnimation.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "caf6ee37-c1eb-4e19-993e-381f45ef673f",
+            "Value": {
+                "id": "ec3e14f7-e91d-49e5-b565-e44db61b79c0",
+                "resourcePath": "rooms\\rmCaveFive\\rmCaveFive.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1887,6 +1911,14 @@
             }
         },
         {
+            "Key": "db680fe0-f7c2-4763-8791-5f7c66d11107",
+            "Value": {
+                "id": "2f3a9218-2c74-4ba4-b9b2-4444e437a740",
+                "resourcePath": "objects\\oUnlockPush\\oUnlockPush.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "db785b38-1771-4e07-8c32-0c58b897fc95",
             "Value": {
                 "id": "3ef69180-b53d-4b6f-bfe2-bccba060222d",
@@ -1956,6 +1988,14 @@
                 "id": "7d2f058b-d303-4401-9296-007f82704868",
                 "resourcePath": "scripts\\scrDead\\scrDead.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e450b1c4-7cfc-4d47-aa1c-4d6c2839b233",
+            "Value": {
+                "id": "16931134-0a20-4f5a-ac50-a79d4cd652bd",
+                "resourcePath": "objects\\oUnlockPull\\oUnlockPull.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2164,6 +2204,14 @@
                 "id": "626dd00a-08b3-4c6f-a439-ea1eaea17d5c",
                 "resourcePath": "rooms\\rmSurfaceFive\\rmSurfaceFive.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "fcae5e3a-f5f7-4619-b618-c3d592604117",
+            "Value": {
+                "id": "89c92fe9-5edc-4d75-b2a2-d708faf043ce",
+                "resourcePath": "views\\fcae5e3a-f5f7-4619-b618-c3d592604117.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

@@ -1,3 +1,17 @@
+//Check if should drawtri
+if (oPlayer.interact == self)
+{
+	if (!drawTri)
+	{
+		audio_sound_pitch(sndPPActive, 2);
+		audio_play_sound(sndPPActive, 40, false);
+	}
+	drawTri = true;
+} else
+{
+	drawTri = false;
+}
+
 //Indication triangle variables
 var dd = angle_difference(triDir, triDirTo);
 

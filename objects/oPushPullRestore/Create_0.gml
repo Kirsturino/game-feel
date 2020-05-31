@@ -1,3 +1,5 @@
+depth = 5;
+
 //Animation variables
 xScale = 0;
 yScale = 0;

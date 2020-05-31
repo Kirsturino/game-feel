@@ -6,14 +6,19 @@ if (keyboard_check_pressed(ord("R")))
 //Saving
 if (keyboard_check_pressed(ord("Q")))
 {
-	scrSaveGame();
+	if (room_exists(room - 1))
+	{
+		room_goto(room - 1);
+	}
 }
 
 //Loading
 if (keyboard_check_pressed(ord("E")))
 {
-	scrLoadGame();
-	room_goto(global.roomTo);
+	if (room_exists(room + 1))
+	{
+		room_goto(room + 1);
+	}
 }
 
 if (keyboard_check_pressed(ord("T")))
@@ -40,18 +45,6 @@ if (keyboard_check_pressed(ord("T")))
 	
 	layerID = layer_get_id("BackgroundEnvironment");
 	layer_set_visible(layerID, !global.debugging);
-}
-
-if (keyboard_check_pressed(ord("F")))
-{
-	switch (room) {
-	    case rmTest:
-	        room_goto(rmOne);
-	        break;
-	    default:
-	        room_goto(rmTest);
-	        break;
-	}
 }
 
 if (keyboard_check_pressed(ord("G")))

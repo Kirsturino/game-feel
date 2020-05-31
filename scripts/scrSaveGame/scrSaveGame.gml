@@ -10,6 +10,8 @@ ds_list_mark_as_map(rootList, ds_list_size(rootList) - 1);
 ds_map_add(map, "room", room);
 ds_map_add(map, "spawnX", global.spawnX);
 ds_map_add(map, "spawnY", global.spawnY);
+ds_map_add(map, "allowPush", global.allowPush);
+ds_map_add(map, "allowPull", global.allowPull);
 	
 //Temporary lists that gets destroyed with the wrapper
 	

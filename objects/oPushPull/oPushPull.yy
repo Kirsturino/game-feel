@@ -65,6 +65,20 @@
             "value": "True",
             "varName": "spawnRestore",
             "varType": 3
+        },
+        {
+            "id": "fa9de948-00c5-4d07-84ec-8b3cac04bdad",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "70",
+            "varName": "interactRange",
+            "varType": 0
         }
     ],
     "solid": false,

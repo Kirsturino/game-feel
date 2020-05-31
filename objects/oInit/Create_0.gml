@@ -10,6 +10,8 @@ global.spawnX = -1;
 global.spawnY = -1;
 global.spawnhsp = 0;
 global.spawnvsp = 0;
+global.allowPush = 0;
+global.allowPull = 0;
 
 //Meta stuff
 global.debugging = false;

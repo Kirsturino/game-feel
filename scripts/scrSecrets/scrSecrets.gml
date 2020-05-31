@@ -20,13 +20,22 @@ if (collectible != noone)
 	{
 		ds_list_add(global.collectibleList, collectible.name);
 	}
-	scrSaveGame();
 	
+	if (collectible.name == "unlockPull")
+	{
+		global.allowPull = 1;
+	}
+	
+	if (collectible.name == "unlockPush")
+	{
+		global.allowPush = 1;
+	}
+	
+	scrSaveGame();
+		
 	with (collectible)
 	{
 		part_particles_create(global.partSystemSecret, x, y, global.secretPart, 100);
-		scrSetShake(10, 10);
-		scrFreeze(60);
 		instance_destroy();
 	}
 }

@@ -40,7 +40,6 @@ isPull = false;
 hspMaxPP = 5;
 vspMaxPP = 5;
 interact = noone;
-lastInteract = noone;
 
 //Walljump variables
 wallJumpDistance = 3;
@@ -48,10 +47,10 @@ wallJumpDir = "";
 hspMaxWallJump = hspMaxNormal;
 wallJumpHSpeed = hspMaxWallJump;
 wallJumpVMultiplier = 0.9;
-wallJumpTimerMax = 12;
+wallJumpTimerMax = 13;
 wallJumpTimer = wallJumpTimerMax;
 wallJumping = false;
-fallSpeedWall = 0.5;
+fallSpeedWall = 0.6;
 #macro wallJumpCoyoteBufferLength 3
 huggedWall = false;
 canWallJump = false;
