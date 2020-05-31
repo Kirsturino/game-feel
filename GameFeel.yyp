@@ -1999,6 +1999,14 @@
             }
         },
         {
+            "Key": "e47f066f-b609-4841-a3c7-0586ca9ea2fc",
+            "Value": {
+                "id": "fecb6f87-ae97-498a-9beb-5d34b444297f",
+                "resourcePath": "rooms\\rmCaveSeven\\rmCaveSeven.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "e4b13dab-b2fa-4c9b-befb-e1981358de22",
             "Value": {
                 "id": "6ad72f52-4cb5-49fd-8815-0937109ad264",
