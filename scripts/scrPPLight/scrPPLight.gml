@@ -17,7 +17,13 @@ if (surface_exists(argument0))
 	var dir = 360 / argument4;
 	var dist = argument3;
 	
-	draw_set_alpha(1);
+	if (!place_meeting(x, y, oFakeCollision))
+	{
+		draw_set_alpha(1);
+	} else
+	{
+		draw_set_alpha(argument6);
+	}
 	
 	//Draw the outer fill of the shape
 	for (var i = 0; i < argument4; ++i) 

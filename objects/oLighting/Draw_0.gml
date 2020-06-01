@@ -10,7 +10,13 @@ with (oFamiliar)
 
 with (oPushPull)
 {
-	scrPPLight(oLighting.lightSurf, x + blockSize * 2, y + blockSize * 2, visualInteractRange, 8, offset, circleAlpha, color);
+	if (place_meeting(x, y, oFakeCollision))
+	{
+		scrPPLight(oLighting.lightSurf, x + blockSize * 2, y + blockSize * 2, visualInteractRange, 8, offset, circleAlpha - global.fakeLayerAlpha, color);
+	} else
+	{
+		scrPPLight(oLighting.lightSurf, x + blockSize * 2, y + blockSize * 2, visualInteractRange, 8, offset, circleAlpha, color);
+	}
 }
 
 with (oLight)
