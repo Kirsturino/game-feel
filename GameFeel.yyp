@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "299ae1ca-86bd-43cb-85af-c6d6d70c755f",
+            "Value": {
+                "id": "6e4887aa-f76f-418f-ad06-e40ff06e9e15",
+                "resourcePath": "rooms\\rmCaveEight\\rmCaveEight.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "2a0c0623-57ac-4d9a-9571-d579903a46ef",
             "Value": {
                 "id": "0be88532-58cb-4eb8-88a4-736ea8b8ca64",
@@ -628,6 +636,14 @@
                 "id": "aff4d9a3-fc34-4223-a608-b34a2f9da024",
                 "resourcePath": "views\\44ee32a4-d85a-403c-a355-36035bb65b53.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4779ed36-f555-4f1e-98b4-8f0219baea62",
+            "Value": {
+                "id": "fa46b4d0-c73c-4c2e-924d-8aa3bf68085f",
+                "resourcePath": "rooms\\rmCaveNine\\rmCaveNine.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

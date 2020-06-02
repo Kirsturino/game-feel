@@ -14,14 +14,14 @@ if (restore != noone && restore.active && ppFrames != ppFramesMax)
 	if (ppFrames == 0)
 	{
 		scrSetShake(10, 10);
-		scrFreeze(80);
+		scrFreeze(100);
 		audio_play_sound(sndPPMax, 100, false);
 		colorTo = canDashColor;
 		ppFrames = ppFramesMax;
 	} else
 	{
 		scrSetShake(15, 30);
-		scrFreeze(120);
+		scrFreeze(140);
 		audio_play_sound(sndRefreshMega, 50, false);
 		ppFrames = floor(ppFramesMax * 3.5);
 	}

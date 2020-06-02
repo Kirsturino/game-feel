@@ -113,7 +113,7 @@ if (interact != noone)
 			audio_sound_pitch(sndPP, pitch);
 			audio_play_sound(sndPP, 50, false);
 			scrSetShake(15, 10);
-			scrFreeze(80);
+			scrFreeze(100);
 		}
 	}
 }
