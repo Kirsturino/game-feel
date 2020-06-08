@@ -11,7 +11,7 @@ vertex_begin(vbuff, format);
 for (var i = 0; i < width; i += bladeSeparation)
 {
 	//Check if there is space to spawn grass
-	if (collision_point(x + i, y, oCollision, false, true) == noone && collision_circle(x + i, y, blockSize / 2, oFakeCollision, false, false) == noone && collision_point(x + i, y + sprite_height + 2, oDanger, false, true) == noone && y > 0)
+	if (collision_point(x + i, y, oCollision, false, true) == noone && collision_circle(x + i, y, blockSize / 2, oFakeCollision, false, false) == noone && collision_circle(x + i, y, blockSize / 2, oDanger, false, false) == noone && y > 0)
 	{
 		var rnd = irandom_range(-5, 5);
 		var bladernd = irandom(5);

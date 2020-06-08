@@ -1,4 +1,5 @@
 lastButton = 0;
+confirmPitch = 1.2;
 
 display_set_gui_size(viewWidth, viewHeight);
 

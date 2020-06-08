@@ -3,6 +3,8 @@ if ((keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(global.co
 {
 	global.pause = !global.pause;
 	
+	audio_play_sound(sndMenu, 0, false);
+	
 	with (oPauseMenu)
 	{
 		page = 0;

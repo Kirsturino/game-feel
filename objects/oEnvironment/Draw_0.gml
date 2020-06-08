@@ -1,6 +1,7 @@
 var camX = camera_get_view_x(view);
 var camY = camera_get_view_y(view);
 
+
 if (!global.debugging)
 {
 	if (!surface_exists(parSurf))
@@ -22,7 +23,10 @@ if (!global.debugging)
 		scrParallaxFarMountain();
 	} else
 	{
-		draw_surface(parSurfFarMountain, camX / 1.5, camY / 3);
+		var drawX = clamp(camX / 1.5, 0, room_width);
+		var drawY = clamp(camY / 3, -room_height, 0);
+		
+		draw_surface(parSurfFarMountain, drawX, drawY);
 	}
 	
 	if (!surface_exists(parSurfMiddleMountain))
@@ -33,7 +37,9 @@ if (!global.debugging)
 		scrParallaxMiddleMountain();
 	} else
 	{
-		draw_surface(parSurfMiddleMountain, camX / 2, camY / 4);
+		var drawX = clamp(camX / 2, 0, room_width);
+		var drawY = clamp(camY / 4, -room_height, 0);
+		draw_surface(parSurfMiddleMountain, drawX, drawY);
 	}
 	
 	if (!surface_exists(parSurfCloseMountain))
@@ -44,11 +50,14 @@ if (!global.debugging)
 		scrParallaxCloseMountain();
 	} else
 	{
+		var drawX = clamp(camX / 4, 0, room_width);
+		var drawY = clamp(camY / 8, -room_height, 0);
+		
 		//shader_set(shdWaveStatic);
 		//shader_set_uniform_f(uTime,current_time/1000 * spd);
 		//shader_set_uniform_f(uFrequency, frequency);
 		//shader_set_uniform_f(uIntensity, intensity);
-		draw_surface(parSurfCloseMountain, camX / 4, camY / 8);
+		draw_surface(parSurfCloseMountain, drawX, drawY);
 		//shader_reset();
 	}
 	
@@ -60,7 +69,9 @@ if (!global.debugging)
 		scrParallaxFarCloud();
 	} else
 	{
-		draw_surface(parSurfFarCloud, camX / 1.5, camY / 3);
+		var drawX = clamp(camX / 1.5, 0, room_width);
+		var drawY = clamp(camY / 3, 0, room_height);
+		draw_surface(parSurfFarCloud, drawX, drawY);
 	}
 
 
@@ -73,7 +84,9 @@ if (!global.debugging)
 		scrParallaxMiddleCloud();
 	} else
 	{
-		draw_surface(parSurfMiddleCloud, camX / 2, camY / 4);
+		var drawX = clamp(camX / 2, 0, room_width);
+		var drawY = clamp(camY / 4, 0, room_height);
+		draw_surface(parSurfMiddleCloud, drawX, drawY);
 	}
 	
 	if (!surface_exists(parSurfCloseCloud))
@@ -84,11 +97,16 @@ if (!global.debugging)
 		scrParallaxCloseCloud();
 	} else
 	{
-		draw_surface(parSurfCloseCloud, camX / 4, camY / 8);
+		var drawX = clamp(camX / 4, 0, room_width);
+		var drawY = clamp(camY / 8, 0, room_height);
+		draw_surface(parSurfCloseCloud, drawX, drawY);
 	}
 }
 
 
 
 //Rain particles
-part_emitter_region(global.partSystem, global.rainEmitter, oPlayer.x - viewWidth * 0.75, oPlayer.x + viewWidth * 0.75, oPlayer.y - viewHeight, oPlayer.y - viewHeight, ps_shape_rectangle, ps_distr_linear);
+if (rain)
+{
+	part_emitter_region(global.partSystem, global.rainEmitter, oPlayer.x - viewWidth * 0.75, oPlayer.x + viewWidth * 0.75, oPlayer.y - viewHeight, oPlayer.y - viewHeight, ps_shape_rectangle, ps_distr_linear);
+}

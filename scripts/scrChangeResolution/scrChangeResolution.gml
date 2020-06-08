@@ -22,6 +22,5 @@ switch (argument0)
 }
 
 global.resolution = argument0;
-show_debug_message(global.resolution);
 
 window_set_size(viewWidth * global.windowScale, viewHeight * global.windowScale);

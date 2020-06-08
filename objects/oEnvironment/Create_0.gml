@@ -93,8 +93,3 @@ with (oCollision)
 {
 	scrGenerateGrass();
 }
-
-with (oFakeCollision)
-{
-	scrGenerateGrass();
-}

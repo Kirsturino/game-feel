@@ -18,9 +18,9 @@ if (place_meeting(x, y + 1, oCollision) || oneway)
 	scrLandSquash();
 	
 	//Landing SFX && reset refresh pitch
-	var land = min(lastVsp / 140, 0.01);
+	//Bad magic numbers
+	var land = global.sfxVolume / 8 + lastVsp * 0.1 * global.sfxVolume;
 	audio_sound_gain(sndLand, land, 0);
-	audio_sound_pitch(sndLand, 1.5 - land * 30);
 	audio_play_sound(sndLand, 50, false);
 	refreshPitch = 1;
 	

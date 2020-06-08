@@ -1,5 +1,6 @@
 alarm[0] = 1;
 lastButton = 0;
+confirmPitch = 1.2;
 
 scrLoadOptions();
 scrLoadGame();

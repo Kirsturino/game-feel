@@ -18,6 +18,7 @@ if (inputting)
 			
 			if (hinput != 0)
 			{
+				audio_sound_pitch(sndMenu, 1);
 				audio_play_sound(sndMenu, 0, false);
 				
 				ds_grid[# 3, menu_option[page]]	+= hinput;
@@ -33,6 +34,7 @@ if (inputting)
 				ds_grid[# 3, menu_option[page]] = clamp(ds_grid[# 3, menu_option[page]], 0, 1);
 				script_execute(ds_grid[# 2, menu_option[page]], ds_grid[# 3, menu_option[page]]);
 				
+				audio_sound_pitch(sndMenu, 1);
 				audio_play_sound(sndMenu, 0, false);
 			}
 		break
@@ -41,6 +43,7 @@ if (inputting)
 			
 			if (hinput != 0)
 			{
+				audio_sound_pitch(sndMenu, 1);
 				audio_play_sound(sndMenu, 0, false);
 				
 				ds_grid[# 3, menu_option[page]]	+= hinput;
@@ -69,7 +72,6 @@ if (inputting)
 		
 		case main_menu_element_type.controllerinput:
 			lastButton = scrGetControllerButtons(lastButton);
-			show_debug_message(lastButton);
 			
 			if (lastButton != global.button_confirm)
 			{
@@ -84,6 +86,7 @@ if (inputting)
 
 	if (ochange != 0)
 	{
+		audio_sound_pitch(sndMenu, 1);
 		audio_play_sound(sndMenu, 0, false);
 		
 		menu_option[page] += ochange;
@@ -101,7 +104,8 @@ if (inputting)
 }
 if (enter_p || confirm_p)
 {
-	audio_play_sound(sndMenuConfirm, 0, false);
+	audio_sound_pitch(sndMenu, confirmPitch);
+	audio_play_sound(sndMenu, 0, false);
 	
 	switch (ds_grid[# 1, menu_option[page]])
 	{
@@ -148,6 +152,9 @@ if (enter_p || confirm_p)
 
 if (back_p && !inputting)
 {
+	audio_sound_pitch(sndMenu, confirmPitch);
+	audio_play_sound(sndMenu, 0, false);
+	
 	switch (menu_pages[page])
 	{
 		case 0:

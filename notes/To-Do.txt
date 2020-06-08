@@ -4,6 +4,7 @@ Features:
 - IDEA: Projectiles that have a PP area that when dashed on will go the opposite direction, like bash
 - IDEA: Water physics & controls. Water acts as a dash zone where you get to decide your dash direction like in Celeste
 - IDEA: Platforms/Walls you destroy if you dash at them
+- IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
 
 - Level select screen
 
@@ -21,16 +22,20 @@ Graphics
 - AI interpolation for player animations?
 - Polish grass shader
 - Polish ground tileset
-- Clamp mountains and clouds to the top and bottom of screen
+- Add background wall tileset
+- Change parallax layer colours for more contrast
+- Wall drag particles
+- Particles when starting movement from 0 speed
 
 
 Sound
 - Default BGM
 - Main menu BGM
 - Final Scene BGM
-- New rain ambient audio
 - Walking SFX
-- MIX SFX FILES TO BE COMPATIBLE WITH AUDIO SLIDERS
+- Wall drag SFX
+- Collectible get SFX
+- Secret get SFX
 
 - Research audio emitters for environment sounds
  - No for gameplay objects, possible for ambient noises

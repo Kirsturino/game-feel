@@ -38,7 +38,7 @@ hugLeft = collision_point(bbox_left - 1, y - sprite_height / 2, oCollision, fals
 
 if ((hugRight != noone && right) || (hugLeft != noone && left))
 {
-	curFallSpeed = fallSpeedWall;
+	curFallSpeed = scrApproach(curFallSpeed, fallSpeedWall, fallSpeedChangeSpeed * 2.5);
 }
 
 

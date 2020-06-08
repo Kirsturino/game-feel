@@ -14,9 +14,4 @@ if (ds_list_find_index(global.roomList, room) == -1)
 	ds_list_add(global.roomList, room);
 }
 
-for (var i = 0; i < ds_list_size(global.collectibleList); ++i)
-{
-    show_debug_message(ds_list_find_value(global.collectibleList, i));
-}
-
 scrSaveGame();
