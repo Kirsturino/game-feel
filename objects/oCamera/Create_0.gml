@@ -15,8 +15,6 @@ camera_set_view_size(view, viewWidth, viewHeight);
 
 surface_resize(application_surface, viewWidth , viewHeight);
 
-
-
 //Camera shake variables
 shakeDuration = 0;
 shakeAmount = 0;

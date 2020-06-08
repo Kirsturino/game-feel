@@ -10,8 +10,8 @@ drawX = x;
 drawY = y;
 
 color = global.cBlueDark;
-activeColor = global.cBlueLight;
-inactiveColor = global.cBlueDark;
+activeColor = global.cYellow;
+inactiveColor = global.cWhite;
 colorTo = global.cBlueLight;
 
 circleAlpha = 0.1;

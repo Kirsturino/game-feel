@@ -5,6 +5,11 @@ var lCollision = collision_point(bbox_left - wallJumpDistance, y - sprite_height
 //Get direction for walljump, set up coyote jump timer for walljump
 if ((rCollision || lCollision) && !wallJumping)
 {
+	if (!canWallJump)
+	{
+		audio_sound_gain(sndLand, global.sfxVolume / 6, 0);
+		audio_play_sound(sndLand, 0, false);
+	}
 	huggedWall = true;
 	canWallJump = true;
 	
@@ -39,6 +44,23 @@ hugLeft = collision_point(bbox_left - 1, y - sprite_height / 2, oCollision, fals
 if ((hugRight != noone && right) || (hugLeft != noone && left))
 {
 	curFallSpeed = scrApproach(curFallSpeed, fallSpeedWall, fallSpeedChangeSpeed * 2.5);
+	
+	if (wallJumpDir = "right")
+	{
+		part_particles_create(global.partSystem, x - 4, y, global.wallDragPart, 2);
+	} else
+	{
+		part_particles_create(global.partSystem, x + 7, y, global.wallDragPart, 2);
+	}
+	
+	
+	if (!audio_is_playing(sndWalldrag) && vsp > 0)
+	{
+		audio_play_sound(sndWalldrag, 0, true);
+	}
+} else if (audio_is_playing(sndWalldrag))
+{
+	audio_stop_sound(sndWalldrag);
 }
 
 
@@ -66,6 +88,8 @@ if (walljump)
 	var jumpPitch = random_range(0.8, 1.2);
 	audio_sound_pitch(sndJumpRetro, jumpPitch);
 	audio_play_sound(sndJumpRetro, 50, false);
+	
+	audio_stop_sound(sndWalldrag);
 }
 
 //Things that happen when player is in walljumping state

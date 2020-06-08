@@ -15,21 +15,33 @@ var collectible = instance_place(x, y, oCollectible);
 
 if (collectible != noone)
 {
+	scrStartNotification("COLLECTIBLE GET!" + "\n\n" + collectible.name);
+		
 	//Add collectible to list of collected collectibles if it hasn't been collected before. Collectible. Great word.
 	if (ds_list_find_index(global.collectibleList, collectible.name) == -1)
 	{
 		ds_list_add(global.collectibleList, collectible.name);
 	}
 	
-	if (collectible.name == "unlockPull")
+	switch (collectible.name)
 	{
-		global.allowPull = 1;
+		case "unlockPull":
+			global.allowPull = 1;
+			scrStartNotification("PULL UNLOCKED!");
+		break;
+		
+		case "unlockPush":
+			global.allowPush = 1;
+			scrStartNotification("PUSH UNLOCKED!");
+		break;
 	}
-	
-	if (collectible.name == "unlockPush")
-	{
-		global.allowPush = 1;
-	}
+
+	//Effects
+	audio_play_sound(sndRefreshBuildup2, 0, false);
+	scrFreeze(100);
+	scrSetShake(10, 10);
+	audio_play_sound(sndRefresh, 0, false);
+	audio_play_sound(sndCollectibleGet, 0, false);
 	
 	scrSaveGame();
 		

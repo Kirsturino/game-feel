@@ -14,6 +14,47 @@ if (!global.debugging)
 	{
 		draw_surface(parSurf, camX, camY);
 	}
+	
+	if (!surface_exists(parSurfFarCloud))
+	{
+		parSurfFarCloud = surface_create(room_width, room_height);
+	
+		//Third parallax layer
+		scrParallaxFarCloud();
+	} else
+	{
+		var drawX = clamp(camX / 1.25, 0, room_width);
+		var drawY = clamp(camY / 1.5, 0, room_height);
+		draw_surface(parSurfFarCloud, drawX, drawY);
+	}
+
+
+	
+	if (!surface_exists(parSurfMiddleCloud))
+	{
+		parSurfMiddleCloud = surface_create(room_width, room_height);
+	
+		//First parallax layer
+		scrParallaxMiddleCloud();
+	} else
+	{
+		var drawX = clamp(camX / 1.5, 0, room_width);
+		var drawY = clamp(camY / 2, 0, room_height);
+		draw_surface(parSurfMiddleCloud, drawX, drawY);
+	}
+	
+	if (!surface_exists(parSurfCloseCloud))
+	{
+		parSurfCloseCloud = surface_create(room_width, room_height);
+	
+		//Second parallax layer
+		scrParallaxCloseCloud();
+	} else
+	{
+		var drawX = clamp(camX / 2, 0, room_width);
+		var drawY = clamp(camY / 2.5, 0, room_height);
+		draw_surface(parSurfCloseCloud, drawX, drawY);
+	}
 
 	if (!surface_exists(parSurfFarMountain))
 	{
@@ -59,47 +100,6 @@ if (!global.debugging)
 		//shader_set_uniform_f(uIntensity, intensity);
 		draw_surface(parSurfCloseMountain, drawX, drawY);
 		//shader_reset();
-	}
-	
-	if (!surface_exists(parSurfFarCloud))
-	{
-		parSurfFarCloud = surface_create(room_width, room_height);
-	
-		//Third parallax layer
-		scrParallaxFarCloud();
-	} else
-	{
-		var drawX = clamp(camX / 1.5, 0, room_width);
-		var drawY = clamp(camY / 3, 0, room_height);
-		draw_surface(parSurfFarCloud, drawX, drawY);
-	}
-
-
-	
-	if (!surface_exists(parSurfMiddleCloud))
-	{
-		parSurfMiddleCloud = surface_create(room_width, room_height);
-	
-		//First parallax layer
-		scrParallaxMiddleCloud();
-	} else
-	{
-		var drawX = clamp(camX / 2, 0, room_width);
-		var drawY = clamp(camY / 4, 0, room_height);
-		draw_surface(parSurfMiddleCloud, drawX, drawY);
-	}
-	
-	if (!surface_exists(parSurfCloseCloud))
-	{
-		parSurfCloseCloud = surface_create(room_width, room_height);
-	
-		//Second parallax layer
-		scrParallaxCloseCloud();
-	} else
-	{
-		var drawX = clamp(camX / 4, 0, room_width);
-		var drawY = clamp(camY / 8, 0, room_height);
-		draw_surface(parSurfCloseCloud, drawX, drawY);
 	}
 }
 

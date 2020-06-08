@@ -27,10 +27,10 @@ part_type_color1(global.jumpPart,global.cWhite);
 part_type_alpha2(global.jumpPart,1,0);
 part_type_speed(global.jumpPart,0.50,1,0,0);
 part_type_direction(global.jumpPart,45,135,0,0);
-part_type_gravity(global.jumpPart,0.01,270);
+part_type_gravity(global.jumpPart,0.05,270);
 part_type_orientation(global.jumpPart,0,0,0,0,1);
 part_type_blend(global.jumpPart,1);
-part_type_life(global.jumpPart,5,20);
+part_type_life(global.jumpPart,20,30);
 
 //PP particles
 global.ppPart = part_type_create();
@@ -166,3 +166,41 @@ part_type_color1(global.trailPart,global.cWhite);
 part_type_alpha2(global.trailPart,0.5,0);
 part_type_speed(global.trailPart,0,0,0,0);
 part_type_life(global.trailPart,60,60);
+
+//Walldrag particles
+global.wallDragPart = part_type_create();
+part_type_shape(global.wallDragPart,pt_shape_pixel);
+part_type_size(global.wallDragPart,1,1,0,0);
+part_type_scale(global.wallDragPart,1,1);
+part_type_color1(global.wallDragPart,global.cBrownDark);
+part_type_alpha2(global.wallDragPart,1,0);
+part_type_speed(global.wallDragPart,0.1,0.2,0,0);
+part_type_direction(global.wallDragPart,110,70,0,0);
+part_type_blend(global.wallDragPart,1);
+part_type_life(global.wallDragPart,5,20);
+
+//Landing particles
+global.landPart = part_type_create();
+part_type_shape(global.landPart,pt_shape_explosion);
+part_type_size(global.landPart,0.1,0.1,0,0);
+part_type_scale(global.landPart,1,1);
+part_type_color1(global.landPart,global.cWhite);
+part_type_alpha2(global.landPart,0.2,0);
+part_type_speed(global.landPart,0.05,0.1,0,0);
+part_type_direction(global.landPart,0,180,0,0);
+part_type_blend(global.landPart,1);
+part_type_life(global.landPart,60,120);
+
+//Walk particles
+global.walkPart = part_type_create();
+part_type_shape(global.walkPart,pt_shape_line);
+part_type_size(global.walkPart,0.02,0.07,0,0);
+part_type_scale(global.walkPart,1,1);
+part_type_color1(global.walkPart,global.cWhite);
+part_type_alpha2(global.walkPart,1,0);
+part_type_speed(global.walkPart,0.25,0.8,-0.002,0);
+part_type_direction(global.walkPart,45,135,0,0);
+part_type_gravity(global.walkPart,0.001,270);
+part_type_orientation(global.walkPart,0,0,0,0,1);
+part_type_blend(global.walkPart,1);
+part_type_life(global.walkPart,60,120);

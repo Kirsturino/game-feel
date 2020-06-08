@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "042d000f-0b3d-43e1-8c39-15f99974ff31",
+            "Value": {
+                "id": "ed01a63a-f2cd-4a4f-8c54-131f4eef1c6e",
+                "resourcePath": "sounds\\sndCollectibleGet\\sndCollectibleGet.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "085f6231-3ee5-4a98-a9c3-52532c3eff72",
             "Value": {
                 "id": "a02b9671-91e5-42e2-8fe7-5893a7435e21",
@@ -295,6 +303,14 @@
             }
         },
         {
+            "Key": "259f356e-2918-4c2a-81e7-a9e22d5a6509",
+            "Value": {
+                "id": "7edbf67d-adc5-44f9-9803-6394fe2fe27e",
+                "resourcePath": "sounds\\sndSkid\\sndSkid.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "25da7767-50dc-43b1-b57b-0e307d2115bd",
             "Value": {
                 "id": "89205019-7247-4e7f-a65f-b87cbfb8f3ed",
@@ -364,6 +380,14 @@
                 "id": "e1749a09-2219-4fde-9563-2a6675ab28e6",
                 "resourcePath": "views\\2a787cb6-9e56-4878-b62a-7dd37440040e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2ac6564a-8087-4143-8331-a6136ea46010",
+            "Value": {
+                "id": "0eebe711-afb7-4244-a4ab-fbe0bf306898",
+                "resourcePath": "scripts\\scrWalkParticles\\scrWalkParticles.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -540,6 +564,14 @@
                 "id": "63e9b18c-aaf2-48f0-8f4e-25dadfc82698",
                 "resourcePath": "scripts\\scrSaveOptions\\scrSaveOptions.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3da2d627-37c8-453c-ab20-9845da4bc10f",
+            "Value": {
+                "id": "e03a3d03-5cbc-4cfb-b4d0-8aa5c757c105",
+                "resourcePath": "sounds\\sndWalldrag\\sndWalldrag.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -1543,6 +1575,14 @@
             }
         },
         {
+            "Key": "a7bf30dc-cb3f-4715-bf9c-b2d6cac1910c",
+            "Value": {
+                "id": "1899662d-fcc8-445f-8692-f66561f1e058",
+                "resourcePath": "scripts\\scrStartNotification\\scrStartNotification.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a7d4fd6b-b52e-4ee0-9c56-e49065358c90",
             "Value": {
                 "id": "32139c1e-0b37-4d97-8295-3e8f74eeade5",
@@ -1643,6 +1683,14 @@
             "Value": {
                 "id": "e34f915b-14d4-48ca-9792-239efc5f128e",
                 "resourcePath": "scripts\\scrWave\\scrWave.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b308b982-5b1b-4052-9618-ab42e0268be3",
+            "Value": {
+                "id": "c6475b41-3bca-4df6-af54-98d1457ca381",
+                "resourcePath": "scripts\\scrDrawFunkyText\\scrDrawFunkyText.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2317,6 +2365,7 @@
         "00485a0a-0d09-4b5d-97ba-a52e90502be9",
         "f22072c5-4aaf-4e97-9a6e-60d561b91e64",
         "4e30cf92-514d-4d29-bfcd-f5f425ec1b02",
+        "b308b982-5b1b-4052-9618-ab42e0268be3",
         "32d7ad34-61ac-4be4-842d-a75aa507b666",
         "6e9f3a3f-efb1-45d2-85dd-a7f67bedcf07",
         "6b8feedb-c55c-479e-a7c8-759956ff0d7e",
@@ -2368,6 +2417,7 @@
         "aefd10aa-c181-4208-b0ee-7b5dc97589c1",
         "7092b549-f414-4588-a644-123c5f67df70",
         "a1701822-1357-4440-b496-ce88618e6ef7",
+        "2ac6564a-8087-4143-8331-a6136ea46010",
         "ad313751-7af1-47a8-9ed0-54778d164f99",
         "d017f810-4881-4ef5-8307-df8b84a7e726",
         "f9761372-5cb4-4f9e-aac2-1252e0533ed9",
@@ -2412,6 +2462,7 @@
         "f358d942-06e9-41f8-99ff-177247aa70da",
         "f88267bd-5c7c-4d77-9369-38421c4c72f3",
         "90ba35b7-36be-4910-aa5d-196ac0c844ce",
+        "a7bf30dc-cb3f-4715-bf9c-b2d6cac1910c",
         "7b009ee4-3867-4f8b-8f59-418fd1eb2821",
         "493b3761-3f8f-4646-9cad-5885ae8538e6",
         "444f812a-4fe7-40a4-b007-2da3a33b3813",

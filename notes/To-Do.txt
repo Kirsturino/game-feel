@@ -24,18 +24,12 @@ Graphics
 - Polish ground tileset
 - Add background wall tileset
 - Change parallax layer colours for more contrast
-- Wall drag particles
-- Particles when starting movement from 0 speed
 
 
 Sound
 - Default BGM
 - Main menu BGM
 - Final Scene BGM
-- Walking SFX
-- Wall drag SFX
-- Collectible get SFX
-- Secret get SFX
 
 - Research audio emitters for environment sounds
  - No for gameplay objects, possible for ambient noises

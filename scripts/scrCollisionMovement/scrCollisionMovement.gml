@@ -1,6 +1,14 @@
 //Get movement direction
 scrNullMovement();
 
+//Walking FX
+if ((leftPress || rightPress) && state == scrGrounded)
+{
+	//FX
+	scrWalkParticles();
+	audio_play_sound(sndSkid, 0, false);
+}
+
 //Calculate movement speed
 if (state == scrGrounded)
 {

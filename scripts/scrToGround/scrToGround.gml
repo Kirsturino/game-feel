@@ -19,10 +19,12 @@ if (place_meeting(x, y + 1, oCollision) || oneway)
 	
 	//Landing SFX && reset refresh pitch
 	//Bad magic numbers
-	var land = global.sfxVolume / 8 + lastVsp * 0.1 * global.sfxVolume;
+	var land = global.sfxVolume / 10 + lastVsp * 0.1 * global.sfxVolume;
 	audio_sound_gain(sndLand, land, 0);
 	audio_play_sound(sndLand, 50, false);
 	refreshPitch = 1;
+	
+	if (audio_is_playing(sndWalldrag)) audio_stop_sound(sndWalldrag);
 	
 	scrResetAnimation();
 	
