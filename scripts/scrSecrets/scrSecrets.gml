@@ -13,7 +13,7 @@ if (secret != noone)
 
 var collectible = instance_place(x, y, oCollectible);
 
-if (collectible != noone)
+if (collectible != noone && !collectible.destroy)
 {
 	scrStartNotification("COLLECTIBLE GET!" + "\n\n" + collectible.name);
 		
@@ -47,7 +47,12 @@ if (collectible != noone)
 		
 	with (collectible)
 	{
-		part_particles_create(global.partSystemSecret, x, y, global.secretPart, 100);
-		instance_destroy();
+		if (!destroy)
+		{
+			part_particles_create(global.partSystemSecret, x, y, global.secretPart, 20);
+			alarm[1] = 360;
+			destroy = true;
+			riseSpeed = -1;
+		}
 	}
 }

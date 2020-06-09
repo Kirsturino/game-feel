@@ -1,9 +1,11 @@
 image_blend = global.cWhite;
-
 drawX = x;
 drawY = y;
-
 rotSpeed = 2;
+
+//Init variables for destroy animation
+destroy = false;
+riseSpeed = 5;
 
 //Timer for SFX
 alarm[0] = 120;

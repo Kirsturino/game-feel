@@ -43,16 +43,9 @@ hugLeft = collision_point(bbox_left - 1, y - sprite_height / 2, oCollision, fals
 
 if ((hugRight != noone && right) || (hugLeft != noone && left))
 {
-	curFallSpeed = scrApproach(curFallSpeed, fallSpeedWall, fallSpeedChangeSpeed * 2.5);
+	curFallSpeed = scrApproach(curFallSpeed, fallSpeedWall, fallSpeedChangeSpeed * 2.5);	
 	
-	if (wallJumpDir = "right")
-	{
-		part_particles_create(global.partSystem, x - 4, y, global.wallDragPart, 2);
-	} else
-	{
-		part_particles_create(global.partSystem, x + 7, y, global.wallDragPart, 2);
-	}
-	
+	scrWallDragParticles();
 	
 	if (!audio_is_playing(sndWalldrag) && vsp > 0)
 	{

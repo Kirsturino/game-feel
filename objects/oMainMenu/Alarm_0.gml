@@ -1,3 +1,4 @@
-/// @description Music jank
+/// @description Music & controller jank
 
 scrPlayMusic();
+scrGetController();

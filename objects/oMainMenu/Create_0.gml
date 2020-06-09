@@ -1,15 +1,16 @@
 alarm[0] = 1;
 lastButton = 0;
+inputting = false;
 confirmPitch = 1.2;
 
 scrLoadOptions();
 scrLoadGame();
-scrGetController();
 
 display_set_gui_size(viewWidth, viewHeight);
 
 enum main_menu_page {
 	main,
+	levelselect,
 	settings,
 	audio,
 	graphics,
@@ -42,12 +43,16 @@ if (!file_exists("save.sav"))
 } else
 {
 	ds_menu_main = scrCreateMenu(
-	["CONTINUE",		main_menu_element_type.script_runner,	scrContinueGame],
-	["NEW GAME",		main_menu_element_type.script_runner,	scrStartNewGame],
+	["CONTINUE",	main_menu_element_type.script_runner,	scrContinueGame],
+	["LEVEL SELECT",main_menu_element_type.page_transfer,	main_menu_page.levelselect],
+	["NEW GAME",	main_menu_element_type.script_runner,	scrStartNewGame],
 	["SETTINGS",	main_menu_element_type.page_transfer,	main_menu_page.settings],
 	["QUIT",		main_menu_element_type.script_runner,	scrExitGame]
 	);
 }
+
+//Some more lines to get which levels you've been to
+scrLevelSelectMenu();
 
 ds_settings = scrCreateMenu(
 	["AUDIO",		main_menu_element_type.page_transfer,	main_menu_page.audio],
@@ -88,18 +93,18 @@ ds_menu_controls_keyboard = scrCreateMenu(
 );
 
 ds_menu_controls_controller = scrCreateMenu(
-	["UP",			main_menu_element_type.controllerinput,			"button_up",				global.button_up],
-	["LEFT",		main_menu_element_type.controllerinput,			"button_left",				global.button_left],
-	["RIGHT",		main_menu_element_type.controllerinput,			"button_right",				global.button_right],
-	["DOWN",		main_menu_element_type.controllerinput,			"button_down",				global.button_down],
-	["JUMP",main_menu_element_type.controllerinput,					"button_jump",				global.button_jump],
-	["PULL",main_menu_element_type.controllerinput,					"button_pull",				global.button_pull],
-	["PUSH",	main_menu_element_type.controllerinput,				"button_push",				global.button_push],
+	["UP",			main_menu_element_type.controllerinput,	"button_up",			global.button_up],
+	["LEFT",		main_menu_element_type.controllerinput,	"button_left",			global.button_left],
+	["RIGHT",		main_menu_element_type.controllerinput,	"button_right",			global.button_right],
+	["DOWN",		main_menu_element_type.controllerinput,	"button_down",			global.button_down],
+	["JUMP",		main_menu_element_type.controllerinput,	"button_jump",			global.button_jump],
+	["PULL",		main_menu_element_type.controllerinput,	"button_pull",			global.button_pull],
+	["PUSH",		main_menu_element_type.controllerinput,	"button_push",			global.button_push],
 	["BACK",		main_menu_element_type.page_transfer,	main_menu_page.controls]
 );
 
 page = 0;
-menu_pages = [ds_menu_main, ds_settings, ds_menu_audio, ds_menu_graphics, ds_menu_controls, ds_menu_controls_keyboard, ds_menu_controls_controller];
+menu_pages = [ds_menu_main, ds_menu_levelselect, ds_settings, ds_menu_audio, ds_menu_graphics, ds_menu_controls, ds_menu_controls_keyboard, ds_menu_controls_controller];
 
 var i = 0;
 var array_length = array_length_1d(menu_pages);
@@ -109,5 +114,3 @@ repeat(array_length)
 	menu_option[i] = 0;
 	i++;
 }
-
-inputting = false;

@@ -15,8 +15,21 @@ if (hidden)
 //Draw representative sprite
 if (!spawnRestore && hidden)
 {
-	draw_sprite_ext(sprite_index, 0, drawX, drawY, xScale, yScale, rot, color, 1 - global.fakeLayerAlpha);
+	if (drawTri)
+	{
+		draw_sprite_ext(sprite_index, 0, drawX, drawY, xScale, yScale, triDir, color, 1 - global.fakeLayerAlpha);
+	} else
+	{
+		draw_sprite_ext(sprite_index, 0, drawX, drawY, xScale, yScale, rot, color, 1 - global.fakeLayerAlpha);
+	}
+	
 } else if (!spawnRestore)
 {
-	draw_sprite_ext(sprite_index, 0, drawX, drawY, xScale, yScale, rot, color, 1);
+	if (drawTri)
+	{
+		draw_sprite_ext(sprite_index, 0, drawX, drawY, xScale, yScale, triDir, color, 1);
+	} else
+	{
+		draw_sprite_ext(sprite_index, 0, drawX, drawY, xScale, yScale, rot, color, 1);
+	}
 }

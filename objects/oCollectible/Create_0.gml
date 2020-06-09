@@ -1,9 +1,11 @@
 image_blend = global.cOrange;
-
 drawX = x;
 drawY = y;
-
 rotSpeed = 2;
+
+//Init variables for destroy animation
+destroy = false;
+riseSpeed = 0;
 
 //Check if collectible has been collected
 collected = false;
