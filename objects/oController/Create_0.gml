@@ -21,3 +21,6 @@ notificationText = "";
 notificationYTarget = 16;
 notificationY = 0;
 notificationAlpha = 1;
+
+//Init narration
+instance_create_layer(0, 0, layer, oNarration);

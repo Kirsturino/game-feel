@@ -1007,6 +1007,14 @@
             }
         },
         {
+            "Key": "64d78a28-2197-46a6-8147-826bc02fabcb",
+            "Value": {
+                "id": "6f066f00-0951-4e42-aaad-9b1a4c694dd1",
+                "resourcePath": "sprites\\sBackgroundWallTiles\\sBackgroundWallTiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "655e9acf-9e67-4ee7-a2f6-08178fe7f191",
             "Value": {
                 "id": "f828ac2a-3b10-42b3-aa65-2e33198302ca",
@@ -1291,6 +1299,14 @@
             "Value": {
                 "id": "878fff4f-e425-4782-a749-4fcf565ca27a",
                 "resourcePath": "scripts\\scrWallDragParticles\\scrWallDragParticles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "834bb33b-d775-4080-a07b-e256cf872dbe",
+            "Value": {
+                "id": "24011360-7f69-410f-bcae-97b239e58f5f",
+                "resourcePath": "scripts\\scrChangeContrast\\scrChangeContrast.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2127,6 +2143,14 @@
             }
         },
         {
+            "Key": "e4e20a29-ac9f-4a3f-a6f7-a97ba66e06ed",
+            "Value": {
+                "id": "f502f81c-f75f-4ccd-81f7-fdfa56b30498",
+                "resourcePath": "objects\\oNarration\\oNarration.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e4e2b48a-1f05-47b4-a6ef-0743a4b66f22",
             "Value": {
                 "id": "97b09c67-e679-4093-ac85-587c2c1ab46a",
@@ -2172,6 +2196,14 @@
                 "id": "fe07205b-1e08-40eb-8980-418e4bdac807",
                 "resourcePath": "rooms\\rmSurfaceFour\\rmSurfaceFour.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "ec6a41e8-078f-4f73-aeb8-4e7319f4706f",
+            "Value": {
+                "id": "070c6a8d-42b0-4306-ab00-957e2cceafb7",
+                "resourcePath": "tilesets\\tsBackgroundWall\\tsBackgroundWall.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -2522,6 +2554,7 @@
         "5e054fc7-caf1-457d-b17c-d347c6129a1c",
         "f270b130-203a-47e2-8fe4-d774ada86b8f",
         "c3558960-f51a-4875-9c06-de5269cb7753",
+        "834bb33b-d775-4080-a07b-e256cf872dbe",
         "e8062921-8125-4908-bf77-a3c1e318cc60",
         "88b66d25-83a0-4b6c-85d3-ec319bdc1dd6",
         "a5b23708-91bc-46c9-8874-84e5f31a4bb1",

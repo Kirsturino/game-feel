@@ -22,6 +22,7 @@ if (file_exists("options.sav"))
 			global.resolution = map[? "resolution"];
 			global.fullscreen = map[? "fullscreen"];
 			window_set_fullscreen(!global.fullscreen);
+			global.highContrast = map[? "highContrast"];
 			
 			//Controls
 			global.key_back = map[? "key_back"];

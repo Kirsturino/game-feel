@@ -5,14 +5,17 @@ if (file_exists("options.sav"))
 {
 	//Audio
 	global.masterVolume = 0.5;
-	global.musicVolume = 0;
-	global.ambientVolume = 1;
-	global.sfxVolume = 0.1;
+	global.musicVolume = 0.5;
+	global.ambientVolume = 0.5;
+	global.sfxVolume = 0.5;
 	
 	//Video
 	global.windowScale = 4;
 	global.fullscreen = 1;
 	global.resolution = 1;
+	
+	//Accessibility options
+	global.highContrast = 0;
 	
 	//Controls
 	scrInitControls();

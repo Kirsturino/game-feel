@@ -21,6 +21,7 @@ with (instance_create_layer(0, 0, layer, oOptionsSave))
 	ds_map_add(map, "windowScale", global.windowScale);
 	ds_map_add(map, "resolution", global.resolution);
 	ds_map_add(map, "fullscreen", global.fullscreen);
+	ds_map_add(map, "highContrast", global.highContrast);
 	
 	//Controls
 	ds_map_add(map, "key_back", global.key_back);

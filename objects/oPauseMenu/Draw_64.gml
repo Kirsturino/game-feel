@@ -89,7 +89,7 @@ repeat (ds_height)
 				c = global.cYellow;
 			}
 			
-			draw_circle_color(rtx + (circle_pos * len), rty, 4, c, c, false);
+			draw_line_width_color(rtx + (circle_pos * len), rty + 5, rtx + (circle_pos * len), rty - 5, 5, c, c);
 			draw_text_color(rtx + (len * 1.2), rty, string(floor(circle_pos * 100)) + " % ", c, c, c, c, 1);
 		break;
 		

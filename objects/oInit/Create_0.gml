@@ -58,9 +58,6 @@ global.gp_num = gamepad_get_device_count();
 global.controller = noone;
 scrGetController();
 
-//Accessibility options
-global.highContrast = false;
-
 //Hide mouse
 window_set_cursor(cr_none);
 

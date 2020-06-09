@@ -6,7 +6,6 @@ Features:
 - IDEA: Platforms/Walls you destroy if you dash at them
 - IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
 
-- Level select screen
 - Narration/Tutorial stuff
 
 - World 1
@@ -23,7 +22,7 @@ Graphics
 - AI interpolation for player animations?
 - Polish grass shader
 - Polish ground tileset
-- Add background wall tileset
+- Add background wall tileset to levels
 - Change parallax layer colours for more contrast
 
 
