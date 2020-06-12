@@ -6,7 +6,7 @@ Features:
 - IDEA: Platforms/Walls you destroy if you dash at them
 - IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
 
-- Narration/Tutorial stuff
+- Global narration list + implement narration in places it should be in
 
 - World 1
 
@@ -24,6 +24,7 @@ Graphics
 - Polish ground tileset
 - Add background wall tileset to levels
 - Change parallax layer colours for more contrast
+- Separate player particle layer
 
 
 Sound

@@ -1,5 +1,6 @@
 //Get object to interact with
-interact = instance_nearest(x, y - sprite_height / 2, oPushPull);
+var centerOffset = sprite_get_height(curSprite) / 2;
+interact = instance_nearest(x, y - centerOffset, oPushPull);
 if (interact != noone)
 {
 	var interactDir = point_direction(x, y - sprite_height / 2, interact.x, interact.y);
@@ -52,6 +53,7 @@ if (interact != noone)
 				isPull = true;
 				scrSetPush(15, ppDir);
 			}
+			
 			vsp = 0;
 			hsp = 0;
 			move = 0;

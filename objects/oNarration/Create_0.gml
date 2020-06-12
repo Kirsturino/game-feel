@@ -4,7 +4,7 @@ drawText = true;
 
 textList = ds_list_create();
 
-ds_list_add(textList, "Hi, I'm a test sentence. Please, just play the game. Don't mind me.");
+ds_list_add(textList, "Hi, I'm a test sentence. Please, just play the game.\nDon't mind me.");
 
 index = 0;
 
