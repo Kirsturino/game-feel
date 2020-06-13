@@ -203,4 +203,4 @@ part_type_direction(global.walkPart,45,135,0,0);
 part_type_gravity(global.walkPart,0.001,270);
 part_type_orientation(global.walkPart,0,0,0,0,1);
 part_type_blend(global.walkPart,1);
-part_type_life(global.walkPart,60,120);
+part_type_life(global.walkPart,30,60);

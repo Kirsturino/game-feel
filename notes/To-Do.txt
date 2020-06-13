@@ -6,8 +6,6 @@ Features:
 - IDEA: Platforms/Walls you destroy if you dash at them
 - IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
 
-- Global narration list + implement narration in places it should be in
-
 - World 1
 
 - Mull over moving platforms
@@ -31,6 +29,7 @@ Sound
 - Default BGM
 - Main menu BGM
 - Final Scene BGM
+- Text SFX
 
 - Research audio emitters for environment sounds
  - No for gameplay objects, possible for ambient noises

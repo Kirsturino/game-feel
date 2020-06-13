@@ -44,4 +44,7 @@ scrPPResetAnimation();
 if (global.debugging)
 {
 	draw_sprite_ext(sprite_index, 0, x, y, 1, 1, 0, global.cOrange, 1);
+	
+	var centerOffset = y - sprite_get_height(curSprite) * yDrawScale / 2;
+	draw_point_color(x, centerOffset, global.cYellow);
 }

@@ -17,6 +17,7 @@ if (notificationTime != 0)
 	notificationAlpha = min(1, notificationTime * 0.1);
 
 	draw_set_halign(fa_center);
+	draw_set_font(fDefault);
 	scrDrawFunkyText( oCamera.xTo + viewWidth / 2, oCamera.yTo + notificationY, notificationText, notificationAlpha);
 	draw_set_halign(fa_left);
 	

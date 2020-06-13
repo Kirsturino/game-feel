@@ -11,9 +11,12 @@ draw_set_font(fDebug);
 
 
 //Draw text background
-draw_set_alpha(0.7);
-draw_roundrect_color(drawX, drawY * 1.05, viewWidth - padding, boxPadding , global.cGray, global.cGray, false);
-draw_set_alpha(1);
+if (alarm[0] != -1 || alarm[1] != -1)
+{
+	draw_set_alpha(0.7);
+	draw_roundrect_color(drawX, drawY * 1.05, viewWidth - padding, boxPadding , global.cGray, global.cGray, false);
+	draw_set_alpha(1);
+}
 
 //Offset shadow
 draw_text_ext_color(drawX + 5, drawY * 0.2 + 1, string(string_copy(text, 1, index)), 16, viewWidth - padding * 2 + 1,  global.cBlack, global.cBlack, global.cBlack, global.cBlack, 1);

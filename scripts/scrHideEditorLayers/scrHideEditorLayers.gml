@@ -13,4 +13,8 @@ if (!global.debugging)
 	layer_set_visible(layerID, false);
 	layerID = layer_get_id("BackgroundEnvironment");
 	layer_set_visible(layerID, false);
+	layerID = layer_get_id("GroundTiles");
+	layer_set_visible(layerID, false);
+	layerID = layer_get_id("FakedGroundTiles");
+	layer_set_visible(layerID, false);
 }

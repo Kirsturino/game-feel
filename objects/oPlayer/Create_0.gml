@@ -119,9 +119,12 @@ defaultY = y;
 scrSpawn();
 
 //Keep player moving after screen transitions
-scrInput();
-if (right) newestDir = "right";
-if (left) newestDir = "left";
+if (!global.pause)
+{
+	scrInput();
+	if (right) newestDir = "right";
+	if (left) newestDir = "left";
+}
 
 //Spawn familiar
 instance_create_layer(x, y, "Player", oFamiliar);

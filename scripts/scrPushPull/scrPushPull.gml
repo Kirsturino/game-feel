@@ -1,5 +1,5 @@
 //Get object to interact with
-var centerOffset = sprite_get_height(curSprite) / 2;
+var centerOffset = sprite_get_height(curSprite) * yDrawScale / 2;
 interact = instance_nearest(x, y - centerOffset, oPushPull);
 if (interact != noone)
 {
