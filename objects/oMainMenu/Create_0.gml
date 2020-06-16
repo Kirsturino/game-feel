@@ -72,7 +72,7 @@ ds_menu_audio = scrCreateMenu(
 ds_menu_graphics = scrCreateMenu(
 	["RESOLUTION",	main_menu_element_type.shift,			scrChangeResolution,	global.resolution,		["640 x 360", "1280 x 720", "1920 x 1080", "2560 x 1440", "4096 x 2160"]],
 	["FULLSCREEN",	main_menu_element_type.toggle,			scrChangeWindowMode,	global.fullscreen,		["FULLSCREEN", "WINDOWED"]],
-	["OUTLINE",		main_menu_element_type.toggle,			scrChangeContrast,		global.highContrast,		["NO", "YES"]],
+	["OUTLINE",		main_menu_element_type.toggle,			scrChangeContrast,		!global.highContrast,		["NO", "YES"]],
 	["BACK",		main_menu_element_type.page_transfer,	main_menu_page.settings]
 );
 

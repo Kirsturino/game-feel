@@ -7,6 +7,7 @@ Features:
 - IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
 
 - World 1
+- Triggers that change camera zoom
 
 - Mull over moving platforms
  - They are a bit boring. A better alternative would be to just have moving PP objects instead
@@ -20,7 +21,6 @@ Graphics
 - AI interpolation for player animations?
 - Polish grass shader
 - Polish ground tileset
-- Add background wall tileset to levels
 - Change parallax layer colours for more contrast
 - Separate player particle layer
 
@@ -29,7 +29,6 @@ Sound
 - Default BGM
 - Main menu BGM
 - Final Scene BGM
-- Text SFX
 
 - Research audio emitters for environment sounds
  - No for gameplay objects, possible for ambient noises

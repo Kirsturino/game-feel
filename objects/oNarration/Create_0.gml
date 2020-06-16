@@ -26,7 +26,7 @@ ds_list_add(textList, "Something went wrong. Oof.");
 
 if (global.controller == noone)
 {
-	ds_list_add(textList, "You can move by pressing the " + leftKey + " and " + rightKey + " keys.\nOh, and jump as well by pressing " + jumpKey + ", I guess.");
+	ds_list_add(textList, "You can move by pressing the " + leftKey + " and " + rightKey + " keys.\nOh, and jump by pressing " + jumpKey + ", I guess.");
 	ds_list_add(textList, "But you probably already knew that, didn't you?");
 
 	ds_list_add(textList, "You can pull on these things by pressing " + pullKey + ".\nThe pull works in 45 degree increments.");
@@ -36,7 +36,7 @@ if (global.controller == noone)
 	
 	ds_list_add(textList, "While holding jump or pull you'll also fall slightly\nslower. Gives you some leeway in tight jumps.");
 	
-	ds_list_add(textList, "Hey, you made it! You can now push by pressing " + pushKey + ".\nTry it out! You totally didn't see this coming, right?");
+	ds_list_add(textList, "Wow, you made it! You can now push by pressing " + pushKey + ".\nTry it out! You totally didn't see this coming, right?");
 } else
 {
 	ds_list_add(textList, "You can move by using the " + leftButton + " and " + rightButton + " buttons or the joystick. Also, jump by pressing " + jumpButton + ".");
@@ -49,7 +49,7 @@ if (global.controller == noone)
 	
 	ds_list_add(textList, "While holding jump or pull you'll also fall slightly\nslower. Gives you some leeway in tight jumps.");
 	
-	ds_list_add(textList, "Hey, you made it! You can now push by pressing\n" + pushButton + ".Try it out!");
+	ds_list_add(textList, "Wow, you made it! You can now push by pressing\n" + pushButton + ".Try it out!");
 }
 
 index = 0;
