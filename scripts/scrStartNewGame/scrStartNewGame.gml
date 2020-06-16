@@ -7,4 +7,6 @@ scrClearSaveLists();
 
 global.spawnX = -1;
 global.spawnY = -1;
+global.allowPull = false;
+global.allowPush = false;
 room_goto(rmSurfaceOne);

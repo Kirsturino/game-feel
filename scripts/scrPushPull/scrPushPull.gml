@@ -1,6 +1,11 @@
 //Get object to interact with
-var centerOffset = sprite_get_height(curSprite) * yDrawScale / 2;
-interact = instance_nearest(x, y - centerOffset, oPushPull);
+
+if (global.allowPull || global.allowPush)
+{
+	var centerOffset = sprite_get_height(curSprite) * yDrawScale / 2;
+	interact = instance_nearest(x, y - centerOffset, oPushPull);
+}
+
 if (interact != noone)
 {
 	var interactDir = point_direction(x, y - sprite_height / 2, interact.x, interact.y);

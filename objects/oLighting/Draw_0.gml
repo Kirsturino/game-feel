@@ -10,12 +10,15 @@ with (oFamiliar)
 
 with (oPushPull)
 {
-	if (place_meeting(x, y, oFakeCollision))
+	if (global.allowPull || global.allowPush)
 	{
-		scrPPLight(oLighting.lightSurf, x + blockSize * 2, y + blockSize * 2, visualInteractRange, 8, offset, circleAlpha - global.fakeLayerAlpha, color);
-	} else
-	{
-		scrPPLight(oLighting.lightSurf, x + blockSize * 2, y + blockSize * 2, visualInteractRange, 8, offset, circleAlpha, color);
+		if (place_meeting(x, y, oFakeCollision))
+		{
+			scrPPLight(oLighting.lightSurf, x + blockSize * 2, y + blockSize * 2, visualInteractRange, 8, offset, circleAlpha - global.fakeLayerAlpha, color);
+		} else
+		{
+			scrPPLight(oLighting.lightSurf, x + blockSize * 2, y + blockSize * 2, visualInteractRange, 8, offset, circleAlpha, color);
+		}
 	}
 }
 

@@ -32,7 +32,8 @@
         "8c6537c8-6f67-42c2-b687-87d62044e0d2",
         "121fcb73-aedd-44d3-ad49-d9719c693695",
         "ec6027af-009c-41a9-950b-518754f73b3b",
-        "36bb9556-212a-4367-823d-db09e63e4c53"
+        "36bb9556-212a-4367-823d-db09e63e4c53",
+        "cfd19cc3-e785-46bf-be47-7318307ae2c9"
     ],
     "IsDnD": false,
     "layers": [
@@ -256,7 +257,7 @@
             "inheritSubLayers": true,
             "inheritVisibility": true,
             "instances": [
-
+{"name": "inst_3904EBCD","id": "cfd19cc3-e785-46bf-be47-7318307ae2c9","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_inst_3904EBCD.gml","creationCodeType": ".gml","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_3904EBCD","objId": "6d9b12ce-4a72-4070-85a4-ef4d75ef5511","properties": [{"id": "e4600177-02fe-44dc-860d-0bbd3b0132cd","modelName": "GMOverriddenProperty","objectId": "6d9b12ce-4a72-4070-85a4-ef4d75ef5511","propertyId": "4c3ec0f4-1e15-41fc-81ca-a0244d28d8b7","mvc": "1.0","value": "False"},{"id": "a54c771e-2207-4dd0-8615-099fae16a2f8","modelName": "GMOverriddenProperty","objectId": "6d9b12ce-4a72-4070-85a4-ef4d75ef5511","propertyId": "fa9de948-00c5-4d07-84ec-8b3cac04bdad","mvc": "1.0","value": "50"}],"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 88,"y": 40}
             ],
             "layers": [
 
