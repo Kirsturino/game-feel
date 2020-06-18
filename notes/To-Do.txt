@@ -8,6 +8,7 @@ Features:
 
 - World 1
 - Triggers that change camera zoom
+- Improve camera logic
 
 - Mull over moving platforms
  - They are a bit boring. A better alternative would be to just have moving PP objects instead

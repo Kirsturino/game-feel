@@ -6,7 +6,7 @@ if (instance_exists(oPlayer))
 	curX = camera_get_view_x(view);
 	curY = camera_get_view_y(view);
 
-	var spd = .1;
+	var spd = .12;
 	
 	xx = clamp(oPlayer.x - viewWidth / 2, 0, room_width - viewWidth);
 	yy = clamp(oPlayer.y - viewHeight / 2, 0, room_height - viewHeight);

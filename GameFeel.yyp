@@ -1287,6 +1287,14 @@
             }
         },
         {
+            "Key": "7e2d3332-7280-4612-b805-51a82a5bc879",
+            "Value": {
+                "id": "1792f02e-9aca-498f-8989-e2d9d2017a77",
+                "resourcePath": "rooms\\rmCaveTen\\rmCaveTen.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "7e6572f9-9c51-4c77-88ab-66aecec68033",
             "Value": {
                 "id": "7823fdfa-32ba-4d8e-8993-49fd9ce37ea4",
