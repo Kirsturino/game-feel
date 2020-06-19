@@ -1,4 +1,6 @@
 //Determine grass type
+width = sprite_width;
+height = sprite_height;
 bladeSize = 1;
 bladeSeparation = 3;
 grassColor = global.cGreenLight;

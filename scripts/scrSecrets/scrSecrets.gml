@@ -15,7 +15,13 @@ var collectible = instance_place(x, y, oCollectible);
 
 if (collectible != noone && !collectible.destroy)
 {
-	scrStartNotification("COLLECTIBLE GET!" + "\n\n" + collectible.name);
+	if (collectible == oCollectible)
+	{
+		scrStartNotification("COLLECTIBLE GET!" + "\n\n" + collectible.name);
+	} else if (collectible == oSecret)
+	{
+		scrStartNotification("SECRET GET!" + "\n\n" + collectible.name);
+	}
 		
 	//Add collectible to list of collected collectibles if it hasn't been collected before. Collectible. Great word.
 	if (ds_list_find_index(global.collectibleList, collectible.name) == -1)
