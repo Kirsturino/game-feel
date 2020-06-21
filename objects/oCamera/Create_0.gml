@@ -24,3 +24,13 @@ shakeY = 0;
 //Camera push variables
 pushX = 0;
 pushY = 0;
+
+//Player camera manipulation
+downTimerMax = 30;
+downTimer = 0;
+
+upTimerMax = 30;
+upTimer = 0;
+
+cameraOffsetY = 0;
+offsetAmount = 96;

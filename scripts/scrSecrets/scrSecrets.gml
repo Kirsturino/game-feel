@@ -15,10 +15,10 @@ var collectible = instance_place(x, y, oCollectible);
 
 if (collectible != noone && !collectible.destroy)
 {
-	if (collectible == oCollectible)
+	if (object_get_parent(collectible) == -100)
 	{
 		scrStartNotification("COLLECTIBLE GET!" + "\n\n" + collectible.name);
-	} else if (collectible == oSecret)
+	} else
 	{
 		scrStartNotification("SECRET GET!" + "\n\n" + collectible.name);
 	}

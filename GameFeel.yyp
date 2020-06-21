@@ -903,6 +903,14 @@
             }
         },
         {
+            "Key": "5ab0008f-6cda-481d-8108-dcd024baed23",
+            "Value": {
+                "id": "0ef401d0-c394-42e2-b6a5-266cef53884e",
+                "resourcePath": "rooms\\rmCaveTwelve\\rmCaveTwelve.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "5ac76887-77b7-4078-a1f8-f3dbc8976a60",
             "Value": {
                 "id": "0319c0a5-9c82-4378-a763-6d7fa4069206",

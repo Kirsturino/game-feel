@@ -5,10 +5,12 @@ Features:
 - IDEA: Water physics & controls. Water acts as a dash zone where you get to decide your dash direction like in Celeste
 - IDEA: Platforms/Walls you destroy if you dash at them
 - IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
+- IDEA: Celeste-like binoculars
 
 - World 1
 - Triggers that change camera zoom
-- Improve camera logic
+- Improve camera logic somehow maybe?
+- Input buffering / Coyote time for dashes
 
 - Mull over moving platforms
  - They are a bit boring. A better alternative would be to just have moving PP objects instead

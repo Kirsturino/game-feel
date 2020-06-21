@@ -37,6 +37,10 @@ if (global.controller == noone)
 	ds_list_add(textList, "While holding jump or pull you'll also fall slightly\nslower. Gives you some leeway in tight jumps.");
 	
 	ds_list_add(textList, "Wow, you made it! You can now push by pressing " + pushKey + ".\nTry it out! You totally didn't see this coming, right?");
+	
+	ds_list_add(textList, "You can fall through platforms by pressing down \nand jump.");
+	
+	ds_list_add(textList, "Get a sneak peek into the level by holding up or down.");
 } else
 {
 	ds_list_add(textList, "You can move by using the " + leftButton + " and " + rightButton + " buttons or the joystick. Also, jump by pressing " + jumpButton + ".");
@@ -50,6 +54,10 @@ if (global.controller == noone)
 	ds_list_add(textList, "While holding jump or pull you'll also fall slightly\nslower. Gives you some leeway in tight jumps.");
 	
 	ds_list_add(textList, "Wow, you made it! You can now push by pressing\n" + pushButton + ".Try it out!");
+	
+	ds_list_add(textList, "You can fall through platforms by pressing down \nand jump.");
+	
+	ds_list_add(textList, "Get a sneak peek into the level by holding up or down.");
 }
 
 index = 0;
@@ -78,6 +86,16 @@ switch (room)
 	
 	case (rmCaveEight):
 		textNumber = 7;
+		textAmount = 0;
+	break;
+	
+	case (rmSurfaceFour):
+		textNumber = 8;
+		textAmount = 0;
+	break;
+	
+	case (rmCaveTwo):
+		textNumber = 9;
 		textAmount = 0;
 	break;
 	

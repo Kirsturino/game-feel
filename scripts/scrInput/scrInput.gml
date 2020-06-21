@@ -54,6 +54,14 @@ if (gamepad_axis_value(global.controller, gp_axislv) > 0 || gamepad_button_check
 	down = false;
 }
 
+if (gamepad_axis_value(global.controller, gp_axislv) < 0 || gamepad_button_check(global.controller, global.button_up) || keyboard_check(global.key_up))
+{
+	up = true;
+} else
+{
+	up = false;
+}
+
 if (gamepad_axis_value(global.controller, gp_axislh) < 0 || keyboard_check_pressed(global.key_left) || gamepad_button_check_pressed(global.controller, global.button_left))
 {
 	leftPress = true;
