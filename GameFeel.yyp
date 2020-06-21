@@ -807,6 +807,14 @@
             }
         },
         {
+            "Key": "4e179e8d-4a2d-4141-a48e-28cbe363c502",
+            "Value": {
+                "id": "c9ba7dfc-1a2b-407a-8ca6-b5fd058b6ef2",
+                "resourcePath": "rooms\\rmBOrCSideMaybeSecretIDunno\\rmBOrCSideMaybeSecretIDunno.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "4e30cf92-514d-4d29-bfcd-f5f425ec1b02",
             "Value": {
                 "id": "077fb1ed-4e8d-41ea-9426-be5d58428dbe",
@@ -1028,6 +1036,14 @@
                 "id": "6f066f00-0951-4e42-aaad-9b1a4c694dd1",
                 "resourcePath": "sprites\\sBackgroundWallTiles\\sBackgroundWallTiles.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "65389e87-a7bc-4038-a8a1-9cad564247e3",
+            "Value": {
+                "id": "e7905df7-e9d5-4a5c-a49b-fb8d083ac63f",
+                "resourcePath": "rooms\\rmCaveThirteen\\rmCaveThirteen.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
