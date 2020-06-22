@@ -695,6 +695,14 @@
             }
         },
         {
+            "Key": "469d7f91-6049-44a5-a893-fb1a51d5690b",
+            "Value": {
+                "id": "f862316c-f6d9-4b92-b7a0-f8fa298ebe6c",
+                "resourcePath": "rooms\\rmCaveFourteen\\rmCaveFourteen.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "4779ed36-f555-4f1e-98b4-8f0219baea62",
             "Value": {
                 "id": "fa46b4d0-c73c-4c2e-924d-8aa3bf68085f",
@@ -810,7 +818,7 @@
             "Key": "4e179e8d-4a2d-4141-a48e-28cbe363c502",
             "Value": {
                 "id": "c9ba7dfc-1a2b-407a-8ca6-b5fd058b6ef2",
-                "resourcePath": "rooms\\rmBOrCSideMaybeSecretIDunno\\rmBOrCSideMaybeSecretIDunno.yy",
+                "resourcePath": "rooms\\rmCSide\\rmCSide.yy",
                 "resourceType": "GMRoom"
             }
         },

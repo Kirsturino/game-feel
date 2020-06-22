@@ -37,3 +37,10 @@ Sound
 
 - Research audio emitters for environment sounds
  - No for gameplay objects, possible for ambient noises
+ 
+ Things to mention in narrative text things
+ 
+ - Longjumping
+ - Longwalljumping (?)
+ - Dash extending (?)
+ 
