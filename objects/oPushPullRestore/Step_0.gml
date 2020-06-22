@@ -1,3 +1,6 @@
+//Check if behind hidden walls
+hidden = place_meeting(x, y, oFakeCollision);
+
 //Animate
 rot += rotSpeed + scrWave(-5, 2, 5, 0);
 

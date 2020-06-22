@@ -12,6 +12,8 @@ Features:
 - Improve camera logic somehow maybe?
 - Input buffering / Coyote time for dashes
 
+- There's a weird bug that extends your dash sometimes, but eats the refresh thing, breaks stuff, but happens very rarely
+
 - Mull over moving platforms
  - They are a bit boring. A better alternative would be to just have moving PP objects instead
 - Moving ppObjects

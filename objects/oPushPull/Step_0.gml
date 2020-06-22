@@ -1,3 +1,6 @@
+//Check if hidden behind fake walls
+hidden = place_meeting(x, y, oFakeCollision);
+
 //Check if should drawtri
 if (oPlayer.interact == self)
 {

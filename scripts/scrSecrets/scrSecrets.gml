@@ -1,14 +1,12 @@
-var secret = instance_nearest(x, y, oFakeCollision);
 
-if (secret != noone)
+if (place_meeting(x, y, oFakeCollision))
 {
-	if (place_meeting(x, y, oFakeCollision))
-	{
-		global.fakeLayerAlpha = scrApproach(global.fakeLayerAlpha, 0.5, 0.02);
-	} else
-	{
-		global.fakeLayerAlpha = scrApproach(global.fakeLayerAlpha, 1, 0.02);
-	}
+	global.fakeLayerAlpha = scrApproach(global.fakeLayerAlpha, 0.2, 0.02);
+	behindWall = true;
+} else
+{
+	global.fakeLayerAlpha = scrApproach(global.fakeLayerAlpha, 1, 0.02);
+	behindWall = false;
 }
 
 var collectible = instance_place(x, y, oCollectible);

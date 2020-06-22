@@ -22,3 +22,5 @@ activeColor = global.cYellow;
 colorTo = global.cYellow;
 
 offset = random(2);
+
+hidden = false;

@@ -8,7 +8,7 @@ if (global.allowPull || global.allowPush)
 
 if (interact != noone)
 {
-	var interactDir = point_direction(x, y - sprite_height / 2, interact.x, interact.y);
+	var interactDir = point_direction(x, y - centerOffset, interact.x, interact.y);
 	interact.triDirTo = other.ppDir;
 
 	#region ppDir

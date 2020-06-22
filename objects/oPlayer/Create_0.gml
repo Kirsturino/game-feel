@@ -102,6 +102,7 @@ lastVsp = 0;
 xCollision = false;
 yCollision = true;
 nearGround = 0;
+behindWall = false;
 
 //Collision forgiveness
 minLedgeDifferenceX = 6;
