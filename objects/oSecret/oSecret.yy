@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "oSecret",
     "eventList": [
-        {
-            "id": "c03e285c-f113-400f-a65f-30284b246349",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "5d01092f-fccb-4aa3-aff1-5def5a3ebe3c"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

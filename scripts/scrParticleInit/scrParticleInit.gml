@@ -107,7 +107,7 @@ global.restorePart = part_type_create();
 part_type_shape(global.restorePart,pt_shape_line);
 part_type_size(global.restorePart,0.05,0.15,0,0);
 part_type_scale(global.restorePart,1,1);
-part_type_color1(global.restorePart,global.cYellow);
+part_type_color1(global.restorePart,global.cGreenLight);
 part_type_alpha2(global.restorePart,1,0);
 part_type_speed(global.restorePart,1,2,-0.04,0);
 part_type_direction(global.restorePart,0,359,0,0);

@@ -10,6 +10,8 @@ Features:
 - World 1
 - Triggers that change camera zoom
 - Improve camera logic somehow maybe?
+- freecam
+- 
 - Input buffering / Coyote time for dashes
 
 - There's a weird bug that extends your dash sometimes, but eats the refresh thing, breaks stuff, but happens very rarely

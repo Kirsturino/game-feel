@@ -11,6 +11,7 @@ if (restore != noone && restore.active && ppFrames != ppFramesMax)
 	//Juice & SFX
 	alarm[2] = 8;
 	audio_play_sound(sndRefreshBuildup2, 40, false);
+	
 	if (ppFrames == 0)
 	{
 		scrSetShake(10, 10);
@@ -18,6 +19,11 @@ if (restore != noone && restore.active && ppFrames != ppFramesMax)
 		audio_play_sound(sndPPMax, 100, false);
 		colorTo = canDashColor;
 		ppFrames = ppFramesMax;
+		
+		//This is fixing some sort of code execution order jank where the ppFrames keep getting decreased after dash
+		//To note, this is a bad fix, maybe improve later
+		isPull = false;
+		isPush = false;
 	} else
 	{
 		scrSetShake(15, 30);

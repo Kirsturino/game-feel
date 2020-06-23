@@ -42,6 +42,6 @@ if (index < string_length(text))
 } else
 {
 	//If at end of text, do something
-	alarm[1] = 180;
+	alarm[1] = 240;
 
 }

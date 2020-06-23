@@ -119,8 +119,11 @@ if (wallJumping)
 	}
 	
 	//Stop walljumping if we hit a new wall
-	if ((hugLeft || hugRight) && wallJumpTimer < wallJumpTimerMax - 2)
+	if ((hugLeft || hugRight) && wallJumpTimer < wallJumpTimerMax - wallJumpCancelAmount)
 	{
+		airAxl = airAxlMax / 2;
+		airDrag = airdragMax / 2;
 		wallJumping = false;
+		wallJumpTimer = wallJumpTimerMax;
 	}
 }

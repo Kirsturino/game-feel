@@ -4,19 +4,26 @@ drawY = y;
 rotSpeed = 2;
 
 //Init variables for destroy animation
+following = false;
 destroy = false;
-riseSpeed = 0;
+riseSpeed = -1;
 
 //Check if collectible has been collected
-collected = false;
 if (ds_list_find_index(global.collectibleList, name) != -1)
 {
-	collected = true;
-	image_alpha = 0.5;
+	image_blend = global.cBlueDark;
+	var collected = true;
+} else
+{
+	//Timer for SFX
+	alarm[0] = 120;
+	
+	var collected = false;
 }
 
-//Timer for SFX
-if (!collected)
+if (name == "unlockPull" || name == "unlockPush")
 {
-	alarm[0] = 120;
+	image_blend = global.cYellow;
+	
+	if (collected) instance_destroy(); else instance_create_layer(x, y, "Lighting", oLight);
 }

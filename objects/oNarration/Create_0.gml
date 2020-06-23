@@ -29,7 +29,8 @@ if (global.controller == noone)
 	ds_list_add(textList, "You can move by pressing the " + leftKey + " and " + rightKey + " keys.\nOh, and jump by pressing " + jumpKey + ", I guess.");
 	ds_list_add(textList, "But you probably already knew that, didn't you?");
 
-	ds_list_add(textList, "You can pull on these things by pressing " + pullKey + ".\nThe pull works in 45 degree increments.");
+	ds_list_add(textList, "You can pull on these things by pressing " + pullKey + ".\nThe pull will always direct you towards the centre.");
+	ds_list_add(textList, "The pull works in 45 degree increments, indicated\nby the hexagon.");
 	
 	ds_list_add(textList, "I should mention, you dash further by\n holding the jump or pull key.");
 	ds_list_add(textList, "It's pretty important for clearing most of the screens\nin the game, so uh... Yeah. Soz.");
@@ -46,7 +47,8 @@ if (global.controller == noone)
 	ds_list_add(textList, "You can move by using the " + leftButton + " and " + rightButton + " buttons or the joystick. Also, jump by pressing " + jumpButton + ".");
 	ds_list_add(textList, "But you probably already knew that, didn't you?");
 
-	ds_list_add(textList, "You can pull on these things by pressing " + pullButton + ". The pull works in 45 degree increments.");
+	ds_list_add(textList, "You can pull on these things by pressing " + pullKey + ".\nThe pull will always direct you towards the centre.");
+	ds_list_add(textList, "The pull works in 45 degree increments, indicated\nby the hexagon.");
 	
 	ds_list_add(textList, "I should mention, you dash further by\n holding the jump or pull button.");
 	ds_list_add(textList, "It's pretty important for clearing most of the screens\nin the game, so uh... Yeah. Soz.");
@@ -71,31 +73,31 @@ switch (room)
 	
 	case (rmCaveFour):
 		textNumber = 3;
-		textAmount = 0;
+		textAmount = 1;
 	break;
 	
 	case (rmCaveFive):
-		textNumber = 4;
+		textNumber = 5;
 		textAmount = 1;
 	break;
 	
 	case (rmCaveSix):
-		textNumber = 6;
-		textAmount = 0;
-	break;
-	
-	case (rmCaveEight):
 		textNumber = 7;
 		textAmount = 0;
 	break;
 	
-	case (rmSurfaceFour):
+	case (rmCaveEight):
 		textNumber = 8;
 		textAmount = 0;
 	break;
 	
-	case (rmCaveTwo):
+	case (rmSurfaceFour):
 		textNumber = 9;
+		textAmount = 0;
+	break;
+	
+	case (rmCaveTwo):
+		textNumber = 10;
 		textAmount = 0;
 	break;
 	

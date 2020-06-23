@@ -28,6 +28,8 @@ if (place_meeting(x, y + 1, oCollision) || oneway)
 	
 	scrResetAnimation();
 	
+	scrGetSecret();
+	
 	//Change state
 	state = scrGrounded;
 }

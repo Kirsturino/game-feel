@@ -1,6 +1,20 @@
 //Initialize default state
 state = scrAirborne;
 
+
+//Initialize input variables
+left = false;
+right = false;
+down = false;
+leftPress = false;
+rightPress = false;
+leftRelease = false;
+rightRelease = false;
+jump = false;
+jumpHeld = false;
+pushPress = false;
+pullPress = false;
+	
 //Initialize movement variables
 hsp = 0;
 vsp = 0;
@@ -51,15 +65,16 @@ wallJumpTimerMax = 13;
 wallJumpTimer = wallJumpTimerMax;
 wallJumping = false;
 fallSpeedWall = 0.6;
-#macro wallJumpCoyoteBufferLength 3
+#macro wallJumpCoyoteBufferLength 5
 huggedWall = false;
 canWallJump = false;
 hugRight = false;
 hugLeft = false;
+wallJumpCancelAmount = 2;
 
 //Jump controls
 grvModifier = 0.7;
-defaultFallSpeed = 3.3;
+defaultFallSpeed = 3.2;
 fallspeedHeld = 3;
 fastFallSpeed = 4;
 curFallSpeed = defaultFallSpeed;
@@ -132,3 +147,6 @@ instance_create_layer(x, y, "Player", oFamiliar);
 
 //Controller & Input stuff
 gamepad_set_axis_deadzone(global.controller, 0.1);
+
+//Secret variables
+followingCollectible = noone;

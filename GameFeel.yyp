@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "24f247db-93ff-4c4e-a464-e4b14a52d463",
+            "Value": {
+                "id": "2d289d5d-a7c7-4568-acc4-52b0367146dc",
+                "resourcePath": "rooms\\rmCaveFifteen\\rmCaveFifteen.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "259f356e-2918-4c2a-81e7-a9e22d5a6509",
             "Value": {
                 "id": "7edbf67d-adc5-44f9-9803-6394fe2fe27e",
@@ -1583,6 +1591,14 @@
             }
         },
         {
+            "Key": "9f3a1a36-cf55-41f3-ad93-435ead18bf7d",
+            "Value": {
+                "id": "f605eb4f-129c-449a-ba8c-b93daf1428f4",
+                "resourcePath": "scripts\\scrGetSecret\\scrGetSecret.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9fe850d2-fc8c-4662-9b9f-511f7ef0dd93",
             "Value": {
                 "id": "fd567713-d3db-4d84-b112-301771ae965d",
@@ -2617,6 +2633,7 @@
         "90ba35b7-36be-4910-aa5d-196ac0c844ce",
         "a7bf30dc-cb3f-4715-bf9c-b2d6cac1910c",
         "add0e8b7-9d91-4602-bf92-41744b7d219a",
+        "9f3a1a36-cf55-41f3-ad93-435ead18bf7d",
         "7b009ee4-3867-4f8b-8f59-418fd1eb2821",
         "493b3761-3f8f-4646-9cad-5885ae8538e6",
         "444f812a-4fe7-40a4-b007-2da3a33b3813",

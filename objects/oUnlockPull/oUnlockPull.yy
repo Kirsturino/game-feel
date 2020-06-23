@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "oUnlockPull",
     "eventList": [
-        {
-            "id": "2575f4aa-b2bf-4e4a-ae89-7143554aaa6f",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "e450b1c4-7cfc-4d47-aa1c-4d6c2839b233"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

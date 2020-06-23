@@ -17,9 +17,9 @@ rotSpeed = 2;
 active = true;
 activeTimer = 180;
 
-inactiveColor = global.cGray;
-activeColor = global.cYellow;
-colorTo = global.cYellow;
+inactiveColor = global.cGreenDark;
+activeColor = global.cGreenLight;
+colorTo = global.cGreenLight;
 
 offset = random(2);
 

@@ -6,8 +6,8 @@ rot += rotSpeed + scrWave(-5, 2, 5, 0);
 
 if (active)
 {
-	xScaleTo = scrWave(0.7, 1.2, 1.0, offset);
-	yScaleTo = scrWave(1.2, 0.7, 2.0, offset);
+	xScaleTo = scrWave(0.9, 1.2, 1.0, offset);
+	yScaleTo = scrWave(1.2, 0.9, 2.0, offset);
 	
 	colorTo = activeColor;
 } else

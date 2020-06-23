@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "oUnlockPush",
     "eventList": [
-        {
-            "id": "406a7936-994b-475c-9a74-79418638e70f",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "db680fe0-f7c2-4763-8791-5f7c66d11107"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
