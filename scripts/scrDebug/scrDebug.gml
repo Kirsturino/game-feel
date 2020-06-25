@@ -45,6 +45,9 @@ if (keyboard_check_pressed(ord("T")))
 	
 	layerID = layer_get_id("BackgroundEnvironment");
 	layer_set_visible(layerID, !global.debugging);
+	
+	layerID = layer_get_id("BackgroundWall");
+	layer_set_visible(layerID, !global.debugging);
 }
 
 if (keyboard_check_pressed(ord("G")))

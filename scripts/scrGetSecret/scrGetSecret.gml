@@ -1,5 +1,5 @@
 //Check if we have collectibles in tow, if yes, collect them
-if (followingCollectible != noone)
+if (followingCollectible != noone && state != scrDead)
 {
 	with (followingCollectible)
 	{	

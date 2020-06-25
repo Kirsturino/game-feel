@@ -28,7 +28,8 @@ if (place_meeting(x, y + 1, oCollision) || oneway)
 	
 	scrResetAnimation();
 	
-	scrGetSecret();
+	//Set player up to collect secret, this is to prevent player from collecting stuff while doing
+	alarm[6] = 1;
 	
 	//Change state
 	state = scrGrounded;

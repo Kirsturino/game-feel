@@ -6,8 +6,8 @@ rot += rotSpeed + scrWave(-5, 2, 5, 0);
 
 if (active)
 {
-	xScaleTo = scrWave(0.9, 1.2, 1.0, offset);
-	yScaleTo = scrWave(1.2, 0.9, 2.0, offset);
+	xScaleTo = scrWave(1.1, 1.5, 1.0, offset);
+	yScaleTo = scrWave(1.5, 1.1, 2.0, offset);
 	
 	colorTo = activeColor;
 } else
@@ -18,8 +18,8 @@ if (active)
 	colorTo = inactiveColor;
 }
 
-xScale = lerp(xScale, xScaleTo, 0.2);
-yScale = lerp(yScale, yScaleTo, 0.2);
+xScale = lerp(xScale, xScaleTo, 0.25);
+yScale = lerp(yScale, yScaleTo, 0.25);
 
 //drawXTo = lerp(drawXTo, x + scrWave(-4, 2, 2, offset), 0.1);
 //drawYTo = lerp(drawYTo, y + scrWave(-2, 4, 3, offset), 0.1);

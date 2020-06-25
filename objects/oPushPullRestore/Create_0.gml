@@ -15,7 +15,7 @@ color = global.cYellow;
 rotSpeed = 2;
 
 active = true;
-activeTimer = 180;
+activeTimer = 120;
 
 inactiveColor = global.cGreenDark;
 activeColor = global.cGreenLight;

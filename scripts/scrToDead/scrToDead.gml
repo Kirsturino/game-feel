@@ -11,6 +11,13 @@ if (alarm[3] == -1)
 
 alarm[3] = 30;
 
+//Remove collectibles from tow upon death
+with (followingCollectible)
+{
+	following = false;
+}
+followingCollectible = noone;
+
 colorTo = cantDashColor;
 
 state = scrDead;

@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "39206088-86bf-4fe1-b2a6-110357e6a6b8",
+            "Value": {
+                "id": "86e87fbb-39f2-4d3d-b889-57f3320175c1",
+                "resourcePath": "rooms\\rmCaveFourPointFive\\rmCaveFourPointFive.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "3a70572b-cefe-49d9-871a-d5c8fa8caeb6",
             "Value": {
                 "id": "8c0ad1d0-de8d-4944-a5cf-5664c2701a37",

@@ -103,8 +103,6 @@ if (!global.debugging)
 	}
 }
 
-
-
 //Rain particles
 if (rain)
 {

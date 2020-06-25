@@ -8,7 +8,7 @@ for (var i = 0; i < room_width;  i += circleFrequency + irandom_range(-blockSize
 	var circleRadius = blockSize * 2;
 	var circleY = irandom(circleRadius / 2);
 	
-    draw_circle_color(i, circleY, circleRadius, global.cBlueLight, global.cBlueLight, false);
+    draw_circle_color(i, circleY, circleRadius, global.cWhite, global.cWhite, false);
 }
 
 surface_reset_target();

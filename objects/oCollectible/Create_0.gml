@@ -11,7 +11,7 @@ riseSpeed = -1;
 //Check if collectible has been collected
 if (ds_list_find_index(global.collectibleList, name) != -1)
 {
-	image_blend = global.cBlueDark;
+	image_blend = global.cBlueLight;
 	var collected = true;
 } else
 {
