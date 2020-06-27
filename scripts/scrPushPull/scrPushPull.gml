@@ -9,36 +9,35 @@ if (global.allowPull || global.allowPush)
 if (interact != noone)
 {
 	var interactDir = point_direction(x, y - centerOffset, interact.x, interact.y);
-	interact.triDirTo = other.ppDir;
 
-	#region ppDir
+	#region Get direction that ppObjects should show
 	//Round interactDir to 8 cardinal directions
 	if (!isPull && !isPush)
 	{
 		if (interactDir <= 22.5 || interactDir > 337.5)
 		{
-			ppDir = 0;
+			interact.triDirTo = 0;
 		} else if (interactDir <= 67.5)
 		{
-			ppDir = 45;
+			interact.triDirTo = 45;
 		} else if (interactDir <= 112.5)
 		{
-			ppDir = 90;
+			interact.triDirTo = 90;
 		} else if (interactDir <= 157.5)
 		{
-			ppDir = 135;
+			interact.triDirTo = 135;
 		} else if (interactDir <= 202.5)
 		{
-			ppDir = 180;
+			interact.triDirTo = 180;
 		} else if (interactDir <= 247.5)
 		{
-			ppDir = 225;
+			interact.triDirTo = 225;
 		} else if (interactDir <= 292.5)
 		{
-			ppDir = 270;
+			interact.triDirTo = 270;
 		}else if (interactDir <= 337.5)
 		{
-			ppDir = 315;
+			interact.triDirTo = 315;
 		}
 	}
 	#endregion
@@ -59,6 +58,7 @@ if (interact != noone)
 				scrSetPush(15, ppDir);
 			}
 			
+			ppDir = interact.triDirTo;
 			vsp = 0;
 			hsp = 0;
 			move = 0;
