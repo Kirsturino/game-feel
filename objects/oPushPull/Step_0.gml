@@ -22,7 +22,6 @@ var dd = angle_difference(triDir, triDirTo);
 triSpeed = lerp(triSpeed, min(abs(dd), triRotSpeed) * sign(dd), 0.4);
 triDir -= triSpeed;
 
-
 //Animate a lot of stuff
 if (drawTri)
 {
@@ -45,8 +44,8 @@ if (drawTri)
 	rot = lerp(rot, wiggle, 0.1);
 	//xScale = lerp(xScale, scrWave(0.7, 1.2, 3.0, 0.0), 0.1);
 	//yScale = lerp(yScale, scrWave(1.2, 0.7, 4.0, 0.0), 0.1);
-	drawX = lerp(drawX, x + scrWave(-4, 2, 2, 0), 0.1);
-	drawY = lerp(drawY, y + scrWave(-2, 4, 3, 0), 0.1);
+	drawX = lerp(drawX, x + scrWave(-2, 2, 2, 0), 0.1);
+	drawY = lerp(drawY, y + scrWave(-2, 2, 3, 0), 0.1);
 	colorTo = inactiveColor;
 	circleAlpha = lerp(circleAlpha, 0.1, 0.1);
 }

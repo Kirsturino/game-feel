@@ -6,6 +6,17 @@ if (global.allowPull || global.allowPush)
 	interact = instance_nearest(x, y - centerOffset, oPushPull);
 }
 
+//See if player wants to dash
+if (pushPress)
+{
+	wantsToPush = true;
+	alarm[7] = ppBufferLength;
+} else if (pullPress)
+{
+	wantsToPull = true;
+	alarm[7] = ppBufferLength;
+}
+
 if (interact != noone)
 {
 	var interactDir = point_direction(x, y - centerOffset, interact.x, interact.y);
@@ -46,13 +57,13 @@ if (interact != noone)
 	if (distance_to_object(interact) < interact.interactRange)
 	{
 		//Stop natural momentum before applying force, get direction for force
-		if (((pushPress && global.allowPush) || (pullPress && global.allowPull)) && ppFrames == ppFramesMax && interact != noone)
+		if (((wantsToPush && global.allowPush) || (wantsToPull && global.allowPull)) && ppFrames == ppFramesMax && interact != noone)
 		{
-			if (pushPress)
+			if (wantsToPush)
 			{
 				isPush = true;
 				scrSetPush(15, ppDir - 180);
-			} else if (pullPress)
+			} else if (wantsToPull)
 			{
 				isPull = true;
 				scrSetPush(15, ppDir);
@@ -65,6 +76,8 @@ if (interact != noone)
 			wallJumping = false;
 			wallJumpTimer = wallJumpTimerMax;
 			canWallJump = false;
+			wantsToPull = false;
+			wantsToPush = false;
 		
 			//Animate character to turn towards or away from pp objects
 			#region sprite rotation shenanigans

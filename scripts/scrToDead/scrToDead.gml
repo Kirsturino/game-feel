@@ -20,4 +20,6 @@ followingCollectible = noone;
 
 colorTo = cantDashColor;
 
+global.deathCounter++;
+
 state = scrDead;

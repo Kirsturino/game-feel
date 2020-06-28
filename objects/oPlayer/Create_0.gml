@@ -1,6 +1,8 @@
 //Initialize default state
 state = scrAirborne;
 
+//Random variables
+blockMovement = false;
 
 //Initialize input variables
 left = false;
@@ -14,6 +16,8 @@ jump = false;
 jumpHeld = false;
 pushPress = false;
 pullPress = false;
+freeCamToggle = false;
+restartPress = false;
 	
 //Initialize movement variables
 hsp = 0;
@@ -33,7 +37,7 @@ hspMax = 2;
 vspMax = 4;
 hspMaxCrouched = 1.5;
 jumpSpeed = 3.75;
-longJumpSpeed = jumpSpeed * 0.65;
+longJumpSpeed = jumpSpeed * 0.7;
 newestDir = "";
 move = 0;
 ledgeTimer = 0;
@@ -54,6 +58,9 @@ isPull = false;
 hspMaxPP = 5;
 vspMaxPP = 5;
 interact = noone;
+wantsToPull = false;
+wantsToPush = false;
+#macro ppBufferLength 8
 
 //Walljump variables
 wallJumpDistance = 3;

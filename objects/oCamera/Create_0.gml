@@ -34,3 +34,16 @@ upTimer = 0;
 
 cameraOffsetY = 0;
 offsetAmount = 96;
+
+state = scrFollowCam;
+
+//Freecam variables
+moveSpeed = 5;
+hsp = 0;
+vsp = 0;
+left = false;
+right = false;
+up = false;
+down = false;
+margin = 0;
+maxMargin = 8;

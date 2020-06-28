@@ -14,12 +14,14 @@ rightKey = scrGetUniqueKeys(global.key_right);
 jumpKey = scrGetUniqueKeys(global.key_jump);
 pullKey = scrGetUniqueKeys(global.key_pull);
 pushKey = scrGetUniqueKeys(global.key_push);
+freeCamKey = scrGetUniqueKeys(global.key_camToggle);
 
 leftButton = string_lower(scrGetUniqueKeys(global.button_left));
 rightButton = string_lower(scrGetUniqueKeys(global.button_right));
 jumpButton = scrGetUniqueKeys(global.button_jump);
 pullButton = string_lower(scrGetUniqueKeys(global.button_pull));
 pushButton = string_lower(scrGetUniqueKeys(global.button_push));
+freeCamButton = string_lower(scrGetUniqueKeys(global.button_camToggle));
 
 //Init text list
 ds_list_add(textList, "Something went wrong. Oof.");
@@ -41,13 +43,13 @@ if (global.controller == noone)
 	
 	ds_list_add(textList, "You can fall through platforms by pressing down \nand jump.");
 	
-	ds_list_add(textList, "Get a sneak peek into the level by holding up or down.");
+	ds_list_add(textList, "Get a sneak peek into the level by holding up or down. Or toggle freecam with " + freeCamKey + ".");
 } else
 {
 	ds_list_add(textList, "You can move by using the " + leftButton + " and " + rightButton + " buttons or the joystick. Also, jump by pressing " + jumpButton + ".");
 	ds_list_add(textList, "But you probably already knew that, didn't you?");
 
-	ds_list_add(textList, "You can pull on these things by pressing " + pullKey + ".\nThe pull will always direct you towards the centre.");
+	ds_list_add(textList, "You can pull on these things by pressing " + pullButton + ".\nThe pull will always direct you towards the centre.");
 	ds_list_add(textList, "The pull works in 45 degree increments, indicated\nby the hexagon.");
 	
 	ds_list_add(textList, "I should mention, you dash further by\n holding the jump or pull button.");
@@ -59,7 +61,7 @@ if (global.controller == noone)
 	
 	ds_list_add(textList, "You can fall through platforms by pressing down \nand jump.");
 	
-	ds_list_add(textList, "Get a sneak peek into the level by holding up or down.");
+	ds_list_add(textList, "Get a sneak peek into the level by holding up or down. Or toggle freecam with " + freeCamButton + ".");
 }
 
 index = 0;

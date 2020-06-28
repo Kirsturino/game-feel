@@ -1,9 +1,9 @@
-if (keyboard_check_pressed(ord("R")))
+if (oPlayer.restartPress)
 {
 	room_restart();
 }
 
-//Saving
+//Debug between rooms
 if (keyboard_check_pressed(ord("Q")))
 {
 	if (room_exists(room - 1))
@@ -12,7 +12,6 @@ if (keyboard_check_pressed(ord("Q")))
 	}
 }
 
-//Loading
 if (keyboard_check_pressed(ord("E")))
 {
 	if (room_exists(room + 1))

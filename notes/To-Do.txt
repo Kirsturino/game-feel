@@ -9,21 +9,19 @@ Features:
 
 - World 1
 - Triggers that change camera zoom
-- Improve camera logic somehow maybe?
-	- freecam mode toggle
 - Menu navigation with arrow keys
-- Ponder or direction based pulling and pushing
-- Input buffering / Coyote time for dashes
-
+- Ponder on direction based pulling and pushing
 - Add surface secret(s)
+- Add remappable inputs for
+	- Room restart
+	- Cam toggle
+-Polish texts, find good pixel font for small text
+- Speedrun clock
 
 - Mull over moving platforms
  - They are a bit boring. A better alternative would be to just have moving PP objects instead
 - Moving ppObjects
  - Paths? Just back and forth? Both? Need research
-
-Game Feel & Oil
-- Rounded hitboxes for enemies/hazards
 
 Graphics
 - AI interpolation for player animations?
@@ -31,17 +29,20 @@ Graphics
 - Polish ground tileset
 - Change parallax layer colours for more contrast
 - Separate player particle layer
+- Checkpoint graphics (familiar spawn on checkpoint)
 
 
 Sound
 - Default BGM
 - Main menu BGM
 - Final Scene BGM
+- Freecam toggle SFX
+- Checkpoint SFX
 
 - Research audio emitters for environment sounds
  - No for gameplay objects, possible for ambient noises
  
- Things to mention in narrative text things
+Things to mention in narrative text things
  
  - Longjumping (?)
  - Longwalljumping (?)

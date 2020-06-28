@@ -90,6 +90,8 @@ ds_menu_controls_keyboard = scrCreateMenu(
 	["JUMP",		main_menu_element_type.input,			"key_jump",				global.key_jump],
 	["PULL/CONFIRM",main_menu_element_type.input,			"key_pull",				global.key_pull],
 	["PUSH/RETURN",	main_menu_element_type.input,			"key_push",				global.key_push],
+	["RESTART",		main_menu_element_type.input,			"key_restart",			global.key_restart],
+	["FREECAM",		main_menu_element_type.input,			"key_camToggle",		global.key_camToggle],
 	["BACK",		main_menu_element_type.page_transfer,	main_menu_page.controls]
 );
 
@@ -101,6 +103,8 @@ ds_menu_controls_controller = scrCreateMenu(
 	["JUMP",		main_menu_element_type.controllerinput,	"button_jump",			global.button_jump],
 	["PULL",		main_menu_element_type.controllerinput,	"button_pull",			global.button_pull],
 	["PUSH",		main_menu_element_type.controllerinput,	"button_push",			global.button_push],
+	["RESTART",		main_menu_element_type.controllerinput,	"button_restart",		global.button_restart],
+	["FREECAM",		main_menu_element_type.controllerinput,	"button_camToggle",		global.button_camToggle],
 	["BACK",		main_menu_element_type.page_transfer,	main_menu_page.controls]
 );
 

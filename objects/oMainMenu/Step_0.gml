@@ -62,6 +62,7 @@ if (inputting)
 			if (kk != global.key_confirm && menu_option[page] == 5)
 			{
 				global.key_enter = kk;
+				inputting = false;
 			}
 			
 			if (kk != global.key_confirm && menu_option[page] == 6)

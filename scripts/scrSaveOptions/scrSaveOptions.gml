@@ -34,6 +34,8 @@ with (instance_create_layer(0, 0, layer, oOptionsSave))
 	ds_map_add(map, "key_up", global.key_up);
 	ds_map_add(map, "key_down", global.key_down);
 	ds_map_add(map, "key_jump", global.key_jump);
+	ds_map_add(map, "key_restart", global.key_restart);
+	ds_map_add(map, "key_camToggle", global.key_camToggle);
 	
 	//Controller controls
 	ds_map_add(map, "button_back", global.button_back);
@@ -46,6 +48,8 @@ with (instance_create_layer(0, 0, layer, oOptionsSave))
 	ds_map_add(map, "button_up", global.button_up);
 	ds_map_add(map, "button_down", global.button_down);
 	ds_map_add(map, "button_jump", global.button_jump);
+	ds_map_add(map, "button_restart", global.button_restart);
+	ds_map_add(map, "button_camToggle", global.button_camToggle);
 }
 	
 //Wrap the root list up in a map

@@ -12,6 +12,7 @@ global.spawnhsp = 0;
 global.spawnvsp = 0;
 global.allowPush = 0;
 global.allowPull = 0;
+global.deathCounter = 0;
 
 //Meta stuff
 global.debugging = false;

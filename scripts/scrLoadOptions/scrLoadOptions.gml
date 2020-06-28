@@ -35,6 +35,8 @@ if (file_exists("options.sav"))
 			global.key_up = map[? "key_up"];
 			global.key_down = map[? "key_down"];
 			global.key_jump = map[? "key_jump"];
+			global.key_restart = map[? "key_restart"];
+			global.key_camToggle = map[? "key_camToggle"];
 			
 			//Controller controls
 			global.button_back = map[? "button_back"];
@@ -47,6 +49,8 @@ if (file_exists("options.sav"))
 			global.button_up = map[? "button_up"];
 			global.button_down = map[? "button_down"];
 			global.button_jump = map[? "button_jump"];
+			global.button_restart = map[? "button_restart"];
+			global.button_camToggle = map[? "button_camToggle"];
 		}
 	}
 		

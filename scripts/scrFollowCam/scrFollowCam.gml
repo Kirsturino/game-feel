@@ -1,3 +1,7 @@
+//Camera manipulation
+scrCameraManipulation();
+
+//Follow player
 if (instance_exists(oPlayer))
 {
 	scrShake();

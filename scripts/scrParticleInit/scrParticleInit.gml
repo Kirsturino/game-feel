@@ -160,7 +160,7 @@ part_type_life(global.deathPart,20,40);
 //Familiar particles
 global.trailPart = part_type_create();
 part_type_shape(global.trailPart,pt_shape_flare);
-part_type_size(global.trailPart,0.2,0.2,-0.01,0);
+part_type_size(global.trailPart,0.15,0.2,-0.01,0);
 part_type_scale(global.trailPart,1,1);
 part_type_color1(global.trailPart,global.cWhite);
 part_type_alpha2(global.trailPart,0.5,0);
