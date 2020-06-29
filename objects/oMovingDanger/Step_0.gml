@@ -1,0 +1,1 @@
+scrJumpInDirection(moveSpeed, moveDir);

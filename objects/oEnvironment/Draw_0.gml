@@ -106,5 +106,7 @@ if (!global.debugging)
 //Rain particles
 if (rain)
 {
-	part_emitter_region(global.partSystem, global.rainEmitter, oPlayer.x - viewWidth * 0.75, oPlayer.x + viewWidth * 0.75, oPlayer.y - viewHeight, oPlayer.y - viewHeight, ps_shape_rectangle, ps_distr_linear);
+	var camX = camera_get_view_x(view);
+	var camY = camera_get_view_y(view);
+	part_emitter_region(global.partSystem, global.rainEmitter, camX - viewWidth * 0.75, camX + viewWidth * 0.75, camY - viewHeight, camY - viewHeight, ps_shape_rectangle, ps_distr_linear);
 }

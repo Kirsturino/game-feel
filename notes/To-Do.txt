@@ -12,10 +12,7 @@ Features:
 - Menu navigation with arrow keys
 - Ponder on direction based pulling and pushing
 - Add surface secret(s)
-- Add remappable inputs for
-	- Room restart
-	- Cam toggle
--Polish texts, find good pixel font for small text
+- Polish texts, find good pixel font for small text
 - Speedrun clock
 
 - Mull over moving platforms
@@ -29,15 +26,11 @@ Graphics
 - Polish ground tileset
 - Change parallax layer colours for more contrast
 - Separate player particle layer
-- Checkpoint graphics (familiar spawn on checkpoint)
-
 
 Sound
 - Default BGM
 - Main menu BGM
 - Final Scene BGM
-- Freecam toggle SFX
-- Checkpoint SFX
 
 - Research audio emitters for environment sounds
  - No for gameplay objects, possible for ambient noises

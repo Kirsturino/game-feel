@@ -5,7 +5,14 @@ with (oFamiliar)
 	var flicker = random_range(-0.2, 0.2);
 	lightRadius += flicker;
 	lightRadius = clamp(lightRadius, lightRadiusMin, lightRadiusMax);
-	scrLightPlayer(oLighting.lightSurf, x + blockSize * 2, y - sprite_height / 2 + blockSize * 2, lightRadius + wiggle, 8);
+	
+	if (followTarget == oPlayer.id)
+	{
+		scrLightPlayer(oLighting.lightSurf, x + blockSize * 2, y - sprite_height / 2 + blockSize * 2, lightRadius + wiggle, 8);
+	} else
+	{
+		scrLight(oLighting.lightSurf, x + blockSize * 2, y - sprite_height / 2 + blockSize * 2, lightRadius + wiggle, 8);
+	}
 }
 
 with (oPushPull)

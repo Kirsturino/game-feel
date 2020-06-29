@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "084d3317-e71c-42ca-9c5e-1b7ee44e5180",
+            "Value": {
+                "id": "3455fd2c-e7f9-4328-8d60-b5d4b2918a9d",
+                "resourcePath": "sounds\\sndCheckpointGet\\sndCheckpointGet.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "085f6231-3ee5-4a98-a9c3-52532c3eff72",
             "Value": {
                 "id": "a02b9671-91e5-42e2-8fe7-5893a7435e21",
@@ -623,6 +631,14 @@
             }
         },
         {
+            "Key": "3c299750-b3a3-44f7-901e-8fbeb351b466",
+            "Value": {
+                "id": "4b27a02d-446e-4221-88b5-331dfea38cb1",
+                "resourcePath": "rooms\\rmCaveSixteen\\rmCaveSixteen.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "3da2d627-37c8-453c-ab20-9845da4bc10f",
             "Value": {
                 "id": "e03a3d03-5cbc-4cfb-b4d0-8aa5c757c105",
@@ -668,6 +684,14 @@
                 "id": "24fda401-fb2e-4ce2-a3c9-194ab235e991",
                 "resourcePath": "objects\\oGrass\\oGrass.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "43323bdc-53d3-4057-91bb-41e34781d974",
+            "Value": {
+                "id": "3da13269-48d9-4ca5-8f0c-93ac99b9507a",
+                "resourcePath": "sounds\\sndFreeCamToggleOff\\sndFreeCamToggleOff.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -1383,6 +1407,14 @@
             }
         },
         {
+            "Key": "7bb92b11-e10d-4187-aaa1-920ce52902dc",
+            "Value": {
+                "id": "0a187cb1-4ec5-4f35-a813-d44c92646861",
+                "resourcePath": "sounds\\sndFreeCamToggleOn\\sndFreeCamToggleOn.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "7e2d3332-7280-4612-b805-51a82a5bc879",
             "Value": {
                 "id": "1792f02e-9aca-498f-8989-e2d9d2017a77",
@@ -1532,6 +1564,14 @@
                 "id": "8e9691f6-7fbc-4130-8241-bbcf33e6a15c",
                 "resourcePath": "scripts\\scrHorCollision\\scrHorCollision.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8f6ca42f-6954-4bda-8021-c77dc8ae1899",
+            "Value": {
+                "id": "1169de4a-e56b-4305-865a-ffd2d9972155",
+                "resourcePath": "objects\\oMovingDanger\\oMovingDanger.yy",
+                "resourceType": "GMObject"
             }
         },
         {

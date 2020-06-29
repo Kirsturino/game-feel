@@ -75,6 +75,7 @@ if (interact != noone)
 			move = 0;
 			wallJumping = false;
 			wallJumpTimer = wallJumpTimerMax;
+			wantsToJump = false;
 			canWallJump = false;
 			wantsToPull = false;
 			wantsToPush = false;
@@ -180,6 +181,9 @@ if (isPull || isPush)
 	vspMax = vspMaxPP;
 	airAxl = 0;
 	curFallSpeed = fastFallSpeed;
+	
+	//Prevent walljump jank after dashing
+	canWallJump = false;
 } else
 {
 	if (state == scrGrounded)

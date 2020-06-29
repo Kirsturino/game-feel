@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oCheckpoint",
     "eventList": [
-        
+        {
+            "id": "61acf7b7-a5f8-4ae6-81a6-0e53b83508fa",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "2e50f2c9-1ef9-4d92-b4fc-17b98f1ecfee"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

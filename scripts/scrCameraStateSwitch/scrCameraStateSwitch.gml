@@ -9,12 +9,15 @@ if (oPlayer.freeCamToggle)
 				blockMovement = true;
 				scrNullifyMovement();
 			}
+			marginTarget = 8;
+			audio_play_sound(sndFreeCamToggleOn, 10, false);
 		break;
 		
 		case scrFreeCam:
 			state = scrFollowCam;
 			oPlayer.blockMovement = false;
-			margin = 0;
+			marginTarget = -8;
+			audio_play_sound(sndFreeCamToggleOff, 10, false);
 		break;
 	}
 }

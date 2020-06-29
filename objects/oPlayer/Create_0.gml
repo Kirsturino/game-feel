@@ -150,7 +150,7 @@ if (!global.pause)
 }
 
 //Spawn familiar
-instance_create_layer(x, y, "Player", oFamiliar);
+with (instance_create_layer(x, y, "Player", oFamiliar)) followTarget = other;
 
 //Controller & Input stuff
 gamepad_set_axis_deadzone(global.controller, 0.1);
