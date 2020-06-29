@@ -36,15 +36,6 @@ part_emitter_region(global.partSystem, global.ambientEmitter, 0, room_width, 0, 
 //Rain particles
 part_emitter_stream(global.partSystem, global.rainEmitter, global.rainPart, 4);
 
-////Wave shader uniforms
-//uTime = shader_get_uniform(shdWave,"time")
-//uFrequency = shader_get_uniform(shdWave,"frequency")
-//uIntensity = shader_get_uniform(shdWave,"intensity")
-//frequency = 50.0;
-//Lower value = more intense
-//intensity = 20.0;
-//spd = 0.2;
-
 //Surface jank
 if (surface_exists(parSurf))
 {

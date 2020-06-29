@@ -1223,6 +1223,14 @@
             }
         },
         {
+            "Key": "6f2f6a28-eeb4-4ade-bd70-9fd2f791ea84",
+            "Value": {
+                "id": "a1650614-6ca4-48c2-ac16-06ab8d066e33",
+                "resourcePath": "objects\\oFlameHandler\\oFlameHandler.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6f43a7e2-fec2-4fb4-a497-450e2f197fe7",
             "Value": {
                 "id": "77cf8944-7d7a-4e9b-ba19-d8e63e1aa977",
@@ -2071,6 +2079,14 @@
             }
         },
         {
+            "Key": "cafcb7d7-c75b-49a6-920f-8c60c50810d8",
+            "Value": {
+                "id": "f461c94c-b344-4a32-8712-f6e9533e43a7",
+                "resourcePath": "scripts\\scrFlameWall\\scrFlameWall.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cbd7c7be-8991-4374-b2a2-b2d31ed16e23",
             "Value": {
                 "id": "b2e1fec7-e523-498a-b880-3b9794ca3336",
@@ -2705,6 +2721,7 @@
         "331345e2-2719-4198-97ce-4d5bff0b1d1c",
         "947299fe-7bf5-4b1e-b517-f6a12991b538",
         "4a356983-fa6f-40dd-a632-a7862136707e",
+        "cafcb7d7-c75b-49a6-920f-8c60c50810d8",
         "9fe850d2-fc8c-4662-9b9f-511f7ef0dd93",
         "fd0818ad-c1b4-4567-aee1-76381d4ff6e5",
         "d2d5cde9-5c86-45ee-a1a7-a607fb14a019",

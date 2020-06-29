@@ -93,13 +93,7 @@ if (!global.debugging)
 	{
 		var drawX = clamp(camX / 4, 0, room_width);
 		var drawY = clamp(camY / 8, -room_height, 0);
-		
-		//shader_set(shdWaveStatic);
-		//shader_set_uniform_f(uTime,current_time/1000 * spd);
-		//shader_set_uniform_f(uFrequency, frequency);
-		//shader_set_uniform_f(uIntensity, intensity);
 		draw_surface(parSurfCloseMountain, drawX, drawY);
-		//shader_reset();
 	}
 }
 
