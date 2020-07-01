@@ -1,4 +1,4 @@
-if (place_meeting(x, y, oDanger))
+if (place_meeting(x, y, oDanger) && !global.debugging)
 {
 	scrToDead();
 }
