@@ -21,7 +21,7 @@ if (!spawnRestore && hidden)
 		draw_sprite_ext(sprite_index, 0, drawX, drawY, xScale, yScale, rot, color, 1 - global.fakeLayerAlpha);
 	}
 	
-} else if (!spawnRestore)
+} /* else if (!spawnRestore)
 {
 	if (drawTri)
 	{
@@ -30,4 +30,4 @@ if (!spawnRestore && hidden)
 	{
 		draw_sprite_ext(sprite_index, 0, drawX, drawY, xScale, yScale, rot, color, 1);
 	}
-}
+} */

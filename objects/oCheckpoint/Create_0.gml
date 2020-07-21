@@ -2,5 +2,5 @@
 
 if (global.spawnX == x && global.spawnY == y)
 {
-	with (instance_create_layer(x, y, "Lighting", oFamiliar)) followTarget = other;
+	with (instance_create_layer(x, y, "Lighting", oFamiliar)) {followTarget = other; yOffset = 8;}
 }

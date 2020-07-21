@@ -11,7 +11,7 @@ with (oFamiliar)
 		scrLightPlayer(oLighting.lightSurf, x + blockSize * 2, y - sprite_height / 2 + blockSize * 2, lightRadius + wiggle, 8);
 	} else
 	{
-		scrLight(oLighting.lightSurf, x + blockSize * 2, y - sprite_height / 2 + blockSize * 2, lightRadius + wiggle, 8);
+		scrLightFamiliar(oLighting.lightSurf, x + blockSize * 2, y - sprite_height / 2 + blockSize * 2, lightRadius + wiggle, 8);
 	}
 }
 
@@ -33,6 +33,12 @@ with (oLight)
 {
 	var wiggle = 22.5 + scrWave(-4, 4, 6, 0);
 	scrLight(oLighting.lightSurf, x + blockSize * 2, y + blockSize * 2, 64 + wiggle, 8);
+}
+
+with (oPushPullRestore)
+{
+	var wiggle = 22.5 + scrWave(-4, 4, 6, 0);
+	scrLight(oLighting.lightSurf, x + blockSize * 2, y + blockSize * 2, 8 + wiggle, 8);
 }
 
 draw_surface(lightSurf, -blockSize * 2, -blockSize * 2);

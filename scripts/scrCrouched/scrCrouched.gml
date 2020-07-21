@@ -16,6 +16,7 @@ scrSquash();
 scrTransition();
 scrSecrets();
 scrCheckpoint();
+scrInteractables();
 
 //Animations
 scrCrouchAnimation();

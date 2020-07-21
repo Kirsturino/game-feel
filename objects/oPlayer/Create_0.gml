@@ -150,10 +150,14 @@ if (!global.pause)
 }
 
 //Spawn familiar
-with (instance_create_layer(x, y, "Player", oFamiliar)) followTarget = other;
+with (instance_create_layer(x, y, "Player", oFamiliar)) {followTarget = other; shouldWiggle = true;}
 
 //Controller & Input stuff
 gamepad_set_axis_deadzone(global.controller, 0.1);
 
 //Secret variables
 followingCollectible = noone;
+
+//Interacting variables
+interactDistance = 16;
+lastSign = noone;

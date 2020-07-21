@@ -1,0 +1,1 @@
+text = "You can also just toggle freecam with " + freeCamKey + ".";

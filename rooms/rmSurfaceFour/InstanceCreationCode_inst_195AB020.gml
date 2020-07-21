@@ -1,0 +1,1 @@
+text = "You can fall through platforms by pressing down and jump together.";

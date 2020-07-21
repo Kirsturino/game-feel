@@ -3,23 +3,6 @@ if (oPlayer.restartPress)
 	room_restart();
 }
 
-//Debug between rooms
-if (keyboard_check_pressed(ord("Q")))
-{
-	if (room_exists(room - 1))
-	{
-		room_goto(room - 1);
-	}
-}
-
-if (keyboard_check_pressed(ord("E")))
-{
-	if (room_exists(room + 1))
-	{
-		room_goto(room + 1);
-	}
-}
-
 if (keyboard_check_pressed(ord("T")))
 {
 	global.debugging = !global.debugging;
@@ -49,12 +32,22 @@ if (keyboard_check_pressed(ord("T")))
 	layer_set_visible(layerID, !global.debugging);
 }
 
-if (keyboard_check_pressed(ord("G")))
+if (global.debugging)
 {
-	repeat(5) show_debug_message("------------");
-}
+	//Debug between rooms
+	if (keyboard_check_pressed(ord("Q")))
+	{
+		if (room_exists(room - 1))
+		{
+			room_goto(room - 1);
+		}
+	}
 
-if (keyboard_check_pressed(ord("B")))
-{
-	global.highContrast = !global.highContrast;
+	if (keyboard_check_pressed(ord("E")))
+	{
+		if (room_exists(room + 1))
+		{
+			room_goto(room + 1);
+		}
+	}
 }

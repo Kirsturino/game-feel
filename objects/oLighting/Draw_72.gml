@@ -1,8 +1,10 @@
 if (surface_exists(lightSurf))
 {
 	surface_set_target(lightSurf);
-	var black = make_color_hsv(240, 56 , 14);
-	draw_clear_alpha(black, 0.5);
+	//Remake palette black
+	//var black = make_color_hsv(240, 56 , 14);
+	var black = c_black;
+	draw_clear_alpha(black, darknessAlpha);
 	surface_reset_target();
 } else
 {

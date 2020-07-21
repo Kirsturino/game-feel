@@ -6,10 +6,10 @@
 
 if (oPlayer.ppFrames == oPlayer.ppFramesMax)
 {
-	lightAlpha = scrApproach(lightAlpha, 1, 0.1);
+	lightAlpha = scrApproach(lightAlpha, 1, 0.05);
 } else
 {
-	lightAlpha = scrApproach(lightAlpha, 0, 0.1);
+	lightAlpha = scrApproach(lightAlpha, 0, 0.05);
 }
 	
 if (surface_exists(argument0))

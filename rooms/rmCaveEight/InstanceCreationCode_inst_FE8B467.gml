@@ -1,0 +1,1 @@
+text = "You can now push by pressing " + pushKey + ". It does exactly what you think it does...";

@@ -27,7 +27,7 @@ if (drawTri)
 {
 	visualInteractRange = lerp(visualInteractRange, interactRange, 0.1);
 	offset = lerp(offset, 22.5, 0.1);
-	triAlpha = scrApproach(triAlpha, 0.5, 0.05);
+	triAlpha = scrApproach(triAlpha, 0.5, 0.1);
 	rot = lerp(rot, triDir, 0.2);
 	//xScale = lerp(xScale, scrWave(0.6, 1.4, 0.5, 0.25), 0.1);
 	//yScale = lerp(yScale, scrWave(0.6, 1.4, 0.5, 0.0), 0.1);

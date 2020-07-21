@@ -14,12 +14,13 @@
         "db680fe0-f7c2-4763-8791-5f7c66d11107",
         "d2ac9412-6593-4340-98cd-951b9458c17e",
         "8f6ca42f-6954-4bda-8021-c77dc8ae1899",
-        "2e50f2c9-1ef9-4d92-b4fc-17b98f1ecfee",
         "7ba4ea2d-703f-4c96-8007-fed4df2c3393",
         "a58b8e36-6441-45b7-bd0e-efa3cff25dff",
         "85eab859-96d6-4bf2-bdfb-fdddf60149ed",
         "1db60372-c5d9-4336-8025-d985147f12b3",
-        "5ea53251-5699-4408-a3cc-d31b19d4b553"
+        "5ea53251-5699-4408-a3cc-d31b19d4b553",
+        "2e50f2c9-1ef9-4d92-b4fc-17b98f1ecfee",
+        "ca7fe43b-4b6a-4d95-9e89-2ebfe3208d79"
     ],
     "filterType": "GMObject",
     "folderName": "Actors",

@@ -28,7 +28,13 @@ triAlpha = 0;
 offset = 22.5;
 
 //Init particles
-ppEmitter = part_emitter_create(global.partSystem);
+if (global.allowPull)
+{
+	ppEmitter = part_emitter_create(global.partSystem);
+} else
+{
+	ppEmitter = noone;
+}
 
 //Spawn restore object for cool gameplay
 if (spawnRestore)

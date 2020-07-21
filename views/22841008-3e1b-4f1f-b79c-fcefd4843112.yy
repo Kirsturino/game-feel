@@ -12,8 +12,7 @@
         "d156ff82-b789-482b-b6b7-847a25bbe1a3",
         "23332e1e-dc1f-48c3-bc13-33416a5333ef",
         "cf871c96-b31d-4b40-bbc0-9bae0b357318",
-        "e4e2b48a-1f05-47b4-a6ef-0743a4b66f22",
-        "e1d1eeb0-2087-433e-8f46-1a604b72aca6"
+        "e4e2b48a-1f05-47b4-a6ef-0743a4b66f22"
     ],
     "filterType": "GMSprite",
     "folderName": "Editor",

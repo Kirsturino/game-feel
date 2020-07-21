@@ -1,10 +1,10 @@
 //Follow any object
+var wiggle = scrWave(-6, 6, 2, 0) * shouldWiggle;
+var wiggle2 = scrWave(-8, 4, 3, 1) * shouldWiggle;
 
-var wiggle = scrWave(-6, 6, 2, 0);
+
 x = lerp(x, followTarget.x + wiggle, 0.15);
-
-wiggle = scrWave(-8, 4, 3, 1);
-y = lerp(y, followTarget.y - 20 + wiggle, 0.15);
+y = lerp(y, followTarget.y - yOffset + wiggle2, 0.15);
 
 //Particles
 var part = scrChance(0.1);
