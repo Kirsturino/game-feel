@@ -1,6 +1,7 @@
 /// @description Make visuals for flame hazard
 
 flameSurf = surface_create(room_width + viewWidth, room_height + viewHeight);
+introY = 64;
 
 //Wave shader uniforms
 uTime = shader_get_uniform(shdWave,"time")

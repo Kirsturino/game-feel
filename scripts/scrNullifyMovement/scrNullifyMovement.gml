@@ -2,6 +2,7 @@
 left = false;
 right = false;
 down = false;
+up = false;
 leftPress = false;
 rightPress = false;
 leftRelease = false;

@@ -6,14 +6,11 @@ Features:
 - IDEA: Platforms/Walls you destroy if you dash at them
 - IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
 
-
 - Finish World 1
 - Triggers that change camera zoom (?)
 - Menu navigation with arrow keys
-- Polish texts, find good pixel font for small text
 - Speedrun clock
-- Flame room redesign
-- Maybe make moving collider lerp to player y coordinate?
+- Add wavedashing, make it so if you go to jump script while ppFrames are not at max it triggers a new kind of jump
 
 Graphics
 - AI interpolation for player animations?
@@ -21,9 +18,8 @@ Graphics
 - Polish ground tileset
 - Change parallax layer colours for more contrast
 - Separate player particle layer
-- Checkpoint graphics
 - New palette?
-- Change darkness alpha for surface and cave
+- Polish fire effect
 
 Sound
 - Default BGM

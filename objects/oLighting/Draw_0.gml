@@ -32,7 +32,7 @@ with (oPushPull)
 with (oLight)
 {
 	var wiggle = 22.5 + scrWave(-4, 4, 6, 0);
-	scrLight(oLighting.lightSurf, x + blockSize * 2, y + blockSize * 2, 64 + wiggle, 8);
+	scrLight(oLighting.lightSurf, x + blockSize * 2, y + blockSize * 2, radius + wiggle, 8);
 }
 
 with (oPushPullRestore)

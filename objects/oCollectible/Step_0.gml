@@ -11,6 +11,11 @@ if (!destroy && !following)
 	image_xscale = lerp(image_xscale, 1, 0.1);
 
 	image_angle += rotSpeed;
+	
+	if (scrChance(0.2))
+	{
+		part_particles_create(global.partSystem, x, y, global.secretPart, 1);
+	}
 } else if (destroy)
 {
 	//Some animation stuff

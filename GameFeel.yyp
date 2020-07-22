@@ -751,6 +751,14 @@
             }
         },
         {
+            "Key": "4692d262-f24f-4754-a452-df3df4cddf44",
+            "Value": {
+                "id": "ff0fc391-1f83-4c1c-9bcf-cd69e2372701",
+                "resourcePath": "rooms\\rmCaveSeventeen\\rmCaveSeventeen.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "469d7f91-6049-44a5-a893-fb1a51d5690b",
             "Value": {
                 "id": "f862316c-f6d9-4b92-b7a0-f8fa298ebe6c",
@@ -2284,6 +2292,14 @@
                 "id": "3ef69180-b53d-4b6f-bfe2-bccba060222d",
                 "resourcePath": "views\\db785b38-1771-4e07-8c32-0c58b897fc95.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dc30aafc-74cb-45f3-8dee-fa2bd7cbb838",
+            "Value": {
+                "id": "99a7751f-c849-4d57-9a3d-cb75a3370056",
+                "resourcePath": "rooms\\rmCaveFifteenPointFive\\rmCaveFifteenPointFive.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

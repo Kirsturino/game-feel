@@ -16,7 +16,7 @@ if (ds_list_find_index(global.collectibleList, name) != -1)
 } else
 {
 	//Timer for SFX
-	alarm[0] = 120;
+	alarm[0] = 240;
 	
 	var collected = false;
 }

@@ -13,6 +13,7 @@ if (obj != noone)
 	if (pullPress && !obj.drawText)
 	{
 		obj.alarm[0] = 1;
+		obj.alarm[1] = -1;
 		obj.drawText = true;
 		
 		audio_play_sound(sndMenu, 10, false);

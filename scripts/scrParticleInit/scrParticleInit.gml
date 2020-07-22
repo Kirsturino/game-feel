@@ -118,10 +118,10 @@ part_type_life(global.restorePart,30,50);
 
 //Secret particles
 global.secretPart = part_type_create();
-part_type_shape(global.secretPart,pt_shape_star);
+part_type_shape(global.secretPart,pt_shape_flare);
 part_type_size(global.secretPart,0.05,0.15,0,0);
 part_type_scale(global.secretPart,0.5,0.5);
-part_type_color1(global.secretPart,global.cOrange);
+part_type_color3(global.secretPart,global.cYellow, global.cOrange, global.cOrangeDark);
 part_type_alpha3(global.secretPart,0,0.5,0);
 part_type_speed(global.secretPart,0.1,0.2,0,0);
 part_type_direction(global.secretPart,0,359,0,0);
@@ -204,3 +204,29 @@ part_type_gravity(global.walkPart,0.001,270);
 part_type_orientation(global.walkPart,0,0,0,0,1);
 part_type_blend(global.walkPart,1);
 part_type_life(global.walkPart,30,60);
+
+//Rising smoke particles
+global.smokePart = part_type_create();
+part_type_shape(global.smokePart,pt_shape_explosion);
+part_type_size(global.smokePart,1,2,0,0);
+part_type_scale(global.smokePart,1,1);
+part_type_color1(global.smokePart,global.cBlack);
+part_type_alpha2(global.smokePart,0.1,0);
+part_type_speed(global.smokePart,1,1.5,0.01,0);
+part_type_direction(global.smokePart,90,90,0,0);
+part_type_orientation(global.smokePart,0,360,0,10,1);
+part_type_blend(global.smokePart,false);
+part_type_life(global.smokePart,60,120);
+
+//Rising sparks and stuff
+global.sparkPart = part_type_create();
+part_type_shape(global.sparkPart,pt_shape_flare);
+part_type_size(global.sparkPart,0.01,0.1,0,0);
+part_type_scale(global.sparkPart,1,1);
+part_type_color3(global.sparkPart,global.cYellow, global.cOrange, global.cBlack);
+part_type_alpha3(global.sparkPart,1, 1, 0);
+part_type_speed(global.sparkPart,1,2,0.01,0);
+part_type_direction(global.sparkPart,90,90,0,30);
+part_type_orientation(global.sparkPart,0,360,0,90,1);
+part_type_blend(global.sparkPart,1);
+part_type_life(global.sparkPart,60,120);

@@ -31,7 +31,22 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "6d559498-80e3-420b-88ad-e2bbb094204e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "64",
+            "varName": "radius",
+            "varType": 1
+        }
+    ],
     "solid": false,
     "spriteId": "23332e1e-dc1f-48c3-bc13-33416a5333ef",
     "visible": true
