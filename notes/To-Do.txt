@@ -17,9 +17,8 @@ Graphics
 - Polish grass shader
 - Polish ground tileset
 - Change parallax layer colours for more contrast
-- Separate player particle layer
+- Separate player particle layer, add more particle layers, like one on top of fakegroundtile layer
 - New palette?
-- Polish fire effect
 
 Sound
 - Default BGM

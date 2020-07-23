@@ -12,7 +12,7 @@ frequency = 100.0;
 intensity = 2;
 spd = 1;
 
-if (surface_exists(flameSurf))
-{
-	scrFlameWall();
-}
+//if (surface_exists(flameSurf))
+//{
+//	scrFlameWall();
+//}

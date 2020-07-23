@@ -1,4 +1,4 @@
-if (surface_exists(flameSurf))
-{
-	surface_free(flameSurf);
-}
+//if (surface_exists(flameSurf))
+//{
+//	surface_free(flameSurf);
+//}
