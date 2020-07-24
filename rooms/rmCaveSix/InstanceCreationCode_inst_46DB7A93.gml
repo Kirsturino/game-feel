@@ -1,0 +1,1 @@
+text = "You can quickly reset a room by pressing " + resetKey + ".";

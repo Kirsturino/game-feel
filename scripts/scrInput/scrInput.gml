@@ -38,8 +38,8 @@ if (gamepad_axis_value(global.controller, gp_axislh) > 0 || gamepad_button_check
 {
 	right = false;
 }
-	
-if (gamepad_axis_value(global.controller, gp_axislv) > 0 || gamepad_button_check(global.controller, global.button_down) || keyboard_check(global.key_down))
+
+if (gamepad_axis_value(global.controller, gp_axislv) > 0.5 || gamepad_button_check(global.controller, global.button_down) || keyboard_check(global.key_down))
 {
 	down = true;
 } else
@@ -47,7 +47,7 @@ if (gamepad_axis_value(global.controller, gp_axislv) > 0 || gamepad_button_check
 	down = false;
 }
 
-if (gamepad_axis_value(global.controller, gp_axislv) < 0 || gamepad_button_check(global.controller, global.button_up) || keyboard_check(global.key_up))
+if (gamepad_axis_value(global.controller, gp_axislv) < -0.5 || gamepad_button_check(global.controller, global.button_up) || keyboard_check(global.key_up))
 {
 	up = true;
 } else
@@ -55,7 +55,7 @@ if (gamepad_axis_value(global.controller, gp_axislv) < 0 || gamepad_button_check
 	up = false;
 }
 
-if (gamepad_axis_value(global.controller, gp_axislh) < 0 || keyboard_check_pressed(global.key_left) || gamepad_button_check_pressed(global.controller, global.button_left))
+if (keyboard_check_pressed(global.key_left) || gamepad_button_check_pressed(global.controller, global.button_left))
 {
 	leftPress = true;
 } else
@@ -63,7 +63,7 @@ if (gamepad_axis_value(global.controller, gp_axislh) < 0 || keyboard_check_press
 	leftPress = false;
 }
 
-if (gamepad_axis_value(global.controller, gp_axislh) > 0 || keyboard_check_pressed(global.key_right) || gamepad_button_check_pressed(global.controller, global.button_right))
+if (keyboard_check_pressed(global.key_right) || gamepad_button_check_pressed(global.controller, global.button_right))
 {
 	rightPress = true;
 } else
@@ -71,9 +71,39 @@ if (gamepad_axis_value(global.controller, gp_axislh) > 0 || keyboard_check_press
 	rightPress = false;
 }
 
-
 leftRelease = keyboard_check_released(global.key_left) || gamepad_button_check_released(global.controller, global.button_left);
 rightRelease = keyboard_check_released(global.key_right) || gamepad_button_check_released(global.controller, global.button_right);
+
+//Joystick jank
+var joyH = gamepad_axis_value(global.controller, gp_axislh);
+if (joyH < -global.deadzone && !joyActive)
+{
+	joyActive = true;
+	leftPress = true;
+	releaseJoyDir = -1;
+} else if (joyH > global.deadzone && !joyActive)
+{
+	joyActive = true;
+	rightPress = true;
+	releaseJoyDir = 1;
+} else if (abs(joyH) < global.deadzone && joyActive)
+{
+	if (releaseJoyDir > 0)
+	{
+		rightRelease = true;
+	} else if (releaseJoyDir < 0)
+	{
+		leftRelease = true;
+		
+	}
+	
+	joyActive = false;
+}
+
+if (sign(joyH) != releaseJoyDir)
+{
+	joyActive = false;
+}
 
 jump = keyboard_check_pressed(global.key_jump) || gamepad_button_check_pressed(global.controller, global.button_jump);
 jumpHeld = keyboard_check(global.key_jump) || gamepad_button_check(global.controller, global.button_jump) || keyboard_check(global.key_pull) || keyboard_check(global.key_push) || gamepad_button_check(global.controller, global.button_push) || gamepad_button_check(global.controller, global.button_pull);

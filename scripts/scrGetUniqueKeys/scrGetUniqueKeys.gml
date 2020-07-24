@@ -87,11 +87,11 @@ switch( argument0 )
 	case gp_padu: return "DPAD UP"; break;
 	case gp_padd: return "DPAD DOWN"; break;
 	
-	case gp_shoulderl: return "LEFT BUMPER"; break;
-	case gp_shoulderr: return "RIGHT BUMPER"; break;
-	case gp_shoulderlb: return "LEFT TRIGGER"; break;
-	case gp_shoulderrb: return "RIGHT TRIGGER"; break;
+	case gp_shoulderl: return "LB"; break;
+	case gp_shoulderr: return "RB"; break;
+	case gp_shoulderlb: return "LT"; break;
+	case gp_shoulderrb: return "RT"; break;
 	
-	case gp_stickl: return "LEFT STICK"; break;
-	case gp_stickr: return "RIGHT STICK"; break;
+	case gp_stickl: return "L3"; break;
+	case gp_stickr: return "R3"; break;
 }

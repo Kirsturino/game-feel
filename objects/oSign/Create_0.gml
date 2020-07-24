@@ -19,14 +19,16 @@ if (global.controller == noone)
 	pullKey = scrGetUniqueKeys(global.key_pull);
 	pushKey = scrGetUniqueKeys(global.key_push);
 	freeCamKey = scrGetUniqueKeys(global.key_camToggle);
+	resetKey = scrGetUniqueKeys(global.key_restart);
 } else
 {
-	leftKey = string_lower(scrGetUniqueKeys(global.button_left));
-	rightKey = string_lower(scrGetUniqueKeys(global.button_right));
+	leftKey = scrGetUniqueKeys(global.button_left);
+	rightKey = scrGetUniqueKeys(global.button_right);
 	jumpKey = scrGetUniqueKeys(global.button_jump);
-	pullKey = string_lower(scrGetUniqueKeys(global.button_pull));
-	pushKey = string_lower(scrGetUniqueKeys(global.button_push));
-	freeCamKey = string_lower(scrGetUniqueKeys(global.button_camToggle));
+	pullKey = scrGetUniqueKeys(global.button_pull);
+	pushKey = scrGetUniqueKeys(global.button_push);
+	freeCamKey = scrGetUniqueKeys(global.button_camToggle);
+	resetKey = scrGetUniqueKeys(global.button_restart);
 }
 
 

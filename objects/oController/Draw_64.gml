@@ -50,9 +50,9 @@
 //	draw_set_font(fDefault);
 //}
 
-if (global.debugging)
-{
-	draw_set_font(fDebug);
-	draw_text(8, 8, "Deaths: " + string(global.deathCounter));
-	draw_set_font(fDefault);
-}
+//if (global.debugging)
+//{
+//	draw_set_font(fDebug);
+//	draw_text(8, 8, "Deaths: " + string(global.deathCounter));
+//	draw_set_font(fDefault);
+//}

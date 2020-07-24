@@ -12,7 +12,7 @@ for (var i = 0; i < global.gp_num; i++;)
 	}
 }
 
-gamepad_set_axis_deadzone(global.controller, 0.2);
+gamepad_set_axis_deadzone(global.controller, global.deadzone);
 
 if (global.controller = noone)
 {

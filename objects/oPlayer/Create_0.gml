@@ -18,6 +18,8 @@ pushPress = false;
 pullPress = false;
 freeCamToggle = false;
 restartPress = false;
+joyActive = false;
+releaseJoyDir = 0;
 	
 //Initialize movement variables
 hsp = 0;

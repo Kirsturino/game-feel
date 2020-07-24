@@ -38,7 +38,6 @@ scrParticleInit();
 //Init options
 scrInitOptions();
 
-
 //Init audio groups
 audio_group_load(agAmbient);
 audio_group_load(agMusic);
@@ -57,6 +56,7 @@ audio_group_set_gain(agAmbient, global.ambientVolume, 0);
 //Get controllers
 global.gp_num = gamepad_get_device_count();
 global.controller = noone;
+global.deadzone = 0.2;
 scrGetController();
 
 //Hide mouse
