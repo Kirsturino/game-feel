@@ -7,17 +7,19 @@ Features:
 - IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
 
 - Finish World 1
-	- Finish two flame rooms
+	- Finish final flame room
 	- Polish trek back to surface
+	- Rework caveTwo
 - Triggers that change camera zoom (?)
-- Menu navigation with arrow keys
+- Menu navigation with arrow keys!!!
 - Speedrun clock
 - Add wavedashing, make it so if you go to jump script while ppFrames are not at max it triggers a new kind of jump
 - Add stat tracking for thesis purposes
 
 Graphics
 - AI interpolation for player animations?
-- Polish grass shader
+- Polish player sprite/animations
+- Optimize grass shader
 - Polish ground tileset
 - Change parallax layer colours for more contrast
 - Separate player particle layer, add more particle layers, like one on top of fakegroundtile layer

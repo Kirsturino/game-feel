@@ -9,7 +9,7 @@ if (jumpHeld)
 
 //Ledge grab
 var rightLedge = instance_place(x + 1, y, oCollision);
-if (rightLedge != noone)
+if (rightLedge != noone && state == scrAirborne)
 {
 	//See if there is space above ledge
 	if (instance_place(x + blockSize, y - ledgeGrabLength, oCollision) == noone && instance_place(x + blockSize, rightLedge.bbox_top - 1, oDanger) == noone)
@@ -30,7 +30,7 @@ if (rightLedge != noone)
 }
 
 var leftLedge = instance_place(x - 1, y, oCollision);
-if (leftLedge != noone)
+if (leftLedge != noone && state == scrAirborne)
 {
 	//See if there is space above ledge
 	if (instance_place(x - blockSize, y - ledgeGrabLength, oCollision) == noone && instance_place(x - blockSize, leftLedge.bbox_top - 1, oDanger) == noone)

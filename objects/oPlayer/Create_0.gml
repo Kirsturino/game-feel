@@ -7,6 +7,7 @@ blockMovement = false;
 //Initialize input variables
 left = false;
 right = false;
+up = false;
 down = false;
 leftPress = false;
 rightPress = false;

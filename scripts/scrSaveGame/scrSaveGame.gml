@@ -12,6 +12,7 @@ ds_map_add(map, "spawnX", global.spawnX);
 ds_map_add(map, "spawnY", global.spawnY);
 ds_map_add(map, "allowPush", global.allowPush);
 ds_map_add(map, "allowPull", global.allowPull);
+ds_map_add(map, "allowFreeCam", global.allowFreeCam);
 	
 //Temporary lists that gets destroyed with the wrapper
 	

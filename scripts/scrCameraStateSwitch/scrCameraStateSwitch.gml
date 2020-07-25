@@ -1,4 +1,4 @@
-if (oPlayer.freeCamToggle)
+if (oPlayer.freeCamToggle && oPlayer.state == scrGrounded)
 {
 	switch (state)
 	{

@@ -16,6 +16,7 @@ scrTransition();
 scrSecrets();
 scrCheckpoint();
 scrInteractables();
+scrUnlockFreeCam();
 
 //Animations
 scrGroundedAnimation();

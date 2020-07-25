@@ -31,6 +31,12 @@ if (place_meeting(x, y + 1, oCollision) || oneway)
 	//Set player up to collect secret, this is to prevent player from collecting stuff while doing
 	alarm[6] = 1;
 	
+	//Refresh inactive dash charges
+	with (oPushPullRestore)
+	{
+		if (!active) alarm[0] = 1;
+	}
+	
 	//Change state
 	state = scrGrounded;
 }

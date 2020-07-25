@@ -1,1 +1,0 @@
-text = "You can jump higher by holding jump. You'll also fall slightly slower when holding jump or pull.";

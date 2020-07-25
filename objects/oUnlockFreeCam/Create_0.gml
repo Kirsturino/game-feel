@@ -1,0 +1,1 @@
+if global.allowFreeCam instance_destroy();
