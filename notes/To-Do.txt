@@ -17,6 +17,9 @@ Features:
 - Add stat tracking for thesis purposes
 - Mario maker trail for dev purposes
 - Polish room transition coordinates when going up or down
+- Change how controller recognition works
+- Fix following collectibles resetting instantly upon death
+- Adjust ledge grab so it alway only barely pulls you over
 
 Graphics
 - AI interpolation for player animations?
