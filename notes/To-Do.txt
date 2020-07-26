@@ -15,6 +15,8 @@ Features:
 - Speedrun clock
 - Add wavedashing, make it so if you go to jump script while ppFrames are not at max it triggers a new kind of jump
 - Add stat tracking for thesis purposes
+- Mario maker trail for dev purposes
+- Polish room transition coordinates when going up or down
 
 Graphics
 - AI interpolation for player animations?
@@ -24,9 +26,12 @@ Graphics
 - Change parallax layer colours for more contrast
 - Separate player particle layer, add more particle layers, like one on top of fakegroundtile layer
 - New palette?
+- Cut back on darkness alpha, remove darkness completely from surface
+- Ambient flame graphics
 
 Sound
 - Default BGM
 - Main menu BGM
 - Final Scene BGM
 - Text thing interaction SFX
+- Downmix restore refresh SFX

@@ -8,6 +8,14 @@ following = false;
 destroy = false;
 riseSpeed = -1;
 
+if (place_meeting(x, y, oFakeCollision))
+{
+	hidden = true;
+} else
+{
+	hidden = false;
+}
+
 //Check if collectible has been collected
 if (ds_list_find_index(global.collectibleList, name) != -1)
 {

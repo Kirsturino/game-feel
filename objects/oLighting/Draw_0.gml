@@ -41,4 +41,13 @@ with (oPushPullRestore)
 	scrLight(oLighting.lightSurf, x + blockSize * 2, y + blockSize * 2, 8 + wiggle, 8);
 }
 
+with (oCollectible)
+{
+	var wiggle = 22.5 + scrWave(-4, 4, 6, 0);
+	if (!hidden)
+	{
+		scrLight(oLighting.lightSurf, x + blockSize * 2, y + blockSize * 2, 8 + wiggle, 8);
+	}
+}
+
 draw_surface(lightSurf, -blockSize * 2, -blockSize * 2);

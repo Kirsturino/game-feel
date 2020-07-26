@@ -34,7 +34,10 @@ part_emitter_stream(global.partSystem, global.ambientEmitter, global.ambientPart
 part_emitter_region(global.partSystem, global.ambientEmitter, 0, room_width, 0, room_height, ps_shape_rectangle, ps_distr_linear);
 
 //Rain particles
-part_emitter_stream(global.partSystem, global.rainEmitter, global.rainPart, 4);
+if (rain)
+{
+	part_emitter_stream(global.partSystem, global.rainEmitter, global.rainPart, 4);
+}
 
 //Surface jank
 if (surface_exists(parSurf))
