@@ -31,6 +31,8 @@ offset = 22.5;
 if (global.allowPull)
 {
 	ppEmitter = part_emitter_create(global.partSystem);
+	var partAmount = clamp(interactRange / 40, 1, 4);
+	part_emitter_stream(global.partSystem, ppEmitter, global.ppEmitterPart, partAmount);
 } else
 {
 	ppEmitter = noone;

@@ -12,6 +12,14 @@ if (obj != noone)
 	//If press interact button, start drawing text. If already drawing text, make whole string visible.
 	if (pullPress && !obj.drawText)
 	{
+		
+		with (oSign)
+		{
+			drawText = false;
+			index = 0;
+			alarm[0] = -1;
+		}
+		
 		obj.alarm[0] = 1;
 		obj.alarm[1] = -1;
 		obj.drawText = true;

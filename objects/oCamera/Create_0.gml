@@ -45,5 +45,5 @@ left = false;
 right = false;
 up = false;
 down = false;
-margin = 0;
+margin = -8;
 marginTarget = -8;

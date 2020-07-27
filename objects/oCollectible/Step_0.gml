@@ -1,11 +1,11 @@
 if (!destroy && !following)
 {
 	//Some animation stuff
-	var wiggle = scrWave(drawX - 5, drawX + 5, 4, 0);
-	x = wiggle;
+	var wiggle = scrWave(-3, 3, 4, 0);
+	x = lerp(x, drawX + wiggle, 0.1);
 
-	var wiggle = scrWave(drawY - 5, drawY + 5, 3, 1);
-	y = wiggle;
+	wiggle = scrWave(-3, 3, 3, 1);
+	y = lerp(y, drawY + wiggle, 0.1);
 
 	image_yscale = lerp(image_yscale, 1, 0.1);
 	image_xscale = lerp(image_xscale, 1, 0.1);
