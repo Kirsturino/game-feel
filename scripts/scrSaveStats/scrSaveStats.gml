@@ -22,7 +22,3 @@ scrSaveStringToFile("stats.sav", str);
 	
 //Delete data
 ds_map_destroy(wrapper);
-	
-with (oSave) instance_destroy();
-	
-show_debug_message("Saved stats!");

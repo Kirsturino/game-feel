@@ -118,5 +118,5 @@ if (rain)
 {
 	var camX = camera_get_view_x(view);
 	var camY = camera_get_view_y(view);
-	part_emitter_region(global.partSystem, global.rainEmitter, camX - viewWidth * 0.75, camX + viewWidth + viewWidth * 0.75, camY - viewHeight, camY - viewHeight, ps_shape_rectangle, ps_distr_linear);
+	part_emitter_region(global.topPartSystem, global.rainEmitter, camX - viewWidth * 0.75, camX + viewWidth + viewWidth * 0.75, camY - viewHeight, camY - viewHeight, ps_shape_rectangle, ps_distr_linear);
 }

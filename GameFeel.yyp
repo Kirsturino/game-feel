@@ -167,14 +167,6 @@
             }
         },
         {
-            "Key": "1212a44b-d5eb-40fe-9fe8-e10f91f25d3e",
-            "Value": {
-                "id": "5172edf9-5eb3-41d1-9d56-2369f79f8db1",
-                "resourcePath": "objects\\oSave\\oSave.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "1286a025-b910-42f2-a09e-3806ccad9856",
             "Value": {
                 "id": "36308f2a-ac67-4ef7-b7aa-68ddd74b24de",
@@ -1404,14 +1396,6 @@
                 "id": "d766369b-63dd-4f36-b265-bc65d289c1a5",
                 "resourcePath": "scripts\\scrSetShake\\scrSetShake.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "7757b8df-d102-43ae-a06f-90d676b2c217",
-            "Value": {
-                "id": "fbef45ae-fd83-4792-906f-b91d986c7fae",
-                "resourcePath": "objects\\oOptionsSave\\oOptionsSave.yy",
-                "resourceType": "GMObject"
             }
         },
         {

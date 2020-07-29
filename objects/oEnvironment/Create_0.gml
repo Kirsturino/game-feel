@@ -10,31 +10,36 @@ if (!part_system_exists(global.partSystem))
 	global.partSystem = part_system_create_layer("Particles", true);
 }
 
-if (!part_emitter_exists(global.partSystem, global.ambientEmitter))
+if (!part_system_exists(global.topPartSystem))
 {
-	global.ambientEmitter = part_emitter_create(global.partSystem);
+	global.topPartSystem = part_system_create_layer("TopParticles", true);
 }
 
-if (!part_emitter_exists(global.partSystem, global.rainEmitter))
+if (!part_emitter_exists(global.topPartSystem, global.ambientEmitter))
 {
-	global.rainEmitter = part_emitter_create(global.partSystem);
+	global.ambientEmitter = part_emitter_create(global.topPartSystem);
+}
+
+if (!part_emitter_exists(global.topPartSystem, global.rainEmitter))
+{
+	global.rainEmitter = part_emitter_create(global.topPartSystem);
 }
 
 //Ambient particles
 if (room == rmCaveFifteenPointNine || room == rmCaveSixteen || room == rmCaveSeventeen)
 {
-	part_emitter_stream(global.partSystem, global.ambientEmitter, global.ambientSparkPart, -5);
+	part_emitter_stream(global.topPartSystem, global.ambientEmitter, global.ambientSparkPart, -5);
 } else
 {
-	part_emitter_stream(global.partSystem, global.ambientEmitter, global.ambientPart, -5);
+	part_emitter_stream(global.topPartSystem, global.ambientEmitter, global.ambientPart, -5);
 }
 
-part_emitter_region(global.partSystem, global.ambientEmitter, 0, room_width, 0, room_height, ps_shape_rectangle, ps_distr_linear);
+part_emitter_region(global.topPartSystem, global.ambientEmitter, 0, room_width, 0, room_height, ps_shape_rectangle, ps_distr_linear);
 
 //Rain particles
 if (rain)
 {
-	part_emitter_stream(global.partSystem, global.rainEmitter, global.rainPart, 4);
+	part_emitter_stream(global.topPartSystem, global.rainEmitter, global.rainPart, 4);
 }
 
 //Generate grass on top of collision objects

@@ -8,8 +8,6 @@ if (followingCollectible != noone && state != scrDead)
 		destroy = true;
 		following = false;
 	}
-	
-	show_debug_message("Secret collected!");
 		
 	var secret = instance_place(followingCollectible.x, followingCollectible.y, oSecret);
 	if (secret == noone)

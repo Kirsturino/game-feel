@@ -20,6 +20,7 @@ if (place_meeting(x, y, oFakeCollision))
 if (ds_list_find_index(global.collectibleList, name) != -1)
 {
 	image_blend = global.cBlueLight;
+	image_alpha = 0.5;
 	var collected = true;
 } else
 {

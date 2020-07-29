@@ -16,4 +16,3 @@ global.missedJumpCounter = map[? "missedJumpCounter"];
 global.bonkPreventCounter = map[? "bonkPreventCounter"];
 
 ds_map_destroy(wrapper);
-show_debug_message("Loaded!");

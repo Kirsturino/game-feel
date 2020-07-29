@@ -16,4 +16,7 @@ if (hsp > 0)
 } else if (newestDir == "right" && hsp == 0 && hugRight == noone || hugLeft != noone)
 {
 	curSprite = sPlayerIdleLeft;
+} else
+{
+	curSprite = sPlayerIdleRight;
 }
