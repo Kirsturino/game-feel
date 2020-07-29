@@ -6,29 +6,20 @@ Features:
 - IDEA: Platforms/Walls you destroy if you dash at them
 - IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
 
-- Finish World 1
-	- Rework caveTwo
-- Triggers that change camera zoom (?)
-- Menu navigation with arrow keys!!!
-- Speedrun clock
-- Add wavedashing, make it so if you go to jump script while ppFrames are not at max it triggers a new kind of jump
-- Add stat tracking for thesis purposes
-- Mario maker trail for dev purposes
-- Polish room transition coordinates when going up or down
-- Change how controller recognition works
-- Adjust ledge grab so it alway only barely pulls you over
+- Add wavedashing, make it so if you go to jump script while ppFrames are not at max (but not at zero) it triggers a new kind of jump, kinda like longjump
 - Credits
+- Title screen/Splash screen
+- Come up with game name
+- Add collectible names
+- Make walljump speed inheriting more clear
+	- Only make it actually inherit speed if player vsp is over normal amounts, aka in vspMaxPP mode
 
 Graphics
 - AI interpolation for player animations?
 - Polish player sprite/animations
-- Optimize grass shader
-- Polish ground tileset
-- Change parallax layer colours for more contrast
-- Separate player particle layer, add more particle layers, like one on top of fakegroundtile layer
-- New palette?
-- Cut back on darkness alpha, remove darkness completely from surface
-- Ambient flame graphics
+- Separate player particle layer, add more particle layers, like one on top of fakegroundtile layer (?)
+	- Player particles behave weirdly among grass, ambient particles can't pass through fake tiles
+- Cut back on darkness alpha, remove darkness completely from surface (and add more lights?)
 
 Sound
 - Default BGM

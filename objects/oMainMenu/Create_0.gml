@@ -42,13 +42,26 @@ if (!file_exists("save.sav"))
 	);
 } else
 {
-	ds_menu_main = scrCreateMenu(
-	["CONTINUE",	main_menu_element_type.script_runner,	scrContinueGame],
-	["LEVEL SELECT",main_menu_element_type.page_transfer,	main_menu_page.levelselect],
-	["NEW GAME",	main_menu_element_type.script_runner,	scrStartNewGame],
-	["SETTINGS",	main_menu_element_type.page_transfer,	main_menu_page.settings],
-	["QUIT",		main_menu_element_type.script_runner,	scrExitGame]
-	);
+	if (ds_list_find_index(global.roomList, rmSurfaceSeven) != -1)
+	{
+		ds_menu_main = scrCreateMenu(
+		["CONTINUE",	main_menu_element_type.script_runner,	scrContinueGame],
+		["LEVEL SELECT",main_menu_element_type.page_transfer,	main_menu_page.levelselect],
+		["NEW GAME",	main_menu_element_type.script_runner,	scrStartNewGame],
+		["NEW SPEEDRUN",main_menu_element_type.script_runner,	scrStartNewSpeedrun],
+		["SETTINGS",	main_menu_element_type.page_transfer,	main_menu_page.settings],
+		["QUIT",		main_menu_element_type.script_runner,	scrExitGame]
+		);
+	} else
+	{
+		ds_menu_main = scrCreateMenu(
+		["CONTINUE",	main_menu_element_type.script_runner,	scrContinueGame],
+		["LEVEL SELECT",main_menu_element_type.page_transfer,	main_menu_page.levelselect],
+		["NEW GAME",	main_menu_element_type.script_runner,	scrStartNewGame],
+		["SETTINGS",	main_menu_element_type.page_transfer,	main_menu_page.settings],
+		["QUIT",		main_menu_element_type.script_runner,	scrExitGame]
+		);
+	}
 }
 
 //Some more lines to get which levels you've been to

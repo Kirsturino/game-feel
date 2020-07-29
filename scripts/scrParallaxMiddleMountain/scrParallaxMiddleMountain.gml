@@ -1,4 +1,4 @@
-surface_set_target(parSurfMiddleMountain);
+surface_set_target(global.parSurfMiddleMountain);
 
 var triangleFrequency = blockSize * 3;
 

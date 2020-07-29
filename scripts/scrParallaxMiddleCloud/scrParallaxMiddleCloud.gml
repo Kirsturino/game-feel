@@ -1,4 +1,4 @@
-surface_set_target(parSurfMiddleCloud);
+surface_set_target(global.parSurfMiddleCloud);
 
 //Clouds, rolling in the top of the screen. Several layers for depth
 draw_set_circle_precision(32);

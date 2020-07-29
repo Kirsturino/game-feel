@@ -29,6 +29,7 @@ if (place_meeting(x + hsp, y, oCollision))
 			}
 			
 			slidHorizontal = true;
+			global.bonkPreventCounter++;
 		} else
 		{
 			hsp = 0;

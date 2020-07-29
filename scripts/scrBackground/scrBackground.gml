@@ -1,4 +1,4 @@
-surface_set_target(parSurf);
+surface_set_target(global.parSurf);
 
 //Background color
 draw_clear(global.cBlueDark);

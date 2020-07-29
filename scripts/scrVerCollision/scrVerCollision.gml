@@ -29,6 +29,7 @@ if (place_meeting(x, y + vsp, oCollision))
 			}
 			
 			slid = true;
+			global.bonkPreventCounter++;
 		} else
 		{
 			vsp = 0;

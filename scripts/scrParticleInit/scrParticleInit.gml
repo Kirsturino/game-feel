@@ -224,9 +224,22 @@ part_type_shape(global.sparkPart,pt_shape_flare);
 part_type_size(global.sparkPart,0.01,0.1,0,0);
 part_type_scale(global.sparkPart,1,1);
 part_type_color3(global.sparkPart,global.cYellow, global.cOrange, global.cBlack);
-part_type_alpha3(global.sparkPart,1, 1, 0);
+part_type_alpha3(global.sparkPart, 1, 1, 0);
 part_type_speed(global.sparkPart,1,2,0.01,0);
 part_type_direction(global.sparkPart,90,90,0,30);
 part_type_orientation(global.sparkPart,0,360,0,90,1);
 part_type_blend(global.sparkPart,1);
 part_type_life(global.sparkPart,60,120);
+
+//Ambient sparks
+global.ambientSparkPart = part_type_create();
+part_type_shape(global.ambientSparkPart,pt_shape_flare);
+part_type_size(global.ambientSparkPart,0.01,0.1,0,0);
+part_type_scale(global.ambientSparkPart,1,1);
+part_type_color3(global.ambientSparkPart,global.cYellow, global.cOrange, global.cBlack);
+part_type_alpha3(global.ambientSparkPart, 0, 1, 0);
+part_type_speed(global.ambientSparkPart,1,2,0.01,0);
+part_type_direction(global.ambientSparkPart,90,90,0,30);
+part_type_orientation(global.ambientSparkPart,0,360,0,90,1);
+part_type_blend(global.ambientSparkPart,1);
+part_type_life(global.ambientSparkPart,120,180);

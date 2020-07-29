@@ -4,20 +4,20 @@ var camY = camera_get_view_y(view);
 
 if (!global.debugging)
 {
-	if (!surface_exists(parSurf))
+	if (!surface_exists(global.parSurf))
 	{
-		parSurf = surface_create(room_width, room_height);
+		global.parSurf = surface_create(room_width, room_height);
 	
 		//Generate a static background
 		scrBackground();
 	} else
 	{
-		draw_surface(parSurf, camX, camY);
+		draw_surface(global.parSurf, camX, camY);
 	}
 	
-	if (!surface_exists(parSurfFarCloud))
+	if (!surface_exists(global.parSurfFarCloud))
 	{
-		parSurfFarCloud = surface_create(room_width, room_height);
+		global.parSurfFarCloud = surface_create(room_width, room_height);
 	
 		//Third parallax layer
 		scrParallaxFarCloud();
@@ -25,14 +25,14 @@ if (!global.debugging)
 	{
 		var drawX = clamp(camX / 1.25, 0, room_width);
 		var drawY = clamp(camY / 1.5, 0, room_height);
-		draw_surface(parSurfFarCloud, drawX, drawY);
+		draw_surface(global.parSurfFarCloud, drawX, drawY);
 	}
 
 
 	
-	if (!surface_exists(parSurfMiddleCloud))
+	if (!surface_exists(global.parSurfMiddleCloud))
 	{
-		parSurfMiddleCloud = surface_create(room_width, room_height);
+		global.parSurfMiddleCloud = surface_create(room_width, room_height);
 	
 		//First parallax layer
 		scrParallaxMiddleCloud();
@@ -40,12 +40,12 @@ if (!global.debugging)
 	{
 		var drawX = clamp(camX / 1.5, 0, room_width);
 		var drawY = clamp(camY / 2, 0, room_height);
-		draw_surface(parSurfMiddleCloud, drawX, drawY);
+		draw_surface(global.parSurfMiddleCloud, drawX, drawY);
 	}
 	
-	if (!surface_exists(parSurfCloseCloud))
+	if (!surface_exists(global.parSurfCloseCloud))
 	{
-		parSurfCloseCloud = surface_create(room_width, room_height);
+		global.parSurfCloseCloud = surface_create(room_width, room_height);
 	
 		//Second parallax layer
 		scrParallaxCloseCloud();
@@ -53,12 +53,12 @@ if (!global.debugging)
 	{
 		var drawX = clamp(camX / 2, 0, room_width);
 		var drawY = clamp(camY / 2.5, 0, room_height);
-		draw_surface(parSurfCloseCloud, drawX, drawY);
+		draw_surface(global.parSurfCloseCloud, drawX, drawY);
 	}
 
-	if (!surface_exists(parSurfFarMountain))
+	if (!surface_exists(global.parSurfFarMountain))
 	{
-		parSurfFarMountain = surface_create(room_width, room_height);
+		global.parSurfFarMountain = surface_create(room_width, room_height);
 	
 		//Third parallax layer
 		scrParallaxFarMountain();
@@ -67,12 +67,12 @@ if (!global.debugging)
 		var drawX = clamp(camX / 1.5, 0, room_width);
 		var drawY = clamp(camY / 3, -room_height, 0);
 		
-		draw_surface(parSurfFarMountain, drawX, drawY);
+		draw_surface(global.parSurfFarMountain, drawX, drawY);
 	}
 	
-	if (!surface_exists(parSurfMiddleMountain))
+	if (!surface_exists(global.parSurfMiddleMountain))
 	{
-		parSurfMiddleMountain = surface_create(room_width, room_height);
+		global.parSurfMiddleMountain = surface_create(room_width, room_height);
 	
 		//First parallax layer
 		scrParallaxMiddleMountain();
@@ -80,12 +80,12 @@ if (!global.debugging)
 	{
 		var drawX = clamp(camX / 2, 0, room_width);
 		var drawY = clamp(camY / 4, -room_height, 0);
-		draw_surface(parSurfMiddleMountain, drawX, drawY);
+		draw_surface(global.parSurfMiddleMountain, drawX, drawY);
 	}
 	
-	if (!surface_exists(parSurfCloseMountain))
+	if (!surface_exists(global.parSurfCloseMountain))
 	{
-		parSurfCloseMountain = surface_create(room_width, room_height);
+		global.parSurfCloseMountain = surface_create(room_width, room_height);
 	
 		//Second parallax layer
 		scrParallaxCloseMountain();
@@ -93,7 +93,23 @@ if (!global.debugging)
 	{
 		var drawX = clamp(camX / 4, 0, room_width);
 		var drawY = clamp(camY / 8, -room_height, 0);
-		draw_surface(parSurfCloseMountain, drawX, drawY);
+		draw_surface(global.parSurfCloseMountain, drawX, drawY);
+	}
+}
+
+if (global.debugging)
+{
+	//Player trail when debugging
+	if (surface_exists(global.debugSurf))
+	{
+		surface_set_target(global.debugSurf);
+		draw_point(oPlayer.x, oPlayer.y)
+		surface_reset_target();
+		
+		draw_surface(global.debugSurf, 0, 0);
+	} else
+	{
+		global.debugSurf = surface_create(room_width, room_height);
 	}
 }
 

@@ -26,6 +26,9 @@ if (rightLedge != noone && state == scrAirborne)
 		vsp = -ledgeGrabSpeed;
 		audio_play_sound(sndJump, 50, false);
 		scrJumpParticles();
+		
+		//Track stats
+		global.ledgeGrabCounter++;
 	}
 }
 
@@ -47,5 +50,8 @@ if (leftLedge != noone && state == scrAirborne)
 		vsp = -ledgeGrabSpeed;
 		audio_play_sound(sndJump, 50, false);
 		scrJumpParticles();
+		
+		//Track stats
+		global.ledgeGrabCounter++;
 	}
 }

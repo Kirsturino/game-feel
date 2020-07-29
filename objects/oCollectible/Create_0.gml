@@ -29,9 +29,22 @@ if (ds_list_find_index(global.collectibleList, name) != -1)
 	var collected = false;
 }
 
-if (name == "unlockPull" || name == "unlockPush")
+if (name == "unlockPull")
 {
 	image_blend = global.cYellow;
 	
-	if (collected) instance_destroy(); else instance_create_layer(x, y, "Lighting", oLight);
+	if (collected  && global.allowPull) 
+	{
+		instance_destroy(); 
+	}
+}
+
+if (name == "unlockPush")
+{
+	image_blend = global.cYellow;
+	
+	if (collected && global.allowPush) 
+	{
+		instance_destroy(); 
+	}
 }

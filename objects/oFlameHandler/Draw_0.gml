@@ -32,5 +32,13 @@ repeat (10)
 	part_particles_create(global.partSystem, xx, yy, global.sparkPart, 1);
 }
 
+//Ambient spark particles
+var camX = camera_get_view_x(view);
+var camY = camera_get_view_y(view);
+xx = irandom_range(camX, camX + viewWidth);
+yy = camY + viewHeight;
+part_particles_create(global.partSystem, xx, yy, global.ambientSparkPart, 1);
+
+
 ////Flamewall intro spaghetti
 //introY = scrApproach(introY, 0, 0.5);

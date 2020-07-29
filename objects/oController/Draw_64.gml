@@ -56,3 +56,40 @@
 //	draw_text(8, 8, "Deaths: " + string(global.deathCounter));
 //	draw_set_font(fDefault);
 //}
+
+//Speedrunning timer
+if (global.speedrunning && !global.runIsOver)
+{
+	draw_set_halign(fa_center);
+	var c = global.cWhite;
+		
+	//Calculate minutes, hours and seconds
+	var timer = (current_time - global.speedrunningTimerOffset) / 1000;
+	var seconds = timer mod 60;
+	var minutes = timer div 60;
+	var hours = minutes div 60;
+		
+	//Draw text
+	if (hours > 0)
+	{
+		draw_text_color(viewWidth / 2, 8, string(hours) + "h " + string(minutes) + "m " + string(seconds) + "s", c, c, c, c, 1);
+	} else if (minutes > 0)
+	{
+		draw_text_color(viewWidth / 2, 8, string(minutes) + "m " + string(seconds) + "s", c, c, c, c, 1);
+	} else
+	{
+		draw_text_color(viewWidth / 2, 8, string(seconds) + "s", c, c, c, c, 1);
+	}
+
+} else if (global.speedrunning && global.runIsOver)
+{
+	draw_set_halign(fa_center);
+	var c = global.cWhite;
+		
+	//Calculate minutes, hours and seconds
+	var seconds = global.speedrunningTimer mod 60;
+	var minutes = global.speedrunningTimer div 60;
+	var hours = minutes div 60;
+	
+	draw_text_color(viewWidth / 2, 8, "FINAL TIME: \n" + string(hours) + "h " + string(minutes) + "m " + string(seconds) + "s", c, c, c, c, 1);
+}
