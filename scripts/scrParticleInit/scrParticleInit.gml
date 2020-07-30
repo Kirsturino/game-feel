@@ -248,7 +248,7 @@ part_type_life(global.ambientSparkPart,120,180);
 //Parts that happen when you do special tech
 global.techPart = part_type_create();
 part_type_shape(global.techPart,pt_shape_circle);
-part_type_size(global.techPart,0,0,0.005,0);
+part_type_size(global.techPart,0.1,0.1,0.005,0);
 part_type_scale(global.techPart,1,1);
 part_type_color1(global.techPart,global.cYellow);
 part_type_alpha2(global.techPart,1,0);
@@ -256,4 +256,4 @@ part_type_speed(global.techPart,0,0,0,0);
 part_type_direction(global.techPart,45,135,0,0);
 part_type_orientation(global.techPart,0,0,0,0,1);
 part_type_blend(global.techPart,1);
-part_type_life(global.techPart,40,40);
+part_type_life(global.techPart,30,30);

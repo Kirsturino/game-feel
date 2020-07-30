@@ -24,16 +24,16 @@ if (obj != noone)
 		obj.alarm[1] = -1;
 		obj.drawText = true;
 		
-		audio_play_sound(sndMenu, 10, false);
+		audio_play_sound(sndSign, 10, false);
 	} else if (pullPress && obj.index < string_length(obj.text))
 	{
 		obj.index = string_length(obj.text);
-		audio_play_sound(sndMenu, 10, false);
+		audio_play_sound(sndSignHurry, 10, false);
 	} else if (pullPress && obj.index == string_length(obj.text) && obj.drawText)
 	{
 		obj.drawText = false;
 		obj.index = 0;
-		audio_play_sound(sndMenu, 10, false);
+		audio_play_sound(sndSignEnd, 10, false);
 	}
 } else if (lastSign != noone)
 {

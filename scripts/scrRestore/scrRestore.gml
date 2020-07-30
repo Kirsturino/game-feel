@@ -34,6 +34,7 @@ if (restore != noone && restore.active && ppFrames != ppFramesMax)
 		
 		//FX
 		alarm[8] = techFXTimerLength;
+		audio_play_sound(sndTech, 0, false);
 	}
 	
 	//SFX after screen freeze

@@ -15,14 +15,13 @@ for (i = 0; i < viewWidth;  i += starFrequency)
 	}
 }
 
-
 //Mountains in the distance, wider and taller triangles
 var triangleFrequency = blockSize * 3;
 
 for (var i = 0; i < viewWidth;  i += triangleFrequency + irandom_range(-blockSize, blockSize))
 {
 	var triangleWidth = blockSize * 12 + irandom_range(-blockSize * 2, blockSize * 2);
-	var triangleHeight = blockSize * 5 + irandom_range(-blockSize * 2, blockSize * 2);
+	var triangleHeight = blockSize * 8 + irandom_range(-blockSize * 2, blockSize * 2);
 
     draw_triangle_color(i - triangleWidth, viewHeight, i + triangleWidth, viewHeight, i, viewHeight - triangleHeight, global.cBlue, global.cBlue, global.cBlue, false);
 }

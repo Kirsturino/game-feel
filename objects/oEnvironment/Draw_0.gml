@@ -2,8 +2,7 @@ var camX = camera_get_view_x(view);
 var camY = camera_get_view_y(view);
 
 
-if (!global.debugging)
-{
+
 	if (!surface_exists(global.parSurf))
 	{
 		global.parSurf = surface_create(room_width, room_height);
@@ -95,7 +94,7 @@ if (!global.debugging)
 		var drawY = clamp(camY / 8, -room_height, 0);
 		draw_surface(global.parSurfCloseMountain, drawX, drawY);
 	}
-}
+
 
 if (global.debugging)
 {

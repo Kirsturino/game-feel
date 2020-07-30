@@ -6,7 +6,7 @@ Features:
 - IDEA: Platforms/Walls you destroy if you dash at them
 - IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
 
-- Credits
+- Credits screen
 - Title screen/Splash screen
 - Come up with game name
 - Prototype dashing with one button
@@ -14,12 +14,8 @@ Features:
 Graphics
 - AI interpolation for player animations?
 - Polish player sprite/animations
-- Cut back on darkness alpha, remove darkness completely from surface (add more lights?)
 
 Sound
 - Default BGM
 - Main menu BGM
 - Final Scene BGM
-- Text thing interaction SFX
-- Downmix restore refresh SFX
-- Wavedash & megawalljump SFX

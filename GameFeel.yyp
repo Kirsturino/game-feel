@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "227ac1ed-ad7d-4050-b297-6a298fb7af4d",
+            "Value": {
+                "id": "46e27683-bf39-4b38-9d43-22dfb09dcbb1",
+                "resourcePath": "sounds\\sndSign\\sndSign.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "22841008-3e1b-4f1f-b79c-fcefd4843112",
             "Value": {
                 "id": "ef9cd88a-d4da-4936-8f26-61e3225ce62c",
@@ -332,6 +340,14 @@
                 "id": "0a0ca211-b83c-470c-ae19-0d96d9a36231",
                 "resourcePath": "views\\235af734-0b57-49c6-9c04-ebedfa027648.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "235f1514-5ec3-4396-8ef0-936e7ba40de1",
+            "Value": {
+                "id": "fb757773-b7a6-43ca-bd29-a782b172b789",
+                "resourcePath": "sounds\\sndSignHurry\\sndSignHurry.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -675,6 +691,14 @@
             "Value": {
                 "id": "2a6073bd-f003-499d-aa91-dfb5eae49128",
                 "resourcePath": "scripts\\scrResumeGame\\scrResumeGame.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4067429d-912c-485e-9b82-a8ea2fac54cf",
+            "Value": {
+                "id": "f13cfd18-e31a-4b70-ab25-85271f37595f",
+                "resourcePath": "scripts\\scrFreeSurfaces\\scrFreeSurfaces.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1647,6 +1671,14 @@
             }
         },
         {
+            "Key": "910c27fb-6db4-4907-9b7e-dc36d3029c29",
+            "Value": {
+                "id": "4cc20dd5-07fe-4bfd-99fe-1ce7a6ef8d44",
+                "resourcePath": "sounds\\sndTech\\sndTech.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "91279afb-77b1-4ca4-a95f-906dfd6db289",
             "Value": {
                 "id": "c67c7513-bec9-4c04-aee9-fdddf7b8305e",
@@ -2527,6 +2559,14 @@
             }
         },
         {
+            "Key": "e8bfe236-fdf4-43dd-92e1-3548cd10e5f8",
+            "Value": {
+                "id": "e3276e78-5b8b-4fc2-bbf5-31163e712d93",
+                "resourcePath": "sounds\\sndSignEnd\\sndSignEnd.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "e9bfaec0-8742-41b1-98b7-2f6d054d0068",
             "Value": {
                 "id": "df716882-ae92-46c1-af6b-8ddea022704f",
@@ -2945,6 +2985,7 @@
         "d5c6f838-6e33-4e1a-95f6-cf6fb5e40cc7",
         "29393934-a5a9-4715-9f6e-122af374d518",
         "44f47209-e837-4fc9-be0d-bd859c2d32b7",
+        "4067429d-912c-485e-9b82-a8ea2fac54cf",
         "76f36131-8795-4b10-adf6-b2655df69ba9",
         "4a795b29-685d-44ce-84e9-40fe28ed620d",
         "30b565f8-4862-4517-8ed1-deebafabfed0",

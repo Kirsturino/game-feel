@@ -29,7 +29,8 @@ if (willJump)
 		
 		//FX
 		alarm[8] = techFXTimerLength;
-		//Insert SFX
+		audio_play_sound(sndTech, 0, false);
+		
 	} else if (longJump)
 	{
 		//Apply movement

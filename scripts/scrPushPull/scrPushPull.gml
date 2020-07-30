@@ -135,8 +135,6 @@ if (interact != noone)
 			audio_play_sound(sndPP, 50, false);
 			scrSetShake(15, 10);
 			scrFreeze(100);
-			
-			show_debug_message(ppDir);
 		}
 	}
 }

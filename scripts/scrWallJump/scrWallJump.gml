@@ -72,7 +72,7 @@ if (walljump)
 		
 		//FX
 		alarm[8] = techFXTimerLength;
-		//Put an audio cue
+		audio_play_sound(sndTech, 0, false);
 		
 	} else
 	{

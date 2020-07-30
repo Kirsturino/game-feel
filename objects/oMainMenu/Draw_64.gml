@@ -7,7 +7,9 @@ var start_y = (viewHeight / 2) - ((((ds_height-1)/2) * y_buffer)), start_x = vie
 
 //Draw pause menu "back"
 var c = global.cGray;
+draw_set_alpha(0.8);
 draw_rectangle_color(0, 0, viewWidth, viewHeight, c, c, c, c, false);
+draw_set_alpha(1);
 
 //Draw elements on left side
 draw_set_valign(fa_middle);

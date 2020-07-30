@@ -24,6 +24,7 @@ if (rightLedge != noone && state == scrAirborne)
 	if (rightLedge != noone && rightLedgeVacant && move == 1 && vsp >= 0)
 	{
 		vsp = -ledgeGrabSpeed;
+		scrResetPP();
 		audio_play_sound(sndJump, 50, false);
 		scrJumpParticles();
 		
@@ -48,6 +49,7 @@ if (leftLedge != noone && state == scrAirborne)
 	if (leftLedge != noone && leftLedgeVacant && move == -1 && vsp >= 0)
 	{
 		vsp = -ledgeGrabSpeed;
+		scrResetPP();
 		audio_play_sound(sndJump, 50, false);
 		scrJumpParticles();
 		
