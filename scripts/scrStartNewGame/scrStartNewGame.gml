@@ -8,6 +8,7 @@ if (file_exists("stats.sav"))
 	file_delete("stats.sav");
 }
 
+scrClearStats();
 scrClearSaveLists();
 
 global.spawnX = -1;

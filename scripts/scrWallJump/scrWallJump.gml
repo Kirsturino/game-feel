@@ -60,16 +60,30 @@ if ((hugRight != noone && right) || (hugLeft != noone && left))
 //Commit walljump
 if (walljump)
 {
-	//Switch player state to walljump
+	//Switch player inair state to walljump
 	wallJumping = true;
 	
-	//Apply vertical momentum, if player is going up, preserve some of that momentum
-	vsp = min(vsp, 0) - jumpSpeed * wallJumpVMultiplier;
+	//Apply vertical momentum
+	//If player just dashed directly up and immediately walljumped, give extra momentum
+	if (alarm[5] != -1 && ppDir != 0 && ppDir != 180 && vsp < 0)
+	{
+		vsp = -jumpSpeed * ppWallJumpVMultiplier;
+		megaWallJump = true;
+		
+		//FX
+		alarm[8] = techFXTimerLength;
+		//Put an audio cue
+		
+	} else
+	{
+		vsp = -jumpSpeed * wallJumpVMultiplier;
+		megaWallJump = false;
+	}
 	
 	//Reset buffer
 	wantsToJump = false;
 	canWallJump = false;
-	
+
 	//Squash and stretch
 	scrJumpSquash();
 	
@@ -92,11 +106,23 @@ if (wallJumping)
 	switch (wallJumpDir)
 	{
 	    case "right":
-	        hsp = wallJumpHSpeed;
+			if (megaWallJump)
+			{
+				hsp = ppWallJumpHSpeed;
+			} else
+			{
+				hsp = wallJumpHSpeed;
+			}
 	        break;
 			
-			case "left":
-	        hsp = -wallJumpHSpeed;
+		case "left":
+	        if (megaWallJump)
+			{
+				hsp = -ppWallJumpHSpeed;
+			} else
+			{
+				hsp = -wallJumpHSpeed;
+			}
 	        break;
 	    default:
 	        show_debug_message("this should never be printed");
@@ -116,6 +142,13 @@ if (wallJumping)
 		airDrag = airdragMax / 2;
 		wallJumpTimer = wallJumpTimerMax;
 		wallJumping = false;
+		megaWallJump = false;
+	}
+	
+	//If doing a megawalljump, keep vertical momentum clamps at pp levels
+	if (megaWallJump)
+	{
+		vspMax = vspMaxPP;
 	}
 	
 	//Stop walljumping if we hit a new wall

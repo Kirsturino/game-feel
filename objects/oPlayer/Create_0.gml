@@ -63,6 +63,7 @@ vspMaxPP = 5;
 interact = noone;
 wantsToPull = false;
 wantsToPush = false;
+techFXTimerLength = 24;
 #macro ppBufferLength 8
 
 //Walljump variables
@@ -81,6 +82,9 @@ canWallJump = false;
 hugRight = false;
 hugLeft = false;
 wallJumpCancelAmount = 2;
+ppWallJumpHSpeed = wallJumpHSpeed * 2;
+ppWallJumpVMultiplier = 2;
+megaWallJump = false;
 
 //Jump controls
 grvModifier = 0.7;
@@ -111,7 +115,7 @@ color = global.cWhite;
 colorTo = global.cWhite;
 canDashColor = global.cWhite;
 cantDashColor = global.cOrange;
-dashFXLength = ppFramesMax * 5;
+dashFXLength = ppFramesMax * 4;
 animationFrame = 0;
 animationFrameIncrement = 0;
 animationSpeed = 2;

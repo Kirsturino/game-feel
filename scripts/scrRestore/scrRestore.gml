@@ -26,10 +26,14 @@ if (restore != noone && restore.active && ppFrames != ppFramesMax)
 		isPush = false;
 	} else
 	{
+		//Mega dash if dashing and collecting a thing at the same time
 		scrSetShake(15, 30);
 		scrFreeze(140);
 		audio_play_sound(sndRefreshMega, 50, false);
 		ppFrames = floor(ppFramesMax * 3.5);
+		
+		//FX
+		alarm[8] = techFXTimerLength;
 	}
 	
 	//SFX after screen freeze

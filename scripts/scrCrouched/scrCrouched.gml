@@ -3,7 +3,6 @@ scrInput();
 
 //Movement
 scrFallThrough();
-
 scrLongJump();
 scrCollisionMovement();
 scrPushPull();

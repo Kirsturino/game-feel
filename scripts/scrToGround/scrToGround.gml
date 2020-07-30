@@ -37,6 +37,9 @@ if (place_meeting(x, y + 1, oCollision) || oneway)
 		if (!active) alarm[0] = 1;
 	}
 	
+	//Deactivate tech particle trail
+	alarm[8] = -1;
+	
 	//Change state
 	state = scrGrounded;
 }

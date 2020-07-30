@@ -103,7 +103,7 @@ if (global.debugging)
 	if (surface_exists(global.debugSurf))
 	{
 		surface_set_target(global.debugSurf);
-		draw_point(oPlayer.x, oPlayer.y)
+		draw_point(oPlayer.x, oPlayer.y - 2)
 		surface_reset_target();
 		
 		draw_surface(global.debugSurf, 0, 0);

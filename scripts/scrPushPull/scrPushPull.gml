@@ -135,6 +135,8 @@ if (interact != noone)
 			audio_play_sound(sndPP, 50, false);
 			scrSetShake(15, 10);
 			scrFreeze(100);
+			
+			show_debug_message(ppDir);
 		}
 	}
 }
@@ -199,8 +201,14 @@ if (isPull || isPush)
 	airDrag = scrApproach(airDrag, airdragMax, airDragChangeSpeed);
 	
 	//Animate spinny boi
-	spriteRot = lerp(spriteRot, 0, 0.1);
+	spriteRot = lerp(spriteRot, 0, 0.15);
 }
 
 //Dash particle trail
 scrDashTrail();
+
+//Extra particle trail if people are doing MLG tech
+if (alarm[8] != -1)
+{
+	part_particles_create(global.partSystem, x, y, global.techPart, 1);
+}

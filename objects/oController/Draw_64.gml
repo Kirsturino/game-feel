@@ -53,7 +53,10 @@
 //if (global.debugging)
 //{
 //	draw_set_font(fDebug);
-//	draw_text(8, 8, "Deaths: " + string(global.deathCounter));
+//	draw_set_halign(fa_left);
+//	draw_text(0, 0, oPlayer.vsp);
+//	draw_text(0, 10, oPlayer.vspMax);
+//	draw_text(0, 20, oPlayer.alarm[5]);
 //	draw_set_font(fDefault);
 //}
 

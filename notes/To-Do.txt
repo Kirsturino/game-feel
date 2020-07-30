@@ -9,16 +9,12 @@ Features:
 - Credits
 - Title screen/Splash screen
 - Come up with game name
-
-- Add wavedashing, make it so if you go to jump script while ppFrames are not at max (but not at zero) it triggers a new kind of jump, kinda like longjump
-- Make walljump speed inheriting more clear
-	- Only make it actually inherit speed if player vsp is over normal amounts, aka in vspMaxPP mode
-	- Add indicator
+- Prototype dashing with one button
 
 Graphics
 - AI interpolation for player animations?
 - Polish player sprite/animations
-- Cut back on darkness alpha, remove darkness completely from surface (and add more lights?)
+- Cut back on darkness alpha, remove darkness completely from surface (add more lights?)
 
 Sound
 - Default BGM
@@ -26,3 +22,4 @@ Sound
 - Final Scene BGM
 - Text thing interaction SFX
 - Downmix restore refresh SFX
+- Wavedash & megawalljump SFX
