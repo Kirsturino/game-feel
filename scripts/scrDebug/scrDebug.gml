@@ -71,6 +71,8 @@ if (global.debugging)
 		if (room_exists(room - 1))
 		{
 			room_goto(room - 1);
+			global.spawnX = -1;
+			global.spawnY = -1;
 		}
 	}
 
@@ -79,6 +81,8 @@ if (global.debugging)
 		if (room_exists(room + 1))
 		{
 			room_goto(room + 1);
+			global.spawnX = -1;
+			global.spawnY = -1;
 		}
 	}
 }
