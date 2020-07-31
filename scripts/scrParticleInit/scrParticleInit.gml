@@ -213,7 +213,7 @@ part_type_size(global.smokePart,1,2,0,0);
 part_type_scale(global.smokePart,1,1);
 part_type_color1(global.smokePart,global.cBlack);
 part_type_alpha2(global.smokePart,0.2,0);
-part_type_speed(global.smokePart,1,1.5,0.01,0);
+part_type_speed(global.smokePart,1,1.3,0.005,0);
 part_type_direction(global.smokePart,90,90,0,0);
 part_type_orientation(global.smokePart,0,360,0,10,1);
 part_type_blend(global.smokePart,false);

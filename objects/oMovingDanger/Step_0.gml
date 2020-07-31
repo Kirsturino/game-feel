@@ -1,3 +1,5 @@
+if !active exit;
+
 var dist = y - oPlayer.y;
 if (dist < viewHeight)
 {

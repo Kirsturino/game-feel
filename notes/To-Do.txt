@@ -10,6 +10,7 @@ Features:
 - Title screen/Splash screen
 - Come up with game name
 - Playtest dashing with one button
+- Fix menu navigation
 
 Graphics
 - AI interpolation for player animations?
@@ -19,3 +20,4 @@ Sound
 - Default BGM
 - Main menu BGM
 - Final Scene BGM
+- SFX when near a sign (activating it)

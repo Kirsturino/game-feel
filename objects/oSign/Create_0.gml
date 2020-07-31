@@ -10,6 +10,8 @@ active = false;
 popUpY = 0;
 popUpAlpha = 0;
 
+alarm[2] = 10;
+
 //Get player input keys for tutorial
 if (global.controller == noone)
 {

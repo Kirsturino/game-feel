@@ -26,6 +26,7 @@ scrSecrets();
 scrCheckpoint();
 scrInteractables();
 scrUnlockFreeCam();
+scrActivateSmoke();
 
 //Animations
 scrAirborneAnimation();

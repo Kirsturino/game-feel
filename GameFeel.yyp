@@ -1775,6 +1775,14 @@
             }
         },
         {
+            "Key": "9b51c2b5-437f-47aa-bacf-a4fb190a786a",
+            "Value": {
+                "id": "d9f1ac2f-1a51-4ba5-a34e-cdb5aa94de24",
+                "resourcePath": "scripts\\scrActivateSmoke\\scrActivateSmoke.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9f3a1a36-cf55-41f3-ad93-435ead18bf7d",
             "Value": {
                 "id": "f605eb4f-129c-449a-ba8c-b93daf1428f4",
@@ -1940,6 +1948,14 @@
                 "id": "fcdfa693-f1e1-4ae3-9886-e8b7ea523682",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a9e83a46-6bb7-43d0-883d-659de1b33692",
+            "Value": {
+                "id": "35e14a3e-09c5-40b7-92e4-391ca23c8c0c",
+                "resourcePath": "objects\\oActivateSmoke\\oActivateSmoke.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2899,6 +2915,7 @@
         "fac4dcba-1668-4f99-8216-55e9e64f8e84",
         "9f3a1a36-cf55-41f3-ad93-435ead18bf7d",
         "fdfa0646-6995-47c1-a6d6-faaf9f248751",
+        "9b51c2b5-437f-47aa-bacf-a4fb190a786a",
         "227a5c7f-fb28-4b3d-a913-b6bdf4d5a1ae",
         "ea418554-e0e7-46aa-b9ef-1072feeefb08",
         "4489bc6b-3e3a-4d81-95e0-0c0274bba6a6",
