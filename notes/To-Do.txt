@@ -9,7 +9,7 @@ Features:
 - Credits screen
 - Title screen/Splash screen
 - Come up with game name
-- Prototype dashing with one button
+- Playtest dashing with one button
 
 Graphics
 - AI interpolation for player animations?

@@ -1,6 +1,37 @@
 if (oPlayer.restartPress)
 {
-	room_restart();
+	//Kill player to restart room
+	with (oPlayer)
+	{
+		scrToDead();
+		oPlayer.restartPress = false;
+	}
+}
+
+//Toggle between one key dashing
+if (global.debugging && keyboard_check_pressed(ord("G")))
+{
+	global.oneKeyDash = !global.oneKeyDash;
+	if (global.oneKeyDash)
+	{
+		scrStartNotification("Toggled one button dashing on");
+	} else
+	{
+		scrStartNotification("Toggled one button dashing off");
+	}
+}
+
+//Toggle between omnidirectional dashes
+if (global.debugging && keyboard_check_pressed(ord("B")))
+{
+	global.omniDash = !global.omniDash;
+	if (global.omniDash)
+	{
+		scrStartNotification("Toggled omnidashing on");
+	} else
+	{
+		scrStartNotification("Toggled omnidashing off");
+	}
 }
 
 if (keyboard_check_pressed(ord("T")))

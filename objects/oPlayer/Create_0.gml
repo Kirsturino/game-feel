@@ -3,6 +3,7 @@ state = scrAirborne;
 
 //Random variables
 blockMovement = false;
+inputDir = 0;
 
 //Initialize input variables
 left = false;
@@ -64,6 +65,7 @@ interact = noone;
 wantsToPull = false;
 wantsToPush = false;
 techFXTimerLength = 24;
+ang = 0;
 #macro ppBufferLength 8
 
 //Walljump variables

@@ -1,4 +1,4 @@
-if (oPlayer.freeCamToggle && oPlayer.state == scrGrounded)
+if (oPlayer.freeCamToggle && oPlayer.state == scrGrounded && !global.pause)
 {
 	switch (state)
 	{

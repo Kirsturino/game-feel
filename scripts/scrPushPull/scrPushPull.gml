@@ -7,7 +7,7 @@ if (global.allowPull || global.allowPush)
 }
 
 //See if player wants to dash
-if (pushPress)
+if (pushPress && !global.oneKeyDash)
 {
 	wantsToPush = true;
 	alarm[7] = ppBufferLength;
@@ -22,8 +22,9 @@ if (interact != noone)
 	var interactDir = point_direction(x, y - centerOffset, interact.x, interact.y);
 
 	#region Get direction that ppObjects should show
+	
 	//Round interactDir to 8 cardinal directions
-	if (!isPull && !isPush)
+	if (!isPull && !isPush && !global.omniDash)
 	{
 		if (interactDir <= 22.5 || interactDir > 337.5)
 		{
@@ -50,6 +51,9 @@ if (interact != noone)
 		{
 			interact.triDirTo = 315;
 		}
+	} else if (!isPull && !isPush && global.omniDash)
+	{
+		interact.triDirTo = interactDir;
 	}
 	#endregion
 
@@ -70,6 +74,13 @@ if (interact != noone)
 			}
 			
 			ppDir = interact.triDirTo;
+			
+			if (global.oneKeyDash)
+			{
+				//See which way player is wanting to go
+				inputDir = scrGetPlayerInputDirection();
+				ang = abs(angle_difference(ppDir, inputDir));
+			}
 			vsp = 0;
 			hsp = 0;
 			move = 0;
@@ -91,19 +102,7 @@ if (interact != noone)
 			}
 			
 			//Up and down pushing rotations will remain at 0
-			if (isPull)
-			{
-				if (ppDir == 225)
-				{
-					spriteRot = -45;
-				} else if (ppDir == 315)
-				{
-					spriteRot = 45;
-				} else if (rotDir != -90)
-				{
-					spriteRot = rotDir - 90;
-				}
-			} else if (isPush)
+			if (isPush || (global.oneKeyDash && ang > 90) && isPull)
 			{
 				if (ppDir == 45)
 				{
@@ -117,6 +116,18 @@ if (interact != noone)
 				} else if (rotDir != 90)
 				{
 					spriteRot = rotDir + 90;
+				}
+			} else if (isPull)
+			{
+				if (ppDir == 225)
+				{
+					spriteRot = -45;
+				} else if (ppDir == 315)
+				{
+					spriteRot = 45;
+				} else if (rotDir != -90)
+				{
+					spriteRot = rotDir - 90;
 				}
 			}
 			
@@ -160,8 +171,23 @@ if (isPush && ppFrames > 0)
 if (isPull && ppFrames > 0)
 {
 	ppSpeed = clamp(ppSpeed + ppAxl, -ppSpeedMax, ppSpeedMax);
-	hsp = lengthdir_x(ppSpeed, ppDir);
-	vsp = lengthdir_y(ppSpeed, ppDir);
+	
+	if (global.oneKeyDash)
+	{
+		if (ang <= 90 || !global.allowPush)
+		{
+			hsp = lengthdir_x(ppSpeed, ppDir);
+			vsp = lengthdir_y(ppSpeed, ppDir);
+		} else if (ang > 90)
+		{
+			hsp = lengthdir_x(ppSpeed, ppDir - 180);
+			vsp = lengthdir_y(ppSpeed, ppDir - 180);
+		}
+	} else
+	{
+		hsp = lengthdir_x(ppSpeed, ppDir);
+		vsp = lengthdir_y(ppSpeed, ppDir);
+	}
 	ppFrames--;
 
 	//Reduce air drag when pushing or pulling
@@ -198,7 +224,7 @@ if (isPull || isPush)
 	airAxl = scrApproach(airAxl, airAxlMax, airAxlChangeSpeed);
 	airDrag = scrApproach(airDrag, airdragMax, airDragChangeSpeed);
 	
-	//Animate spinny boi
+	//Animate spinny boi back to default rot
 	spriteRot = lerp(spriteRot, 0, 0.15);
 }
 

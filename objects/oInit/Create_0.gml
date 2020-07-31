@@ -13,6 +13,8 @@ global.spawnvsp = 0;
 global.allowPush = 0;
 global.allowPull = 0;
 global.allowFreeCam = 0;
+global.oneKeyDash = false;
+global.omniDash = false;
 
 //Meta stuff
 global.debugging = false;

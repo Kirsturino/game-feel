@@ -16,6 +16,7 @@ with (followingCollectible)
 {
 	following = false;
 }
+
 followingCollectible = noone;
 
 colorTo = cantDashColor;
