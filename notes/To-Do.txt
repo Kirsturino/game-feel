@@ -21,3 +21,5 @@ Sound
 - Main menu BGM
 - Final Scene BGM
 - SFX when near a sign (activating it)
+- Additional tech SFX
+- Smoke ambient

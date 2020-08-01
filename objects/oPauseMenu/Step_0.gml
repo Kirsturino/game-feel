@@ -3,7 +3,7 @@ if(!global.pause) exit;
 up_p = keyboard_check_pressed(global.key_up) || gamepad_button_check_pressed(global.controller, global.button_up) || keyboard_check_pressed(vk_up);
 down_p = keyboard_check_pressed(global.key_down) || gamepad_button_check_pressed(global.controller, global.button_down) || keyboard_check_pressed(vk_down);
 left_p = keyboard_check_pressed(global.key_left) || gamepad_button_check_pressed(global.controller, global.button_left) || keyboard_check_pressed(vk_left);
-right_p = keyboard_check_pressed(global.key_right) || gamepad_button_check_pressed(global.controller, global.button_right || keyboard_check_pressed(vk_right));
+right_p = keyboard_check_pressed(global.key_right) || gamepad_button_check_pressed(global.controller, global.button_right) || keyboard_check_pressed(vk_right);
 enter_p = keyboard_check_pressed(global.key_enter) || gamepad_button_check_pressed(global.controller, global.button_enter);
 confirm_p = keyboard_check_pressed(global.key_confirm) || gamepad_button_check_pressed(global.controller, global.button_confirm);
 back_p = keyboard_check_pressed(global.key_back) || gamepad_button_check_pressed(global.controller, global.button_back);
