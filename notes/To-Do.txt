@@ -9,10 +9,11 @@ Features:
 - Credits screen
 - Title screen/Splash screen
 - Come up with game name
-- Playtest dashing with one button
-- Fix menu navigation
+- Fix menu backwards navigation
+- Some additional training rooms after unlocking pull
 - Maybe nullify upwards momentum when ending dash
 	- This lessens the need to hold jump/pull when dashing, making game more accessible
+	- Would need to lengthen dash as a result, probably
 
 Graphics
 - AI interpolation for player animations?
@@ -24,4 +25,4 @@ Sound
 - Final Scene BGM
 - SFX when near a sign (activating it)
 - Additional tech SFX
-- Smoke ambient
+- Smoke ambient sound

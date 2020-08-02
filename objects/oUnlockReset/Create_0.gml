@@ -1,0 +1,1 @@
+if global.allowReset instance_destroy();

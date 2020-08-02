@@ -1,4 +1,4 @@
-if (oPlayer.restartPress)
+if (oPlayer.restartPress && global.allowReset)
 {
 	//Kill player to restart room
 	with (oPlayer)

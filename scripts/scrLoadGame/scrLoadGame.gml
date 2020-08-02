@@ -35,5 +35,6 @@ global.spawnY = map[? "spawnY"];
 global.allowPush = map[? "allowPush"];
 global.allowPull = map[? "allowPull"];
 global.allowFreeCam = map[? "allowFreeCam"];
+global.allowReset = map[? "allowReset"];
 
 ds_map_destroy(wrapper);

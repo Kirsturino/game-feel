@@ -1711,6 +1711,14 @@
             }
         },
         {
+            "Key": "92b52042-662d-464a-80f3-1feacf507796",
+            "Value": {
+                "id": "9dcfe279-6b99-4a6f-9321-fbdfdc5bf8aa",
+                "resourcePath": "scripts\\scrUnlockReset\\scrUnlockReset.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "937f85b1-c296-4391-bd73-246630a11240",
             "Value": {
                 "id": "fcb54c22-85d1-4330-981a-611a39257592",
@@ -2132,6 +2140,14 @@
                 "id": "58f85bd2-3e45-48c2-aac4-b6fc10397905",
                 "resourcePath": "views\\b88d33dc-29ec-4f21-8a50-9ee7b28da407.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b9003317-fab7-47b4-9bff-09771b696f79",
+            "Value": {
+                "id": "cfd5ea1d-0f72-46f3-b0d3-8ac879921c6a",
+                "resourcePath": "objects\\oUnlockReset\\oUnlockReset.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2914,6 +2930,7 @@
         "acb091e2-8056-4d08-9523-861c066ff6f1",
         "b4685c5d-10da-4e3b-81e2-7a5c22b0393c",
         "d3e74764-d7c9-4893-8761-fdafa3d254dc",
+        "92b52042-662d-464a-80f3-1feacf507796",
         "e0b12e9f-90f6-4d4a-a447-d9835c345967",
         "fffd6bb6-8e14-4032-9776-79e0cfd8c2a7",
         "ed129c93-31eb-44ce-9e7d-8f4c40d472c0",
