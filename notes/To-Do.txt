@@ -11,9 +11,12 @@ Features:
 - Come up with game name
 - Fix menu backwards navigation
 - Some additional training rooms after unlocking pull
+- Additional rooms testing all you've learnt before smoke rooms?
 - Maybe nullify upwards momentum when ending dash
 	- This lessens the need to hold jump/pull when dashing, making game more accessible
 	- Would need to lengthen dash as a result, probably
+- Option to disable screen freeze/shake
+- Last smoke room, delete finicky walljump from last bit, invert final section
 
 Graphics
 - AI interpolation for player animations?
