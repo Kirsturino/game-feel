@@ -2,6 +2,7 @@
 global.partSystem = part_system_create_layer("Particles", true);
 global.topPartSystem = part_system_create_layer("TopParticles", true);
 global.partSystemSecret = part_system_create_layer("BackgroundEnvironment", true);
+global.persistentPartSystem = part_system_create_layer("PersistentParticlesb", true);
 
 global.ambientEmitter = part_emitter_create(global.partSystem);
 global.rainEmitter = part_emitter_create(global.partSystem);
@@ -176,7 +177,7 @@ part_type_scale(global.wallDragPart,1,1);
 part_type_color1(global.wallDragPart,global.cBrownDark);
 part_type_alpha2(global.wallDragPart,1,0);
 part_type_speed(global.wallDragPart,0.1,0.2,0,0);
-part_type_direction(global.wallDragPart,110,70,0,0);
+part_type_direction(global.wallDragPart,45,135,0,0);
 part_type_blend(global.wallDragPart,1);
 part_type_life(global.wallDragPart,5,20);
 

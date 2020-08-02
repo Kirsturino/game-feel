@@ -11,6 +11,8 @@ Features:
 - Come up with game name
 - Playtest dashing with one button
 - Fix menu navigation
+- Maybe nullify upwards momentum when ending dash
+	- This lessens the need to hold jump/pull when dashing, making game more accessible
 
 Graphics
 - AI interpolation for player animations?

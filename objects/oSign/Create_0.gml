@@ -1,6 +1,7 @@
 //Init variables
 c = global.cWhite;
 padding = 32;
+textPadding = 34;
 drawText = false;
 textNumber = 0;
 textAmount = 0;

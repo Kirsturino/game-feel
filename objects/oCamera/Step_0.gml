@@ -1,4 +1,7 @@
 script_execute(state);
 
 //State switches
-scrCameraStateSwitch();
+if (alarm[1] == -1)
+{
+	scrCameraStateSwitch();
+}

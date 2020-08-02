@@ -10,7 +10,7 @@ if (obj != noone)
 	}
 	
 	//If press interact button, start drawing text. If already drawing text, make whole string visible.
-	if (pullPress && !obj.drawText)
+	if (pullPress && !obj.drawText && state == scrGrounded)
 	{
 		
 		with (oSign)

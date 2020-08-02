@@ -102,7 +102,6 @@ ds_menu_controls_keyboard = scrCreateMenu(
 	["DOWN",		main_menu_element_type.input,			"key_down",				global.key_down],
 	["JUMP",		main_menu_element_type.input,			"key_jump",				global.key_jump],
 	["PULL/CONFIRM",main_menu_element_type.input,			"key_pull",				global.key_pull],
-	["PUSH/RETURN",	main_menu_element_type.input,			"key_push",				global.key_push],
 	["RESTART",		main_menu_element_type.input,			"key_restart",			global.key_restart],
 	["FREECAM",		main_menu_element_type.input,			"key_camToggle",		global.key_camToggle],
 	["BACK",		main_menu_element_type.page_transfer,	main_menu_page.controls]
@@ -114,8 +113,7 @@ ds_menu_controls_controller = scrCreateMenu(
 	["RIGHT",		main_menu_element_type.controllerinput,	"button_right",			global.button_right],
 	["DOWN",		main_menu_element_type.controllerinput,	"button_down",			global.button_down],
 	["JUMP",		main_menu_element_type.controllerinput,	"button_jump",			global.button_jump],
-	["PULL",		main_menu_element_type.controllerinput,	"button_pull",			global.button_pull],
-	["PUSH",		main_menu_element_type.controllerinput,	"button_push",			global.button_push],
+	["DASH",		main_menu_element_type.controllerinput,	"button_pull",			global.button_pull],
 	["RESTART",		main_menu_element_type.controllerinput,	"button_restart",		global.button_restart],
 	["FREECAM",		main_menu_element_type.controllerinput,	"button_camToggle",		global.button_camToggle],
 	["BACK",		main_menu_element_type.page_transfer,	main_menu_page.controls]

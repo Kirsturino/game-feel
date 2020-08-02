@@ -108,7 +108,11 @@ if (sign(joyH) != releaseJoyDir)
 	joyActive = false;
 }
 
-jump = keyboard_check_pressed(global.key_jump) || gamepad_button_check_pressed(global.controller, global.button_jump);
+if (alarm[9] == -1)
+{
+	jump = keyboard_check_pressed(global.key_jump) || gamepad_button_check_pressed(global.controller, global.button_jump);
+}
+
 jumpHeld = keyboard_check(global.key_jump) || gamepad_button_check(global.controller, global.button_jump) || keyboard_check(global.key_pull) || keyboard_check(global.key_push) || gamepad_button_check(global.controller, global.button_push) || gamepad_button_check(global.controller, global.button_pull);
 
 pushPress = keyboard_check_pressed(global.key_push) || gamepad_button_check_pressed(global.controller, global.button_push);

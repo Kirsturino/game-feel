@@ -1,4 +1,3 @@
 global.pause = false;
-global.speedrunning = false;
-global.runIsOver = false;
+oPlayer.alarm[9] = 1;
 page = 0;

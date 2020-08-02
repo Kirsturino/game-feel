@@ -12,7 +12,7 @@ global.key_restart = ord("R");
 global.key_camToggle = ord("F");
 
 global.button_back = gp_face2;
-global.button_pull = gp_shoulderr;
+global.button_pull = gp_face3;
 global.button_enter = gp_face1;
 global.button_confirm = gp_select;
 global.button_push = gp_shoulderl;
@@ -22,4 +22,4 @@ global.button_up = gp_padu;
 global.button_down = gp_padd;
 global.button_jump = gp_face1;
 global.button_restart = gp_face4;
-global.button_camToggle = gp_face3;
+global.button_camToggle = gp_face2;

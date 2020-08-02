@@ -20,6 +20,6 @@ if (alarm[0] != -1 || alarm[1] != -1)
 }
 
 //Offset shadow
-draw_text_ext_color(drawX + 5, drawY * 0.2 + 1, string(string_copy(text, 1, index)), 16, viewWidth - padding * 2 + 1,  global.cBlack, global.cBlack, global.cBlack, global.cBlack, 1);
+draw_text_ext_color(drawX + 5, drawY * 0.2 + 1, string(string_copy(text, 1, index)), 16, viewWidth - textPadding * 2 + 1,  global.cBlack, global.cBlack, global.cBlack, global.cBlack, 1);
 
-draw_text_ext_color(drawX + 4, drawY * 0.2, string(string_copy(text, 1, index)), 16, viewWidth - padding * 2,  c, c, c, c, 1);
+draw_text_ext_color(drawX + 4, drawY * 0.2, string(string_copy(text, 1, index)), 16, viewWidth - textPadding * 2,  c, c, c, c, 1);

@@ -27,7 +27,7 @@ global.runIsOver = false;
 //Menu things
 global.pause = false;
 
-//Secret layer
+//Secret layer init
 global.fakeLayerAlpha = 1;
 global.uAlpha = 1;
 
