@@ -2,6 +2,10 @@
 #macro grv 0.25
 #macro blockSize 16
 
+//Camera dimensions
+#macro viewWidth 320
+#macro viewHeight 180
+
 //Save stuff
 scrInitSaveLists();
 
@@ -27,6 +31,7 @@ global.runIsOver = false;
 
 //Menu things
 global.pause = false;
+global.trongleSurf = surface_create(viewWidth, viewHeight);
 
 //Secret layer init
 global.fakeLayerAlpha = 1;
@@ -41,10 +46,6 @@ global.parSurfMiddleCloud = noone;
 global.parSurfCloseCloud = noone;
 global.parSurfFarCloud = noone;
 global.debugSurf = noone;
-
-//Camera dimensions
-#macro viewWidth 320
-#macro viewHeight 180
 
 //Make a global palette
 scrInitPalette();

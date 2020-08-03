@@ -14,6 +14,7 @@ if (!destroy && !following)
 	
 	if (scrChance(0.2))
 	{
+		part_type_color1(global.secretPart, image_blend);
 		part_particles_create(global.partSystem, x, y, global.secretPart, 1);
 	}
 } else if (destroy)
@@ -27,6 +28,7 @@ if (!destroy && !following)
 
 	image_angle += rotSpeed * 10;
 	
+	part_type_color1(global.secretPart, image_blend);
 	part_particles_create(global.partSystem, x, y, global.secretPart, 1);
 } else if (following)
 {

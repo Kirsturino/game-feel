@@ -1,15 +1,14 @@
-if(!global.pause) exit;
-
 var ds_grid = menu_pages[page]
 var ds_height = ds_grid_height(ds_grid);
 var y_buffer = 16;
 var x_buffer = 16;
 
-var start_y = (viewHeight / 2) - ((((ds_height-1)/2) * y_buffer)), start_x = viewWidth / 2;
+var start_y = (viewHeight / 2) - ((((ds_height-1)/2) * y_buffer))
+var start_x = viewWidth / 2;
 
-//Draw pause menu "back"
+//Draw transparent background
 var c = global.cGray;
-draw_set_alpha(0.5);
+draw_set_alpha(0.8);
 draw_rectangle_color(0, 0, viewWidth, viewHeight, c, c, c, c, false);
 draw_set_alpha(1);
 
@@ -49,6 +48,7 @@ draw_line_width_color(start_x + 1, start_y - y_buffer, start_x + 1, lty + y_buff
 c = global.cWhite;
 draw_line_width_color(start_x, start_y - y_buffer, start_x, lty + y_buffer, 3, c, c);
 
+
 //Draw elements on right side
 draw_set_halign(fa_left);
 
@@ -61,7 +61,7 @@ repeat (ds_height)
 	
 	switch (ds_grid[# 1, yy])
 	{
-		case menu_element_type.shift:
+		case main_menu_element_type.shift:
 			var current_val = ds_grid[# 3, yy];
 			var current_array = ds_grid[# 4, yy];
 			var left_shift = "< ";
@@ -79,12 +79,12 @@ repeat (ds_height)
 			scrDrawTextColorShadow(rtx, rty, left_shift + current_array[current_val] + right_shift, c, c, c, c, 1);
 		break;
 			
-		case menu_element_type.slider:
+		case main_menu_element_type.slider:
 			var len = 64;
 			var current_val = ds_grid[# 3, yy];
 			var current_array = ds_grid[# 4, yy];
 			var circle_pos = ((current_val - current_array[0]) / (current_array[1] - current_array[0]));
-				
+			
 			c = global.cBlack;	
 			draw_line_width_color(rtx + 1, rty, rtx + len + 1, rty, 2, c, c);
 			
@@ -106,7 +106,7 @@ repeat (ds_height)
 			scrDrawTextColorShadow(rtx + (len * 1.2), rty, string(floor(circle_pos * 100)) + " % ", c, c, c, c, 1);
 		break;
 		
-		case menu_element_type.toggle:
+		case main_menu_element_type.toggle:
 			var current_val = ds_grid[# 3, yy];
 			var c1, c2;
 			c = global.cWhite;
@@ -123,7 +123,7 @@ repeat (ds_height)
 			scrDrawTextColorShadow(rtx + 32, rty, "OFF", c2, c2, c2, c2, 1);
 		break;
 		
-		case menu_element_type.input:
+		case main_menu_element_type.input:
 			var current_val = ds_grid[# 3, yy];
 			
 			current_val = scrGetUniqueKeys(current_val);
@@ -170,3 +170,94 @@ repeat (ds_height)
 }
 
 draw_set_valign(fa_top);
+
+//Draw logo and name when on certain menu parts
+if (page == 0 || page == 1 || page == 2 || page == 5)
+{
+	//Get basic coordinates
+	var centreX = viewWidth / 4 * 3;
+	var centreY = viewHeight / 2;
+	
+	if (surface_exists(global.trongleSurf))
+	{
+		//Draw quick little triangle graphics
+		surface_set_target(global.trongleSurf);
+		var col = make_color_rgb(3, 5, 9);
+		draw_clear_alpha(col, 0);
+		
+		//Rotating trongle
+		c = global.cYellow;
+		var length = 64;
+		var time = 30;
+		var tilt = 30;
+		var offset = 15;
+		var dir = scrWave(-tilt, tilt, time, offset);
+	
+		var x1 = lengthdir_x(length, dir);
+		var y1 = lengthdir_y(length, dir);
+	
+		var x2 = lengthdir_x(length, dir + 120);
+		var y2 = lengthdir_y(length, dir + 120);
+	
+		var x3 = lengthdir_x(length, dir + 240);
+		var y3 = lengthdir_y(length, dir + 240);
+	
+		draw_triangle_color(centreX + x1, centreY + y1, centreX + x2, centreY + y2, centreX + x3, centreY + y3, c, c, c, false);
+	
+		//Other rotating trongle
+		var dir = scrWave(-tilt / 3 * 2, tilt / 3 * 2, time, offset / 3 * 2);
+	
+		var x1 = lengthdir_x(length, dir);
+		var y1 = lengthdir_y(length, dir);
+	
+		var x2 = lengthdir_x(length, dir + 120);
+		var y2 = lengthdir_y(length, dir + 120);
+	
+		var x3 = lengthdir_x(length, dir + 240);
+		var y3 = lengthdir_y(length, dir + 240);
+	
+		draw_triangle_color(centreX + x1, centreY + y1, centreX + x2, centreY + y2, centreX + x3, centreY + y3, c, c, c, false);
+	
+		//Another rotating trongle
+		var dir = scrWave(-tilt / 3, tilt / 3, time, offset / 3);
+	
+		var x1 = lengthdir_x(length, dir);
+		var y1 = lengthdir_y(length, dir);
+	
+		var x2 = lengthdir_x(length, dir + 120);
+		var y2 = lengthdir_y(length, dir + 120);
+	
+		var x3 = lengthdir_x(length, dir + 240);
+		var y3 = lengthdir_y(length, dir + 240);
+	
+		draw_triangle_color(centreX + x1, centreY + y1, centreX + x2, centreY + y2, centreX + x3, centreY + y3, c, c, c, false);
+		
+		surface_reset_target();
+		
+		draw_set_alpha(0.3);
+		
+		draw_surface(global.trongleSurf, 0, 0);
+		
+		draw_set_alpha(1);
+	} else
+	{
+		global.trongleSurf = surface_create(viewWidth, viewHeight);
+	}
+	
+	//Logo
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_center);
+	draw_set_font(fLogo);
+	c = global.cWhite;
+	
+	scrDrawTextColorShadow(centreX, centreY, "OCDA", c, c, c, c, 1);
+	
+	//Text
+	draw_set_font(fDefault);
+	xx = viewWidth / 4 * 3;
+	yy = viewHeight / 2 + 24;
+	
+	scrDrawTextColorShadow(xx, yy, "BY KIRSTU", c, c, c, c, 1);
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
+}

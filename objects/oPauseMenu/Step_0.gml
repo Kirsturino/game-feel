@@ -6,7 +6,7 @@ left_p = keyboard_check_pressed(global.key_left) || gamepad_button_check_pressed
 right_p = keyboard_check_pressed(global.key_right) || gamepad_button_check_pressed(global.controller, global.button_right) || keyboard_check_pressed(vk_right);
 enter_p = keyboard_check_pressed(global.key_enter) || gamepad_button_check_pressed(global.controller, global.button_enter);
 confirm_p = keyboard_check_pressed(global.key_confirm) || gamepad_button_check_pressed(global.controller, global.button_confirm);
-back_p = keyboard_check_pressed(global.key_back) || gamepad_button_check_pressed(global.controller, global.button_back) || keyboard_check_pressed(vk_escape);
+back_p = keyboard_check_pressed(global.key_back) || gamepad_button_check_pressed(global.controller, global.button_back);
 
 var ds_grid = menu_pages[page]
 var ds_height = ds_grid_height(ds_grid);
@@ -90,6 +90,8 @@ if (inputting)
 	{
 		audio_sound_pitch(sndMenu, 1);
 		audio_play_sound(sndMenu, 0, false);
+		
+		xo = 0;
 		
 		menu_option[page] += ochange;
 	

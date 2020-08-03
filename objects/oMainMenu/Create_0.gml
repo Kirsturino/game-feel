@@ -2,6 +2,13 @@ alarm[0] = 1;
 lastButton = 0;
 inputting = false;
 confirmPitch = 1.2;
+xo  = 0;
+
+//Init surface to draw triangles on later
+if (!surface_exists(global.trongleSurf))
+{
+	global.trongleSurf = surface_create(viewWidth, viewHeight);
+}
 
 scrLoadOptions();
 scrLoadGame();

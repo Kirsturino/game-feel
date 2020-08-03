@@ -11,7 +11,7 @@ scrStartRoomStartAnimation();
 alarm[5] = 1;
 
 //Init pause menu
-instance_create_layer(0, 0, layer, oPauseMenu);
+instance_create_layer(0, 0, "Controllers", oPauseMenu);
 
 //Init notification variables
 notificationTimeMax = 360;

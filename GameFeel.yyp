@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "233e22a5-7bc4-4ac7-ac1b-aba8d5c80042",
+            "Value": {
+                "id": "5b77bce3-3a98-4909-974f-bed09506e664",
+                "resourcePath": "scripts\\scrDrawTextColorShadow\\scrDrawTextColorShadow.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "23544fd3-ff05-498c-b08c-78878d3b6c09",
             "Value": {
                 "id": "241849ed-31f0-4776-a35f-1f658ef4a7d9",
@@ -2934,6 +2942,7 @@
         "f22072c5-4aaf-4e97-9a6e-60d561b91e64",
         "4e30cf92-514d-4d29-bfcd-f5f425ec1b02",
         "b308b982-5b1b-4052-9618-ab42e0268be3",
+        "233e22a5-7bc4-4ac7-ac1b-aba8d5c80042",
         "8e7a1a61-3f2a-4b19-bc5f-fe730763758c",
         "895c4ca7-d704-4d28-ac88-43b5746d07ec",
         "32d7ad34-61ac-4be4-842d-a75aa507b666",

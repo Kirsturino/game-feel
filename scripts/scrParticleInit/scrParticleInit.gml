@@ -123,7 +123,7 @@ global.secretPart = part_type_create();
 part_type_shape(global.secretPart,pt_shape_flare);
 part_type_size(global.secretPart,0.05,0.15,0,0);
 part_type_scale(global.secretPart,0.5,0.5);
-part_type_color3(global.secretPart,global.cYellow, global.cOrange, global.cOrangeDark);
+part_type_color1(global.secretPart,global.cOrange);
 part_type_alpha3(global.secretPart,0,0.5,0);
 part_type_speed(global.secretPart,0.1,0.2,0,0);
 part_type_direction(global.secretPart,0,359,0,0);

@@ -6,7 +6,7 @@ Features:
 - IDEA: Platforms/Walls you destroy if you dash at them
 - IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
 
-- Credits screen
+- Credits screen/room
 - Some additional training rooms after unlocking pull
 - Additional rooms testing all you've learnt before smoke rooms?
 - Option to disable screen freeze/shake
@@ -14,6 +14,10 @@ Features:
 Graphics
 - AI interpolation for player animations?
 - Polish player sprite/animations
+- Collectible graphics
+- Secret 3D graphics
+- Drop shadows to sliders and line in menus
+- Fix pause menu to work in not draw GUI event
 
 Sound
 - Default BGM

@@ -1,5 +1,6 @@
 lastButton = 0;
 confirmPitch = 1.2;
+xo = 0;
 
 display_set_gui_size(viewWidth, viewHeight);
 
@@ -70,7 +71,7 @@ ds_menu_controls_keyboard = scrCreateMenu(
 	["PULL/CONFIRM",main_menu_element_type.input,			"key_pull",				global.key_pull],
 	["RESTART",		main_menu_element_type.input,			"key_restart",			global.key_restart],
 	["FREECAM",		main_menu_element_type.input,			"key_camToggle",		global.key_camToggle],
-	["BACK",		main_menu_element_type.page_transfer,	main_menu_page.controls]
+	["BACK",		main_menu_element_type.page_transfer,	menu_page.controls]
 );
 
 ds_menu_controls_controller = scrCreateMenu(
@@ -82,7 +83,7 @@ ds_menu_controls_controller = scrCreateMenu(
 	["DASH",		main_menu_element_type.controllerinput,	"button_pull",			global.button_pull],
 	["RESTART",		main_menu_element_type.controllerinput,	"button_restart",		global.button_restart],
 	["FREECAM",		main_menu_element_type.controllerinput,	"button_camToggle",		global.button_camToggle],
-	["BACK",		main_menu_element_type.page_transfer,	main_menu_page.controls]
+	["BACK",		main_menu_element_type.page_transfer,	menu_page.controls]
 );
 
 

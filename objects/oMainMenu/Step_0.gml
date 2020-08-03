@@ -90,6 +90,8 @@ if (inputting)
 		audio_sound_pitch(sndMenu, 1);
 		audio_play_sound(sndMenu, 0, false);
 		
+		xo = 0;
+		
 		menu_option[page] += ochange;
 	
 		if (menu_option[page] > ds_height - 1)
