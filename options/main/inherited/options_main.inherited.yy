@@ -4,8 +4,9 @@
     },
     "option_gameguid": "5343a9ee-d7ba-4ac8-9a90-ea67f66fc49f",
     "option_game_speed": 60,
-    "option_lastchanged": "22 April 2020 20:39:29",
-    "option_sci_usesci": true
+    "option_lastchanged": "03 August 2020 16:49:32",
+    "option_sci_usesci": true,
+    "option_author": "Kirstu"
 }←1225f6b0-ac20-43bd-a82e-be73fa0b6f4f|{
     "targets": 461609314234257646,
     "autocrop": false

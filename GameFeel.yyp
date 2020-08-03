@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "1efb7183-e92e-4c07-8bbc-b2ce42d594f9",
+            "Value": {
+                "id": "23a50e0f-77d2-4dd3-bf3e-563b289db078",
+                "resourcePath": "objects\\oMusicController\\oMusicController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1f7c618a-58af-4e31-888c-47480d2dee1e",
             "Value": {
                 "id": "62d7f7f4-a4fd-4e4e-94d2-2583652360fe",
@@ -807,6 +815,14 @@
             }
         },
         {
+            "Key": "4642c083-b607-4b75-b1e2-526688093630",
+            "Value": {
+                "id": "955028c8-8732-46fd-9a1f-686e045ab2c0",
+                "resourcePath": "fonts\\fLogo\\fLogo.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "469d7f91-6049-44a5-a893-fb1a51d5690b",
             "Value": {
                 "id": "f862316c-f6d9-4b92-b7a0-f8fa298ebe6c",
@@ -1052,6 +1068,14 @@
                 "id": "d81d0338-8dc7-4377-afba-bcf3c133ae45",
                 "resourcePath": "views\\58b5f32c-c672-4e27-a5b0-09020d3ae4a7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "58d6c9c3-66a0-4240-a332-377ba4134cd0",
+            "Value": {
+                "id": "e7ead483-fa55-4f94-96e4-75f4b3a7681d",
+                "resourcePath": "sounds\\sndAmbientSmoke\\sndAmbientSmoke.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -1652,6 +1676,14 @@
                 "id": "e8dface9-194f-45a8-90c5-d20579593763",
                 "resourcePath": "views\\8cb32950-58d7-4303-b84b-0c60489b3518.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8e4eea29-d551-42cf-8a6f-e6ac493fa0ee",
+            "Value": {
+                "id": "237061d2-a25f-4cb5-b5a9-c0030fb09e3d",
+                "resourcePath": "fonts\\fSign\\fSign.yy",
+                "resourceType": "GMFont"
             }
         },
         {

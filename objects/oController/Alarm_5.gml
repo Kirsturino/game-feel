@@ -1,3 +1,2 @@
 /// @description Controller jank
-
 scrGetController();

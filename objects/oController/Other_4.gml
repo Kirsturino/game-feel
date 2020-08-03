@@ -1,13 +1,4 @@
-/// @description Music and autosave
-
-if (!instance_exists(oSecret))
-{
-	scrChangeMusic(sndBGM);
-} else if (instance_exists(oSecret))
-{
-	scrChangeMusic(sndSecret);
-}
-
+/// @description Autosave
 //Check if player has been in this room, if not, add the index of the room to the list of rooms the player has reached
 if (ds_list_find_index(global.roomList, room) == -1)
 {

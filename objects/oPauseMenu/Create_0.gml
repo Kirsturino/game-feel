@@ -87,7 +87,9 @@ ds_menu_controls_controller = scrCreateMenu(
 
 
 page = 0;
-menu_pages = [ds_menu_main, ds_settings, ds_menu_audio, ds_menu_graphics, ds_menu_controls, ds_menu_controls_keyboard, ds_menu_controls_controller];
+menu_pages =	[ds_menu_main, ds_settings, ds_menu_audio, 
+				ds_menu_graphics, ds_menu_controls, ds_menu_controls_keyboard, 
+				ds_menu_controls_controller];
 
 var i = 0;
 var array_length = array_length_1d(menu_pages);

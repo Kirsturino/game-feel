@@ -163,17 +163,18 @@ if (back_p && !inputting)
 		break;
 		
 		case 1:
+		case 2:
 			page = 0;
 		break;
 		
-		case 2:
 		case 3:
 		case 4:
-			page = 1;
-		break;
 		case 5:
+			page = 2;
+		break;
 		case 6:
-			page = 4;
+		case 7:
+			page = 5;
 		break;
 	}
 }

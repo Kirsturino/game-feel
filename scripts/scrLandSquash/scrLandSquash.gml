@@ -1,8 +1,8 @@
 if (!wantsToJump)
 {
 	//Splot
-	xDrawScale = xScaleTarget + min(abs(lastVsp) * 0.1, 0.4);
-	yDrawScale = yScaleTarget - min(abs(lastVsp) * 0.1, 0.4);
+	xDrawScale = xScaleTarget + min(abs(lastVsp) * 0.4, 0.8);
+	yDrawScale = yScaleTarget - min(abs(lastVsp) * 0.4, 0.8);
 }
 
 scrLandParticles();

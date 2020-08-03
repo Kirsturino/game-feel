@@ -1,0 +1,2 @@
+/// @description Music jank
+scrPlayMusic();

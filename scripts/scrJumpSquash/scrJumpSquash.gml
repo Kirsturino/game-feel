@@ -1,3 +1,3 @@
 //Stretch character upwards
-xDrawScale = 0.5;
-yDrawScale = 1.25;
+xDrawScale = 0.1;
+yDrawScale = 2;

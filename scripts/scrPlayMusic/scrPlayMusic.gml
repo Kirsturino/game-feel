@@ -1,4 +1,4 @@
-//Music stuff
+//Music & ambient stuff
 if (global.currentAmbient == global.ambientTo)
 {
 	if (!audio_is_playing(global.currentAmbient))

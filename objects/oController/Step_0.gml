@@ -1,3 +1,1 @@
 scrDebug();
-
-scrMusicController();
