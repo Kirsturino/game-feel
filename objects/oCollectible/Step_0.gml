@@ -22,11 +22,19 @@ if (!destroy && !following)
 	part_particles_create(global.partSystem, x, y, global.secretPart, 1);
 } else if (following)
 {
+	
 	//Some animation stuff
-	x = lerp(x, oPlayer.x, 0.05);
+	var wiggle = scrWave(-3, 3, 4, 0);
+	x = lerp(x, drawX + wiggle, 0.4);
 
-	var wiggle = scrWave(drawY - 5, drawY + 5, 3, 1);
-	y = lerp(y, oPlayer.y, 0.05);
+	wiggle = scrWave(-3, 3, 3, 1);
+	y = lerp(y, drawY + wiggle, 0.4);
+	
+	
+	//Some animation stuff
+	drawX = lerp(drawX, oPlayer.x, 0.05);
+
+	drawY = lerp(drawY, oPlayer.y, 0.05);
 }
 
 if (rainbow && !collected)

@@ -11,7 +11,7 @@ drawXTo = x;
 drawYTo = y;
 
 rot = 0;
-color = global.cYellow;
+color = global.cWhite;
 rotSpeed = 2;
 
 active = true;
@@ -23,4 +23,5 @@ colorTo = global.cWhite
 
 offset = random(2);
 
-hidden = false;
+//Check if behind hidden walls
+hidden = place_meeting(x, y, oFakeCollision);

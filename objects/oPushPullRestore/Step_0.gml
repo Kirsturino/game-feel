@@ -1,13 +1,10 @@
-//Check if behind hidden walls
-hidden = place_meeting(x, y, oFakeCollision);
-
 //Animate
 rot += rotSpeed + scrWave(-5, 2, 5, 0);
 
 if (active)
 {
-	xScaleTo = scrWave(1.1, 1.5, 1.0, offset);
-	yScaleTo = scrWave(1.5, 1.1, 2.0, offset);
+	xScaleTo = scrWave(0.7, 1.8, 1.0, offset);
+	yScaleTo = scrWave(0.7, 1.8, 1.0, offset + 0.5);
 	
 	colorTo = activeColor;
 } else
