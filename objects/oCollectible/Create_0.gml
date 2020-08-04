@@ -1,4 +1,14 @@
-image_blend = global.cOrange;
+if (!object_is_ancestor(object_index, oCollectible))
+{
+	rainbow = false;
+} else
+{
+	rainbow = true;
+}
+
+color = global.cOrange;
+colorTo = global.cOrange;
+alpha = 1;
 drawX = x;
 drawY = y;
 rotSpeed = 2;
@@ -19,20 +29,20 @@ if (place_meeting(x, y, oFakeCollision))
 //Check if collectible has been collected
 if (ds_list_find_index(global.collectibleList, name) != -1)
 {
-	image_blend = global.cBlueLight;
-	image_alpha = 0.5;
-	var collected = true;
+	color = global.cBlueLight;
+	alpha = 0.5;
+	collected = true;
 } else
 {
 	//Timer for SFX
 	alarm[0] = 240;
 	
-	var collected = false;
+	collected = false;
 }
 
 if (name == "unlockPull")
 {
-	image_blend = global.cYellow;
+	color = global.cYellow;
 	
 	if (collected  && global.allowPull) 
 	{
@@ -42,7 +52,7 @@ if (name == "unlockPull")
 
 if (name == "unlockPush")
 {
-	image_blend = global.cYellow;
+	color = global.cYellow;
 	
 	if (collected && global.allowPush) 
 	{

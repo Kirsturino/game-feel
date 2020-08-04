@@ -14,9 +14,6 @@ Features:
 Graphics
 - AI interpolation for player animations?
 - Polish player sprite/animations
-- Collectible graphics
-- Secret 3D graphics
-- Drop shadows to sliders and line in menus
 - Fix pause menu to work in not draw GUI event
 
 Sound

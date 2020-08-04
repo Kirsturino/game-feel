@@ -14,7 +14,7 @@ if (!destroy && !following)
 	
 	if (scrChance(0.2))
 	{
-		part_type_color1(global.secretPart, image_blend);
+		part_type_color1(global.secretPart, color);
 		part_particles_create(global.partSystem, x, y, global.secretPart, 1);
 	}
 } else if (destroy)
@@ -28,7 +28,7 @@ if (!destroy && !following)
 
 	image_angle += rotSpeed * 10;
 	
-	part_type_color1(global.secretPart, image_blend);
+	part_type_color1(global.secretPart, color);
 	part_particles_create(global.partSystem, x, y, global.secretPart, 1);
 } else if (following)
 {
@@ -42,4 +42,15 @@ if (!destroy && !following)
 	image_xscale = lerp(image_xscale, 1, 0.1);
 
 	image_angle += rotSpeed * 5;
+}
+
+if (rainbow && !collected)
+{
+	color = make_color_hsv(scrWave(0, 255, 8, 0), 255, 255);
+} else if (rainbow)
+{
+	color = make_color_hsv(scrWave(0, 255, 8, 0), 100, 100);
+} else
+{
+	color = merge_color(color, colorTo, 0.1);
 }
