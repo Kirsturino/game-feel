@@ -11,7 +11,7 @@ if (pushPress && !global.oneKeyDash)
 {
 	wantsToPush = true;
 	alarm[7] = ppBufferLength;
-} else if (pullPress)
+} else if (pullPress && alarm[9] == -1)
 {
 	wantsToPull = true;
 	alarm[7] = ppBufferLength;

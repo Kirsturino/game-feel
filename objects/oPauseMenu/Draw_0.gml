@@ -5,12 +5,15 @@ var ds_height = ds_grid_height(ds_grid);
 var y_buffer = 16;
 var x_buffer = 16;
 
-var start_y = (viewHeight / 2) - ((((ds_height-1)/2) * y_buffer)), start_x = viewWidth / 2;
+var camX = camera_get_view_x(view);
+var camY = camera_get_view_y(view);
+var start_y = camY + (viewHeight / 2) - ((((ds_height-1)/2) * y_buffer))
+var start_x = camX + viewWidth / 2;
 
 //Draw pause menu "back"
 var c = global.cGray;
 draw_set_alpha(0.5);
-draw_rectangle_color(0, 0, viewWidth, viewHeight, c, c, c, c, false);
+draw_rectangle_color(camX, camY, camX + viewWidth, camY + viewHeight, c, c, c, c, false);
 draw_set_alpha(1);
 
 //Draw elements on left side
@@ -138,10 +141,8 @@ repeat (ds_height)
 			scrDrawTextColorShadow(rtx, rty, current_val, c, c, c, c, 1);
 			
 			//Draw confirm prompt when rebinding
-			draw_set_halign(fa_center);
 			c = global.cWhite;
-			scrDrawTextColorShadow(viewWidth / 2, viewHeight - 8, "PRESS ENTER TO INPUT & CONFIRM", c, c, c, c, 1);
-			draw_set_halign(fa_left);
+			scrDrawTextColorShadow(camX + viewWidth - 120, camY + viewHeight - 16, "PRESS ENTER TO\nINPUT & CONFIRM", c, c, c, c, 1);
 		break;
 		
 		case main_menu_element_type.controllerinput:
@@ -159,10 +160,8 @@ repeat (ds_height)
 			scrDrawTextColorShadow(rtx, rty, current_val, c, c, c, c, 1);
 			
 			//Draw confirm prompt when rebinding
-			draw_set_halign(fa_center);
 			c = global.cWhite;
-			scrDrawTextColorShadow(viewWidth / 2, viewHeight - 8, "PRESS SELECT TO INPUT & CONFIRM", c, c, c, c, 1);
-			draw_set_halign(fa_left);
+			scrDrawTextColorShadow(camX + viewWidth - 120, camY + viewHeight - 16, "PRESS SELECT TO\nINPUT & CONFIRM", c, c, c, c, 1);
 		break;
 	}
 	

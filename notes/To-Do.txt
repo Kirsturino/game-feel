@@ -14,7 +14,7 @@ Features:
 Graphics
 - AI interpolation for player animations?
 - Polish player sprite/animations
-- Fix pause menu to work in not draw GUI event
+- Change ppRestores to use draw_ellipse
 
 Sound
 - Default BGM

@@ -138,10 +138,8 @@ repeat (ds_height)
 			scrDrawTextColorShadow(rtx, rty, current_val, c, c, c, c, 1);
 			
 			//Draw confirm prompt when rebinding
-			draw_set_halign(fa_center);
 			c = global.cWhite;
-			scrDrawTextColorShadow(viewWidth / 2, viewHeight - 8, "PRESS ENTER TO INPUT & CONFIRM", c, c, c, c, 1);
-			draw_set_halign(fa_left);
+			scrDrawTextColorShadow(viewWidth - 120, viewHeight - 16, "PRESS ENTER TO\nINPUT & CONFIRM", c, c, c, c, 1);
 		break;
 		
 		case main_menu_element_type.controllerinput:
@@ -159,10 +157,8 @@ repeat (ds_height)
 			scrDrawTextColorShadow(rtx, rty, current_val, c, c, c, c, 1);
 			
 			//Draw confirm prompt when rebinding
-			draw_set_halign(fa_center);
 			c = global.cWhite;
-			scrDrawTextColorShadow(viewWidth / 2, viewHeight - 8, "PRESS SELECT TO INPUT & CONFIRM", c, c, c, c, 1);
-			draw_set_halign(fa_left);
+			scrDrawTextColorShadow(viewWidth - 120, viewHeight - 16, "PRESS SELECT TO\nINPUT & CONFIRM", c, c, c, c, 1);
 		break;
 	}
 	
@@ -174,7 +170,7 @@ draw_set_valign(fa_top);
 //Draw logo and name when on certain menu parts
 if (page == 0 || page == 1 || page == 2 || page == 5)
 {
-	//Get basic coordinates
+	//Get basic coordinates for trongles
 	var centreX = viewWidth / 4 * 3;
 	var centreY = viewHeight / 2;
 	
@@ -184,6 +180,8 @@ if (page == 0 || page == 1 || page == 2 || page == 5)
 		surface_set_target(global.trongleSurf);
 		var col = make_color_rgb(3, 5, 9);
 		draw_clear_alpha(col, 0);
+		
+		gpu_set_blendmode(bm_max);
 		
 		//Rotating trongle
 		c = global.cYellow;
@@ -231,6 +229,8 @@ if (page == 0 || page == 1 || page == 2 || page == 5)
 		var y3 = lengthdir_y(length, dir + 240);
 	
 		draw_triangle_color(centreX + x1, centreY + y1, centreX + x2, centreY + y2, centreX + x3, centreY + y3, c, c, c, false);
+		
+		gpu_set_blendmode(bm_normal);
 		
 		surface_reset_target();
 		

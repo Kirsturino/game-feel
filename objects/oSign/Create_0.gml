@@ -34,9 +34,10 @@ if (global.controller == noone)
 	resetKey = scrGetUniqueKeys(global.button_restart);
 }
 
-
-//Outline shader stuff
-upixelH = shader_get_uniform(shdOutline, "pixelH");
-upixelW = shader_get_uniform(shdOutline, "pixelW");
-texelW = texture_get_texel_width(sprite_get_texture(sprite_index, 0));
-texelH = texture_get_texel_height(sprite_get_texture(sprite_index, 0));
+if (place_meeting(x, y, oFakeCollision))
+{
+	hidden = true;
+} else
+{
+	hidden = false;
+}

@@ -20,10 +20,10 @@ if (global.allowFreeCam)
 {
 	freeCamToggle = keyboard_check_pressed(global.key_camToggle) || gamepad_button_check_pressed(global.controller, global.button_camToggle);
 }
-restartPress = keyboard_check_pressed(global.key_restart) || gamepad_button_check_pressed(global.controller, global.button_restart);
 
 if (global.pause || blockMovement) exit;
 
+restartPress = keyboard_check_pressed(global.key_restart) || gamepad_button_check_pressed(global.controller, global.button_restart);
 
 //Gameplay inputs
 if (gamepad_axis_value(global.controller, gp_axislh) < 0 || gamepad_button_check(global.controller, global.button_left) || keyboard_check(global.key_left))

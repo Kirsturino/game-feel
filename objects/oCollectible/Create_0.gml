@@ -1,4 +1,4 @@
-if (!object_is_ancestor(object_index, oCollectible))
+if (!object_is_ancestor(object_index, oCollectible) && name != "unlockPull" && name != "unlockPush")
 {
 	rainbow = false;
 } else
@@ -11,7 +11,6 @@ colorTo = global.cOrange;
 alpha = 1;
 drawX = x;
 drawY = y;
-rotSpeed = 2;
 
 //Init variables for destroy animation
 following = false;
@@ -29,7 +28,7 @@ if (place_meeting(x, y, oFakeCollision))
 //Check if collectible has been collected
 if (ds_list_find_index(global.collectibleList, name) != -1)
 {
-	color = global.cBlueLight;
+	colorTo = global.cBlueLight;
 	alpha = 0.5;
 	collected = true;
 } else
@@ -43,6 +42,7 @@ if (ds_list_find_index(global.collectibleList, name) != -1)
 if (name == "unlockPull")
 {
 	color = global.cYellow;
+	colorTo = global.cYellow;
 	
 	if (collected  && global.allowPull) 
 	{
@@ -53,6 +53,7 @@ if (name == "unlockPull")
 if (name == "unlockPush")
 {
 	color = global.cYellow;
+	colorTo = global.cYellow;
 	
 	if (collected && global.allowPush) 
 	{

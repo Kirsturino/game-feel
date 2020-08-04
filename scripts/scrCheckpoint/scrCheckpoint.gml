@@ -17,6 +17,7 @@ if (cp != noone && (global.spawnX != cp.x || global.spawnY != cp.y))
 		followTarget = cp;
 		shouldWiggle = false;
 		yOffset = 8;
+		part_type_color1(global.secretPart, global.cGreen);
 		part_particles_create(global.partSystem, x, y, global.secretPart, 20);
 	}
 	

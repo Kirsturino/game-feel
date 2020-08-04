@@ -55,12 +55,18 @@ with (oCollectible)
 
 with (oSign)
 {
-	scrLight(oLighting.lightSurf, x + blockSize * 2, y + blockSize * 2, 16 + wiggle, 8);
+	if (!hidden)
+	{
+		scrLight(oLighting.lightSurf, x + blockSize * 2, y + blockSize * 2, 16 + wiggle, 8);
+	}
 }
 
 with (oCheckpoint)
 {
-	scrLight(oLighting.lightSurf, x + blockSize * 2, y + blockSize * 2, 16 + wiggle, 8);
+	if (!hidden)
+	{
+		scrLight(oLighting.lightSurf, x + blockSize * 2, y + blockSize * 2, 16 + wiggle, 8);
+	}
 }
 
 draw_surface(lightSurf, -blockSize * 2, -blockSize * 2);
