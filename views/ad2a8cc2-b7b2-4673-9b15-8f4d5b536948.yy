@@ -11,7 +11,8 @@
         "084d3317-e71c-42ca-9c5e-1b7ee44e5180",
         "227ac1ed-ad7d-4050-b297-6a298fb7af4d",
         "235f1514-5ec3-4396-8ef0-936e7ba40de1",
-        "e8bfe236-fdf4-43dd-92e1-3548cd10e5f8"
+        "e8bfe236-fdf4-43dd-92e1-3548cd10e5f8",
+        "b3cf5136-3d67-4ab6-b640-ae8ff7d8ce74"
     ],
     "filterType": "GMSound",
     "folderName": "Interactables",

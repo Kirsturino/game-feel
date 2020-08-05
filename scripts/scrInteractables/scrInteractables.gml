@@ -7,6 +7,7 @@ if (obj != noone)
 	{
 		obj.active = true;
 		lastSign = obj;
+		audio_play_sound(sndSignActive, 0, false);
 	}
 	
 	//If press interact button, start drawing text. If already drawing text, make whole string visible.

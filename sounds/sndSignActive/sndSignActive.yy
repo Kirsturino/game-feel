@@ -1,8 +1,8 @@
 {
-    "id": "4b51ce30-9fe0-48f2-99eb-b8665c49f71f",
+    "id": "b3cf5136-3d67-4ab6-b640-ae8ff7d8ce74",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "sndMenuConfirm",
+    "name": "sndSignActive",
     "audioGroupGuid": "7113cc24-0936-4256-a58b-8a459e4bb311",
     "bitDepth": 1,
     "bitRate": 128,

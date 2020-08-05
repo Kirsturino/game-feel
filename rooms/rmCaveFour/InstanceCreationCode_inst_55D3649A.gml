@@ -1,1 +1,1 @@
-text = "You can pull on these zones by pressing " + pullKey + ". The pull will direct you towards the zone centre.";
+text = "You can dash towards the centre of these zones by pressing " + pullKey + " while inside of them.";

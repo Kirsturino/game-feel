@@ -6,19 +6,18 @@ Features:
 - IDEA: Platforms/Walls you destroy if you dash at them
 - IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
 
-- Credits screen/room
-- Some additional training rooms after unlocking pull
-- Additional rooms testing all you've learnt before smoke rooms?
+- Credits thing in main menu
+- Some additional rooms before delivery room, ramping the difficulty a bit slower (?)
 - Option to disable screen freeze/shake
 
 Graphics
-- AI interpolation for player animations?
 - Polish player sprite/animations
-- Change ppRestores to use draw_ellipse
+	- Don't make new ones, own the one color style as FEZ owned it
+	- Add more color, face to character, light shading
+	- You can do it, king
+	- Transition sprites to looping ones when jumping?
+	- AI interpolation for player animations
 
 Sound
-- Default BGM
-- Main menu BGM
+- Polish default BGM
 - Final Scene BGM
-- SFX when near a sign (activating it)
-- Additional tech SFX

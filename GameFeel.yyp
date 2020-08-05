@@ -647,6 +647,14 @@
             }
         },
         {
+            "Key": "39e7ef28-d435-4c45-b04c-bebf80895962",
+            "Value": {
+                "id": "99e99609-4408-4f26-8c38-599b655c378d",
+                "resourcePath": "scripts\\scrSmoothstep\\scrSmoothstep.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3a70572b-cefe-49d9-871a-d5c8fa8caeb6",
             "Value": {
                 "id": "8c0ad1d0-de8d-4944-a5cf-5664c2701a37",
@@ -1463,6 +1471,14 @@
             }
         },
         {
+            "Key": "7766029e-4cc9-4345-ac8b-e5b6475e7f37",
+            "Value": {
+                "id": "712367b9-4749-4501-afb1-dd2acd3456b1",
+                "resourcePath": "sounds\\sndTech2\\sndTech2.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "78bccab7-a201-4463-abef-5d9dfb33a5ae",
             "Value": {
                 "id": "1f4b48b5-9859-4bb2-87f7-cab9b5b9bbc3",
@@ -1708,6 +1724,14 @@
                 "id": "1169de4a-e56b-4305-865a-ffd2d9972155",
                 "resourcePath": "objects\\oMovingDanger\\oMovingDanger.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8f6e102d-0bee-4414-8ef1-5f6e9a1e3d08",
+            "Value": {
+                "id": "2cc4eb46-1b69-400f-8e92-ec03be0a91fd",
+                "resourcePath": "scripts\\scrGain\\scrGain.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2100,6 +2124,14 @@
                 "id": "c6475b41-3bca-4df6-af54-98d1457ca381",
                 "resourcePath": "scripts\\scrDrawFunkyText\\scrDrawFunkyText.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b3cf5136-3d67-4ab6-b640-ae8ff7d8ce74",
+            "Value": {
+                "id": "30e9978e-98ee-4335-bcdd-0e9f0500c0d9",
+                "resourcePath": "sounds\\sndSignActive\\sndSignActive.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -2943,6 +2975,8 @@
         "4e30cf92-514d-4d29-bfcd-f5f425ec1b02",
         "b308b982-5b1b-4052-9618-ab42e0268be3",
         "233e22a5-7bc4-4ac7-ac1b-aba8d5c80042",
+        "39e7ef28-d435-4c45-b04c-bebf80895962",
+        "8f6e102d-0bee-4414-8ef1-5f6e9a1e3d08",
         "8e7a1a61-3f2a-4b19-bc5f-fe730763758c",
         "895c4ca7-d704-4d28-ac88-43b5746d07ec",
         "32d7ad34-61ac-4be4-842d-a75aa507b666",

@@ -1,4 +1,4 @@
 global.spawnX = -1;
 global.spawnY = -1;
 
-room_goto(rmCaveEight);
+room_goto(rmCaveSeven);

@@ -18,7 +18,8 @@
         "709c283d-1bd5-4f16-9d22-656b75590f04",
         "3da2d627-37c8-453c-ab20-9845da4bc10f",
         "259f356e-2918-4c2a-81e7-a9e22d5a6509",
-        "910c27fb-6db4-4907-9b7e-dc36d3029c29"
+        "910c27fb-6db4-4907-9b7e-dc36d3029c29",
+        "7766029e-4cc9-4345-ac8b-e5b6475e7f37"
     ],
     "filterType": "GMSound",
     "folderName": "Player",

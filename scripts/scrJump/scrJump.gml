@@ -30,6 +30,7 @@ if (willJump)
 		//FX
 		alarm[8] = techFXTimerLength;
 		audio_play_sound(sndTech, 0, false);
+		audio_play_sound(sndTech2, 0, false);
 		
 	} else if (longJump)
 	{
