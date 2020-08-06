@@ -166,6 +166,7 @@ if (back_p && !inputting)
 		
 		case 1:
 		case 2:
+		case 8:
 			page = 0;
 		break;
 		
@@ -179,4 +180,17 @@ if (back_p && !inputting)
 			page = 5;
 		break;
 	}
+}
+
+//Scrolling credits
+if (page == main_menu_page.credits)
+{
+	creditsY -= scrollSpeed;
+	if (creditsY < -scrollReset)
+	{
+		creditsY = viewHeight;
+	}
+} else
+{
+	creditsY = viewHeight;
 }

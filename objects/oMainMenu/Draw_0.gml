@@ -261,3 +261,22 @@ if (page == 0 || page == 1 || page == 2 || page == 5)
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
 }
+
+//Draw credits text
+{
+	if (page == main_menu_page.credits)
+	{
+		var centreX = viewWidth / 4 * 3;
+		var c = global.cWhite;
+		draw_set_halign(fa_center);
+		var me = "Programming,\ndesign, \"art\",\nall that stuff:\n\nKristian \"Kirstu\" Kallio\n\n";
+		var scripts = "Additional tool\nscripts:\n\nShaun Spalding\nGMLScripts.com\n\n";
+		var fonts = "Additional fonts:\n\n Seraphim1\nby\nJosephKnightCom\n\n";
+		var tutorials = "GameMaker content\ncreators whose\ncontent helped me:\n\nFriendlyCosmonaut\nGMWolf\nIDoZ\nPixelatedPope\nShaun Spalding\nThe Step Event\n\n";
+		var playtesters = "Special thanks to my\nearly playtesters:\n\nArdns\nborb\nFudge\nGlain Glimbs\nHolf\nJebus\nlillamyy\nLinus\nMooses Suuri\nOsqu\nRocky Stein\nSensei Fry\ntams\n\n";
+		var creditsText = me + tutorials + fonts + scripts + playtesters;
+		scrDrawTextColorShadow(centreX, creditsY, creditsText, c, c, c, c, 1);
+		
+		draw_set_halign(fa_left);
+	}
+}

@@ -6,7 +6,6 @@ Features:
 - IDEA: Platforms/Walls you destroy if you dash at them
 - IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
 
-- Credits thing in main menu
 - Some additional rooms before delivery room, ramping the difficulty a bit slower (?)
 - Option to disable screen freeze/shake
 
@@ -21,3 +20,4 @@ Graphics
 Sound
 - Polish default BGM
 - Final Scene BGM
+- See if it's easy to just have silence playing with current scripts

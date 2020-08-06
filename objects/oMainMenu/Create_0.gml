@@ -2,8 +2,11 @@ alarm[0] = 1;
 lastButton = 0;
 inputting = false;
 confirmPitch = 1.2;
+scrollSpeed = 0.5;
+scrollReset = viewHeight * 4;
 xo  = 0;
 
+creditsY = viewHeight;
 //Init surface to draw triangles on later
 if (!surface_exists(global.trongleSurf))
 {
@@ -57,6 +60,7 @@ if (!file_exists("save.sav"))
 		["NEW GAME",	main_menu_element_type.script_runner,	scrStartNewGame],
 		["NEW SPEEDRUN",main_menu_element_type.script_runner,	scrStartNewSpeedrun],
 		["SETTINGS",	main_menu_element_type.page_transfer,	main_menu_page.settings],
+		["CREDITS",		main_menu_element_type.page_transfer,	main_menu_page.credits],
 		["QUIT",		main_menu_element_type.script_runner,	scrExitGame]
 		);
 	} else
@@ -66,6 +70,7 @@ if (!file_exists("save.sav"))
 		["LEVEL SELECT",main_menu_element_type.page_transfer,	main_menu_page.levelselect],
 		["NEW GAME",	main_menu_element_type.script_runner,	scrStartNewGame],
 		["SETTINGS",	main_menu_element_type.page_transfer,	main_menu_page.settings],
+		["CREDITS",		main_menu_element_type.page_transfer,	main_menu_page.credits],
 		["QUIT",		main_menu_element_type.script_runner,	scrExitGame]
 		);
 	}
@@ -92,7 +97,7 @@ ds_menu_audio = scrCreateMenu(
 ds_menu_graphics = scrCreateMenu(
 	["RESOLUTION",	main_menu_element_type.shift,			scrChangeResolution,	global.resolution,		["640 x 360", "1280 x 720", "1920 x 1080", "2560 x 1440", "4096 x 2160"]],
 	["FULLSCREEN",	main_menu_element_type.toggle,			scrChangeWindowMode,	global.fullscreen,		["FULLSCREEN", "WINDOWED"]],
-	["OUTLINE",		main_menu_element_type.toggle,			scrChangeContrast,		!global.highContrast,		["NO", "YES"]],
+	["CHAR. OUTLINE",	main_menu_element_type.toggle,			scrChangeContrast,		!global.highContrast,		["NO", "YES"]],
 	["BACK",		main_menu_element_type.page_transfer,	main_menu_page.settings]
 );
 
@@ -126,10 +131,14 @@ ds_menu_controls_controller = scrCreateMenu(
 	["BACK",		main_menu_element_type.page_transfer,	main_menu_page.controls]
 );
 
+ds_menu_credits = scrCreateMenu(
+["BACK",		main_menu_element_type.page_transfer,	main_menu_page.main]
+);
+
 page = 0;
 menu_pages =	[ds_menu_main, ds_menu_levelselect, ds_settings, 
 				ds_menu_audio, ds_menu_graphics, ds_menu_controls, 
-				ds_menu_controls_keyboard, ds_menu_controls_controller];
+				ds_menu_controls_keyboard, ds_menu_controls_controller, ds_menu_credits];
 
 var i = 0;
 var array_length = array_length_1d(menu_pages);
