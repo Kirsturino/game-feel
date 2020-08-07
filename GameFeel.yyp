@@ -2655,6 +2655,14 @@
             }
         },
         {
+            "Key": "e54eb88f-1ef4-42b5-9187-15c9c550c61f",
+            "Value": {
+                "id": "39f3b588-9947-4840-a232-a90757da1a2f",
+                "resourcePath": "scripts\\scrStandUpSquash\\scrStandUpSquash.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e7d6b5f0-02f9-44dc-b412-a74d67a750f0",
             "Value": {
                 "id": "979891e3-d2b7-4660-a2f2-4e18549b1aa8",
@@ -3025,6 +3033,7 @@
         "68767140-80c7-4a46-93f8-cb8945b2ca7c",
         "b517b931-afdb-4e82-9cb1-63876929d203",
         "a82897e1-3538-44a0-99fc-bb2ace2e9bd1",
+        "e54eb88f-1ef4-42b5-9187-15c9c550c61f",
         "cceee5a7-ba6d-46f5-90cf-4727423c88b5",
         "d7542787-493c-40f3-bf59-909d1af306ab",
         "8773ad11-4068-4214-bf2d-1639697f361b",

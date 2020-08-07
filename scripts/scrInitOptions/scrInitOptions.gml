@@ -15,7 +15,7 @@ if (file_exists("options.sav"))
 	global.resolution = 1;
 	
 	//Accessibility options
-	global.highContrast = 0;
+	global.highContrast = 1;
 	
 	//Controls
 	scrInitControls();

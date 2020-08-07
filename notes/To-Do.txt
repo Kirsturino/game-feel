@@ -10,12 +10,6 @@ Features:
 - Option to disable screen freeze/shake
 
 Graphics
-- Polish player sprite/animations
-	- Don't make new ones, own the one color style as FEZ owned it
-	- Add more color, face to character, light shading
-	- You can do it, king
-	- Transition sprites to looping ones when jumping?
-	- AI interpolation for player animations
 
 Sound
 - Polish default BGM
