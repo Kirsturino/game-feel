@@ -75,13 +75,13 @@ if (global.speedrunning && !global.runIsOver)
 	//Draw text
 	if (hours > 0)
 	{
-		draw_text_color(viewWidth / 2, 8, string(hours) + "h " + string(minutes) + "m " + string(seconds) + "s", c, c, c, c, 1);
+		scrDrawTextColorShadow(viewWidth / 2, 8, string(hours) + "h " + string(minutes) + "m " + string(seconds) + "s", c, c, c, c, 1);
 	} else if (minutes > 0)
 	{
-		draw_text_color(viewWidth / 2, 8, string(minutes) + "m " + string(seconds) + "s", c, c, c, c, 1);
+		scrDrawTextColorShadow(viewWidth / 2, 8, string(minutes) + "m " + string(seconds) + "s", c, c, c, c, 1);
 	} else
 	{
-		draw_text_color(viewWidth / 2, 8, string(seconds) + "s", c, c, c, c, 1);
+		scrDrawTextColorShadow(viewWidth / 2, 8, string(seconds) + "s", c, c, c, c, 1);
 	}
 
 } else if (global.speedrunning && global.runIsOver)
@@ -94,5 +94,5 @@ if (global.speedrunning && !global.runIsOver)
 	var minutes = global.speedrunningTimer div 60;
 	var hours = minutes div 60;
 	
-	draw_text_color(viewWidth / 2, 8, "FINAL TIME: \n" + string(hours) + "h " + string(minutes) + "m " + string(seconds) + "s", c, c, c, c, 1);
+	scrDrawTextColorShadow(viewWidth / 2, 8, "FINAL TIME: \n" + string(hours) + "h " + string(minutes) + "m " + string(seconds) + "s", c, c, c, c, 1);
 }
