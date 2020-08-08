@@ -46,6 +46,9 @@ if (rain)
 {
 	var rand = irandom_range(1, 4);
 	part_emitter_stream(global.persistentPartSystem, global.rainEmitter, global.rainPart, rand);
+} else
+{
+	part_emitter_stream(global.persistentPartSystem, global.rainEmitter, global.rainPart, 0);
 }
 
 //Generate grass on top of collision objects

@@ -7,11 +7,8 @@ Features:
 - IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
 
 - Some additional rooms before delivery room, ramping the difficulty a bit slower (?)
-- Option to disable screen freeze/shake
+- Add secret (or two)
 
 Graphics
 
 Sound
-- Polish default BGM
-- Final Scene BGM
-- See if it's easy to just have silence playing with current scripts

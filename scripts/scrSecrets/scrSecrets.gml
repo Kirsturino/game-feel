@@ -15,7 +15,7 @@ if (collectible != noone && !collectible.following && !collectible.destroy)
 {
 	//Effects
 	audio_play_sound(sndRefreshBuildup2, 0, false);
-	scrFreeze(100);
+	scrFreeze(80);
 	scrSetShake(10, 10);
 	audio_play_sound(sndRefresh, 0, false);
 	

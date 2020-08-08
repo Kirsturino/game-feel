@@ -15,7 +15,7 @@ if (restore != noone && restore.active && ppFrames != ppFramesMax)
 	if (ppFrames == 0)
 	{
 		scrSetShake(10, 10);
-		scrFreeze(100);
+		scrFreeze(80);
 		audio_play_sound(sndPPMax, 100, false);
 		colorTo = canDashColor;
 		ppFrames = ppFramesMax;

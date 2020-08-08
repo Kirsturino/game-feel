@@ -22,3 +22,6 @@ notificationY = 0;
 notificationAlpha = 1;
 
 instance_create_layer(0, 0, "Controllers", oMusicController);
+
+test = 0;
+test2 = 100;

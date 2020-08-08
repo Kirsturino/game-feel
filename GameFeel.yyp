@@ -1479,6 +1479,14 @@
             }
         },
         {
+            "Key": "77b398fb-9784-4b1d-9836-d2c375fb8711",
+            "Value": {
+                "id": "d6f59a9a-bd22-470a-9717-8c50f87bf32c",
+                "resourcePath": "scripts\\scrLerp\\scrLerp.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "78bccab7-a201-4463-abef-5d9dfb33a5ae",
             "Value": {
                 "id": "1f4b48b5-9859-4bb2-87f7-cab9b5b9bbc3",
@@ -2535,6 +2543,14 @@
             }
         },
         {
+            "Key": "dc2e6276-d4b2-42d6-8b2d-fa711d311811",
+            "Value": {
+                "id": "4a1ff39a-5b37-4ba5-88c7-573ecb032ee7",
+                "resourcePath": "sounds\\sndSmokeMusic\\sndSmokeMusic.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "dc30aafc-74cb-45f3-8dee-fa2bd7cbb838",
             "Value": {
                 "id": "99a7751f-c849-4d57-9a3d-cb75a3370056",
@@ -2783,6 +2799,14 @@
             }
         },
         {
+            "Key": "f3b54f70-0fc7-4828-aa1b-47374992e192",
+            "Value": {
+                "id": "82d3b794-0aad-441f-882e-ec5f9b923bfb",
+                "resourcePath": "sounds\\sndSmokeWhisper\\sndSmokeWhisper.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "95883eb6-bd45-4a0d-a7b8-99d5949ba95b",
@@ -2985,6 +3009,7 @@
         "233e22a5-7bc4-4ac7-ac1b-aba8d5c80042",
         "39e7ef28-d435-4c45-b04c-bebf80895962",
         "8f6e102d-0bee-4414-8ef1-5f6e9a1e3d08",
+        "77b398fb-9784-4b1d-9836-d2c375fb8711",
         "8e7a1a61-3f2a-4b19-bc5f-fe730763758c",
         "895c4ca7-d704-4d28-ac88-43b5746d07ec",
         "32d7ad34-61ac-4be4-842d-a75aa507b666",
