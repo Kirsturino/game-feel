@@ -6,9 +6,9 @@ Features:
 - IDEA: Platforms/Walls you destroy if you dash at them
 - IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
 
-- Some additional rooms before delivery room, ramping the difficulty a bit slower (?)
-- Add secret (or two)
+- Add one more secret room
 
 Graphics
 
 Sound
+- Smoke room song(?)

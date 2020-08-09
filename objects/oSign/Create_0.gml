@@ -14,7 +14,7 @@ popUpAlpha = 0;
 alarm[2] = 10;
 
 //Get player input keys for tutorial
-if (global.controller == noone)
+if (!global.usingController)
 {
 	leftKey = scrGetUniqueKeys(global.key_left);
 	rightKey = scrGetUniqueKeys(global.key_right);

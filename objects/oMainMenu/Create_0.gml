@@ -3,7 +3,7 @@ lastButton = 0;
 inputting = false;
 confirmPitch = 1.2;
 scrollSpeed = 0.5;
-scrollReset = viewHeight * 4;
+scrollReset = viewHeight * 4.5;
 xo  = 0;
 
 creditsY = viewHeight;

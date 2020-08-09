@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "150a4bbc-4ae4-4576-b630-f609a84b4313",
+            "Value": {
+                "id": "98ec762c-765f-4378-b64c-39cd0225e7ec",
+                "resourcePath": "rooms\\rmCaveOneSecret\\rmCaveOneSecret.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "1528d0f6-3ef8-4c49-92a1-34cc685a8955",
             "Value": {
                 "id": "6b80160e-956e-4e79-8f12-dfc9c0d5bd9f",
@@ -611,6 +619,14 @@
             "Value": {
                 "id": "2176c785-3218-4205-84e6-f92f93da0a9a",
                 "resourcePath": "scripts\\scrToCrouch\\scrToCrouch.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "348926c4-a652-4242-a1b1-6e237fee25cd",
+            "Value": {
+                "id": "335b2af7-84da-444d-8049-c9260bbba721",
+                "resourcePath": "scripts\\scrGetAnyControllerInput\\scrGetAnyControllerInput.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2263,6 +2279,14 @@
             }
         },
         {
+            "Key": "bd58852f-864c-4394-ac36-a51ee2a5fc5a",
+            "Value": {
+                "id": "86b65910-9d89-4e27-9b55-695fd8eba654",
+                "resourcePath": "rooms\\rmCaveSixSecret\\rmCaveSixSecret.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "bd7a536c-905b-4d7d-8fec-112b6756735c",
             "Value": {
                 "id": "d79f068e-152f-4b1d-b11d-831615ca7858",
@@ -3102,6 +3126,7 @@
         "dea0cd99-9e5a-4e39-97bd-cdf2c032514f",
         "a0139dbd-f6ae-4564-b8a1-915cb55aece4",
         "558717ed-b490-4727-ad27-433c61f4a9bd",
+        "348926c4-a652-4242-a1b1-6e237fee25cd",
         "a7bf30dc-cb3f-4715-bf9c-b2d6cac1910c",
         "add0e8b7-9d91-4602-bf92-41744b7d219a",
         "8537807d-a448-4adf-8f98-e68a8c3212c4",

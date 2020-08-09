@@ -7,7 +7,7 @@ if (global.deathCounter == 0)
 } else if (global.deathCounter > 100)
 {
 	text = "You've died a total of " + string(global.deathCounter) + " times. Oof.";
-} 
+} else
 {
 	text = "You've died a total of " + string(global.deathCounter) + " times.";
 }

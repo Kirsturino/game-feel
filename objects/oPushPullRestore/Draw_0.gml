@@ -13,6 +13,9 @@
 //	}
 //}
 
+
+if (!global.allowPull) exit;
+
 //Draw a wibbly wobbly FX for visuals
 var size = 8;
 

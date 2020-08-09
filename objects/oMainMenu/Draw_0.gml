@@ -270,11 +270,12 @@ if (page == 0 || page == 1 || page == 2 || page == 5)
 		var c = global.cWhite;
 		draw_set_halign(fa_center);
 		var me = "Programming,\ndesign, \"art\", sounds, \nall that stuff:\n\nKristian \"Kirstu\" Kallio\n\n";
+		var palette = "Palette:\n\nEQUPIX15\nby\nNight\n\n";
 		var scripts = "Additional tool\nscripts:\n\nShaun Spalding\nGMLScripts.com\n\n";
 		var fonts = "Additional fonts:\n\n Seraphim1\nby\nJosephKnightCom\n\n";
 		var tutorials = "GameMaker content\ncreators whose\ncontent helped me:\n\nFriendlyCosmonaut\nGMWolf\nIDoZ\nPixelatedPope\nShaun Spalding\nThe Step Event\n\n";
 		var playtesters = "Special thanks to my\nearly playtesters:\n\nArdns\nborb\nFudge\nGlain Glimbs\nHolf\nJebus\nlillamyy\nLinus\nMooses Suuri\nOsqu\nRocky Stein\nSensei Fry\ntams\n\n";
-		var creditsText = me + tutorials + fonts + scripts + playtesters;
+		var creditsText = me + palette + tutorials + fonts + scripts + playtesters;
 		scrDrawTextColorShadow(centreX, creditsY, creditsText, c, c, c, c, 1);
 		
 		draw_set_halign(fa_left);

@@ -28,6 +28,7 @@ global.speedrunning = false;
 global.speedrunningTimer = 0;
 global.speedrunningTimerOffset = 0;
 global.runIsOver = false;
+global.usingController = false;
 
 //Menu things
 global.pause = false;
