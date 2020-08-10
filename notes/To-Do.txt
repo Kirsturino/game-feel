@@ -6,14 +6,6 @@ Features:
 - IDEA: Platforms/Walls you destroy if you dash at them
 - IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
 
-- Add one more secret room
-
 Graphics
 
 Sound
-- Smoke room song(?)
-	- Ambient, like the normal song
-	- Just do a chord progression again, change instruments
-	- Or just a droning bass, steal the bass from Selene
-	- Literally anything else than the normal thing
-	- EZ

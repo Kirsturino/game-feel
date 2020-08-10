@@ -106,7 +106,7 @@ repeat (ds_height)
 			
 			draw_line_width_color(rtx + (circle_pos * len), rty + 5, rtx + (circle_pos * len), rty - 5, 5, c, c);
 			
-			scrDrawTextColorShadow(rtx + (len * 1.2), rty, string(floor(circle_pos * 100)) + " % ", c, c, c, c, 1);
+			scrDrawTextColorShadow(rtx + (len * 1.2), rty, string(round(circle_pos * 100)) + " % ", c, c, c, c, 1);
 		break;
 		
 		case menu_element_type.toggle:

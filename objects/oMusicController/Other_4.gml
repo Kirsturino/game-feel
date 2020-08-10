@@ -1,7 +1,7 @@
 /// @description Music and ambient
 
 //Change to different music
-if (!instance_exists(oSecret))
+if (!instance_exists(oSecret) && !instance_exists(oMovingDanger) && room != rmCaveFifteenPointEight)
 {
 	scrChangeMusic(sndBGM);
 } else if (instance_exists(oSecret))
@@ -16,6 +16,7 @@ if (!instance_exists(oMovingDanger) && room != rmCaveFifteenPointEight)
 } else if (instance_exists(oMovingDanger) || room == rmCaveFifteenPointEight)
 {
 	scrChangeAmbient(sndAmbientSmoke);
+	scrChangeMusic(sndSmokeMusic);
 	
 	if (!audio_is_playing(sndSmokeWhisper))
 	{
