@@ -28,8 +28,11 @@ if (place_meeting(x, y, oFakeCollision))
 //Check if collectible has been collected
 if (ds_list_find_index(global.collectibleList, name) != -1)
 {
-	colorTo = global.cBlueLight;
-	alpha = 0.5;
+	if (name != "unlockPull" && name != "unlockPush")
+	{
+		colorTo = global.cBlueLight;
+		alpha = 0.5;
+	}
 	collected = true;
 } else
 {
