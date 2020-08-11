@@ -20,7 +20,7 @@ if (place_meeting(x, y + vsp, oCollision))
 		var xDifference = x - collider.x;
 		var forgivenessLimit = minLedgeDifferenceX + (collider.image_xscale - 1) * blockSize / 2;
 	
-		if (abs(xDifference) > forgivenessLimit)
+		if (abs(xDifference) > forgivenessLimit && place_empty(x + xDifference, y - 1, oCollision))
 		{
 			//Slide player until no longer colliding
 			while (place_meeting(x, y - 1, oCollision))

@@ -1,1 +1,1 @@
-text = "You can also just toggle freecam with " + freeCamKey + ".";
+text = "You can also toggle freecam with " + freeCamKey + " to get a complete view of the room.";

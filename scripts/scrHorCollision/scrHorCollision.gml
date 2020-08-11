@@ -20,7 +20,7 @@ if (place_meeting(x + hsp, y, oCollision))
 		var yDifference = y - colliderHorizontal.y;
 		var forgivenessLimitHorizontal = minLedgeDifferenceY + (colliderHorizontal.image_yscale - 1) * blockSize / 2;
 		
-		if (abs(yDifference) > forgivenessLimitHorizontal && yDifference < 0)
+		if (abs(yDifference) > forgivenessLimitHorizontal && yDifference < 0 && place_empty(x + sign(hsp), y + yDifference, oCollision))
 		{
 			//slide player until no longer colliding
 			while (place_meeting(x + sign(hsp), y, oCollision))

@@ -1,4 +1,3 @@
-Features:
 - IDEA: reset ppFrames if hitting a projectile while pushing or pulling, a la bash
 - IDEA: Objects that prolong your dash in the same direction as your last dash when hit
 - IDEA: Projectiles that have a PP area that when dashed on will go the opposite direction, like bash
@@ -6,6 +5,11 @@ Features:
 - IDEA: Platforms/Walls you destroy if you dash at them
 - IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
 
-Graphics
+Features:
+- Go over player variables and see if you can finetune some things
 
-Sound
+Graphics:
+- Get a video of main graphic moving with a greenscreen
+
+Sound:
+- Compress music and ambient
