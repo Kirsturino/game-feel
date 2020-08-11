@@ -6,10 +6,15 @@
 - IDEA: ppObjects that float the opposite way of your dash, then smoothly come to a stop
 
 Features:
-- Go over player variables and see if you can finetune some things
+- Really see if you can fix caveTwo first bit, probably needs a wee rework
+- Disable debug mode
 
 Graphics:
-- Get a video of main graphic moving with a greenscreen
 
 Sound:
-- Compress music and ambient
+- Compress music and ambient files
+
+Storefront:
+- Screenshots
+- Video
+- Gifs (just make from video)
